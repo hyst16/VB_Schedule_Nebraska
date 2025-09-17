@@ -10,19 +10,10 @@ OUT  = DATA/"vb_schedule_normalized.json"
 
 CENTRAL = tz.gettz("America/Chicago")
 
-MONTHS = {
-    "Jan":1,"Jan.":1,"January":1,
-    "Feb":2,"Feb.":2,"February":2,
-    "Mar":3,"Mar.":3,"March":3,
-    "Apr":4,"Apr.":4,"April":4,
-    "May":5,
-    "Jun":6,"June":6,
-    "Jul":7,"July":7,
-    "Aug":8,"Aug.":8,"August":8,
-    "Sep":9,"Sep.":9,"Sept":9,"Sept.":9,"September":9,
-    "Oct":10,"Oct.":10,"October":10,
-    "Nov":11,"Nov.":11,"November":11,
-    "Dec":12,"Dec.":12,"December":12,
+# map by canonical 3-letter lowercase token
+MONTH_IDX = {
+    "jan":1, "feb":2, "mar":3, "apr":4, "may":5, "jun":6,
+    "jul":7, "aug":8, "sep":9, "oct":10, "nov":11, "dec":12,
 }
 
 def slug(s: str) -> str:
@@ -31,15 +22,23 @@ def slug(s: str) -> str:
     return re.sub(r"-+", "-", s).strip("-")
 
 def parse_date_from_text(label: str, season_year: int) -> str | None:
-    if not label: return None
+    """
+    Accepts 'AUG 22', 'Sep 5', 'Sept. 5', 'September 5' (case-insensitive).
+    """
+    if not label:
+        return None
     m = re.match(r"\s*([A-Za-z.]+)\s+(\d{1,2})\s*$", label)
-    if not m: return None
-    mon = MONTHS.get(m.group(1)); day = int(m.group(2))
-    if not mon: return None
+    if not m:
+        return None
+    mon_token = m.group(1).replace(".", "")
+    mon_key = mon_token[:3].lower()   # AUG -> aug, Sept -> sep, September -> sep
+    mon = MONTH_IDX.get(mon_key)
+    if not mon:
+        return None
+    day = int(m.group(2))
     return f"{season_year:04d}-{mon:02d}-{day:02d}"
 
 def normalize(items: list, scraped_at: str):
-    # Season year: use scrape timestamp
     try:
         season_year = datetime.fromisoformat((scraped_at or "").replace("Z","+00:00")).year
     except Exception:
@@ -48,14 +47,11 @@ def normalize(items: list, scraped_at: str):
     rows = []
     for it in items:
         # date: prefer ISO from scraper; else parse from date_text
-        date_iso = it.get("date")
+        date_iso = it.get("date") or parse_date_from_text(it.get("date_text"), season_year)
         if not date_iso:
-            date_iso = parse_date_from_text(it.get("date_text"), season_year)
-        if not date_iso:
-            # still no date? skip this row (prevents cascades)
-            continue
+            continue  # still no date -> skip
 
-        # Hard guard: only keep rows from season_year
+        # keep only rows from this season
         if not str(date_iso).startswith(f"{season_year}-"):
             continue
 
@@ -70,7 +66,8 @@ def normalize(items: list, scraped_at: str):
         # result / status
         res = it.get("result")
         status = "final" if res else "scheduled"
-        result_str = None; result_css = None
+        result_str = None
+        result_css = None
         if res:
             result_str = f"{res.get('outcome')} {res.get('sets')}"
             result_css = {"W":"W","L":"L","T":"T"}.get(res.get("outcome"))
