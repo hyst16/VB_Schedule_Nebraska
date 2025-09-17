@@ -1,22 +1,17 @@
 #!/usr/bin/env python3
-import json
-import re
+import json, re
 from pathlib import Path
 from datetime import datetime, timezone
-
 from playwright.sync_api import sync_playwright, TimeoutError as PWTimeout
 
 SOURCE_URL = "https://huskers.com/sports/volleyball/schedule"
 OUT = Path("data/vb_raw.json")
 OUT.parent.mkdir(parents=True, exist_ok=True)
 
-# -------- Helpers (same style as your football scraper) --------
-
 def clean(s):
     return " ".join(s.split()) if isinstance(s, str) else s
 
-def safe_text(locator, timeout=1000):
-    """Return innerText of the FIRST match, or None if no match."""
+def safe_text(locator, timeout=1200):
     try:
         if not locator or locator.count() == 0:
             return None
@@ -24,8 +19,7 @@ def safe_text(locator, timeout=1000):
     except PWTimeout:
         return None
 
-def safe_attr(locator, name, timeout=1000):
-    """Return attribute of the FIRST match, or None if no match."""
+def safe_attr(locator, name, timeout=1200):
     try:
         if not locator or locator.count() == 0:
             return None
@@ -34,7 +28,6 @@ def safe_attr(locator, name, timeout=1000):
         return None
 
 def get_img_src(locator):
-    """Return best-available image URL after lazy-load, or None."""
     if not locator or locator.count() == 0:
         return None
     img = locator.first
@@ -52,153 +45,157 @@ def get_img_src(locator):
         pass
     return None
 
-def get_img_alt(locator):
-    """Return alt text of FIRST match, lowercased, or ''."""
-    alt = safe_attr(locator, "alt") or ""
-    return alt.lower()
-
-# -------- Per-event parsing (Sidearm CSS matches football) --------
-
-def parse_event(event):
-    # Venue type: Home / Away / Neutral
-    venue_type = safe_text(event.locator(".schedule-event-venue__type-label"))
-
-    # Date pieces
-    weekday = safe_text(event.locator(".schedule-event-date__time time"))  # e.g., Fri
-    date_text = safe_text(event.locator(".schedule-event-date__label"))    # e.g., Sep 5
-
-    # Result / time
-    status = "tbd"
-    result = None
-    time_local = None
-
-    has_win = event.locator(".schedule-event-item-result__win").count() > 0
-    has_loss = event.locator(".schedule-event-item-result__loss").count() > 0
-    has_tie = event.locator(".schedule-event-item-result__tie").count() > 0
-
-    label_text = safe_text(event.locator(".schedule-event-item-result__label")) or ""
-
-    if has_win or has_loss or has_tie:
-        status = "final"
-        outcome = "W" if has_win else "L" if has_loss else "T"
-        # VB result often like "Win 3-0" — grab the set score
-        parts = label_text.split()
-        set_score = next((p for p in parts if "-" in p or "–" in p), label_text).replace("–", "-")
-        result = {"outcome": outcome, "sets": set_score}
-    else:
-        # Upcoming: label_text usually holds "8:00 PM CDT" or similar
-        tl = clean(label_text)
-        time_local = tl if tl else None
-        status = "upcoming" if time_local else "tbd"
-
-    # Ensure lazy images load
+def parse_event(ev):
+    # Make sure lazy stuff is in view
     try:
-        event.scroll_into_view_if_needed(timeout=2000)
+        ev.scroll_into_view_if_needed(timeout=2000)
     except PWTimeout:
         pass
 
-    # Logos (order on Sidearm: Nebraska first, Opponent second)
-    wrappers = event.locator(".schedule-event-item-default__images .schedule-event-item-default__image-wrapper")
-    nebraska_logo_url = opponent_logo_url = None
-    nebraska_alt = opponent_alt = ""
+    # Divider (vs./at) and opponent text
+    divider = (safe_text(ev.locator(".schedule-event-item-default__divider")) or "").strip().lower()
+    opponent_name = clean(safe_text(ev.locator(".schedule-event-item-default__opponent-name"))) or ""
 
-    if wrappers.count() >= 1:
-        nebraska_logo = wrappers.nth(0).locator("img")
-        nebraska_logo_url = get_img_src(nebraska_logo)
-        nebraska_alt = get_img_alt(nebraska_logo)
-    if wrappers.count() >= 2:
-        opponent_logo = wrappers.nth(1).locator("img")
-        opponent_logo_url = get_img_src(opponent_logo)
-        opponent_alt = get_img_alt(opponent_logo)
+    # Logos (Nebraska first, opponent second on Sidearm sites)
+    wrappers = ev.locator(".schedule-event-item-default__images .schedule-event-item-default__image-wrapper")
+    ne_logo = get_img_src(wrappers.nth(0).locator("img")) if wrappers.count() >= 1 else None
+    opp_logo = get_img_src(wrappers.nth(1).locator("img")) if wrappers.count() >= 2 else None
 
-    # Divider & opponent text
-    divider_text = safe_text(event.locator(".schedule-event-item-default__divider"))  # "vs" / "at"
-    opponent_name = clean(safe_text(event.locator(".schedule-event-item-default__opponent-name"))) or ""
+    # Location "City, ST. / Arena"
+    location = clean(safe_text(ev.locator(".schedule-event-item-default__location .schedule-event-location"))) or ""
+    city, arena = None, None
+    mloc = re.search(r"(.+?)\s*/\s*(.+)$", location)
+    if mloc:
+        city = mloc.group(1).strip()
+        arena = re.sub(r"\s*presented by\b.*$", "", mloc.group(2).strip(), flags=re.I)
 
-    # Location (e.g., "Lincoln, Neb. / Bob Devaney Sports Center")
-    location = clean(safe_text(event.locator(".schedule-event-item-default__location .schedule-event-location"))) or ""
+    # Rank parsing (e.g., "#22 Utah")
+    opp_rank = None
+    m = re.match(r"#(\d{1,2})\s+(.*)$", opponent_name)
+    if m:
+        opp_rank = int(m.group(1))
+        opponent_name = m.group(2).strip()
 
-    # TV (grab first logo if present; Sidearm links group at the bottom)
-    tv_logo = event.locator(".schedule-event-bottom__link img, .schedule-event-item-links__image")
-    tv_network_logo_url = get_img_src(tv_logo) if tv_logo.count() > 0 else None
+    # NU rank if present somewhere near divider
+    ev_text = (safe_text(ev.locator(".schedule-event-item-default")) or "") + " " + (divider or "")
+    nu_rank = None
+    mnu = re.search(r"#(\d{1,2})\s+(?:vs|at)\b", ev_text)
+    if mnu:
+        nu_rank = int(mnu.group(1))
 
-    # Links (Watch/Listen/Stats/Box/Recap)
+    # Status / result / time label
+    has_win  = ev.locator(".schedule-event-item-result__win").count() > 0
+    has_loss = ev.locator(".schedule-event-item-result__loss").count() > 0
+    has_tie  = ev.locator(".schedule-event-item-result__tie").count() > 0
+    label    = clean(safe_text(ev.locator(".schedule-event-item-result__label"))) or ""
+
+    status = "tbd"
+    result = None
+    time_local = None
+    if has_win or has_loss or has_tie:
+        status = "final"
+        outcome = "W" if has_win else "L" if has_loss else "T"
+        # volleyball usually shows "Win 3-0" / "Loss 2-3"
+        score = next((p for p in label.split() if "-" in p or "–" in p), label).replace("–", "-")
+        result = {"outcome": outcome, "sets": score}
+    else:
+        # upcoming — the label often shows the local time like "8:00 PM CDT"
+        time_local = label if label else None
+        status = "scheduled" if time_local else "tbd"
+
+    # --- CRITICAL: reliable date from ISO attribute ---
+    # Many sports use <time datetime="2025-09-20T20:00:00-05:00"> somewhere inside the date area.
+    iso_dt = safe_attr(ev.locator(".schedule-event-date time[datetime]"), "datetime") \
+          or safe_attr(ev.locator("time[datetime]"), "datetime")
+
+    date_iso = None
+    if iso_dt and "T" in iso_dt:
+        date_iso = iso_dt.split("T", 1)[0]  # YYYY-MM-DD
+
+    # If we still don't have a local time and datetime exists, derive a readable time
+    if not time_local and iso_dt:
+        # produce like "8:00 PM" + TZ if present in visible label elsewhere
+        try:
+            from datetime import datetime as _dt
+            dt = _dt.fromisoformat(iso_dt.replace("Z","+00:00"))
+            time_local = dt.strftime("%-I:%M %p")
+        except Exception:
+            pass
+
+    # Home/Away/Neutral inference:
+    # - "at" -> Away
+    # - "vs" -> Home if Lincoln, otherwise Neutral (e.g., neutral-site tournaments)
+    han = "N"
+    if divider.startswith("at"):
+        han = "A"
+    elif divider.startswith("vs"):
+        han = "H" if city and "Lincoln" in city else "N"
+    else:
+        # fallback: try explicit venue label if present
+        vlabel = (safe_text(ev.locator(".schedule-event-venue__type-label")) or "").lower()
+        if "home" in vlabel: han = "H"
+        elif "away" in vlabel: han = "A"
+        elif "neutral" in vlabel: han = "N"
+
+    # TV logo (first icon in bottom links block)
+    tv_logo = get_img_src(ev.locator(".schedule-event-bottom__link img, .schedule-event-item-links__image"))
+
+    # Links
     links = []
-    link_nodes = event.locator(".schedule-event-bottom__link")
+    link_nodes = ev.locator(".schedule-event-bottom__link")
     for i in range(link_nodes.count()):
         a = link_nodes.nth(i)
         title = safe_text(a.locator(".schedule-event-item-links__title")) or clean(safe_text(a))
         href = safe_attr(a, "href")
         if href:
-            if href.startswith("/"):
-                href = "https://huskers.com" + href
+            if href.startswith("/"): href = "https://huskers.com" + href
             links.append({"title": title, "href": href})
 
-    # ---- NU-only filter ----
-    # Keep only events where Nebraska is one of the two teams in the logo strip.
-    # This is robust on invitational weekends where non-NU matches appear.
-    contains_nebraska = ("nebraska" in nebraska_alt) or ("nebraska" in opponent_alt)
-    if not contains_nebraska:
-        return None  # drop non-NU matches
-
-    # Opponent name cleanup & ranking parse (e.g., "#22 Utah")
-    opp_rank = None
-    m = re.match(r"#(\d{1,2})\s+(.*)$", opponent_name)
-    if m:
-        opp_rank = int(m.group(1))
-        opponent_name = m.group(2)
-
-    # NU rank (if Sidearm shows it near the NU logo as "#1")
-    nu_rank = None
-    # Sometimes rank is rendered near the divider/NU area; try to extract from event text:
-    ev_text = (safe_text(event.locator(".schedule-event-item-default")) or "") + " " + (divider_text or "")
-    mnu = re.search(r"#(\d{1,2})\s+(?:vs|at)\b", ev_text)
-    if mnu:
-        nu_rank = int(mnu.group(1))
+    # NU-only guard: keep only rows where the two-logo strip includes Nebraska
+    # We can check by opponent text containing "Nebraska" (rare) OR simply require we found an opponent name.
+    # The invitational non-NU matches have no Nebraska logo in position 0/1 for our pages, but to be safe:
+    has_opponent = bool(opponent_name)
+    if not has_opponent:
+        return None
 
     return {
-        "venue_type": venue_type,              # "Home"/"Away"/"Neutral"
-        "weekday": weekday,                    # e.g., "Fri"
-        "date_text": date_text,                # e.g., "Sep 5"
-        "status": status,                      # "final"/"upcoming"/"tbd"
-        "result": result,                      # {"outcome":"W","sets":"3-0"} or None
-        "time_local": time_local,              # "8:00 PM CDT" or None
-        "divider_text": divider_text,          # "vs"/"at"
-        "nebraska_logo_url": nebraska_logo_url,
-        "opponent_logo_url": opponent_logo_url,
-        "opponent_name": opponent_name,        # e.g., "Wright State"
-        "opp_rank": opp_rank,                  # e.g., 22
-        "nu_rank": nu_rank,                    # e.g., 1
-        "location": location,                  # "Lincoln, Neb. / Bob Devaney Sports Center"
-        "tv_network_logo_url": tv_network_logo_url,
+        "date": date_iso,                      # <-- ISO date right here
+        "time_local": time_local,
+        "venue_type": han,                     # already H/A/N
+        "nu_rank": nu_rank,
+        "opp_rank": opp_rank,
+        "opponent_name": opponent_name,
+        "city": city,
+        "arena": arena,
+        "nebraska_logo_url": ne_logo,
+        "opponent_logo_url": opp_logo,
+        "tv_network_logo_url": tv_logo,
+        "status": status,
+        "result": result,
         "links": links,
+        "divider_text": divider,
     }
-
-# -------- Main scrape --------
 
 def scrape_with_playwright():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         ctx = browser.new_context(
-            user_agent="huskers-vb-schedule-scraper/1.0 (+https://example.com)",
+            user_agent="huskers-vb-schedule-scraper/1.0",
             viewport={"width": 1400, "height": 2400},
         )
         page = ctx.new_page()
         page.goto(SOURCE_URL, wait_until="networkidle")
-        page.wait_for_timeout(400)
+        page.wait_for_timeout(500)
 
-        # Nudge lazy elements into view to populate currentSrc
         events = page.locator(".schedule-event-item")
+        # nudge all into view so <img> currentSrc resolves
         for i in range(events.count()):
-            ev = events.nth(i)
             try:
-                ev.scroll_into_view_if_needed(timeout=2000)
+                events.nth(i).scroll_into_view_if_needed(timeout=1500)
             except PWTimeout:
                 pass
-            page.wait_for_timeout(120)
+        page.wait_for_timeout(200)
 
-        # Parse all events
-        events = page.locator(".schedule-event-item")
         rows = []
         for i in range(events.count()):
             parsed = parse_event(events.nth(i))
@@ -208,12 +205,10 @@ def scrape_with_playwright():
         payload = {
             "source_url": SOURCE_URL,
             "scraped_at": datetime.now(timezone.utc).isoformat(),
-            "items": rows,   # keep "items" to match your normalizer
+            "items": rows,
         }
         OUT.write_text(json.dumps(payload, indent=2, ensure_ascii=False))
-
-        ctx.close()
-        browser.close()
+        ctx.close(); browser.close()
 
 if __name__ == "__main__":
     scrape_with_playwright()
