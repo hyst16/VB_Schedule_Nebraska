@@ -1,25 +1,24 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2025-09-17T03:58:46.194739+00:00",
+  "scraped_at": "2025-09-17T04:20:47.992850+00:00",
   "items": [
     {
-      "venue_type": "NEUTRAL",
-      "weekday": "FRIDAY",
-      "date_text": "AUG 22",
+      "date": null,
+      "time_local": null,
+      "venue_type": "H",
+      "nu_rank": 1,
+      "opp_rank": null,
+      "opponent_name": "Pittsburgh",
+      "city": "Lincoln, Neb.",
+      "arena": "Pinnacle Bank Arena",
+      "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/01oanMjOj6QytPtPw6zndR2FESuhr0hldPQ6dNaC.svg",
+      "tv_network_logo_url": "https://huskers.com/imgproxy/hW5X3PRTPD7TTcYfZQvChvP-o5z_cztMNxjE6xbKxes/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC92MDVEblk1VkNLMW9HYUcxOVp6RmNUYUtHTGJERktsbUI4azB0QUtsLnBuZw.png",
       "status": "final",
       "result": {
         "outcome": "W",
         "sets": "3-1"
       },
-      "time_local": null,
-      "divider_text": "vs.",
-      "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/01oanMjOj6QytPtPw6zndR2FESuhr0hldPQ6dNaC.svg",
-      "opponent_name": "Pittsburgh",
-      "opp_rank": null,
-      "nu_rank": 1,
-      "location": "Lincoln, Neb. / Pinnacle Bank Arena",
-      "tv_network_logo_url": "https://huskers.com/imgproxy/hW5X3PRTPD7TTcYfZQvChvP-o5z_cztMNxjE6xbKxes/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC92MDVEblk1VkNLMW9HYUcxOVp6RmNUYUtHTGJERktsbUI4azB0QUtsLnBuZw.png",
       "links": [
         {
           "title": "Watch",
@@ -45,26 +44,26 @@
           "title": "Recap",
           "href": "https://huskers.com/news/2025/08/23/vb-recap-vs-pitt-8-22-25"
         }
-      ]
+      ],
+      "divider_text": "vs."
     },
     {
-      "venue_type": "NEUTRAL",
-      "weekday": "SUNDAY",
-      "date_text": "AUG 24",
+      "date": null,
+      "time_local": null,
+      "venue_type": "H",
+      "nu_rank": 1,
+      "opp_rank": null,
+      "opponent_name": "Stanford",
+      "city": "Lincoln, Neb.",
+      "arena": "Pinnacle Bank Arena",
+      "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/u7uWh03BrnsqL8uLUb574mI9cfo2gi1h063Qfav9.svg",
+      "tv_network_logo_url": "https://huskers.com/imgproxy/ys_5oMks9gjiP0_Qwh4FSuzBOpGo-lRh613TDW3QQfA/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC85UmdQQm1GU0pSMmJqNnQxV2RCS1FpSXRMZklreGNtYWpFZEVvd3ZrLnBuZw.png",
       "status": "final",
       "result": {
         "outcome": "W",
         "sets": "3-0"
       },
-      "time_local": null,
-      "divider_text": "vs.",
-      "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/u7uWh03BrnsqL8uLUb574mI9cfo2gi1h063Qfav9.svg",
-      "opponent_name": "Stanford",
-      "opp_rank": null,
-      "nu_rank": 1,
-      "location": "Lincoln, Neb. / Pinnacle Bank Arena",
-      "tv_network_logo_url": "https://huskers.com/imgproxy/ys_5oMks9gjiP0_Qwh4FSuzBOpGo-lRh613TDW3QQfA/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC85UmdQQm1GU0pSMmJqNnQxV2RCS1FpSXRMZklreGNtYWpFZEVvd3ZrLnBuZw.png",
       "links": [
         {
           "title": "Watch",
@@ -90,26 +89,26 @@
           "title": "Recap",
           "href": "https://huskers.com/news/2025/08/24/no-1-huskers-dominate-no-6-stanford"
         }
-      ]
+      ],
+      "divider_text": "vs."
     },
     {
-      "venue_type": "AWAY",
-      "weekday": "FRIDAY",
-      "date_text": "AUG 29",
+      "date": null,
+      "time_local": null,
+      "venue_type": "A",
+      "nu_rank": 1,
+      "opp_rank": null,
+      "opponent_name": "Lipscomb",
+      "city": "Nashville, Tenn.",
+      "arena": "Allen Arena",
+      "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/j0T8pC7xUOT0YQVWTh8K3IOZWQL2TyxxmFug1O08.svg",
+      "tv_network_logo_url": "https://huskers.com/imgproxy/brd2TtnP7sMSGrzmbcBbAPjLsdYTpvPaVC23SBCN6mU/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wMi8wNy9xbGlJQ1FlRTBvM1pRcU54UlBuZDhmN3ZQbGxPaGdTQ0VaWFViYk9NLnBuZw.png",
       "status": "final",
       "result": {
         "outcome": "W",
         "sets": "3-0"
       },
-      "time_local": null,
-      "divider_text": "at",
-      "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/j0T8pC7xUOT0YQVWTh8K3IOZWQL2TyxxmFug1O08.svg",
-      "opponent_name": "Lipscomb",
-      "opp_rank": null,
-      "nu_rank": 1,
-      "location": "Nashville, Tenn. / Allen Arena",
-      "tv_network_logo_url": "https://huskers.com/imgproxy/brd2TtnP7sMSGrzmbcBbAPjLsdYTpvPaVC23SBCN6mU/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wMi8wNy9xbGlJQ1FlRTBvM1pRcU54UlBuZDhmN3ZQbGxPaGdTQ0VaWFViYk9NLnBuZw.png",
       "links": [
         {
           "title": "Watch",
@@ -135,26 +134,26 @@
           "title": "Recap",
           "href": "https://huskers.com/news/2025/08/30/at-lipscomb-recap"
         }
-      ]
+      ],
+      "divider_text": "at"
     },
     {
-      "venue_type": "NEUTRAL",
-      "weekday": "SUNDAY",
-      "date_text": "AUG 31",
+      "date": null,
+      "time_local": null,
+      "venue_type": "N",
+      "nu_rank": 1,
+      "opp_rank": null,
+      "opponent_name": "Kentucky",
+      "city": "Nashville, Tenn.",
+      "arena": "Bridgestone Arena",
+      "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/dHl886BQtGfcG1awTL81CkUCIhg3hBQZVE91IgeG.svg",
+      "tv_network_logo_url": "https://huskers.com/imgproxy/At7vgvr3LPd_0bckbzZHzVS9IMKAGXTPUyMSeyDcfwk/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wOC8xOS9sWnRKeHRUVkkzUXJFY3NoS3d1bERUVGExWVJjRVNjNGpINGtQc3kzLnBuZw.png",
       "status": "final",
       "result": {
         "outcome": "W",
         "sets": "3-2"
       },
-      "time_local": null,
-      "divider_text": "vs.",
-      "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/dHl886BQtGfcG1awTL81CkUCIhg3hBQZVE91IgeG.svg",
-      "opponent_name": "Kentucky",
-      "opp_rank": null,
-      "nu_rank": 1,
-      "location": "Nashville, Tenn. / Bridgestone Arena",
-      "tv_network_logo_url": "https://huskers.com/imgproxy/At7vgvr3LPd_0bckbzZHzVS9IMKAGXTPUyMSeyDcfwk/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wOC8xOS9sWnRKeHRUVkkzUXJFY3NoS3d1bERUVGExWVJjRVNjNGpINGtQc3kzLnBuZw.png",
       "links": [
         {
           "title": "Watch",
@@ -180,26 +179,26 @@
           "title": "Recap",
           "href": "https://huskers.com/news/2025/08/31/husker-vb-recap-vs-kentucky-8-31-25"
         }
-      ]
+      ],
+      "divider_text": "vs."
     },
     {
-      "venue_type": "HOME",
-      "weekday": "FRIDAY",
-      "date_text": "SEP 5",
+      "date": null,
+      "time_local": null,
+      "venue_type": "H",
+      "nu_rank": 1,
+      "opp_rank": null,
+      "opponent_name": "Wright State",
+      "city": "Lincoln, Neb.",
+      "arena": "Bob Devaney Sports Center",
+      "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/H5F2Gff4Cn4Vxvdffna4PxX3MNGNwyM2a7eFkHuu.svg",
+      "tv_network_logo_url": "https://huskers.com/imgproxy/kWKct3j7l1OuknPH2GBSO10bDgncqqetuE9MXsgbUio/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOC8wMS9YOGFieFJhdUprY2RyeXpLVjZFTUJJWmpRNE15djZ3S3NvMjlxRzlPLmpwZw.jpg",
       "status": "final",
       "result": {
         "outcome": "W",
         "sets": "3-0"
       },
-      "time_local": null,
-      "divider_text": "vs.",
-      "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/H5F2Gff4Cn4Vxvdffna4PxX3MNGNwyM2a7eFkHuu.svg",
-      "opponent_name": "Wright State",
-      "opp_rank": null,
-      "nu_rank": 1,
-      "location": "Lincoln, Neb. / Bob Devaney Sports Center",
-      "tv_network_logo_url": "https://huskers.com/imgproxy/kWKct3j7l1OuknPH2GBSO10bDgncqqetuE9MXsgbUio/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOC8wMS9YOGFieFJhdUprY2RyeXpLVjZFTUJJWmpRNE15djZ3S3NvMjlxRzlPLmpwZw.jpg",
       "links": [
         {
           "title": "Watch",
@@ -229,26 +228,26 @@
           "title": "Recap",
           "href": "https://huskers.com/news/2025/09/6/nebraska-vb-recap-wright-state-9-5-25"
         }
-      ]
+      ],
+      "divider_text": "vs."
     },
     {
-      "venue_type": "HOME",
-      "weekday": "SUNDAY",
-      "date_text": "SEP 7",
+      "date": null,
+      "time_local": null,
+      "venue_type": "H",
+      "nu_rank": 1,
+      "opp_rank": null,
+      "opponent_name": "California",
+      "city": "Lincoln, Neb.",
+      "arena": "Bob Devaney Sports Center",
+      "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/DiDWaGi4mKnORYsWB2RrHo1JnFcsvkGTLGCHX8Hv.svg",
+      "tv_network_logo_url": "https://huskers.com/imgproxy/1Dsb_dIet_Zh4V52NHpk2P6twI38akA8iEaIWPZpVDs/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "status": "final",
       "result": {
         "outcome": "W",
         "sets": "3-0"
       },
-      "time_local": null,
-      "divider_text": "vs.",
-      "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/DiDWaGi4mKnORYsWB2RrHo1JnFcsvkGTLGCHX8Hv.svg",
-      "opponent_name": "California",
-      "opp_rank": null,
-      "nu_rank": 1,
-      "location": "Lincoln, Neb. / Bob Devaney Sports Center",
-      "tv_network_logo_url": "https://huskers.com/imgproxy/1Dsb_dIet_Zh4V52NHpk2P6twI38akA8iEaIWPZpVDs/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "links": [
         {
           "title": "Watch",
@@ -278,26 +277,26 @@
           "title": "Recap",
           "href": "https://huskers.com/news/2025/09/7/nebraska-vb-recap-cal-9-7-25"
         }
-      ]
+      ],
+      "divider_text": "vs."
     },
     {
-      "venue_type": "HOME",
-      "weekday": "FRIDAY",
-      "date_text": "SEP 12",
+      "date": null,
+      "time_local": null,
+      "venue_type": "H",
+      "nu_rank": 1,
+      "opp_rank": null,
+      "opponent_name": "Utah",
+      "city": "Lincoln, Neb.",
+      "arena": "Bob Devaney Sports Center",
+      "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/fupeaHUCX04EFj09sEOovTn8h5Ugk9oO96kU5doO.svg",
+      "tv_network_logo_url": "https://huskers.com/imgproxy/PIVROnKwSt44Qly7Uo0wRyQ_q5z1s_yPZ4RnQMIs-3k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8zMC9TVjZNRmIwUGtaM3BRRmZ5M1BQN0RVeGNDVDROQTdYN2JFNFNNZmI5LmpwZw.jpg",
       "status": "final",
       "result": {
         "outcome": "W",
         "sets": "3-1"
       },
-      "time_local": null,
-      "divider_text": "vs.",
-      "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/fupeaHUCX04EFj09sEOovTn8h5Ugk9oO96kU5doO.svg",
-      "opponent_name": "Utah",
-      "opp_rank": null,
-      "nu_rank": 1,
-      "location": "Lincoln, Neb. / Bob Devaney Sports Center",
-      "tv_network_logo_url": "https://huskers.com/imgproxy/PIVROnKwSt44Qly7Uo0wRyQ_q5z1s_yPZ4RnQMIs-3k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8zMC9TVjZNRmIwUGtaM3BRRmZ5M1BQN0RVeGNDVDROQTdYN2JFNFNNZmI5LmpwZw.jpg",
       "links": [
         {
           "title": "Watch",
@@ -327,26 +326,26 @@
           "title": "Recap",
           "href": "https://huskers.com/news/2025/09/13/huskers-top-utes-3-1"
         }
-      ]
+      ],
+      "divider_text": "vs."
     },
     {
-      "venue_type": "HOME",
-      "weekday": "SATURDAY",
-      "date_text": "SEP 13",
+      "date": null,
+      "time_local": null,
+      "venue_type": "H",
+      "nu_rank": 1,
+      "opp_rank": null,
+      "opponent_name": "Grand Canyon",
+      "city": "Lincoln, Neb.",
+      "arena": "Bob Devaney Sports Center",
+      "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
+      "opponent_logo_url": "https://huskers.com/imgproxy/X1es8Lsawp7iUzOBHblGOjPx_mISImqqwmcQOdz2Q1w/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wNy8yMy9lSjdSMHRBM3pBMGlOdFpWY0pQbEtMUzlNRlBLSjdTQjBRRERpU1FLLnBuZw.png",
+      "tv_network_logo_url": "https://huskers.com/imgproxy/MXubl9qIt0COjOck1RgrRtrtU9ZmAhC4WjYBHmg1C6s/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wOC8xOS81MTVLT25xcW94aHBvSTRZWVA5emdTaU83ZFk3b0FIUThtdFl2RnZlLnBuZw.png",
       "status": "final",
       "result": {
         "outcome": "W",
         "sets": "3-0"
       },
-      "time_local": null,
-      "divider_text": "vs.",
-      "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://huskers.com/imgproxy/X1es8Lsawp7iUzOBHblGOjPx_mISImqqwmcQOdz2Q1w/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNS8wNy8yMy9lSjdSMHRBM3pBMGlOdFpWY0pQbEtMUzlNRlBLSjdTQjBRRERpU1FLLnBuZw.png",
-      "opponent_name": "Grand Canyon",
-      "opp_rank": null,
-      "nu_rank": 1,
-      "location": "Lincoln, Neb. / Bob Devaney Sports Center",
-      "tv_network_logo_url": "https://huskers.com/imgproxy/MXubl9qIt0COjOck1RgrRtrtU9ZmAhC4WjYBHmg1C6s/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wOC8xOS81MTVLT25xcW94aHBvSTRZWVA5emdTaU83ZFk3b0FIUThtdFl2RnZlLnBuZw.png",
       "links": [
         {
           "title": "Watch",
@@ -376,26 +375,26 @@
           "title": "Recap",
           "href": "https://huskers.com/news/2025/09/14/vb-recap-gcu-9-13-25"
         }
-      ]
+      ],
+      "divider_text": "vs."
     },
     {
-      "venue_type": "AWAY",
-      "weekday": "TUESDAY",
-      "date_text": "SEP 16",
+      "date": null,
+      "time_local": null,
+      "venue_type": "A",
+      "nu_rank": 1,
+      "opp_rank": null,
+      "opponent_name": "Creighton",
+      "city": "Omaha, Neb.",
+      "arena": "CHI Health Center",
+      "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/yw3V4xJPrpfSmNdpJ7FlojR0crWvl0Glu32q0M2l.svg",
+      "tv_network_logo_url": "https://huskers.com/imgproxy/PIVROnKwSt44Qly7Uo0wRyQ_q5z1s_yPZ4RnQMIs-3k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8zMC9TVjZNRmIwUGtaM3BRRmZ5M1BQN0RVeGNDVDROQTdYN2JFNFNNZmI5LmpwZw.jpg",
       "status": "final",
       "result": {
         "outcome": "W",
         "sets": "3-2"
       },
-      "time_local": null,
-      "divider_text": "at",
-      "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/yw3V4xJPrpfSmNdpJ7FlojR0crWvl0Glu32q0M2l.svg",
-      "opponent_name": "Creighton",
-      "opp_rank": null,
-      "nu_rank": 1,
-      "location": "Omaha, Neb. / CHI Health Center",
-      "tv_network_logo_url": "https://huskers.com/imgproxy/PIVROnKwSt44Qly7Uo0wRyQ_q5z1s_yPZ4RnQMIs-3k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8zMC9TVjZNRmIwUGtaM3BRRmZ5M1BQN0RVeGNDVDROQTdYN2JFNFNNZmI5LmpwZw.jpg",
       "links": [
         {
           "title": "Watch",
@@ -421,23 +420,23 @@
           "title": "Recap",
           "href": "https://huskers.com/news/2025/09/17/nebraska-vb-recap-at-creighton"
         }
-      ]
+      ],
+      "divider_text": "at"
     },
     {
-      "venue_type": "HOME",
-      "weekday": "SATURDAY",
-      "date_text": "SEP 20",
-      "status": "upcoming",
-      "result": null,
+      "date": null,
       "time_local": "8:00 PM CDT",
-      "divider_text": "vs.",
+      "venue_type": "H",
+      "nu_rank": null,
+      "opp_rank": null,
+      "opponent_name": "Arizona",
+      "city": "Lincoln, Neb.",
+      "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/ssQlbv4rpmqucNSYSS6R2EcGJZhXm9KVEW9uElp9.svg",
-      "opponent_name": "Arizona",
-      "opp_rank": null,
-      "nu_rank": null,
-      "location": "Lincoln, Neb. / Bob Devaney Sports Center",
       "tv_network_logo_url": "https://huskers.com/imgproxy/1Dsb_dIet_Zh4V52NHpk2P6twI38akA8iEaIWPZpVDs/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
+      "status": "scheduled",
+      "result": null,
       "links": [
         {
           "title": "Watch",
@@ -455,23 +454,23 @@
           "title": "Sold Out! Buy on SeatGeek",
           "href": "https://seatgeek.com/nebraska-cornhuskers-womens-volleyball-tickets/womens-college-volleyball/2025-09-20-7-pm/17607633?aid=16101&pid=sell_out_page_social&rid=45920&utm_campaign=integration&utm_medium=partnership&utm_source=nebraska_sponsorship"
         }
-      ]
+      ],
+      "divider_text": "vs."
     },
     {
-      "venue_type": "HOME",
-      "weekday": "WEDNESDAY",
-      "date_text": "SEP 24",
-      "status": "upcoming",
-      "result": null,
+      "date": null,
       "time_local": "6:00 PM CDT",
-      "divider_text": "vs.",
+      "venue_type": "H",
+      "nu_rank": null,
+      "opp_rank": null,
+      "opponent_name": "Michigan",
+      "city": "Lincoln, Neb.",
+      "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/VfZOPfPJ8Ps9IldV9Wlg3gdY47UFgUjU17DI6zZE.svg",
-      "opponent_name": "Michigan",
-      "opp_rank": null,
-      "nu_rank": null,
-      "location": "Lincoln, Neb. / Bob Devaney Sports Center",
       "tv_network_logo_url": "https://huskers.com/imgproxy/1Dsb_dIet_Zh4V52NHpk2P6twI38akA8iEaIWPZpVDs/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
+      "status": "scheduled",
+      "result": null,
       "links": [
         {
           "title": "Watch",
@@ -489,23 +488,23 @@
           "title": "Sold Out! Buy on SeatGeek",
           "href": "https://seatgeek.com/nebraska-cornhuskers-womens-volleyball-tickets/womens-college-volleyball/2025-09-24-6-pm/17607634?aid=16101&pid=sell_out_page_social&rid=45924&utm_campaign=integration&utm_medium=partnership&utm_source=nebraska_sponsorship"
         }
-      ]
+      ],
+      "divider_text": "vs."
     },
     {
-      "venue_type": "HOME",
-      "weekday": "SATURDAY",
-      "date_text": "SEP 27",
-      "status": "upcoming",
-      "result": null,
+      "date": null,
       "time_local": "3:00 PM CDT",
-      "divider_text": "vs.",
+      "venue_type": "H",
+      "nu_rank": null,
+      "opp_rank": null,
+      "opponent_name": "Maryland",
+      "city": "Lincoln, Neb.",
+      "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/ckTPjX0bKvYj5KB1p9hAJSOCO7AGA5nbrXGR4JD7.svg",
-      "opponent_name": "Maryland",
-      "opp_rank": null,
-      "nu_rank": null,
-      "location": "Lincoln, Neb. / Bob Devaney Sports Center",
       "tv_network_logo_url": "https://huskers.com/imgproxy/MXubl9qIt0COjOck1RgrRtrtU9ZmAhC4WjYBHmg1C6s/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wOC8xOS81MTVLT25xcW94aHBvSTRZWVA5emdTaU83ZFk3b0FIUThtdFl2RnZlLnBuZw.png",
+      "status": "scheduled",
+      "result": null,
       "links": [
         {
           "title": "Watch",
@@ -523,23 +522,23 @@
           "title": "Sold Out! Buy on SeatGeek",
           "href": "https://seatgeek.com/nebraska-cornhuskers-womens-volleyball-tickets/womens-college-volleyball/2025-09-27-3-pm/17607635?aid=16101&pid=sell_out_page_social&rid=45927&utm_campaign=integration&utm_medium=partnership&utm_source=nebraska_sponsorship"
         }
-      ]
+      ],
+      "divider_text": "vs."
     },
     {
-      "venue_type": "AWAY",
-      "weekday": "FRIDAY",
-      "date_text": "OCT 3",
-      "status": "upcoming",
-      "result": null,
+      "date": null,
       "time_local": "7:00 PM CDT",
-      "divider_text": "at",
+      "venue_type": "A",
+      "nu_rank": null,
+      "opp_rank": null,
+      "opponent_name": "Penn State",
+      "city": "University Park, Pa.",
+      "arena": "Rec Hall",
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/eSnEQOMzqgY8gAPCfxR90DNlJ0vOuXDQfhvTLM4h.svg",
-      "opponent_name": "Penn State",
-      "opp_rank": null,
-      "nu_rank": null,
-      "location": "University Park, Pa. / Rec Hall",
       "tv_network_logo_url": "https://huskers.com/imgproxy/hW5X3PRTPD7TTcYfZQvChvP-o5z_cztMNxjE6xbKxes/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC92MDVEblk1VkNLMW9HYUcxOVp6RmNUYUtHTGJERktsbUI4azB0QUtsLnBuZw.png",
+      "status": "scheduled",
+      "result": null,
       "links": [
         {
           "title": "Watch",
@@ -553,23 +552,23 @@
           "title": "Live Stats",
           "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
-      ]
+      ],
+      "divider_text": "at"
     },
     {
-      "venue_type": "AWAY",
-      "weekday": "SATURDAY",
-      "date_text": "OCT 4",
-      "status": "upcoming",
-      "result": null,
+      "date": null,
       "time_local": "6:00 PM CDT",
-      "divider_text": "at",
+      "venue_type": "A",
+      "nu_rank": null,
+      "opp_rank": null,
+      "opponent_name": "Rutgers",
+      "city": "New Brunswick, N.J.",
+      "arena": "Jersey Mike's Arena",
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/zoaT74wAKvqfSxj4O4pH1n54sO1ObHTHYuqMNWmp.svg",
-      "opponent_name": "Rutgers",
-      "opp_rank": null,
-      "nu_rank": null,
-      "location": "New Brunswick, N.J. / Jersey Mike's Arena",
       "tv_network_logo_url": "https://huskers.com/imgproxy/kWKct3j7l1OuknPH2GBSO10bDgncqqetuE9MXsgbUio/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOC8wMS9YOGFieFJhdUprY2RyeXpLVjZFTUJJWmpRNE15djZ3S3NvMjlxRzlPLmpwZw.jpg",
+      "status": "scheduled",
+      "result": null,
       "links": [
         {
           "title": "Watch",
@@ -583,23 +582,23 @@
           "title": "Live Stats",
           "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
-      ]
+      ],
+      "divider_text": "at"
     },
     {
-      "venue_type": "HOME",
-      "weekday": "FRIDAY",
-      "date_text": "OCT 10",
-      "status": "upcoming",
-      "result": null,
+      "date": null,
       "time_local": "8:00 PM CDT",
-      "divider_text": "vs.",
+      "venue_type": "H",
+      "nu_rank": null,
+      "opp_rank": null,
+      "opponent_name": "Washington",
+      "city": "Lincoln, Neb.",
+      "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/aduluAGeTcF8UtJgQe2OQ8NPQ4RdWHL5CNunZmOf.svg",
-      "opponent_name": "Washington",
-      "opp_rank": null,
-      "nu_rank": null,
-      "location": "Lincoln, Neb. / Bob Devaney Sports Center",
       "tv_network_logo_url": "https://huskers.com/imgproxy/1Dsb_dIet_Zh4V52NHpk2P6twI38akA8iEaIWPZpVDs/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
+      "status": "scheduled",
+      "result": null,
       "links": [
         {
           "title": "Watch",
@@ -617,23 +616,23 @@
           "title": "Sold Out! Buy on SeatGeek",
           "href": "https://seatgeek.com/nebraska-cornhuskers-womens-volleyball-tickets/womens-college-volleyball/2025-10-10-8-pm/17607636?aid=16101&pid=sell_out_page_social&rid=45940&utm_campaign=integration&utm_medium=partnership&utm_source=nebraska_sponsorship"
         }
-      ]
+      ],
+      "divider_text": "vs."
     },
     {
-      "venue_type": "AWAY",
-      "weekday": "SUNDAY",
-      "date_text": "OCT 12",
-      "status": "upcoming",
-      "result": null,
+      "date": null,
       "time_local": "12:00 PM CDT",
-      "divider_text": "at",
+      "venue_type": "A",
+      "nu_rank": null,
+      "opp_rank": null,
+      "opponent_name": "Purdue",
+      "city": "West Lafayette, Ind.",
+      "arena": "Holloway Gymnasium",
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/xNszGRTqhoa3HqgCuw8xM0n8NiRYDXihzYzPIdG9.svg",
-      "opponent_name": "Purdue",
-      "opp_rank": null,
-      "nu_rank": null,
-      "location": "West Lafayette, Ind. / Holloway Gymnasium",
       "tv_network_logo_url": "https://huskers.com/imgproxy/kWKct3j7l1OuknPH2GBSO10bDgncqqetuE9MXsgbUio/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOC8wMS9YOGFieFJhdUprY2RyeXpLVjZFTUJJWmpRNE15djZ3S3NvMjlxRzlPLmpwZw.jpg",
+      "status": "scheduled",
+      "result": null,
       "links": [
         {
           "title": "Watch",
@@ -647,23 +646,23 @@
           "title": "Live Stats",
           "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
-      ]
+      ],
+      "divider_text": "at"
     },
     {
-      "venue_type": "AWAY",
-      "weekday": "FRIDAY",
-      "date_text": "OCT 17",
-      "status": "upcoming",
-      "result": null,
+      "date": null,
       "time_local": "6:00 PM CDT",
-      "divider_text": "at",
+      "venue_type": "A",
+      "nu_rank": null,
+      "opp_rank": null,
+      "opponent_name": "Michigan State",
+      "city": "East Lansing, Mich.",
+      "arena": "Breslin Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/V9lNQEH7qMyFnbplkvJZlFgTfYn4p67blAA6S4D4.svg",
-      "opponent_name": "Michigan State",
-      "opp_rank": null,
-      "nu_rank": null,
-      "location": "East Lansing, Mich. / Breslin Center",
       "tv_network_logo_url": "https://huskers.com/imgproxy/kWKct3j7l1OuknPH2GBSO10bDgncqqetuE9MXsgbUio/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOC8wMS9YOGFieFJhdUprY2RyeXpLVjZFTUJJWmpRNE15djZ3S3NvMjlxRzlPLmpwZw.jpg",
+      "status": "scheduled",
+      "result": null,
       "links": [
         {
           "title": "Watch",
@@ -677,23 +676,23 @@
           "title": "Live Stats",
           "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
-      ]
+      ],
+      "divider_text": "at"
     },
     {
-      "venue_type": "AWAY",
-      "weekday": "SUNDAY",
-      "date_text": "OCT 19",
-      "status": "upcoming",
-      "result": null,
+      "date": null,
       "time_local": "1:00 PM CDT",
-      "divider_text": "at",
+      "venue_type": "A",
+      "nu_rank": null,
+      "opp_rank": null,
+      "opponent_name": "Michigan",
+      "city": "Ann Arbor, Mich.",
+      "arena": "Crisler Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/VfZOPfPJ8Ps9IldV9Wlg3gdY47UFgUjU17DI6zZE.svg",
-      "opponent_name": "Michigan",
-      "opp_rank": null,
-      "nu_rank": null,
-      "location": "Ann Arbor, Mich. / Crisler Center",
       "tv_network_logo_url": "https://huskers.com/imgproxy/kWKct3j7l1OuknPH2GBSO10bDgncqqetuE9MXsgbUio/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOC8wMS9YOGFieFJhdUprY2RyeXpLVjZFTUJJWmpRNE15djZ3S3NvMjlxRzlPLmpwZw.jpg",
+      "status": "scheduled",
+      "result": null,
       "links": [
         {
           "title": "Watch",
@@ -707,23 +706,23 @@
           "title": "Live Stats",
           "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
-      ]
+      ],
+      "divider_text": "at"
     },
     {
-      "venue_type": "HOME",
-      "weekday": "FRIDAY",
-      "date_text": "OCT 24",
-      "status": "upcoming",
-      "result": null,
+      "date": null,
       "time_local": "6:00 PM CDT",
-      "divider_text": "vs.",
+      "venue_type": "H",
+      "nu_rank": null,
+      "opp_rank": null,
+      "opponent_name": "Northwestern",
+      "city": "Lincoln, Neb.",
+      "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/1UQISSq3eRDnRJIAjeXGWar8aTYdy9GWB56k0WDg.svg",
-      "opponent_name": "Northwestern",
-      "opp_rank": null,
-      "nu_rank": null,
-      "location": "Lincoln, Neb. / Bob Devaney Sports Center",
       "tv_network_logo_url": "https://huskers.com/imgproxy/MXubl9qIt0COjOck1RgrRtrtU9ZmAhC4WjYBHmg1C6s/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wOC8xOS81MTVLT25xcW94aHBvSTRZWVA5emdTaU83ZFk3b0FIUThtdFl2RnZlLnBuZw.png",
+      "status": "scheduled",
+      "result": null,
       "links": [
         {
           "title": "Watch",
@@ -741,23 +740,23 @@
           "title": "Sold Out! Buy on SeatGeek",
           "href": "https://seatgeek.com/nebraska-cornhuskers-womens-volleyball-tickets/womens-college-volleyball/2025-10-24-6-pm/17607637?aid=16101&pid=sell_out_page_social&rid=45954&utm_campaign=integration&utm_medium=partnership&utm_source=nebraska_sponsorship"
         }
-      ]
+      ],
+      "divider_text": "vs."
     },
     {
-      "venue_type": "HOME",
-      "weekday": "SATURDAY",
-      "date_text": "OCT 25",
-      "status": "upcoming",
-      "result": null,
+      "date": null,
       "time_local": "7:30 PM CDT",
-      "divider_text": "vs.",
+      "venue_type": "H",
+      "nu_rank": null,
+      "opp_rank": null,
+      "opponent_name": "Michigan State",
+      "city": "Lincoln, Neb.",
+      "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/V9lNQEH7qMyFnbplkvJZlFgTfYn4p67blAA6S4D4.svg",
-      "opponent_name": "Michigan State",
-      "opp_rank": null,
-      "nu_rank": null,
-      "location": "Lincoln, Neb. / Bob Devaney Sports Center",
       "tv_network_logo_url": "https://huskers.com/imgproxy/1Dsb_dIet_Zh4V52NHpk2P6twI38akA8iEaIWPZpVDs/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
+      "status": "scheduled",
+      "result": null,
       "links": [
         {
           "title": "Watch",
@@ -775,23 +774,23 @@
           "title": "Sold Out! Buy on SeatGeek",
           "href": "https://seatgeek.com/nebraska-cornhuskers-womens-volleyball-tickets/womens-college-volleyball/2025-10-25-7-30-pm/17607638?aid=16101&pid=sell_out_page_social&rid=45955&utm_campaign=integration&utm_medium=partnership&utm_source=nebraska_sponsorship"
         }
-      ]
+      ],
+      "divider_text": "vs."
     },
     {
-      "venue_type": "AWAY",
-      "weekday": "FRIDAY",
-      "date_text": "OCT 31",
-      "status": "upcoming",
-      "result": null,
+      "date": null,
       "time_local": "8:00 PM CDT",
-      "divider_text": "at",
+      "venue_type": "A",
+      "nu_rank": null,
+      "opp_rank": null,
+      "opponent_name": "Wisconsin",
+      "city": "Madison, Wis.",
+      "arena": "UW Field House",
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/mJ8a1eU4tgjodrqKozGuiAx00rgRa6pcFoaFvbAB.svg",
-      "opponent_name": "Wisconsin",
-      "opp_rank": null,
-      "nu_rank": null,
-      "location": "Madison, Wis. / UW Field House",
       "tv_network_logo_url": "https://huskers.com/imgproxy/1Dsb_dIet_Zh4V52NHpk2P6twI38akA8iEaIWPZpVDs/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
+      "status": "scheduled",
+      "result": null,
       "links": [
         {
           "title": "Watch",
@@ -805,23 +804,23 @@
           "title": "Live Stats",
           "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
-      ]
+      ],
+      "divider_text": "at"
     },
     {
-      "venue_type": "HOME",
-      "weekday": "SUNDAY",
-      "date_text": "NOV 2",
-      "status": "upcoming",
-      "result": null,
+      "date": null,
       "time_local": "1:00 PM CST",
-      "divider_text": "vs.",
+      "venue_type": "H",
+      "nu_rank": null,
+      "opp_rank": null,
+      "opponent_name": "Oregon",
+      "city": "Lincoln, Neb.",
+      "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/Ob70zmtdWJk9Fs4HQsNtn4eRa5s5H2ZzHFRmxQS0.svg",
-      "opponent_name": "Oregon",
-      "opp_rank": null,
-      "nu_rank": null,
-      "location": "Lincoln, Neb. / Bob Devaney Sports Center",
       "tv_network_logo_url": "https://huskers.com/imgproxy/1Dsb_dIet_Zh4V52NHpk2P6twI38akA8iEaIWPZpVDs/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
+      "status": "scheduled",
+      "result": null,
       "links": [
         {
           "title": "Watch",
@@ -839,23 +838,23 @@
           "title": "Sold Out! Buy on SeatGeek",
           "href": "https://seatgeek.com/nebraska-cornhuskers-womens-volleyball-tickets/womens-college-volleyball/2025-11-02-1-pm/17607639?aid=16101&pid=sell_out_page_social&rid=45963&utm_campaign=integration&utm_medium=partnership&utm_source=nebraska_sponsorship"
         }
-      ]
+      ],
+      "divider_text": "vs."
     },
     {
-      "venue_type": "HOME",
-      "weekday": "THURSDAY",
-      "date_text": "NOV 6",
-      "status": "upcoming",
-      "result": null,
+      "date": null,
       "time_local": "7:00 PM CST",
-      "divider_text": "vs.",
+      "venue_type": "H",
+      "nu_rank": null,
+      "opp_rank": null,
+      "opponent_name": "Illinois",
+      "city": "Lincoln, Neb.",
+      "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/Zep4SdUeuEV4udWIkJM7nyVEYXvtzXpcT85gMfBm.svg",
-      "opponent_name": "Illinois",
-      "opp_rank": null,
-      "nu_rank": null,
-      "location": "Lincoln, Neb. / Bob Devaney Sports Center",
       "tv_network_logo_url": "https://huskers.com/imgproxy/PIVROnKwSt44Qly7Uo0wRyQ_q5z1s_yPZ4RnQMIs-3k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8zMC9TVjZNRmIwUGtaM3BRRmZ5M1BQN0RVeGNDVDROQTdYN2JFNFNNZmI5LmpwZw.jpg",
+      "status": "scheduled",
+      "result": null,
       "links": [
         {
           "title": "Watch",
@@ -873,23 +872,23 @@
           "title": "Sold Out! Buy on SeatGeek",
           "href": "https://seatgeek.com/nebraska-cornhuskers-womens-volleyball-tickets/womens-college-volleyball/2025-11-06-7-pm/17607640?aid=16101&pid=sell_out_page_social&rid=45967&utm_campaign=integration&utm_medium=partnership&utm_source=nebraska_sponsorship"
         }
-      ]
+      ],
+      "divider_text": "vs."
     },
     {
-      "venue_type": "AWAY",
-      "weekday": "SATURDAY",
-      "date_text": "NOV 8",
-      "status": "upcoming",
-      "result": null,
+      "date": null,
       "time_local": "2:30 PM CST",
-      "divider_text": "at",
+      "venue_type": "A",
+      "nu_rank": null,
+      "opp_rank": null,
+      "opponent_name": "Minnesota",
+      "city": "Minneapolis, Minn.",
+      "arena": "Maturi Pavilion",
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/C3Z8GJ3Nxf8uQOj0yM8sNk4HpOGW5qVREe71F2Ao.svg",
-      "opponent_name": "Minnesota",
-      "opp_rank": null,
-      "nu_rank": null,
-      "location": "Minneapolis, Minn. / Maturi Pavilion",
       "tv_network_logo_url": "https://huskers.com/imgproxy/ZhWncpRZd0IkmXdHA-Ji8yhJIupJPwrv_8TTHqZ-ifE/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wOC8xOS9RcjB3TDhzMkd4VXBmZHF3enZFd2hBZnVwYnpmMFU1eXVLcnRLUUt2LnBuZw.png",
+      "status": "scheduled",
+      "result": null,
       "links": [
         {
           "title": "Watch",
@@ -903,23 +902,23 @@
           "title": "Live Stats",
           "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
-      ]
+      ],
+      "divider_text": "at"
     },
     {
-      "venue_type": "AWAY",
-      "weekday": "FRIDAY",
-      "date_text": "NOV 14",
-      "status": "upcoming",
-      "result": null,
+      "date": null,
       "time_local": "8:00 OR 9:00 PM CST",
-      "divider_text": "at",
+      "venue_type": "A",
+      "nu_rank": null,
+      "opp_rank": null,
+      "opponent_name": "UCLA",
+      "city": "Los Angeles, Calif.",
+      "arena": "Pauley Pavilion",
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/HRd1Q70l0yQpZeYQ1h4eRyyBye4Cp06Nn1icMkjm.svg",
-      "opponent_name": "UCLA",
-      "opp_rank": null,
-      "nu_rank": null,
-      "location": "Los Angeles, Calif. / Pauley Pavilion",
       "tv_network_logo_url": "https://huskers.com/imgproxy/1Dsb_dIet_Zh4V52NHpk2P6twI38akA8iEaIWPZpVDs/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
+      "status": "scheduled",
+      "result": null,
       "links": [
         {
           "title": "Watch",
@@ -933,23 +932,23 @@
           "title": "Live Stats",
           "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
-      ]
+      ],
+      "divider_text": "at"
     },
     {
-      "venue_type": "AWAY",
-      "weekday": "SUNDAY",
-      "date_text": "NOV 16",
-      "status": "upcoming",
-      "result": null,
+      "date": null,
       "time_local": "2:00 PM CST",
-      "divider_text": "at",
+      "venue_type": "A",
+      "nu_rank": null,
+      "opp_rank": null,
+      "opponent_name": "USC",
+      "city": "Los Angeles, Calif.",
+      "arena": "Galen Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/UahJy09xytmTXBAdfHeKv65Npu0KNztpHnkwIgsh.svg",
-      "opponent_name": "USC",
-      "opp_rank": null,
-      "nu_rank": null,
-      "location": "Los Angeles, Calif. / Galen Center",
       "tv_network_logo_url": "https://huskers.com/imgproxy/kWKct3j7l1OuknPH2GBSO10bDgncqqetuE9MXsgbUio/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOC8wMS9YOGFieFJhdUprY2RyeXpLVjZFTUJJWmpRNE15djZ3S3NvMjlxRzlPLmpwZw.jpg",
+      "status": "scheduled",
+      "result": null,
       "links": [
         {
           "title": "Watch",
@@ -963,23 +962,23 @@
           "title": "Live Stats",
           "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
-      ]
+      ],
+      "divider_text": "at"
     },
     {
-      "venue_type": "HOME",
-      "weekday": "THURSDAY",
-      "date_text": "NOV 20",
-      "status": "upcoming",
-      "result": null,
+      "date": null,
       "time_local": "TBA",
-      "divider_text": "vs.",
+      "venue_type": "H",
+      "nu_rank": null,
+      "opp_rank": null,
+      "opponent_name": "Iowa",
+      "city": "Lincoln, Neb.",
+      "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/V9YsBNIeewYRZVuMYp8PzCPprdai9tksp5CFtqtT.svg",
-      "opponent_name": "Iowa",
-      "opp_rank": null,
-      "nu_rank": null,
-      "location": "Lincoln, Neb. / Bob Devaney Sports Center",
       "tv_network_logo_url": "https://huskers.com/imgproxy/PIVROnKwSt44Qly7Uo0wRyQ_q5z1s_yPZ4RnQMIs-3k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8zMC9TVjZNRmIwUGtaM3BRRmZ5M1BQN0RVeGNDVDROQTdYN2JFNFNNZmI5LmpwZw.jpg",
+      "status": "scheduled",
+      "result": null,
       "links": [
         {
           "title": "Watch",
@@ -997,23 +996,23 @@
           "title": "Sold Out! Buy on SeatGeek",
           "href": "https://seatgeek.com/nebraska-cornhuskers-womens-volleyball-tickets/womens-college-volleyball/2025-11-20-3-30-am/17607641?aid=16101&pid=sell_out_page_social&rid=45981&utm_campaign=integration&utm_medium=partnership&utm_source=nebraska_sponsorship"
         }
-      ]
+      ],
+      "divider_text": "vs."
     },
     {
-      "venue_type": "AWAY",
-      "weekday": "SATURDAY",
-      "date_text": "NOV 22",
-      "status": "upcoming",
-      "result": null,
+      "date": null,
       "time_local": "5:00 PM CST",
-      "divider_text": "at",
+      "venue_type": "A",
+      "nu_rank": null,
+      "opp_rank": null,
+      "opponent_name": "Indiana",
+      "city": "Bloomington, Ind.",
+      "arena": "Wilkinson Hall",
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/x7OWZFHnQkE6RLMJeEnOT6Lz4NZiLtRmlAGr8w1h.svg",
-      "opponent_name": "Indiana",
-      "opp_rank": null,
-      "nu_rank": null,
-      "location": "Bloomington, Ind. / Wilkinson Hall",
       "tv_network_logo_url": "https://huskers.com/imgproxy/kWKct3j7l1OuknPH2GBSO10bDgncqqetuE9MXsgbUio/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOC8wMS9YOGFieFJhdUprY2RyeXpLVjZFTUJJWmpRNE15djZ3S3NvMjlxRzlPLmpwZw.jpg",
+      "status": "scheduled",
+      "result": null,
       "links": [
         {
           "title": "Watch",
@@ -1027,23 +1026,23 @@
           "title": "Live Stats",
           "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
-      ]
+      ],
+      "divider_text": "at"
     },
     {
-      "venue_type": "HOME",
-      "weekday": "FRIDAY",
-      "date_text": "NOV 28",
-      "status": "upcoming",
-      "result": null,
+      "date": null,
       "time_local": "5:30 PM CST",
-      "divider_text": "vs.",
+      "venue_type": "H",
+      "nu_rank": null,
+      "opp_rank": null,
+      "opponent_name": "Penn State",
+      "city": "Lincoln, Neb.",
+      "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/eSnEQOMzqgY8gAPCfxR90DNlJ0vOuXDQfhvTLM4h.svg",
-      "opponent_name": "Penn State",
-      "opp_rank": null,
-      "nu_rank": null,
-      "location": "Lincoln, Neb. / Bob Devaney Sports Center",
       "tv_network_logo_url": "https://huskers.com/imgproxy/1Dsb_dIet_Zh4V52NHpk2P6twI38akA8iEaIWPZpVDs/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
+      "status": "scheduled",
+      "result": null,
       "links": [
         {
           "title": "Watch",
@@ -1061,23 +1060,23 @@
           "title": "Sold Out! Buy on SeatGeek",
           "href": "https://seatgeek.com/nebraska-cornhuskers-womens-volleyball-tickets/womens-college-volleyball/2025-11-28-5-30-pm/17607642?aid=16101&pid=sell_out_page_social&rid=45989&utm_campaign=integration&utm_medium=partnership&utm_source=nebraska_sponsorship"
         }
-      ]
+      ],
+      "divider_text": "vs."
     },
     {
-      "venue_type": "HOME",
-      "weekday": "SATURDAY",
-      "date_text": "NOV 29",
-      "status": "upcoming",
-      "result": null,
+      "date": null,
       "time_local": "TBA",
-      "divider_text": "vs.",
+      "venue_type": "H",
+      "nu_rank": null,
+      "opp_rank": null,
+      "opponent_name": "Ohio State",
+      "city": "Lincoln, Neb.",
+      "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/ZypwLlH96dLBs8GTvlqdMhyWpV4IgVGyCUAQpTrb.svg",
-      "opponent_name": "Ohio State",
-      "opp_rank": null,
-      "nu_rank": null,
-      "location": "Lincoln, Neb. / Bob Devaney Sports Center",
       "tv_network_logo_url": "https://huskers.com/imgproxy/1Dsb_dIet_Zh4V52NHpk2P6twI38akA8iEaIWPZpVDs/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
+      "status": "scheduled",
+      "result": null,
       "links": [
         {
           "title": "Watch",
@@ -1095,7 +1094,8 @@
           "title": "Sold Out! Buy on SeatGeek",
           "href": "https://seatgeek.com/nebraska-cornhuskers-womens-volleyball-tickets/womens-college-volleyball/2025-11-29-3-30-am/17607643?aid=16101&pid=sell_out_page_social&rid=45990&utm_campaign=integration&utm_medium=partnership&utm_source=nebraska_sponsorship"
         }
-      ]
+      ],
+      "divider_text": "vs."
     }
   ]
 }
