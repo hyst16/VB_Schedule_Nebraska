@@ -1,9 +1,10 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2025-09-17T04:20:47.992850+00:00",
+  "scraped_at": "2025-09-17T04:40:17.807380+00:00",
   "items": [
     {
       "date": null,
+      "date_text": "AUG 22",
       "time_local": null,
       "venue_type": "H",
       "nu_rank": 1,
@@ -49,6 +50,7 @@
     },
     {
       "date": null,
+      "date_text": "AUG 24",
       "time_local": null,
       "venue_type": "H",
       "nu_rank": 1,
@@ -94,6 +96,7 @@
     },
     {
       "date": null,
+      "date_text": "AUG 29",
       "time_local": null,
       "venue_type": "A",
       "nu_rank": 1,
@@ -139,6 +142,7 @@
     },
     {
       "date": null,
+      "date_text": "AUG 31",
       "time_local": null,
       "venue_type": "N",
       "nu_rank": 1,
@@ -184,6 +188,7 @@
     },
     {
       "date": null,
+      "date_text": "SEP 5",
       "time_local": null,
       "venue_type": "H",
       "nu_rank": 1,
@@ -233,6 +238,7 @@
     },
     {
       "date": null,
+      "date_text": "SEP 7",
       "time_local": null,
       "venue_type": "H",
       "nu_rank": 1,
@@ -282,6 +288,7 @@
     },
     {
       "date": null,
+      "date_text": "SEP 12",
       "time_local": null,
       "venue_type": "H",
       "nu_rank": 1,
@@ -331,6 +338,7 @@
     },
     {
       "date": null,
+      "date_text": "SEP 13",
       "time_local": null,
       "venue_type": "H",
       "nu_rank": 1,
@@ -380,6 +388,7 @@
     },
     {
       "date": null,
+      "date_text": "SEP 16",
       "time_local": null,
       "venue_type": "A",
       "nu_rank": 1,
@@ -425,6 +434,7 @@
     },
     {
       "date": null,
+      "date_text": "SEP 20",
       "time_local": "8:00 PM CDT",
       "venue_type": "H",
       "nu_rank": null,
@@ -459,6 +469,7 @@
     },
     {
       "date": null,
+      "date_text": "SEP 24",
       "time_local": "6:00 PM CDT",
       "venue_type": "H",
       "nu_rank": null,
@@ -493,6 +504,7 @@
     },
     {
       "date": null,
+      "date_text": "SEP 27",
       "time_local": "3:00 PM CDT",
       "venue_type": "H",
       "nu_rank": null,
@@ -527,6 +539,7 @@
     },
     {
       "date": null,
+      "date_text": "OCT 3",
       "time_local": "7:00 PM CDT",
       "venue_type": "A",
       "nu_rank": null,
@@ -557,6 +570,7 @@
     },
     {
       "date": null,
+      "date_text": "OCT 4",
       "time_local": "6:00 PM CDT",
       "venue_type": "A",
       "nu_rank": null,
@@ -587,6 +601,7 @@
     },
     {
       "date": null,
+      "date_text": "OCT 10",
       "time_local": "8:00 PM CDT",
       "venue_type": "H",
       "nu_rank": null,
@@ -621,6 +636,7 @@
     },
     {
       "date": null,
+      "date_text": "OCT 12",
       "time_local": "12:00 PM CDT",
       "venue_type": "A",
       "nu_rank": null,
@@ -651,6 +667,7 @@
     },
     {
       "date": null,
+      "date_text": "OCT 17",
       "time_local": "6:00 PM CDT",
       "venue_type": "A",
       "nu_rank": null,
@@ -681,6 +698,7 @@
     },
     {
       "date": null,
+      "date_text": "OCT 19",
       "time_local": "1:00 PM CDT",
       "venue_type": "A",
       "nu_rank": null,
@@ -711,6 +729,7 @@
     },
     {
       "date": null,
+      "date_text": "OCT 24",
       "time_local": "6:00 PM CDT",
       "venue_type": "H",
       "nu_rank": null,
@@ -745,6 +764,7 @@
     },
     {
       "date": null,
+      "date_text": "OCT 25",
       "time_local": "7:30 PM CDT",
       "venue_type": "H",
       "nu_rank": null,
@@ -779,6 +799,7 @@
     },
     {
       "date": null,
+      "date_text": "OCT 31",
       "time_local": "8:00 PM CDT",
       "venue_type": "A",
       "nu_rank": null,
@@ -809,6 +830,7 @@
     },
     {
       "date": null,
+      "date_text": "NOV 2",
       "time_local": "1:00 PM CST",
       "venue_type": "H",
       "nu_rank": null,
@@ -843,6 +865,7 @@
     },
     {
       "date": null,
+      "date_text": "NOV 6",
       "time_local": "7:00 PM CST",
       "venue_type": "H",
       "nu_rank": null,
@@ -877,6 +900,7 @@
     },
     {
       "date": null,
+      "date_text": "NOV 8",
       "time_local": "2:30 PM CST",
       "venue_type": "A",
       "nu_rank": null,
@@ -907,6 +931,7 @@
     },
     {
       "date": null,
+      "date_text": "NOV 14",
       "time_local": "8:00 OR 9:00 PM CST",
       "venue_type": "A",
       "nu_rank": null,
@@ -937,6 +962,7 @@
     },
     {
       "date": null,
+      "date_text": "NOV 16",
       "time_local": "2:00 PM CST",
       "venue_type": "A",
       "nu_rank": null,
@@ -967,6 +993,7 @@
     },
     {
       "date": null,
+      "date_text": "NOV 20",
       "time_local": "TBA",
       "venue_type": "H",
       "nu_rank": null,
@@ -1001,6 +1028,7 @@
     },
     {
       "date": null,
+      "date_text": "NOV 22",
       "time_local": "5:00 PM CST",
       "venue_type": "A",
       "nu_rank": null,
@@ -1031,6 +1059,7 @@
     },
     {
       "date": null,
+      "date_text": "NOV 28",
       "time_local": "5:30 PM CST",
       "venue_type": "H",
       "nu_rank": null,
@@ -1065,6 +1094,7 @@
     },
     {
       "date": null,
+      "date_text": "NOV 29",
       "time_local": "TBA",
       "venue_type": "H",
       "nu_rank": null,
