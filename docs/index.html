@@ -1,32 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nebraska Volleyball – 2025 Schedule</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css" />
+  <!-- Use the whole screen, even behind notches / rounded corners -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Husker Volleyball — Auto Schedule</title>
+
+  <!-- Cache-bust CSS so the player can’t serve an old copy -->
+  <link rel="stylesheet" href="assets/styles.css?v=2025-09-16-1" />
+
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
 </head>
 <body>
-  <main id="app">
-    <header class="page-header">
-      <h1>NEBRASKA VOLLEYBALL</h1>
-      <div class="sub">2025 SCHEDULE</div>
-    </header>
+  <div id="view-next" class="view hidden">
+    <div class="bg" id="next-bg"></div>
+    <div class="next-card">
+      <div class="row logos">
+        <img id="ne-logo" class="logo" alt="Nebraska" />
+        <div class="vs" id="divider">vs.</div>
+        <img id="opp-logo" class="logo" alt="Opponent" />
+      </div>
+      <div id="next-opponent" class="opponent"></div>
+      <div id="next-datetime" class="detail"></div>
+      <div id="next-venue" class="detail"></div>
+      <div id="next-tv" class="detail"></div>
+    </div>
+  </div>
 
-    <section id="schedule" class="grid-2col ultra-compact"></section>
+  <div id="view-all" class="view hidden">
+    <div class="all-wrap"><!-- JS injects .cols → .col → .game-row here --></div>
+  </div>
 
-    <footer class="page-footer">
-      <div id="arena-note">Backgrounds: <code>docs/images/arenas/&lt;slug&gt;.jpg</code></div>
-    </footer>
-  </main>
+  <div id="debug" class="debug hidden"></div>
 
   <script>
-    window.VB_JSON = 'data/vb_schedule_normalized.json';
-    window.ARENA_JSON = 'data/arena_manifest.json';
+    // UI options à la football
+    window.UI = {
+      theme: "classic-husker",
+      rotateSeconds: 15,
+      showDividerLiteral: true, // show "vs." / "at"
+      showCityOnly: true,       // show city without arena in the compact row if needed
+      kenBurns: false
+    };
+    const params = new URLSearchParams(location.search);
+    const rot = parseInt(params.get("rot"),10);
+    if (!isNaN(rot) && rot > 0) window.UI.rotateSeconds = rot;
+    const lockView = params.get("view"); // "next" or "all"
+    const debug = params.get("debug") === "1";
+
+    // Cache-bust data fetches
+    window.DATA_URL = "data/vb_schedule_normalized.json?v=" + Date.now();
+    window.MANIFEST_URL = "data/arena_manifest.json?v=" + Date.now();
   </script>
-  <script src="assets/app.js"></script>
+
+  <!-- Cache-bust JS so new scaling logic definitely loads -->
+  <script src="assets/app.js?v=2025-09-16-1"></script>
 </body>
 </html>
