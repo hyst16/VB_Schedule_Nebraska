@@ -1,0 +1,171 @@
+{
+  "source": "https://huskers.com/sports/volleyball/schedule?type=home",
+  "scraped_at": "2025-09-17T03:31:26.486469Z",
+  "items": [
+    {
+      "home_away": "H",
+      "date": "2025-09-05",
+      "time_local": null,
+      "opponent": "Wright",
+      "location": "State Lincoln, Neb. / Bob Devaney Sports Center presented by Opens in a new window Open Info",
+      "nu_rank": 1,
+      "opp_rank": null,
+      "result": {
+        "outcome": "W",
+        "sets": "3-0"
+      }
+    },
+    {
+      "home_away": "H",
+      "date": "2025-09-07",
+      "time_local": null,
+      "opponent": "California",
+      "location": "Lincoln, Neb. / Bob Devaney Sports Center presented by Opens in a new window Open Info",
+      "nu_rank": 1,
+      "opp_rank": null,
+      "result": {
+        "outcome": "W",
+        "sets": "3-0"
+      }
+    },
+    {
+      "home_away": "H",
+      "date": "2025-09-12",
+      "time_local": null,
+      "opponent": "#22",
+      "location": "Utah Lincoln, Neb. / Bob Devaney Sports Center presented by Opens in a new window Open Info",
+      "nu_rank": 1,
+      "opp_rank": 22,
+      "result": {
+        "outcome": "W",
+        "sets": "3-1"
+      }
+    },
+    {
+      "home_away": "H",
+      "date": "2025-09-13",
+      "time_local": null,
+      "opponent": "Grand",
+      "location": "Canyon Lincoln, Neb. / Bob Devaney Sports Center Open Info",
+      "nu_rank": 1,
+      "opp_rank": null,
+      "result": {
+        "outcome": "W",
+        "sets": "3-0"
+      }
+    },
+    {
+      "home_away": "H",
+      "date": "2025-09-20",
+      "time_local": "8:00 PM CDT",
+      "opponent": "Arizona",
+      "location": "Lincoln, Neb. / Bob Devaney Sports Center presented by Opens in a new window Open Info",
+      "nu_rank": null,
+      "opp_rank": null,
+      "result": null
+    },
+    {
+      "home_away": "H",
+      "date": "2025-09-24",
+      "time_local": "6:00 PM CDT",
+      "opponent": "Michigan",
+      "location": "Lincoln, Neb. / Bob Devaney Sports Center presented by Opens in a new window Open Info",
+      "nu_rank": null,
+      "opp_rank": null,
+      "result": null
+    },
+    {
+      "home_away": "H",
+      "date": "2025-09-27",
+      "time_local": "3:00 PM CDT",
+      "opponent": "Maryland",
+      "location": "Lincoln, Neb. / Bob Devaney Sports Center Open Info",
+      "nu_rank": null,
+      "opp_rank": null,
+      "result": null
+    },
+    {
+      "home_away": "H",
+      "date": "2025-10-10",
+      "time_local": "8:00 PM CDT",
+      "opponent": "Washington",
+      "location": "Lincoln, Neb. / Bob Devaney Sports Center presented by Opens in a new window Open Info",
+      "nu_rank": null,
+      "opp_rank": null,
+      "result": null
+    },
+    {
+      "home_away": "H",
+      "date": "2025-10-24",
+      "time_local": "6:00 PM CDT",
+      "opponent": "Northwestern",
+      "location": "Lincoln, Neb. / Bob Devaney Sports Center presented by Opens in a new window Open Info",
+      "nu_rank": null,
+      "opp_rank": null,
+      "result": null
+    },
+    {
+      "home_away": "H",
+      "date": "2025-10-25",
+      "time_local": "7:30 PM CDT",
+      "opponent": "Michigan",
+      "location": "State Lincoln, Neb. / Bob Devaney Sports Center presented by Opens in a new window Open Info",
+      "nu_rank": null,
+      "opp_rank": null,
+      "result": null
+    },
+    {
+      "home_away": "H",
+      "date": "2025-11-02",
+      "time_local": "1:00 PM CST",
+      "opponent": "Oregon",
+      "location": "Lincoln, Neb. / Bob Devaney Sports Center presented by Opens in a new window Open Info",
+      "nu_rank": null,
+      "opp_rank": null,
+      "result": null
+    },
+    {
+      "home_away": "H",
+      "date": "2025-11-06",
+      "time_local": "7:00 PM CST",
+      "opponent": "Illinois",
+      "location": "Lincoln, Neb. / Bob Devaney Sports Center presented by Opens in a new window Open Info",
+      "nu_rank": null,
+      "opp_rank": null,
+      "result": null
+    },
+    {
+      "home_away": "H",
+      "date": "2025-11-20",
+      "time_local": null,
+      "opponent": "Iowa",
+      "location": "Lincoln, Neb. / Bob Devaney Sports Center presented by Opens in a new window Open Info",
+      "nu_rank": null,
+      "opp_rank": null,
+      "result": null
+    },
+    {
+      "home_away": "H",
+      "date": "2025-11-28",
+      "time_local": "5:30 PM CST",
+      "opponent": "Penn",
+      "location": "State Lincoln, Neb. / Bob Devaney Sports Center presented by Opens in a new window Open Info",
+      "nu_rank": null,
+      "opp_rank": null,
+      "result": null
+    },
+    {
+      "home_away": "H",
+      "date": "2025-11-29",
+      "time_local": null,
+      "opponent": "Ohio",
+      "location": "State Lincoln, Neb. / Bob Devaney Sports Center presented by Opens in a new window Open Info",
+      "nu_rank": 1,
+      "opp_rank": 22,
+      "result": {
+        "outcome": "W",
+        "sets": "3-0"
+      }
+    }
+  ]
+}
