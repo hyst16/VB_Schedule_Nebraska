@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nebraska Volleyball – 2025 Schedule</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <main id="app">
+    <header class="page-header">
+      <h1>NEBRASKA VOLLEYBALL</h1>
+      <div class="sub">2025 SCHEDULE</div>
+    </header>
+
+    <section id="schedule" class="grid-2col ultra-compact"></section>
+
+    <footer class="page-footer">
+      <div id="arena-note">Backgrounds: <code>docs/images/arenas/&lt;slug&gt;.jpg</code></div>
+    </footer>
+  </main>
+
+  <script>
+    window.VB_JSON = 'data/vb_schedule_normalized.json';
+    window.ARENA_JSON = 'data/arena_manifest.json';
+  </script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
