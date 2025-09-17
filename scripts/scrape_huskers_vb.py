@@ -25,13 +25,22 @@ def safe_attr(locator, name, timeout=1200):
         return None
 
 def get_img_src(locator):
-    if not locator or locator.count() == 0: return None
+    """Return best-available image URL after lazy-load, or None."""
+    if not locator or locator.count() == 0:
+        return None
     img = locator.first
     try:
         current = img.evaluate("(el) => el.currentSrc || el.src || el.getAttribute('data-src') || ''")
-        if current and not current.startswith("data:image"): return current
-        src = safe_attr(locator, "src");       if src and not src.startswith("data:image"): return src
-        data_src = safe_attr(locator, "data-src");  if data_src and not data_src.startswith("data:image"): return data_src
+        if current and not current.startswith("data:image"):
+            return current
+
+        src = safe_attr(locator, "src")
+        if src and not src.startswith("data:image"):
+            return src
+
+        data_src = safe_attr(locator, "data-src")
+        if data_src and not data_src.startswith("data:image"):
+            return data_src
     except PWTimeout:
         pass
     return None
