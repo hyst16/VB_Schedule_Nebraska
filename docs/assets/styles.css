@@ -1,17 +1,15 @@
-/* assets/styles.css
-   Mirrors the football layout: a hero “next game” and a tight 2-column compact schedule.
-*/
+/* Global + hero styles (football parity) */
 
 :root { 
-  --safe:25px; 
-  --fg:#fff; 
-  --bg:#000; 
-  --muted:#c9c9c9; 
+  --safe: 25px; 
+  --fg: #fff; 
+  --bg: #000; 
+  --muted: #c9c9c9;
 
-  /* Schedule layout tuning */
-  --col-width: 780px;        /* width of each column (large screen baseline) */
-  --cols-gap: 40px;          /* gap between the two columns */
-  --schedule-side-pad: 60px; /* side padding around the grid */
+  /* Two-column schedule tuning */
+  --col-width: 780px;
+  --cols-gap: 40px;
+  --schedule-side-pad: 60px;
 }
 
 * { box-sizing: border-box; }
@@ -24,7 +22,8 @@ html,body {
 .hidden { display:none; }
 .view { position:relative; width:100vw; height:100vh; overflow:hidden; }
 
-/* ---------------- HERO (next-game) ---------------- */
+/* ------------- HERO (next game) ------------- */
+
 .bg { position:absolute; inset:0; background:#000 center/cover no-repeat; filter:brightness(0.5); }
 
 .next-card {
@@ -35,32 +34,41 @@ html,body {
 
 .row.logos {
   display:flex;
-  align-items:center;           
-  justify-content: center;      
-  gap:12px;                     
-  margin-bottom:8px;            
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  margin-bottom:8px;
 }
-.logo { width:72px; height:72px; object-fit:contain; }
+.logo-wrap { position: relative; display: inline-block; }
+.logo { width:72px; height:72px; object-fit:contain; display:block; }
+
+.rank-badge {
+  position:absolute; right:-6px; bottom:-6px;
+  padding:2px 6px;
+  font-size:12px; font-weight:800; line-height:1;
+  color:#000; background:#fff;
+  border-radius:999px; border:1px solid rgba(0,0,0,.2);
+  box-shadow:0 1px 2px rgba(0,0,0,.35);
+}
+.rank-badge.ne { background:#c00000; color:#fff; border-color:rgba(255,255,255,.25); }
+
 .vs { font-weight:800; font-size:32px; letter-spacing:.5px; }
 .opponent { font-size:40px; font-weight:800; line-height:1.1; }
 .detail { font-size:22px; color:var(--muted); }
 
 /* TV chip inside the hero card */
 .next-card .tv-chip {
-  display: inline-flex;
-  align-items: center;
+  display:inline-flex; align-items:center; gap:8px;
   padding: 4px 10px;
-  border-radius: 999px;
-  background: #fff;
-  border: 1px solid rgba(0,0,0,0.2);
+  border-radius:999px; background:#fff; color:#000;
+  border:1px solid rgba(0,0,0,.2);
+  overflow: hidden;
 }
 .next-card .tv-chip img {
-  height: 20px;
-  width: auto;
-  display: block;
+  height:20px; max-width:80px; width:auto; display:block; object-fit:contain;
 }
 
-/* ---------------- COMPACT SCHEDULE (always 2 columns) ---------------- */
+/* ------------- COMPACT SCHEDULE (two fixed columns) ------------- */
 
 #view-all .all-wrap { 
   padding: var(--safe); 
@@ -68,47 +76,31 @@ html,body {
   justify-content: center; 
 }
 
-/* Two-column wrapper (always 2 cols, scaled to fit) */
 #view-all .cols {
   width: min(calc((2 * var(--col-width)) + var(--cols-gap)), 96vw);
   max-width: 96vw;
-
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: var(--cols-gap);
-
   justify-content: center;
   margin: 0 auto;
 }
 
-/* Each column stacks rows vertically */
-#view-all .col {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
+#view-all .col { display:flex; flex-direction:column; gap:2px; }
 
-/* Entire row is one “card” — no explicit columns */
 #view-all .game-row {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  min-height: 52px;
-  padding: 2px 12px;
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.12);
+  display:flex; gap:10px; align-items:center;
+  min-height:52px; padding:2px 12px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,0.12);
   background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
-  position: relative;
+  position:relative;
 }
 
 /* Left accent for venue */
 #view-all .game-row::before {
-  content:"";
-  position:absolute;
-  left:0; top:0; bottom:0;
-  width: 3px;
-  border-radius: 12px 0 0 12px;
-  background: rgba(255,255,255,0.20);
+  content:""; position:absolute; left:0; top:0; bottom:0; width:3px;
+  border-radius:12px 0 0 12px; background: rgba(255,255,255,0.20);
 }
 
 /* HOME */
@@ -123,64 +115,42 @@ html,body {
 }
 #view-all .game-row.is-away::before { background: rgba(140,140,140,0.8); }
 
-/* Left cap: stacked date + weekday */
 #view-all .when {
-  width: 72px;
+  width:72px;
   display:flex; flex-direction:column; align-items:flex-start;
-  line-height: 1.1;
+  line-height:1.1;
 }
-#view-all .when .date { font-weight: 700; font-size: 16px; }
-#view-all .when .dow  { color: var(--muted); font-size: 13px; margin-top: 2px; }
+#view-all .when .date { font-weight:700; font-size:16px; }
+#view-all .when .dow  { color:var(--muted); font-size:13px; margin-top:2px; }
 
-/* Main sentence line */
-#view-all .line {
-  display: flex; align-items: center; gap: 6px;
-  min-width: 0;
-  flex: 1;
-}
+#view-all .line { display:flex; align-items:center; gap:6px; min-width:0; flex:1; }
 
-/* Tiny marks (logos) */
 #view-all .line .mark {
-  height: 22px; width: 22px; object-fit: contain; flex: 0 0 auto;
-  padding: 2px;
-  border-radius: 6px;
-  background: rgba(255,255,255,0.10);
-  border: 1px solid rgba(255,255,255,0.18);
+  height:22px; width:22px; object-fit:contain; flex:0 0 auto;
+  padding:2px; border-radius:6px;
+  background:rgba(255,255,255,0.10); border:1px solid rgba(255,255,255,0.18);
 }
 
-/* Divider + opponent name */
-#view-all .line .divider { font-weight: 800; opacity: 0.9; }
+#view-all .line .divider { font-weight:800; opacity:.9; }
 #view-all .line .opp-name {
-  font-weight: 600;
-  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-  max-width: 26ch;
+  font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:26ch;
 }
 
-/* Chips */
 #view-all .chip {
-  font-size: 13px;
-  padding: 4px 8px;
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.18);
-  background: rgba(255,255,255,0.06);
-  color: var(--fg);
-  white-space: nowrap;
+  font-size:13px; padding:4px 8px;
+  border-radius:999px; border:1px solid rgba(255,255,255,0.18);
+  background:rgba(255,255,255,0.06); color:var(--fg);
+  white-space:nowrap; display:inline-flex; align-items:center; gap:6px;
 }
-#view-all .chip.city { color: var(--muted); } 
-#view-all .chip.tv {
-  background: #fff;
-  border-color: rgba(0,0,0,0.2);
-  padding: 2px 8px;
-}
-#view-all .chip.tv img { display:block; height: 18px; width:auto; }
+#view-all .chip.city { color:var(--muted); }
+
+#view-all .chip.tv { background:#fff; color:#000; border-color:rgba(0,0,0,0.2); padding:2px 8px; overflow:hidden; }
+#view-all .chip.tv img { display:block; height:18px; max-width:80px; width:auto; object-fit:contain; }
 
 /* Result pill */
 #view-all .result {
-  font-size: 14px;
-  padding: 4px 10px;
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.2);
-  margin: 0 8px 0 0;
+  font-size:14px; padding:4px 10px; border-radius:999px;
+  border:1px solid rgba(255,255,255,0.2); margin:0 8px 0 0;
 }
 #view-all .result.W { background:#1a6123; }
 #view-all .result.L { background:#6b1b1b; }
@@ -195,23 +165,23 @@ html,body {
 /* 4K bump */
 @media (min-width: 2560px) {
   :root { --safe:64px; }
-  .logo { width:96px; height:96px; } 
-  .vs { font-size:40px; } .opponent { font-size:48px; } .detail { font-size:26px; }
+  .logo { width:96px; height:96px; }
+  .vs { font-size:40px; }
+  .opponent { font-size:48px; }
+  .detail { font-size:26px; }
+  .rank-badge { font-size:14px; }
 
-  #view-all .game-row { min-height: 56px; padding: 10px 14px; }
-  #view-all .when { width: 84px; }
-  #view-all .when .date { font-size: 18px; }
-  #view-all .when .dow  { font-size: 14px; }
-  #view-all .line .mark { height: 24px; width: 24px; }
-  #view-all .chip { font-size: 14px; }
-  #view-all .chip.tv img { height: 20px; }
-  #view-all .result { font-size: 15px; }
+  #view-all .game-row { min-height:56px; padding:10px 14px; }
+  #view-all .when { width:84px; }
+  #view-all .when .date { font-size:18px; }
+  #view-all .when .dow  { font-size:14px; }
+  #view-all .line .mark { height:24px; width:24px; }
+  #view-all .chip { font-size:14px; }
+  #view-all .chip.tv img { height:20px; }
+  #view-all .result { font-size:15px; }
 }
 
-/* Smaller TV screens (e.g., 1366x768) — shrink cols */
+/* Smaller 1366/1080 TV screens — shrink cols */
 @media (max-width: 1600px) {
-  :root {
-    --col-width: 560px;
-    --cols-gap: 24px;
-  }
+  :root { --col-width:560px; --cols-gap:24px; }
 }
