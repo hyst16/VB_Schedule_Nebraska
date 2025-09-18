@@ -59,7 +59,7 @@ html,body {
   margin-bottom:8px;
 }
 
-/* Team logos + rank pills */
+/* Team logos + rank pills (hero) */
 .logo-wrap { position: relative; display: inline-block; }
 .logo { width:72px; height:72px; object-fit:contain; display:block; }
 
@@ -151,10 +151,41 @@ html,body {
 
 #view-all .line { display:flex; align-items:center; gap:6px; min-width:0; flex:1; }
 
-#view-all .line .mark {
-  height:22px; width:22px; object-fit:contain; flex:0 0 auto;
-  padding:2px; border-radius:6px;
-  background:rgba(255,255,255,0.10); border:1px solid rgba(255,255,255,0.18);
+/* ===== Logo + tiny rank dot in schedule rows ===== */
+
+/* Wrapper is RELATIVE so the dot can anchor; size matches the image. */
+#view-all .logo-badge {
+  position: relative;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  flex: 0 0 auto;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.18);
+  overflow: visible; /* allow the dot to hang over the corner */
+}
+
+/* The actual logo image */
+#view-all .logo-badge .mark {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  padding:2px;
+  border-radius:6px;
+}
+
+/* Tiny white rank dot, bottom-right, barely overlapping */
+#view-all .rank-dot {
+  position: absolute;
+  right:-6px;
+  bottom:-5px;
+  font-size:6px; font-weight:800; line-height:1;
+  padding:1px 1px;
+  color:#000; background:#fff;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.2);
 }
 
 #view-all .line .divider { font-weight:800; opacity:.9; }
@@ -212,7 +243,11 @@ body.dense #view-all .when .date { font-size:14px; }
 body.dense #view-all .when .dow  { font-size:12px; margin-top:1px; }
 
 body.dense #view-all .line { gap:5px; }
-body.dense #view-all .line .mark { height:19px; width:19px; padding:1px; }
+
+/* shrink logo-badge in dense */
+body.dense #view-all .logo-badge { width:19px; height:19px; }
+body.dense #view-all .logo-badge .mark { padding:1px; }
+
 body.dense #view-all .line .divider { font-size: 92%; }
 body.dense #view-all .line .opp-name { max-width:24ch; }
 
@@ -245,7 +280,7 @@ body.dense #view-all .chip.tv img { height: var(--tv-chip-img-h); }
   #view-all .when { width:84px; }
   #view-all .when .date { font-size:18px; }
   #view-all .when .dow  { font-size:14px; }
-  #view-all .line .mark { height:24px; width:24px; }
+  #view-all .logo-badge { width:24px; height:24px; }
   #view-all .chip { font-size:14px; }
   #view-all .result { font-size:15px; }
 }
