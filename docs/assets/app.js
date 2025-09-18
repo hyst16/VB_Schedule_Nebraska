@@ -19,12 +19,9 @@
   // Debug overlay
   const debug = params.get("debug") === "1";
 
-  // Dense mode (optional) — if you want dense by default, add it here unconditionally.
+  // Dense mode: default ON; pass ?dense=0 to disable
   const denseParam = params.get("dense");
-  if (denseParam === "1" || denseParam === null) {
-    // Default to dense ON; pass ?dense=0 to disable
-    document.body.classList.add("dense");
-  }
+  if (denseParam === "1" || denseParam === null) document.body.classList.add("dense");
 
   // NEW: Global scale knob (uniformly scales the entire schedule view)
   // Example: ?scale=0.88  (clamped to 0.6–1.3)
@@ -47,11 +44,7 @@
   // Abbreviate time strings for chips
   function abbrevTime(s) {
     if (!s || typeof s !== "string") return s;
-
-    // Normalize multiple spaces
     s = s.replace(/\s+/g, " ").trim();
-
-    // Case: "8:00 OR 9:00 PM CST" -> "8 or 9 PM CST"
     const orMatch = s.match(/^(\d{1,2})(?::00)?\s*OR\s*(\d{1,2})(?::00)?\s*(AM|PM)\s+([A-Z]{3})$/i);
     if (orMatch) {
       const h1 = String(+orMatch[1]);
@@ -60,8 +53,6 @@
       const tz = orMatch[4].toUpperCase();
       return `${h1} or ${h2} ${ampm} ${tz}`;
     }
-
-    // Case: "6:00 PM CDT" -> "6 PM CDT"
     const fullMatch = s.match(/^(\d{1,2})(?::(\d{2}))\s*(AM|PM)\s+([A-Z]{3})$/i);
     if (fullMatch) {
       const hour = String(+fullMatch[1]);
@@ -70,8 +61,6 @@
       const tz = fullMatch[4].toUpperCase();
       return mins === "00" ? `${hour} ${ampm} ${tz}` : `${hour}:${mins} ${ampm} ${tz}`;
     }
-
-    // Case: "6:00 PM" (no tz)
     const noTZ = s.match(/^(\d{1,2})(?::(\d{2}))\s*(AM|PM)$/i);
     if (noTZ) {
       const hour = String(+noTZ[1]);
@@ -79,8 +68,6 @@
       const ampm = noTZ[3].toUpperCase();
       return mins === "00" ? `${hour} ${ampm}` : `${hour}:${mins} ${ampm}`;
     }
-
-    // Leave TBA or other formats as-is
     return s;
   }
 
@@ -111,17 +98,14 @@
   const nextTV  = $("#next-tv");
 
   if (nextGame) {
-    if (nextGame.arena_key) {
-      nextBg.style.backgroundImage = `url(images/arenas/${nextGame.arena_key}.jpg)`;
-    }
-
+    if (nextGame.arena_key) nextBg.style.backgroundImage = `url(images/arenas/${nextGame.arena_key}.jpg)`;
     if (nextGame.nu_logo) neLogo.src  = nextGame.nu_logo;
     if (nextGame.opp_logo) oppLogo.src = nextGame.opp_logo;
 
     const divider = dividerFor(nextGame.home_away);
     $("#divider").textContent = UI.showDividerLiteral ? (divider + ".") : "";
 
-    // IMPORTANT: Use opponent name only (no "#rank")
+    // Use opponent name only (no "#rank")
     const headline =
       (nextGame.home_away === "A" ? "Nebraska at " : "Nebraska vs. ") +
       (nextGame.opponent || nextGame.title || "");
@@ -132,7 +116,7 @@
     const arena = nextGame.arena || "";
     nextVenue.textContent = UI.showCityOnly || !arena ? city : `${city} • ${arena}`;
 
-    // TV chip — fixed pill size; remove if image fails
+    // TV chip
     nextTV.innerHTML = "";
     if (nextGame.tv_logo) {
       const chip = document.createElement("span");
@@ -149,16 +133,12 @@
       nextTV.appendChild(chip);
     }
 
-    // Rank pills (white for both)
+    // Rank pills (hero)
     const neRankEl  = $("#ne-rank");
     const oppRankEl = $("#opp-rank");
     const setRank = (el, rank) => {
-      if (rank && Number(rank) > 0) {
-        el.textContent = `#${rank}`;
-        el.classList.remove("hidden");
-      } else {
-        el.classList.add("hidden");
-      }
+      if (rank && Number(rank) > 0) { el.textContent = `#${rank}`; el.classList.remove("hidden"); }
+      else el.classList.add("hidden");
     };
     setRank(neRankEl, nextGame.nu_rank);
     setRank(oppRankEl, nextGame.opp_rank);
@@ -173,6 +153,24 @@
   colA.className = "col"; colB.className = "col";
   cols.appendChild(colA); cols.appendChild(colB);
   wrap.appendChild(cols);
+
+  // Helper: create a logo with optional tiny rank dot
+  function createLogoWithRank(src, alt, rank) {
+    const box = document.createElement("span");
+    box.className = "logo-badge";
+    const img = new Image();
+    img.className = "mark";
+    img.src = src || "";
+    img.alt = alt || "";
+    box.appendChild(img);
+    if (rank && Number(rank) > 0) {
+      const dot = document.createElement("span");
+      dot.className = "rank-dot";
+      dot.textContent = `#${rank}`;
+      box.appendChild(dot);
+    }
+    return box;
+  }
 
   // Build one schedule row
   const makeRow = (g) => {
@@ -189,24 +187,24 @@
     // sentence line
     const line = document.createElement("div");
     line.className = "line";
-    const neMark = new Image();
-    neMark.className = "mark"; neMark.src = g.nu_logo || ""; neMark.alt = "Nebraska";
-    const oppMark = new Image();
-    oppMark.className = "mark"; oppMark.src = g.opp_logo || ""; oppMark.alt = g.opponent || "Opponent";
 
+    // Nebraska logo + rank
+    line.appendChild(createLogoWithRank(g.nu_logo || "", "Nebraska", g.nu_rank));
+
+    // divider
     const divEl = document.createElement("span");
     divEl.className = "divider";
     divEl.textContent = UI.showDividerLiteral ? dividerFor(g.home_away) : "";
+    line.appendChild(divEl);
 
+    // opponent name (no rank in text)
     const oppSpan = document.createElement("span");
     oppSpan.className = "opp-name";
-    // IMPORTANT: use g.opponent (no "#rank" prefix)
     oppSpan.textContent = g.opponent || g.title || "";
-
-    line.appendChild(neMark);
-    line.appendChild(divEl);
     line.appendChild(oppSpan);
-    line.appendChild(oppMark);
+
+    // opponent logo + rank
+    line.appendChild(createLogoWithRank(g.opp_logo || "", g.opponent || "Opponent", g.opp_rank));
 
     // chips cluster
     const chips = document.createElement("div");
@@ -249,7 +247,7 @@
     } else if (Array.isArray(g.tv) && g.tv.length) {
       const tv = document.createElement("span");
       tv.className = "chip tv";
-      tv.textContent = g.tv[0]; // keep short in dense layout; logo preferred anyway
+      tv.textContent = g.tv[0];
       chips.appendChild(tv);
     }
 
