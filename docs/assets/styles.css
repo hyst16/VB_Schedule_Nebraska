@@ -1,6 +1,6 @@
-/* -------------------------------------------------------------------
-   Global + Hero + Compact Schedule styles (Volleyball, Football parity)
-   ------------------------------------------------------------------- */
+/* =======================
+   Global + hero styles
+   ======================= */
 
 :root { 
   --safe: 25px; 
@@ -17,6 +17,18 @@
   --tv-chip-width: 64px;   /* ~FOX chip width */
   --tv-chip-height: 24px;  /* ~FOX chip height */
   --tv-chip-img-h: 16px;   /* logo height inside the pill */
+
+  /* NEW: global UI scale (schedule view) */
+  --ui-scale: 1;
+}
+
+/* NEW: wrapper we scale uniformly.
+   We counter-scale its metrics so the grid still fills the viewport. */
+.scale-wrap {
+  transform: scale(var(--ui-scale));
+  transform-origin: top left;
+  width: calc(100% / var(--ui-scale));
+  height: calc(100% / var(--ui-scale));
 }
 
 * { box-sizing: border-box; }
@@ -29,7 +41,7 @@ html,body {
 .hidden { display:none; }
 .view { position:relative; width:100vw; height:100vh; overflow:hidden; }
 
-/* ---------------- HERO (next-game) ---------------- */
+/* ------------- HERO (next game) ------------- */
 
 .bg { position:absolute; inset:0; background:#000 center/cover no-repeat; filter:brightness(0.5); }
 
@@ -46,16 +58,15 @@ html,body {
   gap:12px;
   margin-bottom:8px;
 }
+
+/* Team logos + rank pills */
 .logo-wrap { position: relative; display: inline-block; }
 .logo { width:72px; height:72px; object-fit:contain; display:block; }
 
-/* Small rank badge on the bottom-right corner of the hero logos.
-   Both NU and opponent pills are white; tiny overlap (subtle). */
 .rank-badge {
-  position:absolute;
-  right:-2px;          /* barely overlaps the corner */
-  bottom:-2px;         /* barely overlaps the corner */
-  padding:2px 6px;
+  /* White pill for BOTH teams, lightly overlapping bottom-right of the logo */
+  position:absolute; right:-6px; bottom:-6px;
+  padding:3px 8px;
   font-size:12px; font-weight:800; line-height:1;
   color:#000; background:#fff;
   border-radius:999px; border:1px solid rgba(0,0,0,.2);
@@ -83,7 +94,7 @@ html,body {
   object-fit: contain;
 }
 
-/* ---------------- COMPACT SCHEDULE (two fixed columns) ---------------- */
+/* ------------- COMPACT SCHEDULE (two fixed columns) ------------- */
 
 #view-all .all-wrap { 
   padding: var(--safe); 
@@ -130,7 +141,6 @@ html,body {
 }
 #view-all .game-row.is-away::before { background: rgba(140,140,140,0.8); }
 
-/* Left date stack */
 #view-all .when {
   width:72px;
   display:flex; flex-direction:column; align-items:flex-start;
@@ -139,27 +149,12 @@ html,body {
 #view-all .when .date { font-weight:700; font-size:16px; }
 #view-all .when .dow  { color:var(--muted); font-size:13px; margin-top:2px; }
 
-/* Sentence line */
 #view-all .line { display:flex; align-items:center; gap:6px; min-width:0; flex:1; }
 
-/* Mark wrappers so we can overlay tiny rank dots */
-#view-all .mark-wrap { position: relative; display:inline-block; }
 #view-all .line .mark {
   height:22px; width:22px; object-fit:contain; flex:0 0 auto;
   padding:2px; border-radius:6px;
   background:rgba(255,255,255,0.10); border:1px solid rgba(255,255,255,0.18);
-}
-
-/* Tiny white rank dot, bottom-right, barely overlapping */
-#view-all .rank-dot {
-  position: absolute;
-  right:-6px;
-  bottom:-5px;
-  font-size:6px; font-weight:800; line-height:1;
-  padding:1px 1px;
-  color:#000; background:#fff;
-  border-radius:999px;
-  border:1px solid rgba(0,0,0,.2);
 }
 
 #view-all .line .divider { font-weight:800; opacity:.9; }
@@ -167,6 +162,7 @@ html,body {
   font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:26ch;
 }
 
+/* Universal chip */
 #view-all .chip {
   font-size:13px; padding:4px 8px;
   border-radius:999px; border:1px solid rgba(255,255,255,0.18);
@@ -217,6 +213,7 @@ body.dense #view-all .when .dow  { font-size:12px; margin-top:1px; }
 
 body.dense #view-all .line { gap:5px; }
 body.dense #view-all .line .mark { height:19px; width:19px; padding:1px; }
+body.dense #view-all .line .divider { font-size: 92%; }
 body.dense #view-all .line .opp-name { max-width:24ch; }
 
 body.dense #view-all .chip { font-size:12px; padding:3px 7px; gap:5px; }
@@ -242,7 +239,7 @@ body.dense #view-all .chip.tv img { height: var(--tv-chip-img-h); }
   .vs { font-size:40px; }
   .opponent { font-size:48px; }
   .detail { font-size:26px; }
-  .rank-badge { font-size:14px; }
+  .rank-badge { font-size:14px; padding:4px 10px; }
 
   #view-all .game-row { min-height:56px; padding:10px 14px; }
   #view-all .when { width:84px; }
