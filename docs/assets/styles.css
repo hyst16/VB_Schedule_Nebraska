@@ -7,7 +7,7 @@
   --muted: #c9c9c9;
 
   /* Two-column schedule tuning */
-  --col-width: 780px;   /* can be overridden via ?colw=### */
+  --col-width: 780px;
   --cols-gap: 40px;
   --schedule-side-pad: 60px;
 
@@ -47,6 +47,7 @@ html,body {
 .logo-wrap { position: relative; display: inline-block; }
 .logo { width:72px; height:72px; object-fit:contain; display:block; }
 
+/* Hero rank badges on the big logos */
 .rank-badge {
   position:absolute; right:-6px; bottom:-6px;
   padding:2px 6px;
@@ -55,8 +56,6 @@ html,body {
   border-radius:999px; border:1px solid rgba(0,0,0,.2);
   box-shadow:0 1px 2px rgba(0,0,0,.35);
 }
-/* Keep Nebraska white too per your preference */
-.rank-badge.ne { background:#fff; color:#000; border-color:rgba(0,0,0,.25); }
 
 .vs { font-weight:800; font-size:32px; letter-spacing:.5px; }
 .opponent { font-size:40px; font-weight:800; line-height:1.1; }
@@ -85,7 +84,7 @@ html,body {
   padding: var(--safe); 
   display: flex; 
   justify-content: center; 
-  transform-origin: top left; /* global scale uses this */
+  transform-origin: top left; /* for the global scale knob */
 }
 
 #view-all .cols {
@@ -137,16 +136,15 @@ html,body {
 
 #view-all .line { display:flex; align-items:center; gap:6px; min-width:0; flex:1; }
 
-/* Logo + tiny rank wrapper so the dot sits relative to the logo */
+/* Small mark logo inside schedule rows */
 #view-all .mark-wrap { position: relative; display:inline-block; }
-#view-all .line .mark {
+#view-all .mark {
   height:22px; width:22px; object-fit:contain; flex:0 0 auto;
   padding:2px; border-radius:6px;
   background:rgba(255,255,255,0.10); border:1px solid rgba(255,255,255,0.18);
-  display:block;
 }
 
-/* Tiny white rank dot, bottom-right, barely overlapping (scales with transform) */
+/* Tiny white rank dot, bottom-right, barely overlapping */
 #view-all .rank-dot {
   position: absolute;
   right:-6px;
@@ -212,7 +210,7 @@ body.dense #view-all .when .date { font-size:14px; }
 body.dense #view-all .when .dow  { font-size:12px; margin-top:1px; }
 
 body.dense #view-all .line { gap:5px; }
-body.dense #view-all .mark-wrap .mark { height:19px; width:19px; padding:1px; }
+body.dense #view-all .mark { height:19px; width:19px; padding:1px; }
 body.dense #view-all .line .divider { font-size: 92%; }
 body.dense #view-all .line .opp-name { max-width:24ch; }
 
@@ -245,12 +243,12 @@ body.dense #view-all .chip.tv img { height: var(--tv-chip-img-h); }
   #view-all .when { width:84px; }
   #view-all .when .date { font-size:18px; }
   #view-all .when .dow  { font-size:14px; }
-  #view-all .mark-wrap .mark { height:24px; width:24px; }
+  #view-all .mark { height:24px; width:24px; }
   #view-all .chip { font-size:14px; }
   #view-all .result { font-size:15px; }
 }
 
-/* Smaller 1366/1080 TV screens — shrink cols (can be overridden by ?colw=###) */
+/* Smaller 1366/1080 TV screens — shrink cols */
 @media (max-width: 1600px) {
   :root { --col-width:560px; --cols-gap:24px; }
 }
