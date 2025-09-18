@@ -1,3 +1,4 @@
+// assets/app.js
 (async function () {
   const $ = (sel, el = document) => el.querySelector(sel);
 
@@ -9,15 +10,15 @@
   // URL params
   const params = new URLSearchParams(location.search);
 
-  // Global scale (e.g., ?scale=0.95). Scales the schedule view only.
+  // Global scale knob (?scale=0.95). We only scale the schedule view container.
   const scaleParam = parseFloat(params.get("scale"));
   const globalScale = !isNaN(scaleParam) && scaleParam > 0 ? scaleParam : 1;
 
-  // Dense mode toggle (?dense=1)
+  // Dense rows toggle (?dense=1)
   const dense = params.get("dense") === "1";
   if (dense) document.body.classList.add("dense");
 
-  // Lock view (?view=next|all) + rotation seconds override
+  // Optional view lock (?view=next|all) + rotation seconds override (?rot=10)
   const rot = parseInt(params.get("rot"), 10);
   if (!isNaN(rot) && rot > 0) UI.rotateSeconds = rot;
   const lockView = params.get("view"); // "next" | "all"
@@ -25,17 +26,20 @@
   // Debug HUD
   const debug = params.get("debug") === "1";
 
-  // Fetch data
-  const sched = await fetch(DATA_URL).then(r => r.json()).then(d => d.items || []).catch(() => []);
+  // -------- Fetch data --------
+  const sched = await fetch(DATA_URL)
+    .then(r => r.json())
+    .then(d => d.items || [])
+    .catch(() => []);
   const manifest = await fetch(MANIFEST_URL).then(r => r.json()).catch(() => ({}));
   const arenas = Object.fromEntries(((manifest && manifest.arenas) || []).map(a => [a.arena_key, a]));
 
-  // Helpers
+  // -------- Helpers --------
   const dividerFor = (han) => (han === "A" ? "at" : "vs");
   const homeClass = (han) => (han === "H" ? "is-home" : "is-away");
   const rowResult = (g) => (g.result ? (g.result.split(" ")[0] || "") : ""); // "W"/"L"/"T"
 
-  // Abbreviate time strings for chips
+  // Compact time strings for chips
   function abbrevTime(s) {
     if (!s || typeof s !== "string") return s;
     s = s.replace(/\s+/g, " ").trim();
@@ -58,7 +62,7 @@
       return mins === "00" ? `${hour} ${ampm} ${tz}` : `${hour}:${mins} ${ampm} ${tz}`;
     }
 
-    // "6:00 PM"
+    // "6:00 PM" (no TZ)
     const noTZ = s.match(/^(\d{1,2})(?::(\d{2}))\s*(AM|PM)$/i);
     if (noTZ) {
       const hour = String(+noTZ[1]);
@@ -67,7 +71,7 @@
       return mins === "00" ? `${hour} ${ampm}` : `${hour}:${mins} ${ampm}`;
     }
 
-    return s; // TBA etc
+    return s; // TBA, etc.
   }
 
   const fmtHero = (iso, time) => {
@@ -83,11 +87,11 @@
       weekday: "short", month: "short", day: "numeric",
     });
 
-  // Choose "next" game: first not-final with a date; else last item
+  // Choose next game: first not-final with a date; else last item
   const upcoming = sched.filter(g => g.status !== "final" && g.date).sort((a,b) => a.date.localeCompare(b.date));
   const nextGame = upcoming[0] || sched[sched.length - 1];
 
-  // ----- HERO (next game) -----
+  // -------- HERO (next game) --------
   const nextBg = $("#next-bg");
   const neLogo = $("#ne-logo");
   const oppLogo = $("#opp-logo");
@@ -133,7 +137,7 @@
       nextTV.appendChild(chip);
     }
 
-    // rank pills (white for both)
+    // Rank pills on hero logos (white background)
     const neRankEl  = $("#ne-rank");
     const oppRankEl = $("#opp-rank");
     const setRank = (el, rank) => {
@@ -148,10 +152,9 @@
     setRank(oppRankEl, nextGame.opp_rank);
   }
 
-  // ----- COMPACT TWO-COLUMN VIEW -----
+  // -------- COMPACT TWO-COLUMN VIEW --------
   const wrap = $("#view-all .all-wrap");
   wrap.style.transform = `scale(${globalScale})`; // global scale knob
-
   const cols = document.createElement("div");
   cols.className = "cols";
   const colA = document.createElement("div");
@@ -160,7 +163,7 @@
   cols.appendChild(colA); cols.appendChild(colB);
   wrap.appendChild(cols);
 
-  // Helper to build logo+rank element
+  // Build a tiny logo with an optional rank dot (bottom-right)
   function buildMark(url, rank) {
     const wrap = document.createElement("span");
     wrap.className = "mark-wrap";
@@ -179,44 +182,44 @@
     return wrap;
   }
 
-  const makeRow = (g) => {
+  function makeRow(g) {
     const row = document.createElement("div");
     row.className = `game-row ${homeClass(g.home_away)}`;
 
-    // left date stack
+    // Left date stack
     const when = document.createElement("div");
     when.className = "when";
     const dayStr = g.date ? fmtDay(g.date) : "";
     const [dow, mmmdd] = dayStr ? [dayStr.split(", ")[0], dayStr.split(", ")[1]] : ["",""];
     when.innerHTML = `<div class="date">${mmmdd || ""}</div><div class="dow">${dow || ""}</div>`;
 
-    // sentence line
+    // Sentence line
     const line = document.createElement("div");
     line.className = "line";
 
-    // Nebraska mark (with optional rank)
+    // Nebraska mark
     const neWrap = buildMark(g.nu_logo, g.nu_rank);
 
-    // divider "vs"/"at"
+    // "vs" / "at"
     const divEl = document.createElement("span");
     divEl.className = "divider";
     divEl.textContent = UI.showDividerLiteral ? dividerFor(g.home_away) : "";
 
-    // Opponent name text (No ranking text injected here)
+    // Opponent logo + rank dot — now placed BEFORE the opponent text
+    const oppWrap = buildMark(g.opp_logo, g.opp_rank);
+
+    // Opponent name text (no rank text here)
     const oppSpan = document.createElement("span");
     oppSpan.className = "opp-name";
     oppSpan.textContent = g.opponent || g.title || "";
 
-    // Opponent logo (with optional rank) at the end
-    const oppWrap = buildMark(g.opp_logo, g.opp_rank);
-
-    // Assemble line
+    // Assemble in this order: NE mark • vs/at • OPP mark • OPP name
     line.appendChild(neWrap);
     line.appendChild(divEl);
-    line.appendChild(oppSpan);
     line.appendChild(oppWrap);
+    line.appendChild(oppSpan);
 
-    // chips cluster (result, time, city, tv)
+    // Chips cluster (result, time, city, tv)
     const chips = document.createElement("div");
 
     if (g.status === "final" && g.result) {
@@ -261,12 +264,15 @@
     row.appendChild(line);
     row.appendChild(chips);
     return row;
-  };
+  }
 
-  // Distribute rows by alternating (even/odd) — original behavior
-  sched.forEach((g, i) => (i % 2 === 0 ? colA : colB).appendChild(makeRow(g)));
+  // Fill Column 1 completely (top-down) with the first half,
+  // then continue in Column 2 (top-down) with the second half.
+  const splitIndex = Math.ceil(sched.length / 2);
+  sched.slice(0, splitIndex).forEach(g => colA.appendChild(makeRow(g)));
+  sched.slice(splitIndex).forEach(g => colB.appendChild(makeRow(g)));
 
-  // ----- view rotation / debug -----
+  // -------- View rotation / debug HUD --------
   const vNext = $("#view-next");
   const vAll  = $("#view-all");
   const dbg   = $("#debug");
