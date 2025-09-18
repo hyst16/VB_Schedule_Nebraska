@@ -8,59 +8,76 @@
   <!-- Cache-bust CSS so players never serve an old copy -->
   <link rel="stylesheet" href="assets/styles.css?v=2025-09-17-1" />
 
+  <meta name="theme-color" content="#000000" />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
 </head>
 <body>
-  <!-- Hero / Next game -->
-  <div id="view-next" class="view hidden">
-    <div class="bg" id="next-bg"></div>
-    <div class="next-card">
+  <!-- =========== HERO / NEXT GAME =========== -->
+  <div id="view-next" class="view hidden" aria-label="Next game">
+    <!-- Ken Burns/background image is set by JS via arena_key -->
+    <div class="bg" id="next-bg" role="img" aria-label="Arena background"></div>
+
+    <div class="next-card" aria-live="polite">
+      <!-- Logos row (rank pills are tiny white chips on the bottom-right corners) -->
       <div class="row logos">
         <div class="logo-wrap">
-          <img id="ne-logo" class="logo" alt="Nebraska" />
+          <img id="ne-logo" class="logo" alt="Nebraska" decoding="async" />
+          <!-- White pill; JS sets text like “#1” and toggles hidden -->
           <span id="ne-rank" class="rank-badge hidden"></span>
         </div>
-        <div class="vs" id="divider">vs.</div>
+
+        <!-- Divider text is “vs” or “at” (with optional dot) -->
+        <div class="vs" id="divider" aria-hidden="true">vs.</div>
+
         <div class="logo-wrap">
-          <img id="opp-logo" class="logo" alt="Opponent" />
+          <img id="opp-logo" class="logo" alt="Opponent" decoding="async" />
+          <!-- White pill; JS sets text like “#6” and toggles hidden -->
           <span id="opp-rank" class="rank-badge hidden"></span>
         </div>
       </div>
 
+      <!-- Headline: “Nebraska vs. Stanford” (opponent name is plain; no “#N ” prefix) -->
       <div id="next-opponent" class="opponent"></div>
+
+      <!-- Date/time and location line -->
       <div id="next-datetime" class="detail"></div>
       <div id="next-venue" class="detail"></div>
+
+      <!-- TV chip (fixed-size pill); JS injects logo or text fallback -->
       <div id="next-tv" class="detail"></div>
     </div>
   </div>
 
-  <!-- Compact two-column schedule -->
-  <div id="view-all" class="view hidden">
-    <div class="all-wrap"><!-- JS injects schedule here --></div>
+  <!-- =========== COMPACT TWO-COLUMN SCHEDULE =========== -->
+  <div id="view-all" class="view hidden" aria-label="Full schedule">
+    <!-- JS injects the two columns into this wrapper -->
+    <div class="all-wrap"></div>
   </div>
 
-  <div id="debug" class="debug hidden"></div>
+  <!-- Optional on-screen debug readout (enable with ?debug=1) -->
+  <div id="debug" class="debug hidden" aria-live="polite"></div>
 
   <script>
-    // UI knobs (can be overridden by URL params)
+    // ---- UI knobs (can be overridden by URL params) ----
     window.UI = {
       theme: "classic-husker",
-      rotateSeconds: 15,
-      showDividerLiteral: true,
-      showCityOnly: true,
-      kenBurns: false
+      rotateSeconds: 15,         // seconds between hero <-> schedule rotation
+      showDividerLiteral: true,  // show "vs" or "at" text in rows/hero
+      showCityOnly: true,        // city only (true) or "city • arena" (false)
+      kenBurns: false            // reserved; background movement if desired
     };
 
-    // Cache-bust data fetches
+    // ---- Cache-bust data fetches ----
     window.DATA_URL = "data/vb_schedule_normalized.json?v=" + Date.now();
     window.MANIFEST_URL = "data/arena_manifest.json?v=" + Date.now();
 
-    // URL params
+    // ---- URL params ----
     const params = new URLSearchParams(location.search);
     const rot = parseInt(params.get("rot"), 10);
     if (!isNaN(rot) && rot > 0) window.UI.rotateSeconds = rot;
+    // Dense mode is enabled by default in app.js; pass ?dense=0 to opt out.
   </script>
 
   <!-- Cache-bust JS -->
