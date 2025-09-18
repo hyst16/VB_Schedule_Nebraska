@@ -1,48 +1,65 @@
+// assets/app.js
+// Compact two-column Husker Volleyball schedule + hero.
+// Features:
+// - "Sequential" column fill (first half left, second half right)
+// - Global scale knob (?scale=0.95) that scales the schedule view
+// - Optional column width override (?colw=640)
+// - Dense mode (?dense=1)
+// - Optional flow toggle (?colflow=alternate) for even/odd fill
+// - Opponent logo + tiny rank dot placed just right of "vs/at" and left of opponent name
+// - TV chips are fixed-size pills with logos fit inside
+
 (async function () {
   const $ = (sel, el = document) => el.querySelector(sel);
 
-  // Data endpoints set in index.html (with cache-bust)
-  const DATA_URL = window.DATA_URL || "data/vb_schedule_normalized.json";
+  // -------- Config from index.html (with cache-bust applied there) --------
+  const DATA_URL     = window.DATA_URL     || "data/vb_schedule_normalized.json";
   const MANIFEST_URL = window.MANIFEST_URL || "data/arena_manifest.json";
-  const UI = window.UI || { rotateSeconds: 15, showDividerLiteral: true, showCityOnly: true };
+  const UI = window.UI || {
+    rotateSeconds: 15,
+    showDividerLiteral: true,
+    showCityOnly: true,
+  };
 
-  // URL params
+  // -------- URL params --------
   const params = new URLSearchParams(location.search);
 
-  // Global scale (0.95 etc). This scales the whole schedule view (not the page).
-  const scaleParam = parseFloat(params.get("scale"));
+  // Global schedule scale: scales the *schedule view container* (not the entire page)
+  const scaleParam  = parseFloat(params.get("scale"));
   const globalScale = !isNaN(scaleParam) && scaleParam > 0 ? scaleParam : 1;
 
-  // Optional: set column width in pixels (e.g., ?colw=640). Works alongside scale.
+  // Manual column width override (px). Works in addition to scale.
   const colwParam = parseInt(params.get("colw"), 10);
   if (!isNaN(colwParam) && colwParam > 300) {
-    // Override the CSS variable so media queries don’t cap it.
     document.documentElement.style.setProperty("--col-width", `${colwParam}px`);
   }
 
-  // Dense mode toggle (?dense=1)
+  // Dense mode compacts vertical spacing.
   const dense = params.get("dense") === "1";
   if (dense) document.body.classList.add("dense");
 
-  // Lock view (?view=next|all) + rotation seconds override
+  // View rotation + lock
   const rot = parseInt(params.get("rot"), 10);
   if (!isNaN(rot) && rot > 0) UI.rotateSeconds = rot;
   const lockView = params.get("view"); // "next" | "all"
 
+  // Column flow (default: sequential). You can pass ?colflow=alternate for even/odd.
+  const colFlow = (params.get("colflow") || "sequential").toLowerCase();
+
   // Debug HUD
   const debug = params.get("debug") === "1";
 
-  // Fetch data
+  // -------- Fetch data --------
   const sched = await fetch(DATA_URL).then(r => r.json()).then(d => d.items || []).catch(() => []);
   const manifest = await fetch(MANIFEST_URL).then(r => r.json()).catch(() => ({}));
   const arenas = Object.fromEntries(((manifest && manifest.arenas) || []).map(a => [a.arena_key, a]));
 
-  // Helpers
+  // -------- Helpers --------
   const dividerFor = (han) => (han === "A" ? "at" : "vs"); // no dot here
-  const homeClass = (han) => (han === "H" ? "is-home" : "is-away");
-  const rowResult = (g) => (g.result ? (g.result.split(" ")[0] || "") : ""); // "W"/"L"/"T"
+  const homeClass  = (han) => (han === "H" ? "is-home" : "is-away");
+  const rowResult  = (g) => (g.result ? (g.result.split(" ")[0] || "") : ""); // "W"/"L"/"T"
 
-  // Abbreviate time strings for chips
+  // Abbreviate time strings for chips (e.g., "6:00 PM CDT" -> "6 PM CDT")
   function abbrevTime(s) {
     if (!s || typeof s !== "string") return s;
     s = s.replace(/\s+/g, " ").trim();
@@ -58,14 +75,14 @@
     // "6:00 PM CDT" -> "6 PM CDT"
     const fullMatch = s.match(/^(\d{1,2})(?::(\d{2}))\s*(AM|PM)\s+([A-Z]{3})$/i);
     if (fullMatch) {
-      const hour = String(+fullMatch[1]);
-      const mins = fullMatch[2];
-      const ampm = fullMatch[3].toUpperCase();
-      const tz = fullMatch[4].toUpperCase();
+      const hour  = String(+fullMatch[1]);
+      const mins  = fullMatch[2];
+      const ampm  = fullMatch[3].toUpperCase();
+      const tz    = fullMatch[4].toUpperCase();
       return mins === "00" ? `${hour} ${ampm} ${tz}` : `${hour}:${mins} ${ampm} ${tz}`;
     }
 
-    // "6:00 PM"
+    // "6:00 PM" (no TZ)
     const noTZ = s.match(/^(\d{1,2})(?::(\d{2}))\s*(AM|PM)$/i);
     if (noTZ) {
       const hour = String(+noTZ[1]);
@@ -74,7 +91,7 @@
       return mins === "00" ? `${hour} ${ampm}` : `${hour}:${mins} ${ampm}`;
     }
 
-    return s; // TBA etc
+    return s; // TBA, etc.
   }
 
   const fmtHero = (iso, time) => {
@@ -90,24 +107,26 @@
       weekday: "short", month: "short", day: "numeric",
     });
 
-  // Choose "next" game: first not-final with a date; else last item
-  const upcoming = sched.filter(g => g.status !== "final" && g.date).sort((a,b) => a.date.localeCompare(b.date));
+  // -------- Choose "next" game: first not-final with a date; else last item --------
+  const upcoming = sched
+    .filter(g => g.status !== "final" && g.date)
+    .sort((a,b) => a.date.localeCompare(b.date));
   const nextGame = upcoming[0] || sched[sched.length - 1];
 
-  // ----- HERO (next game) -----
-  const nextBg = $("#next-bg");
-  const neLogo = $("#ne-logo");
-  const oppLogo = $("#opp-logo");
-  const nextOpp = $("#next-opponent");
-  const nextDT  = $("#next-datetime");
+  // ===================== HERO (next game) =====================
+  const nextBg    = $("#next-bg");
+  const neLogo    = $("#ne-logo");
+  const oppLogo   = $("#opp-logo");
+  const nextOpp   = $("#next-opponent");
+  const nextDT    = $("#next-datetime");
   const nextVenue = $("#next-venue");
-  const nextTV  = $("#next-tv");
+  const nextTV    = $("#next-tv");
 
   if (nextGame) {
     if (nextGame.arena_key) {
       nextBg.style.backgroundImage = `url(images/arenas/${nextGame.arena_key}.jpg)`;
     }
-    if (nextGame.nu_logo) neLogo.src  = nextGame.nu_logo;
+    if (nextGame.nu_logo)  neLogo.src  = nextGame.nu_logo;
     if (nextGame.opp_logo) oppLogo.src = nextGame.opp_logo;
 
     const divider = dividerFor(nextGame.home_away);
@@ -123,7 +142,7 @@
     const arena = nextGame.arena || "";
     nextVenue.textContent = UI.showCityOnly || !arena ? city : `${city} • ${arena}`;
 
-    // TV chip
+    // TV chip — fixed pill size; remove if image fails
     nextTV.innerHTML = "";
     if (nextGame.tv_logo) {
       const chip = document.createElement("span");
@@ -140,10 +159,10 @@
       nextTV.appendChild(chip);
     }
 
-    // rank pills (white for both)
-    const neRankEl  = $("#ne-rank");
-    const oppRankEl = $("#opp-rank");
-    const setRank = (el, rank) => {
+    // Rank pills (white for both)
+    const setRank = (sel, rank) => {
+      const el = $(sel);
+      if (!el) return;
       if (rank && Number(rank) > 0) {
         el.textContent = `#${rank}`;
         el.classList.remove("hidden");
@@ -151,11 +170,11 @@
         el.classList.add("hidden");
       }
     };
-    setRank(neRankEl, nextGame.nu_rank);
-    setRank(oppRankEl, nextGame.opp_rank);
+    setRank("#ne-rank",  nextGame.nu_rank);
+    setRank("#opp-rank", nextGame.opp_rank);
   }
 
-  // ----- COMPACT TWO-COLUMN VIEW -----
+  // ===================== COMPACT SCHEDULE (two columns) =====================
   const wrap = $("#view-all .all-wrap");
   wrap.style.transform = `scale(${globalScale})`; // global scale knob
 
@@ -167,7 +186,7 @@
   cols.appendChild(colA); cols.appendChild(colB);
   wrap.appendChild(cols);
 
-  // Helper to build logo+rank element
+  // --- Build a team mark (logo + tiny rank dot) ---
   function buildMark(url, rank) {
     const wrap = document.createElement("span");
     wrap.className = "mark-wrap";
@@ -186,45 +205,45 @@
     return wrap;
   }
 
+  // --- Build one schedule row ---
   const makeRow = (g) => {
     const row = document.createElement("div");
     row.className = `game-row ${homeClass(g.home_away)}`;
 
-    // left date stack
+    // Left date stack
     const when = document.createElement("div");
     when.className = "when";
     const dayStr = g.date ? fmtDay(g.date) : "";
     const [dow, mmmdd] = dayStr ? [dayStr.split(", ")[0], dayStr.split(", ")[1]] : ["",""];
     when.innerHTML = `<div class="date">${mmmdd || ""}</div><div class="dow">${dow || ""}</div>`;
 
-    // sentence line
+    // Sentence line
     const line = document.createElement("div");
     line.className = "line";
 
-    // Nebraska mark (with optional rank) on the far left
+    // Nebraska mark (logo+rank) on the far left
     const neWrap = buildMark(g.nu_logo, g.nu_rank);
 
-    // divider "vs"/"at"
+    // "vs"/"at"
     const divEl = document.createElement("span");
     divEl.className = "divider";
     divEl.textContent = UI.showDividerLiteral ? dividerFor(g.home_away) : "";
 
-    // --- NEW ORDER: opponent logo (with rank) immediately after "vs/at" ---
+    // Opponent logo+rank immediately after divider, then opponent name
     const oppWrap = buildMark(g.opp_logo, g.opp_rank);
 
-    // Opponent name text
     const oppSpan = document.createElement("span");
     oppSpan.className = "opp-name";
-    // Make sure the plain text name is used (ranking stays in the dot)
+    // Use plain opponent name; rankings appear only in the tiny dot
     oppSpan.textContent = g.opponent || g.title || "";
 
-    // Assemble the line
+    // Assemble the sentence
     line.appendChild(neWrap);
     line.appendChild(divEl);
-    line.appendChild(oppWrap);  // <= moved here
+    line.appendChild(oppWrap);
     line.appendChild(oppSpan);
 
-    // chips cluster (result, time, city, tv)
+    // Chips cluster (result, time, city, TV)
     const chips = document.createElement("div");
 
     if (g.status === "final" && g.result) {
@@ -261,7 +280,7 @@
     } else if (Array.isArray(g.tv) && g.tv.length) {
       const tv = document.createElement("span");
       tv.className = "chip tv";
-      tv.textContent = g.tv[0];
+      tv.textContent = g.tv[0]; // keep short; logo is preferred
       chips.appendChild(tv);
     }
 
@@ -271,12 +290,24 @@
     return row;
   };
 
-  // Fill Column 1 completely (top-down), then Column 2 (top-down)
-  const split = Math.ceil(sched.length / 2);
-  sched.slice(0, split).forEach(g => colA.appendChild(makeRow(g)));
-  sched.slice(split).forEach(g => colB.appendChild(makeRow(g)));
+  // Chronological order safeguard (normalized file is sorted, but enforce anyway)
+  const sorted = [...sched].sort((a, b) =>
+    (a.date || "").localeCompare(b.date || "") ||
+    (a.time_local || "").localeCompare(b.time_local || "")
+  );
 
-  // ----- view rotation / debug -----
+  // Column fill
+  if (colFlow === "alternate") {
+    // Even/odd alternation (for comparison / legacy behavior)
+    sorted.forEach((g, i) => (i % 2 === 0 ? colA : colB).appendChild(makeRow(g)));
+  } else {
+    // Default: sequential — first half fills left, second half fills right (both top-down)
+    const splitIndex = Math.ceil(sorted.length / 2);
+    sorted.slice(0,  splitIndex).forEach(g => colA.appendChild(makeRow(g)));
+    sorted.slice(splitIndex).forEach(g => colB.appendChild(makeRow(g)));
+  }
+
+  // -------- View rotation / debug HUD --------
   const vNext = $("#view-next");
   const vAll  = $("#view-all");
   const dbg   = $("#debug");
@@ -298,6 +329,9 @@
 
   if (debug) {
     dbg.classList.remove("hidden");
-    dbg.textContent = `games: ${sched.length} • next: ${nextGame ? (nextGame.opponent || "") : "n/a"} • scale: ${globalScale} • colw: ${isNaN(colwParam) ? "default" : colwParam + "px"}`;
+    dbg.textContent =
+      `games: ${sorted.length} • next: ${nextGame ? (nextGame.opponent || "") : "n/a"} ` +
+      `• scale: ${globalScale} • colw: ${isNaN(colwParam) ? "default" : colwParam + "px"} ` +
+      `• flow: ${colFlow}`;
   }
 })();
