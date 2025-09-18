@@ -6,6 +6,15 @@
   const MANIFEST_URL = window.MANIFEST_URL || "data/arena_manifest.json";
   const UI = window.UI || { rotateSeconds: 15, showDividerLiteral: true, showCityOnly: true };
 
+  // URL params
+  const params = new URLSearchParams(location.search);
+  const rot = parseInt(params.get("rot"), 10);
+  if (!isNaN(rot) && rot > 0) UI.rotateSeconds = rot;
+  const lockView = params.get("view"); // "next" | "all"
+  const debug = params.get("debug") === "1";
+  const dense = params.get("dense") === "1";
+  if (dense) document.body.classList.add("dense");
+
   // Fetch data
   const sched = await fetch(DATA_URL).then(r => r.json()).then(d => d.items || []).catch(() => []);
   const manifest = await fetch(MANIFEST_URL).then(r => r.json()).catch(() => ({}));
@@ -16,13 +25,53 @@
   const homeClass = (han) => (han === "H" ? "is-home" : "is-away");
   const rowResult = (g) => (g.result ? (g.result.split(" ")[0] || "") : ""); // "W"/"L"/"T"
 
+  // Abbreviate time strings for chips
+  function abbrevTime(s) {
+    if (!s || typeof s !== "string") return s;
+
+    // Normalize multiple spaces
+    s = s.replace(/\s+/g, " ").trim();
+
+    // Case: "8:00 OR 9:00 PM CST" -> "8 or 9 PM CST"
+    const orMatch = s.match(/^(\d{1,2})(?::00)?\s*OR\s*(\d{1,2})(?::00)?\s*(AM|PM)\s+([A-Z]{3})$/i);
+    if (orMatch) {
+      const h1 = String(+orMatch[1]); // drop leading zero
+      const h2 = String(+orMatch[2]);
+      const ampm = orMatch[3].toUpperCase();
+      const tz = orMatch[4].toUpperCase();
+      return `${h1} or ${h2} ${ampm} ${tz}`;
+    }
+
+    // Case: "6:00 PM CDT" -> "6 PM CDT"
+    const fullMatch = s.match(/^(\d{1,2})(?::(\d{2}))\s*(AM|PM)\s+([A-Z]{3})$/i);
+    if (fullMatch) {
+      const hour = String(+fullMatch[1]);
+      const mins = fullMatch[2];
+      const ampm = fullMatch[3].toUpperCase();
+      const tz = fullMatch[4].toUpperCase();
+      return mins === "00" ? `${hour} ${ampm} ${tz}` : `${hour}:${mins} ${ampm} ${tz}`;
+    }
+
+    // Case: "6:00 PM" (no tz)
+    const noTZ = s.match(/^(\d{1,2})(?::(\d{2}))\s*(AM|PM)$/i);
+    if (noTZ) {
+      const hour = String(+noTZ[1]);
+      const mins = noTZ[2];
+      const ampm = noTZ[3].toUpperCase();
+      return mins === "00" ? `${hour} ${ampm}` : `${hour}:${mins} ${ampm}`;
+    }
+
+    // Leave TBA or other formats as-is
+    return s;
+  }
+
   const fmtHero = (iso, time) => {
-    if (!iso) return time || "";
+    if (!iso) return time ? abbrevTime(time) : "";
     const d = new Date(iso + "T00:00:00");
     const weekday = d.toLocaleDateString("en-US", { weekday: "long" }).toUpperCase();
     const mon = d.toLocaleDateString("en-US", { month: "short" });
     const day = d.getDate();
-    return [weekday, `${mon} ${day}`, time].filter(Boolean).join(" • ");
+    return [weekday, `${mon} ${day}`, abbrevTime(time || "")].filter(Boolean).join(" • ");
   };
   const fmtDay = (iso) =>
     new Date(iso + "T00:00:00").toLocaleDateString("en-US", {
@@ -43,40 +92,34 @@
   const nextTV  = $("#next-tv");
 
   if (nextGame) {
-    // background by arena key (optional)
     if (nextGame.arena_key) {
       nextBg.style.backgroundImage = `url(images/arenas/${nextGame.arena_key}.jpg)`;
     }
 
-    // logos
     if (nextGame.nu_logo) neLogo.src  = nextGame.nu_logo;
     if (nextGame.opp_logo) oppLogo.src = nextGame.opp_logo;
 
-    // divider text with single trailing dot (if enabled)
     const divider = dividerFor(nextGame.home_away);
     $("#divider").textContent = UI.showDividerLiteral ? (divider + ".") : "";
 
-    // headline parity with football
     const headline =
       (nextGame.home_away === "A" ? "Nebraska at " : "Nebraska vs. ") +
       (nextGame.title || nextGame.opponent || "");
     nextOpp.textContent = headline;
 
-    // datetime line + venue
     nextDT.textContent = fmtHero(nextGame.date, nextGame.time_local);
     const city = nextGame.city || "";
     const arena = nextGame.arena || "";
     nextVenue.textContent = UI.showCityOnly || !arena ? city : `${city} • ${arena}`;
 
-    // TV chip (logo preferred)
+    // TV chip — fixed pill size; remove if image fails
     nextTV.innerHTML = "";
     if (nextGame.tv_logo) {
       const chip = document.createElement("span");
       chip.className = "tv-chip";
       const img = new Image();
-      img.src = nextGame.tv_logo;
-      img.alt = "TV";
-      img.onerror = () => chip.remove(); // avoid ghost pill if broken
+      img.src = nextGame.tv_logo; img.alt = "TV";
+      img.onerror = () => chip.remove();
       chip.appendChild(img);
       nextTV.appendChild(chip);
     } else if (Array.isArray(nextGame.tv) && nextGame.tv.length) {
@@ -147,7 +190,7 @@
     // chips cluster
     const chips = document.createElement("div");
 
-    // result pill (if final)
+    // result pill
     if (g.status === "final" && g.result) {
       const res = document.createElement("span");
       res.className = `result ${rowResult(g)}`;
@@ -155,11 +198,11 @@
       chips.appendChild(res);
     }
 
-    // time chip
+    // time chip (abbreviated)
     if (g.time_local) {
       const t = document.createElement("span");
       t.className = "chip";
-      t.textContent = g.time_local;
+      t.textContent = abbrevTime(g.time_local);
       chips.appendChild(t);
     }
 
@@ -173,20 +216,19 @@
       chips.appendChild(c);
     }
 
-    // TV chip
+    // TV chip — fixed pill size; remove if logo fails
     if (g.tv_logo) {
       const tv = document.createElement("span");
       tv.className = "chip tv";
       const img = new Image();
-      img.src = g.tv_logo;
-      img.alt = "TV";
+      img.src = g.tv_logo; img.alt = "TV";
       img.onerror = () => tv.remove();
       tv.appendChild(img);
       chips.appendChild(tv);
     } else if (Array.isArray(g.tv) && g.tv.length) {
       const tv = document.createElement("span");
-      tv.className = "chip";
-      tv.textContent = g.tv.join(" • ");
+      tv.className = "chip tv";
+      tv.textContent = g.tv[0]; // keep short in dense layout; logo preferred anyway
       chips.appendChild(tv);
     }
 
@@ -203,9 +245,6 @@
   const vNext = $("#view-next");
   const vAll  = $("#view-all");
   const dbg   = $("#debug");
-  const params = new URLSearchParams(location.search);
-  const lockView = params.get("view"); // "next" | "all"
-  const debug = params.get("debug") === "1";
 
   function show(which) {
     vNext.classList.toggle("hidden", which !== "next");
