@@ -1,6 +1,4 @@
-/* =======================
-   Global + hero styles
-   ======================= */
+/* Global + hero styles (football parity) */
 
 :root { 
   --safe: 25px; 
@@ -9,7 +7,7 @@
   --muted: #c9c9c9;
 
   /* Two-column schedule tuning */
-  --col-width: 780px;
+  --col-width: 780px;   /* can be overridden via ?colw=### */
   --cols-gap: 40px;
   --schedule-side-pad: 60px;
 
@@ -17,18 +15,6 @@
   --tv-chip-width: 64px;   /* ~FOX chip width */
   --tv-chip-height: 24px;  /* ~FOX chip height */
   --tv-chip-img-h: 16px;   /* logo height inside the pill */
-
-  /* NEW: global UI scale (schedule view) */
-  --ui-scale: 1;
-}
-
-/* NEW: wrapper we scale uniformly.
-   We counter-scale its metrics so the grid still fills the viewport. */
-.scale-wrap {
-  transform: scale(var(--ui-scale));
-  transform-origin: top left;
-  width: calc(100% / var(--ui-scale));
-  height: calc(100% / var(--ui-scale));
 }
 
 * { box-sizing: border-box; }
@@ -58,20 +44,19 @@ html,body {
   gap:12px;
   margin-bottom:8px;
 }
-
-/* Team logos + rank pills (hero) */
 .logo-wrap { position: relative; display: inline-block; }
 .logo { width:72px; height:72px; object-fit:contain; display:block; }
 
 .rank-badge {
-  /* White pill for BOTH teams, lightly overlapping bottom-right of the logo */
   position:absolute; right:-6px; bottom:-6px;
-  padding:3px 8px;
+  padding:2px 6px;
   font-size:12px; font-weight:800; line-height:1;
   color:#000; background:#fff;
   border-radius:999px; border:1px solid rgba(0,0,0,.2);
   box-shadow:0 1px 2px rgba(0,0,0,.35);
 }
+/* Keep Nebraska white too per your preference */
+.rank-badge.ne { background:#fff; color:#000; border-color:rgba(0,0,0,.25); }
 
 .vs { font-weight:800; font-size:32px; letter-spacing:.5px; }
 .opponent { font-size:40px; font-weight:800; line-height:1.1; }
@@ -100,6 +85,7 @@ html,body {
   padding: var(--safe); 
   display: flex; 
   justify-content: center; 
+  transform-origin: top left; /* global scale uses this */
 }
 
 #view-all .cols {
@@ -151,32 +137,16 @@ html,body {
 
 #view-all .line { display:flex; align-items:center; gap:6px; min-width:0; flex:1; }
 
-/* ===== Logo + tiny rank dot in schedule rows ===== */
-
-/* Wrapper is RELATIVE so the dot can anchor; size matches the image. */
-#view-all .logo-badge {
-  position: relative;
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  flex: 0 0 auto;
-  border-radius: 6px;
-  background: rgba(255,255,255,0.10);
-  border: 1px solid rgba(255,255,255,0.18);
-  overflow: visible; /* allow the dot to hang over the corner */
-}
-
-/* The actual logo image */
-#view-all .logo-badge .mark {
+/* Logo + tiny rank wrapper so the dot sits relative to the logo */
+#view-all .mark-wrap { position: relative; display:inline-block; }
+#view-all .line .mark {
+  height:22px; width:22px; object-fit:contain; flex:0 0 auto;
+  padding:2px; border-radius:6px;
+  background:rgba(255,255,255,0.10); border:1px solid rgba(255,255,255,0.18);
   display:block;
-  width:100%;
-  height:100%;
-  object-fit:contain;
-  padding:2px;
-  border-radius:6px;
 }
 
-/* Tiny white rank dot, bottom-right, barely overlapping */
+/* Tiny white rank dot, bottom-right, barely overlapping (scales with transform) */
 #view-all .rank-dot {
   position: absolute;
   right:-6px;
@@ -193,7 +163,6 @@ html,body {
   font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:26ch;
 }
 
-/* Universal chip */
 #view-all .chip {
   font-size:13px; padding:4px 8px;
   border-radius:999px; border:1px solid rgba(255,255,255,0.18);
@@ -243,11 +212,7 @@ body.dense #view-all .when .date { font-size:14px; }
 body.dense #view-all .when .dow  { font-size:12px; margin-top:1px; }
 
 body.dense #view-all .line { gap:5px; }
-
-/* shrink logo-badge in dense */
-body.dense #view-all .logo-badge { width:19px; height:19px; }
-body.dense #view-all .logo-badge .mark { padding:1px; }
-
+body.dense #view-all .mark-wrap .mark { height:19px; width:19px; padding:1px; }
 body.dense #view-all .line .divider { font-size: 92%; }
 body.dense #view-all .line .opp-name { max-width:24ch; }
 
@@ -274,18 +239,18 @@ body.dense #view-all .chip.tv img { height: var(--tv-chip-img-h); }
   .vs { font-size:40px; }
   .opponent { font-size:48px; }
   .detail { font-size:26px; }
-  .rank-badge { font-size:14px; padding:4px 10px; }
+  .rank-badge { font-size:14px; }
 
   #view-all .game-row { min-height:56px; padding:10px 14px; }
   #view-all .when { width:84px; }
   #view-all .when .date { font-size:18px; }
   #view-all .when .dow  { font-size:14px; }
-  #view-all .logo-badge { width:24px; height:24px; }
+  #view-all .mark-wrap .mark { height:24px; width:24px; }
   #view-all .chip { font-size:14px; }
   #view-all .result { font-size:15px; }
 }
 
-/* Smaller 1366/1080 TV screens — shrink cols */
+/* Smaller 1366/1080 TV screens — shrink cols (can be overridden by ?colw=###) */
 @media (max-width: 1600px) {
   :root { --col-width:560px; --cols-gap:24px; }
 }
