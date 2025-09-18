@@ -1,12 +1,16 @@
 #!/usr/bin/env python3
 """
-Normalize Huskers VB raw scrape into a consistent structure for the UI.
-- Fills ISO dates (parsing "SEP 20" if needed)
-- Keeps only current-season rows
-- Preserves ranks and builds a short 'title' ("#6 Stanford")
-"""
+Normalize the raw volleyball scrape into a compact, UI-friendly JSON.
 
-import json, re
+Key behaviors:
+- Keep opponent title as plain text (no "#N " prefix).
+- Preserve nu_rank / opp_rank as numbers for pill rendering.
+- Parse dates robustly (prefer ISO from scraper; fallback to visible month/day).
+- Filter out games not in the current season.
+- Sort chronologically.
+"""
+import json
+import re
 from pathlib import Path
 from datetime import datetime
 from dateutil import tz
@@ -17,14 +21,14 @@ OUT  = DATA / "vb_schedule_normalized.json"
 
 CENTRAL = tz.gettz("America/Chicago")
 
-# Simple month lookup by 3-letter key
+# Canonical 3-letter month mapping (case-insensitive; allows "Sept."/"September")
 MONTH_IDX = {
     "jan":1, "feb":2, "mar":3, "apr":4, "may":5, "jun":6,
     "jul":7, "aug":8, "sep":9, "oct":10, "nov":11, "dec":12,
 }
 
 def slug(s: str) -> str:
-    """URL-ish key maker (for arena image lookups etc.)."""
+    """Lowercase, dash-separated key."""
     s = (s or "").lower().strip()
     s = re.sub(r"[^a-z0-9]+", "-", s)
     return re.sub(r"-+", "-", s).strip("-")
@@ -40,25 +44,15 @@ def parse_date_from_text(label: str, season_year: int) -> str | None:
     if not m:
         return None
     mon_token = m.group(1).replace(".", "")
-    mon_key = mon_token[:3].lower()   # "September" -> "sep"
+    mon_key = mon_token[:3].lower()   # AUG -> aug, Sept -> sep, September -> sep
     mon = MONTH_IDX.get(mon_key)
     if not mon:
         return None
     day = int(m.group(2))
     return f"{season_year:04d}-{mon:02d}-{day:02d}"
 
-def parse_rank_from_title(title: str) -> int | None:
-    """
-    Fallback: if a title starts like '#12 Opponent', return 12.
-    (We prefer the scraper's explicit fields, but belts & suspenders.)
-    """
-    if not title:
-        return None
-    m = re.match(r"\s*#\s*(\d+)\b", title)
-    return int(m.group(1)) if m else None
-
 def normalize(items: list, scraped_at: str):
-    # Determine the season year from the scrape timestamp; fall back to 'now' in Central
+    """Convert raw items to a simple, sorted list suitable for the UI."""
     try:
         season_year = datetime.fromisoformat((scraped_at or "").replace("Z", "+00:00")).year
     except Exception:
@@ -66,52 +60,41 @@ def normalize(items: list, scraped_at: str):
 
     rows = []
     for it in items:
-        # --- Date: prefer ISO from scraper; else parse from visible label ---
+        # --- DATE: prefer ISO, else parse visible month/day text ---
         date_iso = it.get("date") or parse_date_from_text(it.get("date_text"), season_year)
         if not date_iso:
-            # Can't place it on the calendar → skip
-            continue
+            continue  # skip if we still couldn't get a date
 
-        # Keep only rows in this season (guards against old pages lingering)
+        # --- Keep only rows from the current season ---
         if not str(date_iso).startswith(f"{season_year}-"):
             continue
 
-        # Home/Away/Neutral
         han = it.get("venue_type") or "N"
 
-        # Clean city/arena; strip "presented by ..."
         city  = (it.get("city") or "").strip() or None
         arena = (it.get("arena") or "").strip() or None
         if arena:
+            # Trim any sponsor suffixes after "presented by ..."
             arena = re.sub(r"\s*presented by\b.*$", "", arena, flags=re.I).strip()
         arena_key = slug(arena or "unknown")
 
-        # Status + result
+        # --- Result / status ---
         res = it.get("result")
         status = "final" if res else "scheduled"
         result_str = None
         result_css = None
         if res:
-            result_str = f"{res.get('outcome')} {res.get('sets')}"  # e.g., "W 3-1"
+            # Example: {"outcome": "W", "sets": "3-1"} -> "W 3-1"
+            result_str = f"{res.get('outcome')} {res.get('sets')}"
             result_css = {"W": "W", "L": "L", "T": "T"}.get(res.get("outcome"))
 
-        # Names + ranks
         opp = it.get("opponent_name") or "TBA"
         opp_rank = it.get("opp_rank")
         nu_rank  = it.get("nu_rank")
 
-        # Best-effort rank fallback from a title if we didn't get explicit opp_rank
-        if opp_rank is None:
-            maybe = parse_rank_from_title(opp)
-            if maybe is not None:
-                opp_rank = maybe
-                # Remove "#N " prefix from display name if present
-                opp = re.sub(r"^\s*#\s*\d+\s+", "", opp).strip() or opp
+        # IMPORTANT: title is plain text — no "#N " prefix here
+        title = opp
 
-        # Title shown in UI rows: "#6 Stanford" or just "Stanford"
-        title = f"{('#'+str(opp_rank)+' ') if opp_rank else ''}{opp}".strip()
-
-        # Compose final row
         rows.append({
             "date": date_iso,
             "time_local": it.get("time_local"),
@@ -119,14 +102,14 @@ def normalize(items: list, scraped_at: str):
             "nu_rank": nu_rank,
             "opponent": opp,
             "opp_rank": opp_rank,
-            "title": title,
+            "title": title,                   # plain, no rank prefix
             "arena": arena,
             "city": city,
             "arena_key": arena_key,
             "nu_logo": it.get("nebraska_logo_url"),
             "opp_logo": it.get("opponent_logo_url"),
             "tv_logo": it.get("tv_network_logo_url"),
-            "tv": it.get("networks") or [],    # currently unused, but preserved
+            "tv": it.get("networks") or [],   # rarely used; logos preferred
             "status": status,
             "result": result_str,
             "result_css": result_css,
@@ -134,7 +117,7 @@ def normalize(items: list, scraped_at: str):
             "links": it.get("links") or [],
         })
 
-    # Sort by date (then time if present)
+    # Sorted by date then time (null times sorted last)
     rows.sort(key=lambda x: (x.get("date") or "9999-12-31", x.get("time_local") or "23:59"))
     return rows
 
