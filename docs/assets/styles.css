@@ -10,6 +10,11 @@
   --col-width: 780px;
   --cols-gap: 40px;
   --schedule-side-pad: 60px;
+
+  /* TV chip footprint (use everywhere for consistency) */
+  --tv-chip-width: 64px;   /* ~FOX chip width */
+  --tv-chip-height: 24px;  /* ~FOX chip height */
+  --tv-chip-img-h: 16px;   /* logo height inside the pill */
 }
 
 * { box-sizing: border-box; }
@@ -56,16 +61,21 @@ html,body {
 .opponent { font-size:40px; font-weight:800; line-height:1.1; }
 .detail { font-size:22px; color:var(--muted); }
 
-/* TV chip inside the hero card */
+/* TV chip inside the hero card — fixed-size pill */
 .next-card .tv-chip {
-  display:inline-flex; align-items:center; gap:8px;
-  padding: 4px 10px;
+  display:inline-flex; align-items:center; justify-content:center;
+  width: var(--tv-chip-width);
+  height: var(--tv-chip-height);
   border-radius:999px; background:#fff; color:#000;
   border:1px solid rgba(0,0,0,.2);
   overflow: hidden;
 }
 .next-card .tv-chip img {
-  height:20px; max-width:80px; width:auto; display:block; object-fit:contain;
+  height: var(--tv-chip-img-h);
+  max-width: 100%;
+  width: auto;
+  display:block;
+  object-fit: contain;
 }
 
 /* ------------- COMPACT SCHEDULE (two fixed columns) ------------- */
@@ -144,8 +154,22 @@ html,body {
 }
 #view-all .chip.city { color:var(--muted); }
 
-#view-all .chip.tv { background:#fff; color:#000; border-color:rgba(0,0,0,0.2); padding:2px 8px; overflow:hidden; }
-#view-all .chip.tv img { display:block; height:18px; max-width:80px; width:auto; object-fit:contain; }
+/* Fixed-size TV chip in the schedule list */
+#view-all .chip.tv {
+  background:#fff; color:#000; border-color:rgba(0,0,0,0.2);
+  overflow:hidden;
+  width: var(--tv-chip-width);
+  height: var(--tv-chip-height);
+  padding: 0 8px;
+  justify-content: center;
+}
+#view-all .chip.tv img { 
+  display:block; 
+  height: var(--tv-chip-img-h); 
+  width:auto; 
+  max-width:100%; 
+  object-fit:contain; 
+}
 
 /* Result pill */
 #view-all .result {
@@ -155,6 +179,35 @@ html,body {
 #view-all .result.W { background:#1a6123; }
 #view-all .result.L { background:#6b1b1b; }
 #view-all .result.T { background:#3a3f4b; }
+
+/* ---------- DENSE MODE (shrink ~25–30% vertically) ---------- */
+
+body.dense #view-all .game-row { 
+  min-height: 40px; 
+  padding: 0 10px; 
+  gap: 6px; 
+  border-radius: 10px;
+}
+body.dense #view-all .game-row::before { width:2px; }
+
+body.dense #view-all .when { width:60px; }
+body.dense #view-all .when .date { font-size:14px; }
+body.dense #view-all .when .dow  { font-size:12px; margin-top:1px; }
+
+body.dense #view-all .line { gap:5px; }
+body.dense #view-all .line .mark { height:19px; width:19px; padding:1px; }
+body.dense #view-all .line .divider { font-size: 92%; }
+body.dense #view-all .line .opp-name { max-width:24ch; }
+
+body.dense #view-all .chip { font-size:12px; padding:3px 7px; gap:5px; }
+body.dense #view-all .result { font-size:13px; padding:3px 8px; }
+
+body.dense #view-all .chip.tv {
+  width: var(--tv-chip-width);
+  height: var(--tv-chip-height);
+  padding: 0 6px;
+}
+body.dense #view-all .chip.tv img { height: var(--tv-chip-img-h); }
 
 /* Debug badge */
 .debug {
@@ -177,8 +230,8 @@ html,body {
   #view-all .when .dow  { font-size:14px; }
   #view-all .line .mark { height:24px; width:24px; }
   #view-all .chip { font-size:14px; }
-  #view-all .chip.tv img { height:20px; }
   #view-all .result { font-size:15px; }
+  /* TV chips keep same proportions, scale visually with higher DPI displays */
 }
 
 /* Smaller 1366/1080 TV screens — shrink cols */
