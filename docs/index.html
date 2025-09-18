@@ -2,26 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <!-- Use the whole screen, even behind notches / rounded corners -->
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Husker Volleyball — Auto Schedule</title>
 
-  <!-- Cache-bust CSS so the player can’t serve an old copy -->
-  <link rel="stylesheet" href="assets/styles.css?v=2025-09-16-1" />
+  <!-- Cache-bust CSS so players never serve an old copy -->
+  <link rel="stylesheet" href="assets/styles.css?v=2025-09-17-1" />
 
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
 </head>
 <body>
+  <!-- Hero / Next game -->
   <div id="view-next" class="view hidden">
     <div class="bg" id="next-bg"></div>
     <div class="next-card">
       <div class="row logos">
-        <img id="ne-logo" class="logo" alt="Nebraska" />
+        <div class="logo-wrap">
+          <img id="ne-logo" class="logo" alt="Nebraska" />
+          <span id="ne-rank" class="rank-badge hidden"></span>
+        </div>
         <div class="vs" id="divider">vs.</div>
-        <img id="opp-logo" class="logo" alt="Opponent" />
+        <div class="logo-wrap">
+          <img id="opp-logo" class="logo" alt="Opponent" />
+          <span id="opp-rank" class="rank-badge hidden"></span>
+        </div>
       </div>
+
       <div id="next-opponent" class="opponent"></div>
       <div id="next-datetime" class="detail"></div>
       <div id="next-venue" class="detail"></div>
@@ -29,33 +36,34 @@
     </div>
   </div>
 
+  <!-- Compact two-column schedule -->
   <div id="view-all" class="view hidden">
-    <div class="all-wrap"><!-- JS injects .cols → .col → .game-row here --></div>
+    <div class="all-wrap"><!-- JS injects schedule here --></div>
   </div>
 
   <div id="debug" class="debug hidden"></div>
 
   <script>
-    // UI options à la football
+    // UI knobs (can be overridden by URL params)
     window.UI = {
       theme: "classic-husker",
       rotateSeconds: 15,
-      showDividerLiteral: true, // show "vs." / "at"
-      showCityOnly: true,       // show city without arena in the compact row if needed
+      showDividerLiteral: true,
+      showCityOnly: true,
       kenBurns: false
     };
-    const params = new URLSearchParams(location.search);
-    const rot = parseInt(params.get("rot"),10);
-    if (!isNaN(rot) && rot > 0) window.UI.rotateSeconds = rot;
-    const lockView = params.get("view"); // "next" or "all"
-    const debug = params.get("debug") === "1";
 
     // Cache-bust data fetches
     window.DATA_URL = "data/vb_schedule_normalized.json?v=" + Date.now();
     window.MANIFEST_URL = "data/arena_manifest.json?v=" + Date.now();
+
+    // URL params
+    const params = new URLSearchParams(location.search);
+    const rot = parseInt(params.get("rot"), 10);
+    if (!isNaN(rot) && rot > 0) window.UI.rotateSeconds = rot;
   </script>
 
-  <!-- Cache-bust JS so new scaling logic definitely loads -->
-  <script src="assets/app.js?v=2025-09-16-1"></script>
+  <!-- Cache-bust JS -->
+  <script src="assets/app.js?v=2025-09-17-1"></script>
 </body>
 </html>
