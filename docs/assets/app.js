@@ -271,8 +271,10 @@
     return row;
   };
 
-  // Fill column A top-down, then column B top-down (reading order)
-  sched.forEach((g, i) => (i % 2 === 0 ? colA : colB).appendChild(makeRow(g)));
+  // Fill Column 1 completely (top-down), then Column 2 (top-down)
+  const split = Math.ceil(sched.length / 2);
+  sched.slice(0, split).forEach(g => colA.appendChild(makeRow(g)));
+  sched.slice(split).forEach(g => colB.appendChild(makeRow(g)));
 
   // ----- view rotation / debug -----
   const vNext = $("#view-next");
