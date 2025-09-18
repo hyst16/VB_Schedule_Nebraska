@@ -1,47 +1,55 @@
-/**
- * Volleyball schedule UI (hero + two-column compact list).
- * - Dense layout is ON by default (pass ?dense=0 to turn off).
- * - TV chips are fixed-size pills; logos scale to fit inside.
- * - Tiny rank dots appear on the mini logos in the schedule list.
- * - Hero logos show rank pills (if ranks exist).
- */
+/* eslint-disable */
 (async function () {
+  // ---------- tiny helper ----------
   const $ = (sel, el = document) => el.querySelector(sel);
 
-  // -------- Config and inputs --------
-  // Data endpoints (set in index.html with cache-busting query strings)
+  // ---------- data + ui config ----------
   const DATA_URL = window.DATA_URL || "data/vb_schedule_normalized.json";
   const MANIFEST_URL = window.MANIFEST_URL || "data/arena_manifest.json";
-  const UI = window.UI || { rotateSeconds: 15, showDividerLiteral: true, showCityOnly: true };
+  const UI = window.UI || {
+    rotateSeconds: 15,
+    showDividerLiteral: true,
+    showCityOnly: true,
+  };
 
-  // URL params (debug, view lock, rotation, dense override)
+  // URL params
   const params = new URLSearchParams(location.search);
   const rot = parseInt(params.get("rot"), 10);
   if (!isNaN(rot) && rot > 0) UI.rotateSeconds = rot;
+
   const lockView = params.get("view"); // "next" | "all"
   const debug = params.get("debug") === "1";
 
-  // Dense mode: default ON. Use ?dense=0 to disable.
-  const dense = params.get("dense") !== "0";
-  if (dense) document.body.classList.add("dense");
+  // Dense is default; allow ?dense=0 to opt out
+  const denseParam = params.get("dense");
+  if (denseParam !== "0") document.body.classList.add("dense");
 
-  // -------- Data fetch --------
-  const sched = await fetch(DATA_URL).then(r => r.json()).then(d => d.items || []).catch(() => []);
-  const manifest = await fetch(MANIFEST_URL).then(r => r.json()).catch(() => ({}));
-  const arenas = Object.fromEntries(((manifest && manifest.arenas) || []).map(a => [a.arena_key, a]));
+  // ---------- fetch data ----------
+  const sched = await fetch(DATA_URL)
+    .then((r) => r.json())
+    .then((d) => d.items || [])
+    .catch(() => []);
 
-  // -------- Small helpers --------
-  const dividerFor = (han) => (han === "A" ? "at" : "vs"); // we add the dot in CSS/strings if wanted
+  const manifest = await fetch(MANIFEST_URL)
+    .then((r) => r.json())
+    .catch(() => ({}));
+  const arenas =
+    Object.fromEntries(((manifest && manifest.arenas) || []).map((a) => [a.arena_key, a])) || {};
+
+  // ---------- helpers ----------
+  const dividerFor = (han) => (han === "A" ? "at" : "vs"); // no trailing dot here
   const homeClass = (han) => (han === "H" ? "is-home" : "is-away");
   const rowResult = (g) => (g.result ? (g.result.split(" ")[0] || "") : ""); // "W"/"L"/"T"
 
-  // Abbreviate time strings for the tighter chips
+  // Abbreviate time strings for pills
   function abbrevTime(s) {
     if (!s || typeof s !== "string") return s;
     s = s.replace(/\s+/g, " ").trim();
 
     // "8:00 OR 9:00 PM CST" -> "8 or 9 PM CST"
-    const orMatch = s.match(/^(\d{1,2})(?::00)?\s*OR\s*(\d{1,2})(?::00)?\s*(AM|PM)\s+([A-Z]{3})$/i);
+    const orMatch = s.match(
+      /^(\d{1,2})(?::00)?\s*OR\s*(\d{1,2})(?::00)?\s*(AM|PM)\s+([A-Z]{3})$/i
+    );
     if (orMatch) {
       const h1 = String(+orMatch[1]);
       const h2 = String(+orMatch[2]);
@@ -50,7 +58,7 @@
       return `${h1} or ${h2} ${ampm} ${tz}`;
     }
 
-    // "6:00 PM CDT" -> "6 PM CDT" (drop :00)
+    // "6:00 PM CDT" -> "6 PM CDT"
     const fullMatch = s.match(/^(\d{1,2})(?::(\d{2}))\s*(AM|PM)\s+([A-Z]{3})$/i);
     if (fullMatch) {
       const hour = String(+fullMatch[1]);
@@ -60,7 +68,7 @@
       return mins === "00" ? `${hour} ${ampm} ${tz}` : `${hour}:${mins} ${ampm} ${tz}`;
     }
 
-    // "6:00 PM" (no TZ) -> "6 PM"
+    // "6:00 PM" (no tz)
     const noTZ = s.match(/^(\d{1,2})(?::(\d{2}))\s*(AM|PM)$/i);
     if (noTZ) {
       const hour = String(+noTZ[1]);
@@ -69,11 +77,10 @@
       return mins === "00" ? `${hour} ${ampm}` : `${hour}:${mins} ${ampm}`;
     }
 
-    // TBA or unknown → leave
+    // leave TBA, etc.
     return s;
   }
 
-  // Nice hero date line: "SATURDAY • Sep 20 • 8 PM CDT"
   const fmtHero = (iso, time) => {
     if (!iso) return time ? abbrevTime(time) : "";
     const d = new Date(iso + "T00:00:00");
@@ -83,58 +90,66 @@
     return [weekday, `${mon} ${day}`, abbrevTime(time || "")].filter(Boolean).join(" • ");
   };
 
-  // Short date for the schedule rows (left stack)
   const fmtDay = (iso) =>
     new Date(iso + "T00:00:00").toLocaleDateString("en-US", {
-      weekday: "short", month: "short", day: "numeric",
+      weekday: "short",
+      month: "short",
+      day: "numeric",
     });
 
-  // Choose "next" game: first non-final with a date; otherwise last item as fallback
-  const upcoming = sched.filter(g => g.status !== "final" && g.date).sort((a,b) => a.date.localeCompare(b.date));
+  // ---------- pick next game ----------
+  const upcoming = sched
+    .filter((g) => g.status !== "final" && g.date)
+    .sort((a, b) => a.date.localeCompare(b.date));
   const nextGame = upcoming[0] || sched[sched.length - 1];
 
-  // -------- HERO WIRING --------
+  // ---------- HERO (next game) ----------
   const nextBg = $("#next-bg");
   const neLogo = $("#ne-logo");
   const oppLogo = $("#opp-logo");
+  const neRankEl = $("#ne-rank");
+  const oppRankEl = $("#opp-rank");
   const nextOpp = $("#next-opponent");
-  const nextDT  = $("#next-datetime");
+  const nextDT = $("#next-datetime");
   const nextVenue = $("#next-venue");
-  const nextTV  = $("#next-tv");
+  const nextTV = $("#next-tv");
 
   if (nextGame) {
-    // Background arena image if we have a key
+    // Background based on arena key (if you have an image)
     if (nextGame.arena_key) {
       nextBg.style.backgroundImage = `url(images/arenas/${nextGame.arena_key}.jpg)`;
     }
 
     // Logos
-    if (nextGame.nu_logo) neLogo.src  = nextGame.nu_logo;
+    if (nextGame.nu_logo) neLogo.src = nextGame.nu_logo;
     if (nextGame.opp_logo) oppLogo.src = nextGame.opp_logo;
 
-    // Divider text ("vs."/"at")
+    // Divider punctuation in hero (optional)
     const divider = dividerFor(nextGame.home_away);
-    $("#divider").textContent = UI.showDividerLiteral ? (divider + ".") : "";
+    $("#divider").textContent = UI.showDividerLiteral ? divider + "." : "";
 
-    // "Nebraska vs. Stanford"
+    // Headline: "Nebraska vs. Pittsburgh" — opponent name is plain, no "#N " prefix
+    const cleanOpponent = (nextGame.opponent || "").replace(/^\s*#\s*\d+\s+/, "");
     const headline =
-      (nextGame.home_away === "A" ? "Nebraska at " : "Nebraska vs. ") +
-      (nextGame.title || nextGame.opponent || "");
+      (nextGame.home_away === "A" ? "Nebraska at " : "Nebraska vs. ") + cleanOpponent;
     nextOpp.textContent = headline;
 
-    // Date/time + venue line
+    // Date / time
     nextDT.textContent = fmtHero(nextGame.date, nextGame.time_local);
+
+    // Location line (city-only or city • arena)
     const city = nextGame.city || "";
     const arena = nextGame.arena || "";
     nextVenue.textContent = UI.showCityOnly || !arena ? city : `${city} • ${arena}`;
 
-    // TV chip — fixed footprint; remove if logo fails to load
+    // TV chip — fixed-size pill; remove if image fails
     nextTV.innerHTML = "";
     if (nextGame.tv_logo) {
       const chip = document.createElement("span");
       chip.className = "tv-chip";
       const img = new Image();
-      img.src = nextGame.tv_logo; img.alt = "TV";
+      img.src = nextGame.tv_logo;
+      img.alt = "TV";
       img.onerror = () => chip.remove();
       chip.appendChild(img);
       nextTV.appendChild(chip);
@@ -145,95 +160,84 @@
       nextTV.appendChild(chip);
     }
 
-    // Rank pills on the hero logos
-    const neRankEl  = $("#ne-rank");
-    const oppRankEl = $("#opp-rank");
-    const setRank = (el, rank, isNeb = false) => {
+    // Rank pills on the hero logos (white for both)
+    const setRank = (el, rank) => {
       if (rank && Number(rank) > 0) {
         el.textContent = `#${rank}`;
-        el.classList.toggle("ne", !!isNeb);
         el.classList.remove("hidden");
       } else {
         el.classList.add("hidden");
       }
     };
-    setRank(neRankEl, nextGame.nu_rank, true);
-    setRank(oppRankEl, nextGame.opp_rank, false);
+    setRank(neRankEl, nextGame.nu_rank);
+    setRank(oppRankEl, nextGame.opp_rank);
   }
 
-  // -------- COMPACT TWO-COLUMN SCHEDULE --------
+  // ---------- COMPACT TWO-COLUMN SCHEDULE ----------
   const wrap = $("#view-all .all-wrap");
   const cols = document.createElement("div");
   cols.className = "cols";
   const colA = document.createElement("div");
   const colB = document.createElement("div");
-  colA.className = "col"; colB.className = "col";
-  cols.appendChild(colA); cols.appendChild(colB);
+  colA.className = "col";
+  colB.className = "col";
+  cols.appendChild(colA);
+  cols.appendChild(colB);
   wrap.appendChild(cols);
 
-  // Build one schedule row (tight, but readable)
+  function makeLogoWithRank(src, alt, rank) {
+    // Wrap the tiny logo so we can overlay the small rank dot
+    const w = document.createElement("span");
+    w.className = "mark-wrap";
+    const img = new Image();
+    img.className = "mark";
+    img.src = src || "";
+    img.alt = alt || "";
+    w.appendChild(img);
+    if (rank && Number(rank) > 0) {
+      const dot = document.createElement("span");
+      dot.className = "rank-dot"; // white by CSS
+      dot.textContent = `#${rank}`;
+      w.appendChild(dot);
+    }
+    return w;
+  }
+
   const makeRow = (g) => {
     const row = document.createElement("div");
     row.className = `game-row ${homeClass(g.home_away)}`;
 
-    // Left date stack (MMM DD + DOW)
+    // Left date stack
     const when = document.createElement("div");
     when.className = "when";
     const dayStr = g.date ? fmtDay(g.date) : "";
-    const parts = dayStr ? dayStr.split(", ") : [];
-    const dow = parts[0] || "";
-    const mmmdd = parts[1] || "";
-    when.innerHTML = `<div class="date">${mmmdd}</div><div class="dow">${dow}</div>`;
+    const [dow, mmmdd] = dayStr ? [dayStr.split(", ")[0], dayStr.split(", ")[1]] : ["", ""];
+    when.innerHTML = `<div class="date">${mmmdd || ""}</div><div class="dow">${dow || ""}</div>`;
 
-    // Sentence line: tiny NU mark + divider + opponent name + tiny Opp mark
+    // Sentence line: NE logo + divider + Opponent name (plain) + Opp logo
     const line = document.createElement("div");
     line.className = "line";
 
-    // Tiny NU mark with rank dot
-    const neWrap = document.createElement("span");
-    neWrap.className = "mark-wrap";
-    const neMark = new Image();
-    neMark.className = "mark"; neMark.src = g.nu_logo || ""; neMark.alt = "Nebraska";
-    neWrap.appendChild(neMark);
-    if (g.nu_rank && Number(g.nu_rank) > 0) {
-      const dot = document.createElement("span");
-      dot.className = "rank-dot ne";
-      dot.textContent = `#${g.nu_rank}`;
-      neWrap.appendChild(dot);
-    }
+    const neWrap = makeLogoWithRank(g.nu_logo || "", "Nebraska", g.nu_rank);
+    const oppWrap = makeLogoWithRank(g.opp_logo || "", g.opponent || "Opponent", g.opp_rank);
 
-    // Divider text
     const divEl = document.createElement("span");
     divEl.className = "divider";
     divEl.textContent = UI.showDividerLiteral ? dividerFor(g.home_away) : "";
 
-    // Opponent text (may include "#N ..." already baked into 'title')
     const oppSpan = document.createElement("span");
     oppSpan.className = "opp-name";
-    oppSpan.textContent = g.title || g.opponent || "";
-
-    // Tiny opponent mark with rank dot
-    const oppWrap = document.createElement("span");
-    oppWrap.className = "mark-wrap";
-    const oppMark = new Image();
-    oppMark.className = "mark"; oppMark.src = g.opp_logo || ""; oppMark.alt = g.opponent || "Opponent";
-    oppWrap.appendChild(oppMark);
-    if (g.opp_rank && Number(g.opp_rank) > 0) {
-      const dot = document.createElement("span");
-      dot.className = "rank-dot";
-      dot.textContent = `#${g.opp_rank}`;
-      oppWrap.appendChild(dot);
-    }
+    // opponent label is plain text — strip any accidental "#N " prefix
+    oppSpan.textContent = (g.opponent || "").replace(/^\s*#\s*\d+\s+/, "");
 
     line.appendChild(neWrap);
     line.appendChild(divEl);
     line.appendChild(oppSpan);
     line.appendChild(oppWrap);
 
-    // Chips cluster on the right (result, time, city/arena, TV)
+    // Chips cluster (result, time, city/arena, tv)
     const chips = document.createElement("div");
 
-    // Result pill if final
     if (g.status === "final" && g.result) {
       const res = document.createElement("span");
       res.className = `result ${rowResult(g)}`;
@@ -241,7 +245,6 @@
       chips.appendChild(res);
     }
 
-    // Time chip (abbreviated)
     if (g.time_local) {
       const t = document.createElement("span");
       t.className = "chip";
@@ -249,29 +252,28 @@
       chips.appendChild(t);
     }
 
-    // City/arena chip (respect UI.showCityOnly)
-    const city = g.city || "";
-    const arena = g.arena || "";
-    if (city) {
+    const city2 = g.city || "";
+    const arena2 = g.arena || "";
+    if (city2) {
       const c = document.createElement("span");
       c.className = "chip city";
-      c.textContent = UI.showCityOnly || !arena ? city : `${city} • ${arena}`;
+      c.textContent = UI.showCityOnly || !arena2 ? city2 : `${city2} • ${arena2}`;
       chips.appendChild(c);
     }
 
-    // TV chip — fixed pill, prefer logo; fallback to short text
     if (g.tv_logo) {
       const tv = document.createElement("span");
       tv.className = "chip tv";
       const img = new Image();
-      img.src = g.tv_logo; img.alt = "TV";
+      img.src = g.tv_logo;
+      img.alt = "TV";
       img.onerror = () => tv.remove();
       tv.appendChild(img);
       chips.appendChild(tv);
     } else if (Array.isArray(g.tv) && g.tv.length) {
       const tv = document.createElement("span");
       tv.className = "chip tv";
-      tv.textContent = g.tv[0]; // keep short in dense layout
+      tv.textContent = g.tv[0]; // keep short if no logo
       chips.appendChild(tv);
     }
 
@@ -281,13 +283,20 @@
     return row;
   };
 
-  // Alternate rows into two columns
-  sched.forEach((g, i) => (i % 2 === 0 ? colA : colB).appendChild(makeRow(g)));
+  // ---------- Column fill strategy ----------
+  // Fill first column top->bottom with the earliest N games,
+  // then continue in the second column (also top->bottom).
+  const splitIndex = Math.ceil(sched.length / 2);
+  const firstCol = sched.slice(0, splitIndex);
+  const secondCol = sched.slice(splitIndex);
 
-  // -------- View rotation + debug badge --------
+  firstCol.forEach((g) => colA.appendChild(makeRow(g)));
+  secondCol.forEach((g) => colB.appendChild(makeRow(g)));
+
+  // ---------- view rotation / debug ----------
   const vNext = $("#view-next");
-  const vAll  = $("#view-all");
-  const dbg   = $("#debug");
+  const vAll = $("#view-all");
+  const dbg = $("#debug");
 
   function show(which) {
     vNext.classList.toggle("hidden", which !== "next");
@@ -297,7 +306,8 @@
   if (lockView === "next") show("next");
   else if (lockView === "all") show("all");
   else {
-    let mode = "next"; show(mode);
+    let mode = "next";
+    show(mode);
     setInterval(() => {
       mode = mode === "next" ? "all" : "next";
       show(mode);
