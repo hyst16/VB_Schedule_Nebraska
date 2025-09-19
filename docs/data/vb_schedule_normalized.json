@@ -434,7 +434,7 @@
       "date": "2025-09-20",
       "time_local": "8:00 PM CDT",
       "home_away": "H",
-      "nu_rank": null,
+      "nu_rank": 1,
       "opponent": "Arizona",
       "opp_rank": null,
       "title": "Arizona",
@@ -460,7 +460,7 @@
         },
         {
           "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+          "href": "https://stats.statbroadcast.com/broadcast/?id=601955"
         },
         {
           "title": "Sold Out! Buy on SeatGeek",
@@ -974,7 +974,7 @@
     },
     {
       "date": "2025-11-14",
-      "time_local": "8:00 OR 9:00 PM CST",
+      "time_local": "8:00 PM CST",
       "home_away": "A",
       "nu_rank": null,
       "opponent": "UCLA",
