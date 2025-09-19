@@ -38,6 +38,7 @@ This mirrors your football project, tailored for volleyball (more matches, tight
     ├── scrape_vb.py
     └── normalize_vb.py
 
+
 > If you’re serving from `/docs`, your GitHub Pages URL will be `.../VB_Schedule_Nebraska/` and the app will read JSON from `docs/data/`.
 
 ## Files you’ll likely touch
