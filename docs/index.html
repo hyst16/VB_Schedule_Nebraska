@@ -3,83 +3,71 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Husker Volleyball — Auto Schedule</title>
+  <title>Husker Volleyball — Auto Schedule (16:9 fit)</title>
 
-  <!-- Cache-bust CSS so players never serve an old copy -->
-  <link rel="stylesheet" href="assets/styles.css?v=2025-09-21-16x9" />
+  <!-- Cache-busted CSS -->
+  <link rel="stylesheet" href="assets/styles.css?v=2025-09-19-fit169" />
 
-  <!-- No caching on signage players -->
+  <!-- Hard no-cache for signage players -->
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
 </head>
 <body>
-  <!--
-    16:9 STAGE WRAPPER
-    - The "stage" fills the viewport and centers a 16:9 box (like a TV).
-    - Inside the box we place "stage-content", which we design at a base
-      size (1920x1080). JS scales it to fit perfectly, with optional
-      extra safe padding for bezel overscan.
-  -->
-  <div id="stage" class="stage">
-    <div id="stageBox" class="stage-box">
-      <div id="stageContent" class="stage-content">
-        <!-- Everything you already had lives INSIDE the stage now -->
-
-        <!-- Hero / Next game -->
-        <div id="view-next" class="view hidden">
-          <div class="bg" id="next-bg"></div>
-          <div class="next-card">
-            <div class="row logos">
-              <div class="logo-wrap">
-                <img id="ne-logo" class="logo" alt="Nebraska" />
-                <span id="ne-rank" class="rank-badge hidden"></span>
-              </div>
-              <div class="vs" id="divider">vs.</div>
-              <div class="logo-wrap">
-                <img id="opp-logo" class="logo" alt="Opponent" />
-                <span id="opp-rank" class="rank-badge hidden"></span>
-              </div>
-            </div>
-
-            <div id="next-opponent" class="opponent"></div>
-            <div id="next-datetime" class="detail"></div>
-            <div id="next-venue" class="detail"></div>
-            <div id="next-tv" class="detail"></div>
-          </div>
+  <!-- HERO / “next game” view (unchanged) -->
+  <div id="view-next" class="view hidden">
+    <div class="bg" id="next-bg"></div>
+    <div class="next-card">
+      <div class="row logos">
+        <div class="logo-wrap">
+          <img id="ne-logo" class="logo" alt="Nebraska" />
+          <span id="ne-rank" class="rank-badge hidden"></span>
         </div>
-
-        <!-- Compact two-column schedule -->
-        <div id="view-all" class="view hidden">
-          <div class="all-wrap"><!-- JS injects schedule here --></div>
+        <div class="vs" id="divider">vs.</div>
+        <div class="logo-wrap">
+          <img id="opp-logo" class="logo" alt="Opponent" />
+          <span id="opp-rank" class="rank-badge hidden"></span>
         </div>
+      </div>
+
+      <div id="next-opponent" class="opponent"></div>
+      <div id="next-datetime" class="detail"></div>
+      <div id="next-venue" class="detail"></div>
+      <div id="next-tv" class="detail"></div>
+    </div>
+  </div>
+
+  <!-- SCHEDULE / two-column view -->
+  <div id="view-all" class="view hidden">
+    <!--
+      STAGE: fixed 16:9 canvas that we’ll center on the screen.
+      We keep a little safe padding so cards don’t kiss the bezel.
+    -->
+    <div id="stage" class="stage">
+      <div class="stage-inner">
+        <!-- JS injects the two columns here -->
+        <div class="all-wrap"></div>
       </div>
     </div>
   </div>
 
+  <!-- tiny debug readout when ?debug=1 -->
   <div id="debug" class="debug hidden"></div>
 
   <script>
     // UI knobs (can be overridden by URL params)
     window.UI = {
-      theme: "classic-husker",
       rotateSeconds: 15,
       showDividerLiteral: true,
-      showCityOnly: true,
-      kenBurns: false
+      showCityOnly: true
     };
 
     // Cache-bust data fetches
     window.DATA_URL = "data/vb_schedule_normalized.json?v=" + Date.now();
     window.MANIFEST_URL = "data/arena_manifest.json?v=" + Date.now();
-
-    // URL params (we read more in app.js, but we want rot early just in case)
-    const params = new URLSearchParams(location.search);
-    const rot = parseInt(params.get("rot"), 10);
-    if (!isNaN(rot) && rot > 0) window.UI.rotateSeconds = rot;
   </script>
 
-  <!-- Cache-bust JS -->
-  <script src="assets/app.js?v=2025-09-21-16x9"></script>
+  <!-- Cache-busted JS -->
+  <script src="assets/app.js?v=2025-09-19-fit169"></script>
 </body>
 </html>
