@@ -1,290 +1,194 @@
-/* ============================================================
-   Global + hero styles (football parity)
-   This file now also includes the 16:9 "stage" layout styles.
-   ============================================================ */
+/* =========================
+   Global & shared variables
+   ========================= */
+:root{
+  /* “safe” inset around edges of stage so UI doesn’t hug bezel */
+  --safe: 24px;
 
-:root { 
-  --safe: 25px;                 /* hero card outer safe padding */
-  --fg: #fff; 
-  --bg: #000; 
-  --muted: #c9c9c9;
+  /* 16:9 stage padding INSIDE the stage (additional breathing room) */
+  --stage-pad: 20px;
 
-  /* Two-column schedule tuning */
+  /* schedule columns gap (center gutter) */
+  --cols-gap: 32px;
+
+  /* default column width used outside of 16:9 fit; inside 16:9 we stretch to 1fr */
   --col-width: 780px;
-  --cols-gap: 40px;
-  --schedule-side-pad: 60px;
 
-  /* TV chip footprint (use everywhere for consistency) */
-  --tv-chip-width: 64px;   /* pill width like the FOX sample */
+  /* unified TV chip footprint */
+  --tv-chip-width: 64px;
   --tv-chip-height: 24px;
-  --tv-chip-img-h: 16px;   /* logo height inside the pill */
+  --tv-chip-img-h: 16px;
 
-  /* Stage base design size (the "virtual canvas" we scale from) */
-  --stage-w: 1920px;
-  --stage-h: 1080px;
+  --fg:#fff; --bg:#000; --muted:#c9c9c9;
 }
 
-/* Reset / base */
-* { box-sizing: border-box; }
-html,body { margin:0; height:100%; background:#000; color:var(--fg);
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif; }
-.hidden { display:none; }
+*{ box-sizing:border-box }
+html,body{ margin:0; height:100%; background:var(--bg); color:var(--fg);
+  font-family:Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif; }
+.hidden{ display:none }
+.view{ position:relative; width:100vw; height:100vh; overflow:hidden }
 
-/* ============================================================
-   16:9 STAGE
-   - .stage fills the entire viewport (letterbox background)
-   - .stage-box is the visible 16:9 rectangle we fit to screen
-   - .stage-content is our "design size" canvas (1920x1080 by default),
-     which JS scales to exactly fill .stage-box (minus optional safe padding)
-   ============================================================ */
-.stage {
-  position: fixed;
-  inset: 0;
-  background: #000;                /* letterbox bars */
-  display: grid;
-  place-items: center;             /* center the 16:9 box */
+/* ===================
+   16:9 STAGE layout
+   ===================
+   The #stage element creates a letterboxed 16:9 canvas centered on screen.
+   .stage-inner provides inner padding and is where the schedule grid sits.
+*/
+.stage{
+  position:absolute; inset:var(--safe);
+  display:grid; place-items:center;
+
+  /* Maintain 16:9. We size by height so it always fits vertically. */
+  height: calc(100vh - (var(--safe)*2));
+  width: calc((100vh - (var(--safe)*2)) * 16 / 9);
+
+  /* If the width would overflow, fall back to max width mode */
+  max-width: calc(100vw - (var(--safe)*2));
+  aspect-ratio: 16 / 9;
+  margin:auto;
+}
+.stage-inner{
+  width:100%; height:100%;
+  padding: var(--stage-pad);
+  display:flex; /* just a block container for .all-wrap */
 }
 
-.stage-box {
-  /* We let JS size this box to a 16:9 that fits the viewport,
-     so here it just needs to be a positioned container. */
-  position: relative;
-  background: transparent;
-  overflow: hidden;
-}
-
-.stage-content {
-  /* Design space: think of this as a 1920x1080 canvas */
-  width: var(--stage-w);
-  height: var(--stage-h);
-  transform-origin: top left;      /* scale from top-left so JS can position */
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-/* Views still behave like before, but now live inside stage-content */
-.view { position:relative; width:100%; height:100%; overflow:hidden; }
-
-/* ------------- HERO (next game) ------------- */
-
-.bg { position:absolute; inset:0; background:#000 center/cover no-repeat; filter:brightness(0.5); }
-
-.next-card {
-  position:absolute; left:var(--safe); right:auto; top:var(--safe);
+/* ==========
+   HERO card
+   ========== */
+.bg{ position:absolute; inset:0; background:#000 center/cover no-repeat; filter:brightness(.5) }
+.next-card{
+  position:absolute; left:var(--safe); top:var(--safe);
   padding:16px 18px; background:rgba(0,0,0,.55); backdrop-filter: blur(2px);
   border:1px solid rgba(255,255,255,.15); border-radius:16px; max-width:760px;
 }
-
-.row.logos {
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:12px;
-  margin-bottom:8px;
-}
-.logo-wrap { position: relative; display: inline-block; }
-.logo { width:72px; height:72px; object-fit:contain; display:block; }
-
-/* Rank pill for HERO logos */
-.rank-badge {
+.row.logos{ display:flex; align-items:center; justify-content:center; gap:12px; margin-bottom:8px }
+.logo-wrap{ position:relative; display:inline-block }
+.logo{ width:72px; height:72px; object-fit:contain; display:block }
+.rank-badge{
   position:absolute; right:-6px; bottom:-6px;
-  padding:2px 6px;
-  font-size:12px; font-weight:800; line-height:1;
-  color:#000; background:#fff;                 /* white for both teams (your preference) */
-  border-radius:999px; border:1px solid rgba(0,0,0,.2);
-  box-shadow:0 1px 2px rgba(0,0,0,.35);
+  padding:2px 6px; font-size:12px; font-weight:800; line-height:1;
+  color:#000; background:#fff; border-radius:999px;
+  border:1px solid rgba(0,0,0,.2); box-shadow:0 1px 2px rgba(0,0,0,.35)
 }
-
-.vs { font-weight:800; font-size:32px; letter-spacing:.5px; }
-.opponent { font-size:40px; font-weight:800; line-height:1.1; }
-.detail { font-size:22px; color:var(--muted); }
-
-/* TV chip inside the hero card — fixed-size pill */
-.next-card .tv-chip {
+.vs{ font-weight:800; font-size:32px; letter-spacing:.5px }
+.opponent{ font-size:40px; font-weight:800; line-height:1.1 }
+.detail{ font-size:22px; color:var(--muted) }
+.next-card .tv-chip{
   display:inline-flex; align-items:center; justify-content:center;
-  width: var(--tv-chip-width);
-  height: var(--tv-chip-height);
+  width:var(--tv-chip-width); height:var(--tv-chip-height);
   border-radius:999px; background:#fff; color:#000;
-  border:1px solid rgba(0,0,0,.2);
-  overflow: hidden;
+  border:1px solid rgba(0,0,0,.2); overflow:hidden
 }
-.next-card .tv-chip img {
-  height: var(--tv-chip-img-h);
-  max-width: 100%;
-  width: auto;
-  display:block;
-  object-fit: contain;
+.next-card .tv-chip img{ height:var(--tv-chip-img-h); max-width:100%; width:auto; display:block; object-fit:contain }
+
+/* =========================
+   SCHEDULE: two fixed cols
+   ========================= */
+#view-all .all-wrap{
+  /* The JS may scale this whole thing (global scale knob) */
+  width:100%; height:100%;
+  display:flex; /* we’ll place a grid inside via .cols */
 }
-
-/* ------------- COMPACT SCHEDULE (two fixed columns) ------------- */
-
-#view-all .all-wrap { 
-  padding: var(--safe); 
-  display: flex; 
-  justify-content: center; 
-}
-
-#view-all .cols {
-  width: min(calc((2 * var(--col-width)) + var(--cols-gap)), 96vw);
-  max-width: 96vw;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+#view-all .cols{
+  /* Important: in 16:9 fit, we want the grid to span the stage edges. */
+  width:100%; height:100%;
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));  /* two equal columns */
   column-gap: var(--cols-gap);
   justify-content: center;
-  margin: 0 auto;
+  align-items: start;
+}
+#view-all .col{
+  display:flex; flex-direction:column; gap:2px;
+  width:100%; /* columns expand to available width */
 }
 
-#view-all .col { display:flex; flex-direction:column; gap:2px; }
-
-#view-all .game-row {
+/* Game row fills the full column width */
+#view-all .game-row{
+  width:100%;
   display:flex; gap:10px; align-items:center;
-  min-height:52px; padding:2px 12px;
-  border-radius:12px;
-  border:1px solid rgba(255,255,255,0.12);
-  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+  min-height:52px; padding:2px 12px; border-radius:12px;
+  border:1px solid rgba(255,255,255,.12);
+  background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
   position:relative;
 }
-
-/* Left accent for venue */
-#view-all .game-row::before {
+#view-all .game-row::before{
   content:""; position:absolute; left:0; top:0; bottom:0; width:3px;
-  border-radius:12px 0 0 12px; background: rgba(255,255,255,0.20);
+  border-radius:12px 0 0 12px; background:rgba(255,255,255,.20)
+}
+#view-all .game-row.is-home{
+  background:linear-gradient(180deg, rgba(196,0,0,.12), rgba(196,0,0,.06));
+}
+#view-all .game-row.is-home::before{ background:rgba(196,0,0,.9) }
+#view-all .game-row.is-away::before{ background:rgba(140,140,140,.8) }
+
+/* Left date stack */
+#view-all .when{ width:72px; display:flex; flex-direction:column; align-items:flex-start; line-height:1.1 }
+#view-all .when .date{ font-weight:700; font-size:16px }
+#view-all .when .dow{ color:var(--muted); font-size:13px; margin-top:2px }
+
+/* Sentence line (logos + “at/vs” + opponent name) */
+#view-all .line{ display:flex; align-items:center; gap:8px; min-width:0; flex:1 }
+#view-all .line .mark{ height:22px; width:22px; object-fit:contain; flex:0 0 auto;
+  padding:2px; border-radius:6px; background:rgba(255,255,255,.10); border:1px solid rgba(255,255,255,.18) }
+#view-all .mark-wrap{ position:relative; display:inline-flex; align-items:center; justify-content:center }
+
+/* the tiny white rank dot, bottom-right, barely overlapping (stays crisp under scale) */
+#view-all .rank-dot{
+  position:absolute; right:-6px; bottom:-5px;
+  font-size:6px; font-weight:800; line-height:1;
+  padding:1px 1px; color:#000; background:#fff;
+  border-radius:999px; border:1px solid rgba(0,0,0,.2)
 }
 
-/* HOME */
-#view-all .game-row.is-home {
-  background: linear-gradient(180deg, rgba(196,0,0,0.12), rgba(196,0,0,0.06));
-}
-#view-all .game-row.is-home::before { background: rgba(196,0,0,0.9); }
-
-/* AWAY/NEUTRAL */
-#view-all .game-row.is-away {
-  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
-}
-#view-all .game-row.is-away::before { background: rgba(140,140,140,0.8); }
-
-#view-all .when {
-  width:72px;
-  display:flex; flex-direction:column; align-items:flex-start;
-  line-height:1.1;
-}
-#view-all .when .date { font-weight:700; font-size:16px; }
-#view-all .when .dow  { color:var(--muted); font-size:13px; margin-top:2px; }
-
-#view-all .line { display:flex; align-items:center; gap:6px; min-width:0; flex:1; }
-
-/* LOGO + tiny rank dot cluster */
-#view-all .mark-wrap { position: relative; display:inline-block; }
-#view-all .mark {
-  height:22px; width:22px; object-fit:contain; flex:0 0 auto;
-  padding:2px; border-radius:6px;
-  background:rgba(255,255,255,0.10); border:1px solid rgba(255,255,255,0.18);
-}
-/* Tiny white rank dot, bottom-right, barely overlapping (stays visible under scaling) */
-#view-all .rank-dot {
-  position: absolute;
-  right: -6px;
-  bottom: -5px;
-  font-size: 6px; font-weight: 800; line-height: 1;
-  padding: 1px 1px;
-  color: #000; background: #fff;
-  border-radius: 999px;
-  border: 1px solid rgba(0,0,0,.2);
+#view-all .line .divider{ font-weight:800; opacity:.9 }
+#view-all .line .opp-name{
+  font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:28ch;
 }
 
-#view-all .line .divider { font-weight:800; opacity:.9; }
-#view-all .line .opp-name {
-  font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:26ch;
+/* Chips */
+#view-all .chip{
+  font-size:13px; padding:4px 8px; border-radius:999px; border:1px solid rgba(255,255,255,.18);
+  background:rgba(255,255,255,.06); color:var(--fg); white-space:nowrap; display:inline-flex; align-items:center; gap:6px;
 }
+#view-all .chip.city{ color:var(--muted) }
 
-#view-all .chip {
-  font-size:13px; padding:4px 8px;
-  border-radius:999px; border:1px solid rgba(255,255,255,0.18);
-  background:rgba(255,255,255,0.06); color:var(--fg);
-  white-space:nowrap; display:inline-flex; align-items:center; gap:6px;
+/* Fixed-size TV chip in the list */
+#view-all .chip.tv{
+  background:#fff; color:#000; border-color:rgba(0,0,0,.2); overflow:hidden;
+  width:var(--tv-chip-width); height:var(--tv-chip-height); padding:0 8px; justify-content:center
 }
-#view-all .chip.city { color:var(--muted); }
-
-/* Fixed-size TV chip in the schedule list */
-#view-all .chip.tv {
-  background:#fff; color:#000; border-color:rgba(0,0,0,0.2);
-  overflow:hidden;
-  width: var(--tv-chip-width);
-  height: var(--tv-chip-height);
-  padding: 0 8px;
-  justify-content: center;
-}
-#view-all .chip.tv img { 
-  display:block; 
-  height: var(--tv-chip-img-h); 
-  width:auto; 
-  max-width:100%; 
-  object-fit:contain; 
-}
+#view-all .chip.tv img{ display:block; height:var(--tv-chip-img-h); width:auto; max-width:100%; object-fit:contain }
 
 /* Result pill */
-#view-all .result {
-  font-size:14px; padding:4px 10px; border-radius:999px;
-  border:1px solid rgba(255,255,255,0.2); margin:0 8px 0 0;
-}
-#view-all .result.W { background:#1a6123; }
-#view-all .result.L { background:#6b1b1b; }
-#view-all .result.T { background:#3a3f4b; }
+#view-all .result{ font-size:14px; padding:4px 10px; border-radius:999px; border:1px solid rgba(255,255,255,.2); margin:0 8px 0 0 }
+#view-all .result.W{ background:#1a6123 }  /* win */
+#view-all .result.L{ background:#6b1b1b }  /* loss */
+#view-all .result.T{ background:#3a3f4b }  /* tie */
 
-/* ---------- DENSE MODE (shrink ~25–30% vertically) ---------- */
-body.dense #view-all .game-row { 
-  min-height: 40px; 
-  padding: 0 10px; 
-  gap: 6px; 
-  border-radius: 10px;
-}
-body.dense #view-all .game-row::before { width:2px; }
-
-body.dense #view-all .when { width:60px; }
-body.dense #view-all .when .date { font-size:14px; }
-body.dense #view-all .when .dow  { font-size:12px; margin-top:1px; }
-
-body.dense #view-all .line { gap:5px; }
-body.dense #view-all .mark { height:19px; width:19px; padding:1px; }
-body.dense #view-all .line .divider { font-size: 92%; }
-body.dense #view-all .line .opp-name { max-width:24ch; }
-
-body.dense #view-all .chip { font-size:12px; padding:3px 7px; gap:5px; }
-body.dense #view-all .result { font-size:13px; padding:3px 8px; }
-
-body.dense #view-all .chip.tv {
-  width: var(--tv-chip-width);
-  height: var(--tv-chip-height);
-  padding: 0 6px;
-}
-body.dense #view-all .chip.tv img { height: var(--tv-chip-img-h); }
+/* DENSE mode trims vertical space (~25–30%) */
+body.dense #view-all .game-row{ min-height:40px; padding:0 10px; gap:6px; border-radius:10px }
+body.dense #view-all .game-row::before{ width:2px }
+body.dense #view-all .when{ width:60px }
+body.dense #view-all .when .date{ font-size:14px }
+body.dense #view-all .when .dow{ font-size:12px; margin-top:1px }
+body.dense #view-all .line{ gap:6px }
+body.dense #view-all .line .mark{ height:19px; width:19px; padding:1px }
+body.dense #view-all .chip{ font-size:12px; padding:3px 7px; gap:5px }
+body.dense #view-all .result{ font-size:13px; padding:3px 8px }
 
 /* Debug badge */
-.debug {
+.debug{
   position:fixed; right:8px; bottom:8px; padding:6px 8px; font:12px/1.2 monospace;
   background:rgba(0,0,0,.65); border:1px solid rgba(255,255,255,.2); border-radius:8px; color:#ddd;
 }
 
-/* 4K bump (keeps proportions; stage scaling will still work) */
-@media (min-width: 2560px) {
-  :root { --safe:64px; }
-  .logo { width:96px; height:96px; }
-  .vs { font-size:40px; }
-  .opponent { font-size:48px; }
-  .detail { font-size:26px; }
-  .rank-badge { font-size:14px; }
-
-  #view-all .game-row { min-height:56px; padding:10px 14px; }
-  #view-all .when { width:84px; }
-  #view-all .when .date { font-size:18px; }
-  #view-all .when .dow  { font-size:14px; }
-  #view-all .mark { height:24px; width:24px; }
-  #view-all .chip { font-size:14px; }
-  #view-all .result { font-size:15px; }
-}
-
-/* Smaller 1366/1080 TV screens — shrink cols if you ever *don’t* use the stage */
-@media (max-width: 1600px) {
-  :root { --col-width:560px; --cols-gap:24px; }
+/* 4K bump */
+@media (min-width:2560px){
+  :root{ --safe:64px }
+  .logo{ width:96px; height:96px }
+  .vs{ font-size:40px } .opponent{ font-size:48px } .detail{ font-size:26px }
+  .rank-badge{ font-size:14px }
+  /* schedule scales visually with higher DPI; widths are fluid in 16:9 fit */
 }
