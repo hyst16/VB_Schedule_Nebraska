@@ -1,21 +1,29 @@
-/* ========== Global + theme ========== */
+/* =========================================================
+   GLOBAL + THEME VARIABLES
+   These CSS variables control colors, spacing, and common
+   sizes used across both the hero and schedule views.
+   ========================================================= */
 
 :root {
+  /* general theme */
   --safe: 25px;
   --fg: #fff;
   --bg: #000;
   --muted: #c9c9c9;
 
-  /* Spacing between the two schedule columns (default set by JS to 5px) */
-  --cols-gap: 12px;
+  /* schedule layout tuning */
+  --col-width: 780px;          /* width of each schedule column on large displays */
+  --cols-gap: 40px;            /* gap between the 2 columns */
+  --schedule-side-pad: 60px;   /* side padding around the grid */
 
-  /* Optional total max width for BOTH columns + gap (set by JS when ?colw= is used) */
-  --cols-total-max: none;
+  /* TV chip footprint (consistent pills everywhere) */
+  --tv-chip-width: 64px;       /* ~ FOX chip width */
+  --tv-chip-height: 24px;      /* ~ FOX chip height */
+  --tv-chip-img-h: 16px;       /* logo height used inside the pill */
 
-  /* Hero TV chip footprint */
-  --tv-chip-width: 64px;
-  --tv-chip-height: 24px;
-  --tv-chip-img-h: 16px;
+  /* Stage (16:9) internals */
+  --stage-max-w: 96vw;         /* stage should not exceed viewport width */
+  --stage-max-h: 96vh;         /* stage should not exceed viewport height */
 }
 
 * { box-sizing: border-box; }
@@ -27,68 +35,165 @@ html, body {
   font-family: Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
 }
 
-.hidden { display: none !important; }
-.view { position: relative; width: 100vw; height: 100vh; overflow: hidden; }
+.hidden { display: none; }
+.view   { position: relative; width: 100vw; height: 100vh; overflow: hidden; }
 
-/* ========== 16:9 Stage (schedule view) ========== */
-/* The stage gives you a predictable canvas that we can scale/letterbox to fit any screen. */
+/* =========================================================
+   OPTIONAL 16:9 "STAGE"
+   If index.html wraps #view-all in a #stage container, these
+   styles center that stage and maintain a fixed 16:9 aspect
+   ratio. The JS will scale contents to fit, so the schedule
+   layout never spills off-screen on TVs.
+   ========================================================= */
 
-.stage {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  /* Stage is just a container; scaling is applied to .stage-content via transform in JS */
-}
-
-.stage-inner {
-  /* Center the 16:9 rectangle in the available space */
+#stage {
+  /* The stage is a centered rectangle we can scale to the screen */
   position: absolute;
   inset: 0;
   display: grid;
   place-items: center;
-  padding: env(safe-area-inset-top, 0) env(safe-area-inset-right, 0)
-           env(safe-area-inset-bottom, 0) env(safe-area-inset-left, 0);
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+           env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
-.stage-content {
-  /* This is the 16:9 content that gets scaled */
-  aspect-ratio: 16 / 9;          /* default; JS can override with other ratios */
-  width: 100%;
-  max-width: var(--cols-total-max); /* JS sets this when ?colw=…; otherwise “none” */
-  transform-origin: top center;   /* scale from top center so columns climb down nicely */
-  will-change: transform;
-}
-
-/* Wrapper where the schedule grid lives */
-#view-all .all-wrap {
+#stage-inner {
+  /* This element holds the actual schedule content */
   width: 100%;
   height: 100%;
+  max-width: var(--stage-max-w);
+  max-height: var(--stage-max-h);
+  display: grid;
+  place-items: center;
+  transform-origin: center center; /* scale from center */
+}
+
+/* When we explicitly want a 16:9 stage, JS adds .is-16x9 */
+#stage.is-16x9 #stage-inner {
+  aspect-ratio: 16 / 9;
+  background: transparent; /* keep transparent, or set a faint bg if desired */
+}
+
+/* The schedule view itself (when used inside the stage) */
+#stage .stage-content {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+/* =========================================================
+   HERO (NEXT GAME) STYLES
+   Matches the football parity you liked.
+   ========================================================= */
+
+.bg {
+  position: absolute;
+  inset: 0;
+  background: #000 center/cover no-repeat;
+  filter: brightness(0.5);
+}
+
+.next-card {
+  position: absolute;
+  left: var(--safe);
+  right: auto;
+  top: var(--safe);
+  padding: 16px 18px;
+  background: rgba(0,0,0,.55);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 16px;
+  max-width: 760px;
+}
+
+/* logo row in the hero card */
+.row.logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+/* wrap each logo to position a ranking pill over it */
+.logo-wrap { position: relative; display: inline-block; }
+.logo      { width: 72px; height: 72px; object-fit: contain; display: block; }
+
+/* white ranking pill in hero (bottom-right of logo) */
+.rank-badge {
+  position: absolute;
+  right: -6px;
+  bottom: -6px;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1;
+  color: #000;
+  background: #fff;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,.2);
+  box-shadow: 0 1px 2px rgba(0,0,0,.35);
+}
+
+/* big labels in the hero */
+.vs        { font-weight: 800; font-size: 32px; letter-spacing: .5px; }
+.opponent  { font-size: 40px; font-weight: 800; line-height: 1.1; }
+.detail    { font-size: 22px; color: var(--muted); }
+
+/* TV chip inside the hero card — fixed-size pill, centered */
+.next-card .tv-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--tv-chip-width);
+  height: var(--tv-chip-height);
+  border-radius: 999px;
+  background: #fff;
+  color: #000;
+  border: 1px solid rgba(0,0,0,.2);
+  overflow: hidden;
+}
+.next-card .tv-chip img {
+  height: var(--tv-chip-img-h);
+  max-width: 100%;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* =========================================================
+   COMPACT SCHEDULE (ALWAYS 2 COLUMNS)
+   These styles control the list view (view-all). The grid is
+   a fixed 2-column layout that can be scaled by JS to fit TVs.
+   ========================================================= */
+
+#view-all .all-wrap {
+  /* This container gets scaled by JS when needed */
   padding: var(--safe);
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  overflow: hidden; /* ensure nothing bleeds outside the stage */
 }
-
-/* ========== Grid: always 2 flexible columns ========== */
 
 #view-all .cols {
-  width: 100%;                     /* fill the stage-content width */
+  /* 2 fixed columns; width is derived from col width + gap */
+  width: min(calc((2 * var(--col-width)) + var(--cols-gap)), 96vw);
+  max-width: 96vw;
+
   display: grid;
-  grid-template-columns: 1fr 1fr;  /* robust two columns */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: var(--cols-gap);
-  align-items: start;
+
+  justify-content: center;
+  margin: 0 auto;
 }
 
-/* Each column stacks rows vertically */
 #view-all .col {
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
 
-/* ========== Game row card ========== */
-
+/* each game is a card-like row (no explicit internal columns) */
 #view-all .game-row {
   display: flex;
   gap: 10px;
@@ -101,7 +206,7 @@ html, body {
   position: relative;
 }
 
-/* Left accent for venue */
+/* left accent strip for venue (tinted on Home) */
 #view-all .game-row::before {
   content: "";
   position: absolute;
@@ -111,18 +216,19 @@ html, body {
   background: rgba(255,255,255,0.20);
 }
 
-/* HOME vs AWAY background tint */
+/* HOME = red tint background + red accent */
 #view-all .game-row.is-home {
   background: linear-gradient(180deg, rgba(196,0,0,0.12), rgba(196,0,0,0.06));
 }
 #view-all .game-row.is-home::before { background: rgba(196,0,0,0.9); }
 
+/* AWAY/NEUTRAL = neutral background + gray accent */
 #view-all .game-row.is-away {
   background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
 }
 #view-all .game-row.is-away::before { background: rgba(140,140,140,0.8); }
 
-/* Left date stack */
+/* LEFT CAP: date + weekday mini stack */
 #view-all .when {
   width: 72px;
   display: flex;
@@ -133,33 +239,27 @@ html, body {
 #view-all .when .date { font-weight: 700; font-size: 16px; }
 #view-all .when .dow  { color: var(--muted); font-size: 13px; margin-top: 2px; }
 
-/* Sentence line (logos + text) */
+/* MAIN sentence line: [N logo] [vs/at] [OPP logo] [Opponent Name] */
 #view-all .line {
   display: flex;
   align-items: center;
   gap: 6px;
-  min-width: 0;   /* allow text ellipsis */
+  min-width: 0;
   flex: 1;
 }
 
-/* Logo + rank container (so we can anchor the tiny rank pill) */
-#view-all .mark-wrap {
-  position: relative;
-  display: inline-block;
-  flex: 0 0 auto;
-}
-
-/* Tiny square logos in the list */
-#view-all .mark {
-  height: 22px; width: 22px; object-fit: contain;
+/* Tiny marks (logos) — use .mark-wrap so we can attach a rank dot */
+#view-all .mark-wrap { position: relative; display: inline-block; }
+#view-all .line .mark {
+  height: 22px; width: 22px;
+  object-fit: contain; flex: 0 0 auto;
   padding: 2px;
   border-radius: 6px;
   background: rgba(255,255,255,0.10);
   border: 1px solid rgba(255,255,255,0.18);
-  display: block;
 }
 
-/* Tiny white rank dot, bottom-right, barely overlapping */
+/* Rank dot for logos on the schedule page (tiny white dot) */
 #view-all .rank-dot {
   position: absolute;
   right: -6px;
@@ -169,9 +269,9 @@ html, body {
   line-height: 1;
   padding: 1px 1px;
   color: #000;
-  background: #fff;               /* white for both NU and opponent per your preference */
+  background: #fff;
   border-radius: 999px;
-  border: 1px solid rgba(0,0,0,0.2);
+  border: 1px solid rgba(0,0,0,.2);
 }
 
 /* Divider + opponent name */
@@ -182,7 +282,7 @@ html, body {
   max-width: 26ch;
 }
 
-/* Chips (time, city/arena, TV, result) */
+/* Chips (small pills next to the sentence line) */
 #view-all .chip {
   font-size: 13px;
   padding: 4px 8px;
@@ -197,6 +297,7 @@ html, body {
 }
 #view-all .chip.city { color: var(--muted); }
 
+/* TV chip (fixed-size pill, ensures logos don't stretch row height) */
 #view-all .chip.tv {
   background: #fff; color: #000; border-color: rgba(0,0,0,0.2);
   overflow: hidden;
@@ -213,7 +314,7 @@ html, body {
   object-fit: contain;
 }
 
-/* Result pill */
+/* Result pill (W/L/T) */
 #view-all .result {
   font-size: 14px;
   padding: 4px 10px;
@@ -225,7 +326,10 @@ html, body {
 #view-all .result.L { background: #6b1b1b; }
 #view-all .result.T { background: #3a3f4b; }
 
-/* ========== Dense mode (optional ?dense=1) ========== */
+/* =========================================================
+   DENSE MODE (vertical savings ~25–30%)
+   Activate with body.dense (URL: ?dense=1)
+   ========================================================= */
 
 body.dense #view-all .game-row {
   min-height: 40px;
@@ -240,70 +344,100 @@ body.dense #view-all .when .date { font-size: 14px; }
 body.dense #view-all .when .dow  { font-size: 12px; margin-top: 1px; }
 
 body.dense #view-all .line { gap: 5px; }
-body.dense #view-all .mark { height: 19px; width: 19px; padding: 1px; }
-body.dense #view-all .line .divider { font-size: 92%; }
+body.dense #view-all .line .mark { height: 19px; width: 19px; padding: 1px; }
 body.dense #view-all .line .opp-name { max-width: 24ch; }
 
 body.dense #view-all .chip { font-size: 12px; padding: 3px 7px; gap: 5px; }
 body.dense #view-all .result { font-size: 13px; padding: 3px 8px; }
 
-body.dense #view-all .chip.tv { padding: 0 6px; }
-
-/* ========== Hero (next-game) styles (unchanged) ========== */
-
-.bg { position: absolute; inset: 0; background: #000 center/cover no-repeat; filter: brightness(0.5); }
-
-.next-card {
-  position: absolute; left: var(--safe); right: auto; top: var(--safe);
-  padding: 16px 18px; background: rgba(0,0,0,.55); backdrop-filter: blur(2px);
-  border: 1px solid rgba(255,255,255,.15); border-radius: 16px; max-width: 760px;
-}
-
-.row.logos {
-  display: flex; align-items: center; justify-content: center;
-  gap: 12px; margin-bottom: 8px;
-}
-
-.logo-wrap { position: relative; display: inline-block; }
-.logo { width: 72px; height: 72px; object-fit: contain; display: block; }
-
-/* Rank badge on hero logos (white, bottom-right, subtle overlap) */
-.rank-badge {
-  position: absolute; right: -4px; bottom: -4px;
-  padding: 2px 6px;
-  font-size: 12px; font-weight: 800; line-height: 1;
-  color: #000; background: #fff;
-  border-radius: 999px; border: 1px solid rgba(0,0,0,.2);
-  box-shadow: 0 1px 2px rgba(0,0,0,.35);
-}
-
-.vs { font-weight: 800; font-size: 32px; letter-spacing: .5px; }
-.opponent { font-size: 40px; font-weight: 800; line-height: 1.1; }
-.detail { font-size: 22px; color: var(--muted); }
-
-/* TV chip inside the hero card */
-.next-card .tv-chip {
-  display: inline-flex; align-items: center; justify-content: center;
+body.dense #view-all .chip.tv {
   width: var(--tv-chip-width);
   height: var(--tv-chip-height);
-  border-radius: 999px; background: #fff; color: #000;
-  border: 1px solid rgba(0,0,0,.2);
-  overflow: hidden;
+  padding: 0 6px;
 }
-.next-card .tv-chip img {
-  height: var(--tv-chip-img-h);
-  width: auto;
-  display: block;
-  object-fit: contain;
+body.dense #view-all .chip.tv img { height: var(--tv-chip-img-h); }
+
+/* =========================================================
+   ULTRA DENSE MODE (extra ~15–20% savings vs dense)
+   Activate with body.ultra (URL: ?ultra=1)
+   Focuses only on vertical metrics so names/logos remain crisp.
+   ========================================================= */
+
+body.ultra #view-all .game-row {
+  min-height: 34px;     /* dense: 40px */
+  padding: 0 8px;
+  gap: 5px;
+  border-radius: 9px;
+}
+body.ultra #view-all .game-row::before { width: 2px; }
+
+body.ultra #view-all .when {
+  width: 54px;          /* dense: 60px */
+  line-height: 1.05;
+}
+body.ultra #view-all .when .date { font-size: 13px; font-weight: 700; }
+body.ultra #view-all .when .dow  { font-size: 11px; color: var(--muted); margin-top: 0; }
+
+body.ultra #view-all .line { gap: 5px; }
+
+/* Slightly smaller tiny logos */
+body.ultra #view-all .line .mark {
+  height: 17px; width: 17px; padding: 1px; border-radius: 5px;
 }
 
-/* Debug badge */
+/* Slight text downshift on opponent name */
+body.ultra #view-all .line .opp-name {
+  font-weight: 600;
+  font-size: 93%;
+  max-width: 24ch;
+}
+
+/* Chips: a hair smaller */
+body.ultra #view-all .chip {
+  font-size: 11.5px;
+  padding: 2px 6px;
+  gap: 4px;
+}
+
+/* Result pill: slightly smaller */
+body.ultra #view-all .result {
+  font-size: 12.5px;
+  padding: 2px 7px;
+}
+
+/* TV chip: reduce inner logo height slightly (keeps row shorter) */
+body.ultra #view-all .chip.tv {
+  width: var(--tv-chip-width);
+  height: var(--tv-chip-height);
+  padding: 0 6px;
+}
+body.ultra #view-all .chip.tv img {
+  height: calc(var(--tv-chip-img-h) - 2px); /* e.g., 16px -> 14px */
+}
+
+/* Rank dot: slightly smaller & nudged */
+body.ultra #view-all .rank-dot {
+  right: -5px;
+  bottom: -4px;
+  font-size: 5.5px;
+  padding: 1px 1px;
+  border-width: 1px;
+}
+
+/* =========================================================
+   DEBUG BADGE + MEDIA QUERIES
+   ========================================================= */
+
 .debug {
-  position: fixed; right: 8px; bottom: 8px; padding: 6px 8px; font: 12px/1.2 monospace;
-  background: rgba(0,0,0,.65); border: 1px solid rgba(255,255,255,.2); border-radius: 8px; color: #ddd;
+  position: fixed; right: 8px; bottom: 8px;
+  padding: 6px 8px;
+  font: 12px/1.2 monospace;
+  background: rgba(0,0,0,.65);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 8px; color: #ddd;
 }
 
-/* 4K bump */
+/* 4K bump for the hero + schedule */
 @media (min-width: 2560px) {
   :root { --safe: 64px; }
   .logo { width: 96px; height: 96px; }
@@ -316,7 +450,12 @@ body.dense #view-all .chip.tv { padding: 0 6px; }
   #view-all .when { width: 84px; }
   #view-all .when .date { font-size: 18px; }
   #view-all .when .dow  { font-size: 14px; }
-  #view-all .mark { height: 24px; width: 24px; }
+  #view-all .line .mark { height: 24px; width: 24px; }
   #view-all .chip { font-size: 14px; }
   #view-all .result { font-size: 15px; }
+}
+
+/* Smaller 1366/1080-ish screens — shrink cols for safety */
+@media (max-width: 1600px) {
+  :root { --col-width: 560px; --cols-gap: 24px; }
 }
