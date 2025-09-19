@@ -18,26 +18,25 @@ This mirrors your football project, tailored for volleyball (more matches, tight
 4. Run the workflow once: **Actions → Scrape & Build (Volleyball) → Run workflow**.
 
 .
-├── docs/
-│   ├── index.html
-│   ├── assets/
-│   │   ├── styles.css
-│   │   └── app.js
-│   ├── data/
-│   │   ├── vb_schedule_normalized.json   # UI reads this
-│   │   └── arena_manifest.json           # optional (for hero backgrounds)
-│   └── images/
-│       └── arenas/                       # <arena_key>.jpg files (optional)
-│
-├── data/                                 # raw + build artifacts written here by scripts
-│   ├── vb_raw.json
-│   ├── vb_schedule_normalized.json
-│   └── arena_manifest.json
-│
-└── scripts/                              # scraper/normalizer (optional folder name)
-    ├── scrape_vb.py
-    └── normalize_vb.py
-
++-- docs/
+|   +-- index.html
+|   +-- assets/
+|   |   +-- styles.css
+|   |   `-- app.js
+|   +-- data/
+|   |   +-- vb_schedule_normalized.json   (UI reads this)
+|   |   `-- arena_manifest.json           (optional: hero backgrounds)
+|   `-- images/
+|       `-- arenas/                       (<arena_key>.jpg files; optional)
+|
++-- data/                                 (raw + build artifacts written here by scripts)
+|   +-- vb_raw.json
+|   +-- vb_schedule_normalized.json
+|   `-- arena_manifest.json
+|
+`-- scripts/                              (scraper/normalizer)
+    +-- scrape_vb.py
+    `-- normalize_vb.py
 
 
 > If you’re serving from `/docs`, your GitHub Pages URL will be `.../VB_Schedule_Nebraska/` and the app will read JSON from `docs/data/`.
