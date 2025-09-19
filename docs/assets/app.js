@@ -1,69 +1,108 @@
-/**
- * Schedule app bootstrap:
- * - Keeps your existing hero + schedule rendering
- * - Forces schedule grid to 2 columns that fill the 16:9 stage width
- * - Preserves rank dots and logo order (opp logo + rank placed before team name)
- * - Adds robust handling for ?colw= to cap TOTAL content width (both columns + gap)
- * - Defaults gap=5 unless overridden
- */
+/* =========================================================
+   VOLLEYBALL SCHEDULE UI SCRIPT
+   - Loads normalized data and optional arena manifest
+   - Renders the hero (next game) and the 2-column schedule
+   - Supports lots of URL knobs (scale, fit=16x9, colw, gap,
+     dense, ultra, view, rot, debug) for TVs vs laptops
+   ========================================================= */
 
 (async function () {
+  // Small DOM helper (like jQuery's $)
   const $ = (sel, el = document) => el.querySelector(sel);
 
-  // -------- Config wires from index.html --------
+  /* ---------------------------------------------------------
+     DATA ENDPOINTS
+     These are set by index.html with cache-busting; we fall
+     back to default paths if those globals are missing.
+     --------------------------------------------------------- */
   const DATA_URL = window.DATA_URL || "data/vb_schedule_normalized.json";
   const MANIFEST_URL = window.MANIFEST_URL || "data/arena_manifest.json";
-  const UI = window.UI || { rotateSeconds: 15, showDividerLiteral: true, showCityOnly: true };
+  const UI = window.UI || {
+    rotateSeconds: 15,
+    showDividerLiteral: true,
+    showCityOnly: true
+  };
 
-  // -------- URL params --------
+  /* ---------------------------------------------------------
+     URL PARAMETERS (all optional)
+     - view=next|all       : lock to a specific view
+     - rot=15              : seconds between view rotations
+     - scale=0.95          : global scale for schedule (fine-tune fit)
+     - colw=700            : override per-column width (px)
+     - gap=5               : column gap in px for the 2-col schedule
+     - dense=1             : tighter vertical layout
+     - ultra=1             : extra-tight vertical layout (overrides dense)
+     - fit=16x9            : enable 16:9 stage scaling for TVs
+     - safe=1              : add a bit of safe padding inside stage
+     - debug=1             : show a tiny HUD for diagnostics
+     --------------------------------------------------------- */
   const params = new URLSearchParams(location.search);
 
-  // 16:9 stage fit (default on). You can pass ?fit=off to disable scaling logic if you want.
-  const fitParam = (params.get("fit") || "16x9").toLowerCase(); // "16x9" | "off"
-  const fitEnabled = fitParam !== "off";
+  // Rotation override
+  const rot = parseInt(params.get("rot"), 10);
+  if (!isNaN(rot) && rot > 0) UI.rotateSeconds = rot;
 
-  // Global scale knob (still supported): ?scale=0.95 etc — applied after stage fit
+  // View lock
+  const lockView = params.get("view"); // "next" | "all"
+
+  // Global scale (applied to the schedule content)
   const scaleParam = parseFloat(params.get("scale"));
   const globalScale = !isNaN(scaleParam) && scaleParam > 0 ? scaleParam : 1;
 
-  // Column gap (px). We’ll default this to 5 unless overridden.
-  const gapParam = params.get("gap");
-  const gap = !isNaN(parseInt(gapParam,10)) ? Math.max(0, parseInt(gapParam,10)) : 5;
-  document.documentElement.style.setProperty("--cols-gap", `${gap}px`);
-
-  // Optional: cap TOTAL content width by column width: ?colw=720  => max width = 720*2 + gap
-  const colwParam = parseInt(params.get("colw") || "", 10);
-  if (!Number.isNaN(colwParam) && colwParam > 320) {
-    const total = (colwParam * 2) + gap;
-    document.documentElement.style.setProperty("--cols-total-max", total + "px");
-  } else {
-    document.documentElement.style.setProperty("--cols-total-max", "none");
+  // Column width override (?colw=640)
+  const colwParam = parseInt(params.get("colw"), 10);
+  if (!isNaN(colwParam) && colwParam > 300) {
+    document.documentElement.style.setProperty("--col-width", `${colwParam}px`);
   }
 
-  // Dense mode toggle (?dense=1)
+  // Column gap override (?gap=5)
+  const gapParam = parseInt(params.get("gap"), 10);
+  if (!isNaN(gapParam) && gapParam >= 0) {
+    document.documentElement.style.setProperty("--cols-gap", `${gapParam}px`);
+  } else {
+    // default to 5px if not provided (as requested)
+    document.documentElement.style.setProperty("--cols-gap", `5px`);
+  }
+
+  // Dense vs Ultra-dense; ultra wins if both provided
   const dense = params.get("dense") === "1";
-  if (dense) document.body.classList.add("dense");
+  const ultra = params.get("ultra") === "1";
+  if (ultra) {
+    document.body.classList.add("ultra");
+    document.body.classList.remove("dense");
+  } else if (dense) {
+    document.body.classList.add("dense");
+  }
 
-  // Lock view (?view=next|all) + rotation seconds override
-  const rot = parseInt(params.get("rot") || "", 10);
-  if (!isNaN(rot) && rot > 0) UI.rotateSeconds = rot;
-  const lockView = params.get("view"); // "next" | "all"
-
-  // Debug HUD
+  // 16:9 stage controls
+  const fit = (params.get("fit") || "").toLowerCase(); // "16x9"
+  const useStage = (fit === "16x9" || fit === "16/9");
+  const safe = params.get("safe") === "1"; // extra safe padding (if you want it)
   const debug = params.get("debug") === "1";
 
-  // -------- Data fetch --------
+  /* ---------------------------------------------------------
+     FETCH DATA
+     - Schedule JSON (normalized)
+     - Arena manifest (optional background images)
+     --------------------------------------------------------- */
   const sched = await fetch(DATA_URL).then(r => r.json()).then(d => d.items || []).catch(() => []);
   const manifest = await fetch(MANIFEST_URL).then(r => r.json()).catch(() => ({}));
   const arenas = Object.fromEntries(((manifest && manifest.arenas) || []).map(a => [a.arena_key, a]));
 
-  // -------- Helpers --------
+  /* ---------------------------------------------------------
+     HELPERS
+     --------------------------------------------------------- */
 
-  const dividerFor = (han) => (han === "A" ? "at" : "vs"); // no dot here
+  // "vs" for home, "at" for away/neutral (no dot in the schedule row)
+  const dividerFor = (han) => (han === "A" ? "at" : "vs");
+
+  // CSS class for home/away coloring
   const homeClass = (han) => (han === "H" ? "is-home" : "is-away");
-  const rowResult = (g) => (g.result ? (g.result.split(" ")[0] || "") : ""); // "W"/"L"/"T"
 
-  // Abbreviate time strings for chips
+  // Extract a W/L/T token for the result pill CSS
+  const rowResult = (g) => (g.result ? (g.result.split(" ")[0] || "") : "");
+
+  // Abbreviate time strings to save space on schedule chips
   function abbrevTime(s) {
     if (!s || typeof s !== "string") return s;
     s = s.replace(/\s+/g, " ").trim();
@@ -95,9 +134,10 @@
       return mins === "00" ? `${hour} ${ampm}` : `${hour}:${mins} ${ampm}`;
     }
 
-    return s; // TBA etc
+    return s; // leave TBA or anything else alone
   }
 
+  // Format date/time for the hero card line
   const fmtHero = (iso, time) => {
     if (!iso) return time ? abbrevTime(time) : "";
     const d = new Date(iso + "T00:00:00");
@@ -107,16 +147,22 @@
     return [weekday, `${mon} ${day}`, abbrevTime(time || "")].filter(Boolean).join(" • ");
   };
 
+  // Short date for the left cap
   const fmtDay = (iso) =>
     new Date(iso + "T00:00:00").toLocaleDateString("en-US", {
       weekday: "short", month: "short", day: "numeric",
     });
 
-  // Choose "next" game: first not-final with a date; else last item
-  const upcoming = sched.filter(g => g.status !== "final" && g.date).sort((a, b) => a.date.localeCompare(b.date));
+  /* ---------------------------------------------------------
+     CHOOSE "NEXT" GAME
+     - First non-final with a date; else last item
+     --------------------------------------------------------- */
+  const upcoming = sched.filter(g => g.status !== "final" && g.date).sort((a,b) => a.date.localeCompare(b.date));
   const nextGame = upcoming[0] || sched[sched.length - 1];
 
-  // -------- HERO (next game) --------
+  /* ---------------------------------------------------------
+     HERO RENDER
+     --------------------------------------------------------- */
   const nextBg = $("#next-bg");
   const neLogo = $("#ne-logo");
   const oppLogo = $("#opp-logo");
@@ -126,27 +172,34 @@
   const nextTV  = $("#next-tv");
 
   if (nextGame) {
+    // Background image (if present in your images/arenas folder)
     if (nextGame.arena_key) {
       nextBg.style.backgroundImage = `url(images/arenas/${nextGame.arena_key}.jpg)`;
     }
 
-    if (nextGame.nu_logo) neLogo.src  = nextGame.nu_logo;
+    // Logos
+    if (nextGame.nu_logo)  neLogo.src  = nextGame.nu_logo;
     if (nextGame.opp_logo) oppLogo.src = nextGame.opp_logo;
 
+    // Divider text in hero (with a dot)
     const divider = dividerFor(nextGame.home_away);
     $("#divider").textContent = UI.showDividerLiteral ? (divider + ".") : "";
 
+    // Headline: "Nebraska at Opponent" or "Nebraska vs. Opponent"
     const headline =
       (nextGame.home_away === "A" ? "Nebraska at " : "Nebraska vs. ") +
       (nextGame.title || nextGame.opponent || "");
     nextOpp.textContent = headline;
 
+    // Date/time line
     nextDT.textContent = fmtHero(nextGame.date, nextGame.time_local);
-    const city = nextGame.city || "";
+
+    // Location line (city or city + arena)
+    const city  = nextGame.city  || "";
     const arena = nextGame.arena || "";
     nextVenue.textContent = UI.showCityOnly || !arena ? city : `${city} • ${arena}`;
 
-    // TV chip — logo preferred, fallback to text
+    // TV chip (prefer logo)
     nextTV.innerHTML = "";
     if (nextGame.tv_logo) {
       const chip = document.createElement("span");
@@ -163,7 +216,7 @@
       nextTV.appendChild(chip);
     }
 
-    // rank pills (white for both per your preference)
+    // Ranking pills (white for both in hero)
     const neRankEl  = $("#ne-rank");
     const oppRankEl = $("#opp-rank");
     const setRank = (el, rank) => {
@@ -178,70 +231,30 @@
     setRank(oppRankEl, nextGame.opp_rank);
   }
 
-  // -------- SCHEDULE: 2-column grid (fill col 1 top-down, then col 2) --------
+  /* ---------------------------------------------------------
+     SCHEDULE (VIEW-ALL) RENDER
+     - Builds a 2-column layout
+     - Opponent logo + rank dot is placed before the name
+     - Keeps your chips/logos/result logic
+     --------------------------------------------------------- */
 
-  // Find stage nodes
-  const stage = $("#stage");
-  const stageContent = $("#stage-content");
-
-  // Apply stage scale for 16:9 fit + your manual scale
-  if (fitEnabled && stage && stageContent) {
-    // Compute the scale to fit the 16:9 content into the available area while respecting safe padding.
-    // We treat the content’s “natural” size as its CSS size; scale is applied via transform below.
-    const applyFit = () => {
-      // Available pixels for the stage-content (inside stage-inner). We measure the real box.
-      const inner = $(".stage-inner");
-      if (!inner) return;
-
-      const innerRect = inner.getBoundingClientRect();
-
-      // We want a 16:9 box that fits inside innerRect. Compute scale factor against current content width/height.
-      // The content has aspect-ratio: 16/9 and width:100%, so we consider width as limiting dimension.
-      const targetW = innerRect.width;
-      const targetH = innerRect.height;
-      const ar = 16 / 9;
-
-      // Compute the maximum content size that fits in innerRect respecting aspect ratio.
-      let fitW = targetW;
-      let fitH = fitW / ar;
-      if (fitH > targetH) {
-        fitH = targetH;
-        fitW = fitH * ar;
-      }
-
-      // The stage-content is width:100% of its container. We simulate scale by comparing its current CSS pixel box.
-      // Measure current unscaled content box:
-      const contentRect = stageContent.getBoundingClientRect();
-      const curW = contentRect.width || 1;
-      const curH = contentRect.height || 1;
-
-      // Scale to match the fit size, then multiply by your manual globalScale.
-      const scaleToFit = Math.min(fitW / curW, fitH / curH);
-      const finalScale = scaleToFit * globalScale;
-
-      stageContent.style.transform = `translateX(-50%) scale(${finalScale})`;
-    };
-
-    // Prepare transform baseline
-    stageContent.style.position = "absolute";
-    stageContent.style.left = "50%";
-    stageContent.style.top = "0";
-    stageContent.style.transform = "translateX(-50%) scale(1)";
-
-    // Initial fit + on resize
-    applyFit();
-    window.addEventListener("resize", applyFit);
-  } else if (stageContent) {
-    // If fit=off, still honor manual scale
-    stageContent.style.position = "absolute";
-    stageContent.style.left = "50%";
-    stageContent.style.top = "0";
-    stageContent.style.transformOrigin = "top center";
-    stageContent.style.transform = `translateX(-50%) scale(${globalScale})`;
+  // If you’re using the 16:9 stage in index.html, we scale the stage-content.
+  // Otherwise, we scale the .all-wrap directly (older setup).
+  const allWrap = $("#view-all .all-wrap");
+  if (useStage) {
+    // Apply scale to the stage content (so everything inside scales together)
+    const stageContent = $("#stage .stage-content");
+    if (stageContent) {
+      stageContent.style.transform = `scale(${globalScale})`;
+      stageContent.style.transformOrigin = "center center";
+    }
+  } else {
+    // No stage -> scale the schedule wrap directly
+    allWrap.style.transform = `scale(${globalScale})`;
+    allWrap.style.transformOrigin = "top center";
   }
 
-  // Build the schedule DOM inside the stage-content
-  const wrap = $("#view-all .all-wrap");
+  // Build the two columns container
   const cols = document.createElement("div");
   cols.className = "cols";
   const colA = document.createElement("div");
@@ -250,9 +263,9 @@
   colB.className = "col";
   cols.appendChild(colA);
   cols.appendChild(colB);
-  wrap.appendChild(cols);
+  allWrap.appendChild(cols);
 
-  // Small builder for a logo with an optional rank dot
+  // Small helper: build a tiny logo with an optional rank dot
   function buildMark(url, rank) {
     const wrap = document.createElement("span");
     wrap.className = "mark-wrap";
@@ -271,7 +284,7 @@
     return wrap;
   }
 
-  // Single row (card)
+  // Build a single schedule row
   const makeRow = (g) => {
     const row = document.createElement("div");
     row.className = `game-row ${homeClass(g.home_away)}`;
@@ -280,10 +293,10 @@
     const when = document.createElement("div");
     when.className = "when";
     const dayStr = g.date ? fmtDay(g.date) : "";
-    const [dow, mmmdd] = dayStr ? [dayStr.split(", ")[0], dayStr.split(", ")[1]] : ["", ""];
+    const [dow, mmmdd] = dayStr ? [dayStr.split(", ")[0], dayStr.split(", ")[1]] : ["",""];
     when.innerHTML = `<div class="date">${mmmdd || ""}</div><div class="dow">${dow || ""}</div>`;
 
-    // Sentence line: NU logo • vs/at • OPP logo • Opponent Name
+    // Sentence line: N logo, divider, OPP logo, Opponent name
     const line = document.createElement("div");
     line.className = "line";
 
@@ -297,7 +310,7 @@
 
     const oppSpan = document.createElement("span");
     oppSpan.className = "opp-name";
-    // Use plain team name (ranking stays only in the dot)
+    // Ensure name text is clean (ranking stays in the dot, not in the string)
     oppSpan.textContent = g.opponent || g.title || "";
 
     line.appendChild(neWrap);
@@ -305,7 +318,7 @@
     line.appendChild(oppWrap);
     line.appendChild(oppSpan);
 
-    // Chips (result • time • city/arena • TV)
+    // Chips cluster (result, time, city, tv)
     const chips = document.createElement("div");
 
     if (g.status === "final" && g.result) {
@@ -342,23 +355,25 @@
     } else if (Array.isArray(g.tv) && g.tv.length) {
       const tv = document.createElement("span");
       tv.className = "chip tv";
-      tv.textContent = g.tv[0];
+      tv.textContent = g.tv[0]; // keep short; logos are preferred anyway
       chips.appendChild(tv);
     }
 
+    // Assemble row
     row.appendChild(when);
     row.appendChild(line);
     row.appendChild(chips);
     return row;
   };
 
-  // Order: fill Column 1 entirely (top-down) with the first half of games,
-  // then Column 2 (top-down) with the second half.
+  // Fill Column 1 completely (top-down), then Column 2 (top-down)
   const split = Math.ceil(sched.length / 2);
   sched.slice(0, split).forEach(g => colA.appendChild(makeRow(g)));
   sched.slice(split).forEach(g => colB.appendChild(makeRow(g)));
 
-  // -------- View rotation / debug --------
+  /* ---------------------------------------------------------
+     VIEW TOGGLING + DEBUG HUD
+     --------------------------------------------------------- */
   const vNext = $("#view-next");
   const vAll  = $("#view-all");
   const dbg   = $("#debug");
@@ -380,7 +395,14 @@
 
   if (debug) {
     dbg.classList.remove("hidden");
-    dbg.textContent =
-      `games: ${sched.length} • next: ${nextGame ? (nextGame.opponent || "") : "n/a"} • colw-total: ${getComputedStyle(document.documentElement).getPropertyValue("--cols-total-max") || "none"} • gap: ${gap}px`;
+    dbg.textContent = [
+      `games: ${sched.length}`,
+      `next: ${nextGame ? (nextGame.opponent || "") : "n/a"}`,
+      `scale: ${globalScale}`,
+      `colw: ${isNaN(colwParam) ? "default" : colwParam + "px"}`,
+      `gap: ${isNaN(gapParam) ? "5px (default)" : gapParam + "px"}`,
+      `mode: ${ultra ? "ultra" : (dense ? "dense" : "normal")}`,
+      `fit: ${useStage ? "16:9" : "none"}`
+    ].join(" • ");
   }
 })();
