@@ -1,154 +1,90 @@
-Husker Volleyball — Auto Schedule (Display App)
+# Nebraska Volleyball Schedule (static Pages + daily scrape)
 
-This is a single-page web app that shows Nebraska Volleyball’s next game (hero view) and a compact two-column schedule optimized for TV screens, lobbies, and poster players. It’s designed to be hosted on GitHub Pages (or any static host) and controlled entirely by URL parameters—no back end required.
+This mirrors your football project, tailored for volleyball (more matches, tighter grid, rankings, arena helper JSON, and no buttons for display use).
 
-Live app:
-https://hyst16.github.io/VB_Schedule_Nebraska/
+## How it works
+- **Scraper** hits the Huskers schedule page and parses server-rendered text **with Playwright** so lazy-loaded **team + TV logos** resolve correctly.  
+  If a date isn’t present in ISO, it falls back to the visible “AUG 22” style label.
+- **Normalizer** outputs `data/vb_schedule_normalized.json` for the UI (hero + two-column schedule).  
+  It also extracts **Nebraska and opponent rankings** (shown as tiny white dots on the logo corners).
+- **Arena manifest** builds `data/arena_manifest.json` listing every arena background you’ll need (`images/arenas/<slug>.jpg`) and includes the **opponent + arena** for your reference (not used in filenames).
+- **GitHub Actions** run the scraper + normalizer and commit updated JSON back into `data/`.
 
-Best preset for your office TV (what works best):
-?ultra=1&scale=0.90&gap=2
-Full URL: https://hyst16.github.io/VB_Schedule_Nebraska/?ultra=1&scale=0.90&gap=2
+## One-time setup
+1. Create a repo named `VB_Schedule_Nebraska`.
+2. Add the project files (root layout shown below).
+3. **Settings → Pages**: Deploy from **`/docs`** on the `main` branch, or serve from the repo root if you prefer.  
+   Live URL will be `https://<your-username>.github.io/VB_Schedule_Nebraska/`
+4. Run the workflow once: **Actions → Scrape & Build (Volleyball) → Run workflow**.
 
-What’s in the box?
 .
-├─ index.html               # Page shell (loads CSS/JS, defines views)
-├─ assets/
-│  ├─ styles.css            # All layout + visual styling
-│  └─ app.js                # Fetch data, render hero + two-column schedule
-├─ data/
-│  ├─ vb_schedule_normalized.json   # Normalized schedule the app reads
-│  └─ arena_manifest.json           # (Optional) arena keys -> background images
-└─ images/
-   └─ arenas/               # Background photos keyed by arena_key (optional)
+├─ docs/
+│ ├─ index.html
+│ ├─ assets/
+│ │ ├─ styles.css
+│ │ └─ app.js
+│ ├─ data/
+│ │ ├─ vb_schedule_normalized.json # UI reads this
+│ │ └─ arena_manifest.json # optional (for hero backgrounds)
+│ └─ images/
+│ └─ arenas/ # <arena_key>.jpg files (optional)
+├─ data/ # raw + build artifacts written here by scripts
+│ ├─ vb_raw.json
+│ ├─ vb_schedule_normalized.json
+│ └─ arena_manifest.json
+└─ scripts/ # scraper/normalizer (optional folder name)
+├─ scrape_vb.py
+└─ normalize_vb.py
+
+> If you’re serving from `/docs`, your GitHub Pages URL will be `.../VB_Schedule_Nebraska/` and the app will read JSON from `docs/data/`.
+
+## Files you’ll likely touch
+- `data/arena_overrides.json` – force a specific arena name → background slug (optional helper).
+- `docs/assets/styles.css` – tune column width, spacing, pills (TV chip), rank dots, and fonts.
+- `docs/assets/app.js` – rendering order, column split, and URL parameter handling.
+
+## URL parameters (display controls)
+Append these to the page URL; combine as needed:
+
+**Views & rotation**
+- `view=next` — lock to hero “Next Game” view  
+- `view=all` — lock to compact schedule view  
+- `rot=15` — auto-rotate every N seconds (if `view` is not locked)
+
+**Compactness (vertical density)**
+- `dense=1` — tight rows (~25–30% shorter)  
+- `ultra=1` — even tighter than dense (another ~15–20% vertical savings)  
+  > If both appear, **ultra** wins.
+
+**Sizing & layout fit**
+- `fit=16x9` — locks the schedule view to a 16:9 stage, centered and scaled to fit
+- `safe=24` — optional safe padding in pixels around the 16:9 stage (defaults to `24`)
+- `scale=0.95` — scales the **entire schedule view** (fine-tuning for TVs)
+- `colw=700` — per-column width in pixels (wider columns show longer names)
+- `gap=5` — gap between the two columns (pixels). **Default is `5`.**
+
+**Debug**
+- `debug=1` — tiny HUD (bottom-right) with active settings
+
+**Best preset for your TV**
+- `?ultra=1&scale=0.90&gap=2`  
+  Full: `https://hyst16.github.io/VB_Schedule_Nebraska/?ultra=1&scale=0.90&gap=2`
+
+> Tip: If opponent names clip, increase `colw` a bit (e.g., `colw=720`) and/or slightly reduce `scale` (e.g., `0.94`). Lowering `gap` (e.g., `gap=2`) also helps.
+
+## Arena images
+Add JPEGs to `images/arenas/` (or `docs/images/arenas/` if serving from `/docs`) using the `arena_key` from `data/arena_manifest.json`. Example: images/arenas/chi-health-center.jpg
 
 
-The page only reads from data/vb_schedule_normalized.json (and optionally data/arena_manifest.json). Update those files to change what’s displayed.
+If an arena image exists, it’s used as the **hero background** for the next game.
 
-How it works (high level)
+## Notes / roadmap
+- If you later want to include **non-Nebraska matches** at NU invitationals (e.g., *California vs Wright State*), the scraper can be extended to capture those neutral blocks.
+- TV logos: you can keep text pills, or switch to local PNGs/SVGs and point the TV chip to your own `images/networks/` assets.
+- Results already color as **green for wins**, **red for losses**, **gray for ties**.
+- Rankings are shown as **tiny white dots** on the bottom-right of each team’s logo (not inside the opponent name text).
 
-app.js loads JSON from /data/vb_schedule_normalized.json (and arena_manifest.json if present).
-
-It finds the next upcoming game for the hero and renders all games into a fixed two-column schedule.
-
-It applies your URL parameters (dense/ultra compactness, scaling, column width, gaps, etc.) so the layout looks perfect on different screens (laptop vs TV).
-
-If an arena_key matches an image in images/arenas/, that image is used as the hero background.
-
-Data format (expected fields)
-
-A normalized schedule array under items, e.g.:
-
-{
-  "items": [
-    {
-      "date": "2025-08-22",
-      "time_local": "8:00 PM CDT",
-      "home_away": "H",
-      "nu_rank": 1,
-      "opponent": "Pittsburgh",
-      "opp_rank": 3,
-      "title": "Pittsburgh",
-      "arena": "Pinnacle Bank Arena",
-      "city": "Lincoln, Neb.",
-      "arena_key": "pinnacle-bank-arena",
-      "nu_logo": "https://...png",
-      "opp_logo": "https://...svg",
-      "tv_logo": "https://...png",
-      "tv": ["FOX"],
-      "status": "final",
-      "result": "W 3-1",
-      "result_css": "W",
-      "notes": null,
-      "links": [{ "title": "Watch", "href": "..." }]
-    }
-  ]
-}
-
-
-Notes
-
-Keep opponent/team names clean (no #3 in the text). Rankings show as tiny white dots on the bottom-right of the corresponding logos.
-
-tv_logo is preferred for the TV chip; if missing, the first string in tv is shown.
-
-URL parameters
-
-Stack these in any order, e.g. ?view=all&ultra=1&scale=0.9&gap=2.
-
-View & rotation
-
-view=next — lock to the hero “Next Game” view
-
-view=all — lock to the compact schedule view
-
-rot=15 — auto-rotate every N seconds between next/all (if view not locked)
-
-Compactness (vertical space)
-
-dense=1 — tighter rows (about 25–30% shorter)
-
-ultra=1 — even tighter than dense (another ~15–20% vertical savings)
-If both are present, ultra wins.
-
-Sizing & fit
-
-scale=0.95 — scales the whole schedule content (fine-tune to fit TV)
-
-colw=700 — force each column width (px). More width = longer names fit
-
-gap=5 — gap between the two columns (px). Default is gap=5
-
-The app can also support a 16:9 “stage” mode (fit=16x9) if your index.html includes that wrapper. Your current preset doesn’t need it.
-
-Debugging
-
-debug=1 — shows a tiny HUD with the active settings (bottom-right)
-
-Recommended presets
-
-Office TV (your best):
-?ultra=1&scale=0.90&gap=2
-Full: https://hyst16.github.io/VB_Schedule_Nebraska/?ultra=1&scale=0.90&gap=2
-
-Laptop quick check (wider columns):
-?view=all&dense=1&colw=700&gap=8
-
-Hero only (lobby splash):
-?view=next
-
-Troubleshooting
-
-Opponent names get cut off:
-Increase colw (e.g., colw=720) and/or decrease gap. If you still need room, reduce scale slightly (e.g., 0.96, 0.94).
-
-Rows run off the bottom on the TV:
-Turn on ultra=1 (or dense=1) and nudge scale down in tiny steps. Using gap=2 also helps.
-
-No arena background in hero:
-Ensure arena_key in the JSON matches a file name in images/arenas/ (e.g., pinnacle-bank-arena.jpg).
-
-TV logo pill missing:
-If tv_logo is absent or fails to load, the pill shows the first tv string instead (e.g., “FOX”).
-
-Updating the data
-
-This app is static and reads from files in /data. To update:
-
-Replace data/vb_schedule_normalized.json with your latest normalized schedule (same schema).
-
-(Optional) Update data/arena_manifest.json and images/arenas/ if you add new arena backdrops.
-
-Commit & push to main—GitHub Pages updates automatically.
-
-If you maintain a Python scraper/normalizer in another repo, have that pipeline write the updated files here.
-
-Dev tips
-
-Open locally with a simple static server (e.g., VS Code Live Server) or use GitHub Pages.
-
-Most TV fit issues are solved by a combo of:
-ultra=1, a small scale tweak, a sensible colw, and a small gap.
-
-License
-
-Do whatever you need for your display use case. If you improve the layout or add a new knob, PRs welcome!
+## Updating data (day-to-day)
+1. Let the scheduled Action run, or trigger it manually from **Actions**.
+2. It updates `data/vb_schedule_normalized.json` (and `data/arena_manifest.json` if needed).
+3. GitHub Pages serves the fresh files immediately; the app cache-busts JSON fetches with `?v=timestamp`.
