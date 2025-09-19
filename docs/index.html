@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Husker Volleyball — Auto Schedule (16:9 fit)</title>
+  <title>Husker Volleyball — Auto Schedule</title>
 
-  <!-- Cache-busted CSS -->
-  <link rel="stylesheet" href="assets/styles.css?v=2025-09-19-fit169" />
+  <!-- Cache-bust CSS so signage players don't reuse old files -->
+  <link rel="stylesheet" href="assets/styles.css?v=2025-09-19-1" />
 
-  <!-- Hard no-cache for signage players -->
+  <!-- Disable caching aggressively -->
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
 </head>
 <body>
-  <!-- HERO / “next game” view (unchanged) -->
+  <!-- =============== NEXT / HERO =============== -->
   <div id="view-next" class="view hidden">
     <div class="bg" id="next-bg"></div>
     <div class="next-card">
@@ -37,37 +37,39 @@
     </div>
   </div>
 
-  <!-- SCHEDULE / two-column view -->
+  <!-- =============== SCHEDULE (16:9 STAGE) =============== -->
+  <!-- The stage is a fixed 16:9 box centered on screen. We scale the INNER content to fit. -->
   <div id="view-all" class="view hidden">
-    <!--
-      STAGE: fixed 16:9 canvas that we’ll center on the screen.
-      We keep a little safe padding so cards don’t kiss the bezel.
-    -->
     <div id="stage" class="stage">
-      <div class="stage-inner">
-        <!-- JS injects the two columns here -->
-        <div class="all-wrap"></div>
+      <!-- The 16:9 box itself -->
+      <div id="stage-box" class="stage-box">
+        <!-- We anchor content at TOP-CENTER so it never drifts when scaled -->
+        <div id="stage-content" class="stage-content">
+          <!-- JS injects the schedule grid (.cols) here -->
+          <div class="all-wrap"><!-- injected --></div>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- tiny debug readout when ?debug=1 -->
   <div id="debug" class="debug hidden"></div>
 
   <script>
-    // UI knobs (can be overridden by URL params)
+    // UI defaults (can be overridden by URL params)
     window.UI = {
+      theme: "classic-husker",
       rotateSeconds: 15,
       showDividerLiteral: true,
-      showCityOnly: true
+      showCityOnly: true,
+      kenBurns: false
     };
 
     // Cache-bust data fetches
-    window.DATA_URL = "data/vb_schedule_normalized.json?v=" + Date.now();
+    window.DATA_URL     = "data/vb_schedule_normalized.json?v=" + Date.now();
     window.MANIFEST_URL = "data/arena_manifest.json?v=" + Date.now();
   </script>
 
-  <!-- Cache-busted JS -->
-  <script src="assets/app.js?v=2025-09-19-fit169"></script>
+  <!-- Cache-bust JS -->
+  <script src="assets/app.js?v=2025-09-19-1"></script>
 </body>
 </html>
