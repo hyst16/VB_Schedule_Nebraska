@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2025-09-24T13:37:30.816101+00:00",
+  "scraped_at": "2025-09-25T07:32:27.970017+00:00",
   "items": [
     {
       "date": null,
@@ -485,7 +485,7 @@
     {
       "date": null,
       "date_text": "SEP 24",
-      "time_local": "6:00 PM CDT",
+      "time_local": null,
       "venue_type": "H",
       "nu_rank": null,
       "opp_rank": null,
@@ -495,8 +495,11 @@
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/VfZOPfPJ8Ps9IldV9Wlg3gdY47UFgUjU17DI6zZE.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/1Dsb_dIet_Zh4V52NHpk2P6twI38akA8iEaIWPZpVDs/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
-      "status": "scheduled",
-      "result": null,
+      "status": "final",
+      "result": {
+        "outcome": "W",
+        "sets": "3-0"
+      },
       "links": [
         {
           "title": "Watch",
@@ -508,11 +511,19 @@
         },
         {
           "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+          "href": "https://stats.statbroadcast.com/statmonitr/?id=601959"
         },
         {
           "title": "Sold Out! Buy on SeatGeek",
           "href": "https://seatgeek.com/nebraska-cornhuskers-womens-volleyball-tickets/womens-college-volleyball/2025-09-24-6-pm/17607634?aid=16101&pid=sell_out_page_social&rid=45924&utm_campaign=integration&utm_medium=partnership&utm_source=nebraska_sponsorship"
+        },
+        {
+          "title": "Box Score (PDF)",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2025/09/25/mQ571uhUDYgO0FlbhPtA2zgom7y0Mt068HEchqmr.pdf"
+        },
+        {
+          "title": "Recap",
+          "href": "https://huskers.com/news/2025/09/25/huskers-open-big-ten-play-with-sweep-of-michigan"
         }
       ],
       "divider_text": "vs."
@@ -543,7 +554,7 @@
         },
         {
           "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+          "href": "https://stats.statbroadcast.com/broadcast/?id=606138"
         },
         {
           "title": "Sold Out! Buy on SeatGeek",
