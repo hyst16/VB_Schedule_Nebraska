@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2025-09-25T13:39:17.844373+00:00",
+  "scraped_at": "2025-09-26T07:31:28.115790+00:00",
   "items": [
     {
       "date": null,
@@ -520,6 +520,10 @@
         {
           "title": "Box Score (PDF)",
           "href": "https://storage.googleapis.com/huskers-com-prod/2025/09/25/mQ571uhUDYgO0FlbhPtA2zgom7y0Mt068HEchqmr.pdf"
+        },
+        {
+          "title": "Box Score",
+          "href": "https://huskers.com/boxscore/23678"
         },
         {
           "title": "Recap",
