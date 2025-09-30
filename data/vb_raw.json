@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2025-09-29T13:39:11.761751+00:00",
+  "scraped_at": "2025-09-30T07:31:13.838404+00:00",
   "items": [
     {
       "date": null,
@@ -487,7 +487,7 @@
       "date_text": "SEP 24",
       "time_local": null,
       "venue_type": "H",
-      "nu_rank": null,
+      "nu_rank": 1,
       "opp_rank": null,
       "opponent_name": "Michigan",
       "city": "Lincoln, Neb.",
