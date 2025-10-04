@@ -582,7 +582,7 @@
     },
     {
       "date": "2025-10-03",
-      "time_local": "7:00 PM CDT",
+      "time_local": null,
       "home_away": "A",
       "nu_rank": 1,
       "opponent": "Penn State",
@@ -595,9 +595,9 @@
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/eSnEQOMzqgY8gAPCfxR90DNlJ0vOuXDQfhvTLM4h.svg",
       "tv_logo": "https://huskers.com/imgproxy/hW5X3PRTPD7TTcYfZQvChvP-o5z_cztMNxjE6xbKxes/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC92MDVEblk1VkNLMW9HYUcxOVp6RmNUYUtHTGJERktsbUI4azB0QUtsLnBuZw.png",
       "tv": [],
-      "status": "scheduled",
-      "result": null,
-      "result_css": null,
+      "status": "final",
+      "result": "W 3-0",
+      "result_css": "W",
       "notes": null,
       "links": [
         {
@@ -610,7 +610,15 @@
         },
         {
           "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+          "href": "https://stats.statbroadcast.com/statmonitr/?id=610105&_gl=1*75p3gz*_ga*MTM0MTgzODQyMC4xNzUwMTAzNjY3*_ga_2ZWVK1X7BJ*czE3NTk1MzQwMTIkbzQxJGcxJHQxNzU5NTM2MzI1JGo1OSRsMCRoMA.."
+        },
+        {
+          "title": "Box Score (PDF)",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2025/10/04/6QEj2xdgjX6HqdKXG05QB7tUOu6hVHwLBdH9LAuv.pdf"
+        },
+        {
+          "title": "Box Score",
+          "href": "https://huskers.com/boxscore/23688"
         }
       ]
     },
@@ -644,7 +652,7 @@
         },
         {
           "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+          "href": "https://stats.statbroadcast.com/broadcast/?id=606399"
         }
       ]
     },

@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2025-10-03T13:36:47.375182+00:00",
+  "scraped_at": "2025-10-04T07:27:52.120498+00:00",
   "items": [
     {
       "date": null,
@@ -585,7 +585,7 @@
     {
       "date": null,
       "date_text": "OCT 3",
-      "time_local": "7:00 PM CDT",
+      "time_local": null,
       "venue_type": "A",
       "nu_rank": 1,
       "opp_rank": 16,
@@ -595,8 +595,11 @@
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/eSnEQOMzqgY8gAPCfxR90DNlJ0vOuXDQfhvTLM4h.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/hW5X3PRTPD7TTcYfZQvChvP-o5z_cztMNxjE6xbKxes/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC92MDVEblk1VkNLMW9HYUcxOVp6RmNUYUtHTGJERktsbUI4azB0QUtsLnBuZw.png",
-      "status": "scheduled",
-      "result": null,
+      "status": "final",
+      "result": {
+        "outcome": "W",
+        "sets": "3-0"
+      },
       "links": [
         {
           "title": "Watch",
@@ -608,7 +611,15 @@
         },
         {
           "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+          "href": "https://stats.statbroadcast.com/statmonitr/?id=610105&_gl=1*75p3gz*_ga*MTM0MTgzODQyMC4xNzUwMTAzNjY3*_ga_2ZWVK1X7BJ*czE3NTk1MzQwMTIkbzQxJGcxJHQxNzU5NTM2MzI1JGo1OSRsMCRoMA.."
+        },
+        {
+          "title": "Box Score (PDF)",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2025/10/04/6QEj2xdgjX6HqdKXG05QB7tUOu6hVHwLBdH9LAuv.pdf"
+        },
+        {
+          "title": "Box Score",
+          "href": "https://huskers.com/boxscore/23688"
         }
       ],
       "divider_text": "at"
@@ -639,7 +650,7 @@
         },
         {
           "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+          "href": "https://stats.statbroadcast.com/broadcast/?id=606399"
         }
       ],
       "divider_text": "at"
