@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2025-10-09T07:33:14.468035+00:00",
+  "scraped_at": "2025-10-10T13:38:23.574551+00:00",
   "items": [
     {
       "date": null,
@@ -595,7 +595,7 @@
       "date_text": "OCT 10",
       "time_local": "8:00 PM CDT",
       "venue_type": "H",
-      "nu_rank": null,
+      "nu_rank": 1,
       "opp_rank": null,
       "opponent_name": "Washington",
       "city": "Lincoln, Neb.",
@@ -630,8 +630,8 @@
       "date_text": "OCT 12",
       "time_local": "12:00 PM CDT",
       "venue_type": "A",
-      "nu_rank": null,
-      "opp_rank": null,
+      "nu_rank": 1,
+      "opp_rank": 12,
       "opponent_name": "Purdue",
       "city": "West Lafayette, Ind.",
       "arena": "Holloway Gymnasium",
