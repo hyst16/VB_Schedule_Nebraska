@@ -590,7 +590,7 @@
     },
     {
       "date": "2025-10-10",
-      "time_local": "8:00 PM CDT",
+      "time_local": null,
       "home_away": "H",
       "nu_rank": 1,
       "opponent": "Washington",
@@ -603,11 +603,15 @@
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/aduluAGeTcF8UtJgQe2OQ8NPQ4RdWHL5CNunZmOf.svg",
       "tv_logo": "https://huskers.com/imgproxy/1Dsb_dIet_Zh4V52NHpk2P6twI38akA8iEaIWPZpVDs/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "tv": [],
-      "status": "scheduled",
-      "result": null,
-      "result_css": null,
+      "status": "final",
+      "result": "W 3-0",
+      "result_css": "W",
       "notes": null,
       "links": [
+        {
+          "title": "Box Score (PDF)",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2025/10/11/IwFng42rt8KeeW4169fzjt6lzJoNIVNzkOoKjop4.pdf"
+        },
         {
           "title": "Watch",
           "href": "https://www.foxsports.com/live"
@@ -617,12 +621,12 @@
           "href": "https://huskers.com/listen"
         },
         {
-          "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+          "title": "Box Score",
+          "href": "https://huskers.com/boxscore/23680"
         },
         {
-          "title": "Sold Out! Buy on SeatGeek",
-          "href": "https://seatgeek.com/nebraska-cornhuskers-womens-volleyball-tickets/womens-college-volleyball/2025-10-10-8-pm/17607636?aid=16101&pid=sell_out_page_social&rid=45940&utm_campaign=integration&utm_medium=partnership&utm_source=nebraska_sponsorship"
+          "title": "Recap",
+          "href": "https://huskers.com/news/2025/10/11/huskers-defeat-washington-3-0"
         }
       ]
     },
