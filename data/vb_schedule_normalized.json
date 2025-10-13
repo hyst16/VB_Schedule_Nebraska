@@ -632,7 +632,7 @@
     },
     {
       "date": "2025-10-12",
-      "time_local": "12:00 PM CDT",
+      "time_local": null,
       "home_away": "A",
       "nu_rank": 1,
       "opponent": "Purdue",
@@ -645,9 +645,9 @@
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/xNszGRTqhoa3HqgCuw8xM0n8NiRYDXihzYzPIdG9.svg",
       "tv_logo": "https://huskers.com/imgproxy/kWKct3j7l1OuknPH2GBSO10bDgncqqetuE9MXsgbUio/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOC8wMS9YOGFieFJhdUprY2RyeXpLVjZFTUJJWmpRNE15djZ3S3NvMjlxRzlPLmpwZw.jpg",
       "tv": [],
-      "status": "scheduled",
-      "result": null,
-      "result_css": null,
+      "status": "final",
+      "result": "W 3-0",
+      "result_css": "W",
       "notes": null,
       "links": [
         {
@@ -659,8 +659,16 @@
           "href": "https://huskers.com/listen"
         },
         {
-          "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+          "title": "Box Score (PDF)",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2025/10/12/hxOJCgd5LHqpoblQ0EnOL7co0JfCE2g2GmuqoiWw.pdf"
+        },
+        {
+          "title": "Box Score",
+          "href": "https://huskers.com/boxscore/23690"
+        },
+        {
+          "title": "Recap",
+          "href": "https://huskers.com/news/2025/10/12/nebraska-vb-at-purdue-10-12-25"
         }
       ]
     },

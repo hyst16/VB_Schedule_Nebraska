@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2025-10-12T13:29:28.117840+00:00",
+  "scraped_at": "2025-10-13T07:33:13.250897+00:00",
   "items": [
     {
       "date": null,
@@ -635,7 +635,7 @@
     {
       "date": null,
       "date_text": "OCT 12",
-      "time_local": "12:00 PM CDT",
+      "time_local": null,
       "venue_type": "A",
       "nu_rank": 1,
       "opp_rank": 12,
@@ -645,8 +645,11 @@
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/xNszGRTqhoa3HqgCuw8xM0n8NiRYDXihzYzPIdG9.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/kWKct3j7l1OuknPH2GBSO10bDgncqqetuE9MXsgbUio/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOC8wMS9YOGFieFJhdUprY2RyeXpLVjZFTUJJWmpRNE15djZ3S3NvMjlxRzlPLmpwZw.jpg",
-      "status": "scheduled",
-      "result": null,
+      "status": "final",
+      "result": {
+        "outcome": "W",
+        "sets": "3-0"
+      },
       "links": [
         {
           "title": "Watch",
@@ -657,8 +660,16 @@
           "href": "https://huskers.com/listen"
         },
         {
-          "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+          "title": "Box Score (PDF)",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2025/10/12/hxOJCgd5LHqpoblQ0EnOL7co0JfCE2g2GmuqoiWw.pdf"
+        },
+        {
+          "title": "Box Score",
+          "href": "https://huskers.com/boxscore/23690"
+        },
+        {
+          "title": "Recap",
+          "href": "https://huskers.com/news/2025/10/12/nebraska-vb-at-purdue-10-12-25"
         }
       ],
       "divider_text": "at"
