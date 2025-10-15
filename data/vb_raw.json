@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2025-10-14T13:40:39.655325+00:00",
+  "scraped_at": "2025-10-15T07:34:11.946994+00:00",
   "items": [
     {
       "date": null,
@@ -919,13 +919,13 @@
       "arena": "Maturi Pavilion",
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/C3Z8GJ3Nxf8uQOj0yM8sNk4HpOGW5qVREe71F2Ao.svg",
-      "tv_network_logo_url": "https://huskers.com/imgproxy/ZhWncpRZd0IkmXdHA-Ji8yhJIupJPwrv_8TTHqZ-ifE/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wOC8xOS9RcjB3TDhzMkd4VXBmZHF3enZFd2hBZnVwYnpmMFU1eXVLcnRLUUt2LnBuZw.png",
+      "tv_network_logo_url": "https://huskers.com/imgproxy/wCuzyLey0zoGk--Q7pvQe7UDeZlHP8TbCS8yvX8SMos/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8zMC9aZHB4bkJoazV3RUlEcU1xWGtkdkptbUFkZVhYQk1wckc4SnhUcjN2LnBuZw.png",
       "status": "scheduled",
       "result": null,
       "links": [
         {
           "title": "Watch",
-          "href": "https://www.nbcsports.com/watch"
+          "href": "http://www.peacock.com/"
         },
         {
           "title": "Listen",
