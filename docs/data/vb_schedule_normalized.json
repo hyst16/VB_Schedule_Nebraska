@@ -674,9 +674,9 @@
     },
     {
       "date": "2025-10-17",
-      "time_local": "6:00 PM CDT",
+      "time_local": null,
       "home_away": "A",
-      "nu_rank": null,
+      "nu_rank": 1,
       "opponent": "Michigan State",
       "opp_rank": null,
       "title": "Michigan State",
@@ -687,9 +687,9 @@
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/V9lNQEH7qMyFnbplkvJZlFgTfYn4p67blAA6S4D4.svg",
       "tv_logo": "https://huskers.com/imgproxy/kWKct3j7l1OuknPH2GBSO10bDgncqqetuE9MXsgbUio/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOC8wMS9YOGFieFJhdUprY2RyeXpLVjZFTUJJWmpRNE15djZ3S3NvMjlxRzlPLmpwZw.jpg",
       "tv": [],
-      "status": "scheduled",
-      "result": null,
-      "result_css": null,
+      "status": "final",
+      "result": "W 3-0",
+      "result_css": "W",
       "notes": null,
       "links": [
         {
@@ -701,8 +701,12 @@
           "href": "https://huskers.com/listen"
         },
         {
-          "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+          "title": "Box Score (PDF)",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2025/10/18/SxDou5kS70Zycu9OHmfu0AAl81XeJn0Xecyh0Qkf.pdf"
+        },
+        {
+          "title": "Recap",
+          "href": "https://huskers.com/news/2025/10/18/nebraska-vb-recap-at-michigan-state-10-17-25"
         }
       ]
     },

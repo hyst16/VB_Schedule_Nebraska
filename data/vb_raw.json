@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2025-10-17T13:38:08.139140+00:00",
+  "scraped_at": "2025-10-18T07:28:44.404394+00:00",
   "items": [
     {
       "date": null,
@@ -677,9 +677,9 @@
     {
       "date": null,
       "date_text": "OCT 17",
-      "time_local": "6:00 PM CDT",
+      "time_local": null,
       "venue_type": "A",
-      "nu_rank": null,
+      "nu_rank": 1,
       "opp_rank": null,
       "opponent_name": "Michigan State",
       "city": "East Lansing, Mich.",
@@ -687,8 +687,11 @@
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/V9lNQEH7qMyFnbplkvJZlFgTfYn4p67blAA6S4D4.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/kWKct3j7l1OuknPH2GBSO10bDgncqqetuE9MXsgbUio/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOC8wMS9YOGFieFJhdUprY2RyeXpLVjZFTUJJWmpRNE15djZ3S3NvMjlxRzlPLmpwZw.jpg",
-      "status": "scheduled",
-      "result": null,
+      "status": "final",
+      "result": {
+        "outcome": "W",
+        "sets": "3-0"
+      },
       "links": [
         {
           "title": "Watch",
@@ -699,8 +702,12 @@
           "href": "https://huskers.com/listen"
         },
         {
-          "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+          "title": "Box Score (PDF)",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2025/10/18/SxDou5kS70Zycu9OHmfu0AAl81XeJn0Xecyh0Qkf.pdf"
+        },
+        {
+          "title": "Recap",
+          "href": "https://huskers.com/news/2025/10/18/nebraska-vb-recap-at-michigan-state-10-17-25"
         }
       ],
       "divider_text": "at"
