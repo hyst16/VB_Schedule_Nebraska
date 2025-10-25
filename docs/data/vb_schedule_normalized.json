@@ -758,9 +758,9 @@
     },
     {
       "date": "2025-10-24",
-      "time_local": "6:00 PM CDT",
+      "time_local": null,
       "home_away": "H",
-      "nu_rank": null,
+      "nu_rank": 1,
       "opponent": "Northwestern",
       "opp_rank": null,
       "title": "Northwestern",
@@ -771,9 +771,9 @@
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/1UQISSq3eRDnRJIAjeXGWar8aTYdy9GWB56k0WDg.svg",
       "tv_logo": "https://huskers.com/imgproxy/MXubl9qIt0COjOck1RgrRtrtU9ZmAhC4WjYBHmg1C6s/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wOC8xOS81MTVLT25xcW94aHBvSTRZWVA5emdTaU83ZFk3b0FIUThtdFl2RnZlLnBuZw.png",
       "tv": [],
-      "status": "scheduled",
-      "result": null,
-      "result_css": null,
+      "status": "final",
+      "result": "W 3-0",
+      "result_css": "W",
       "notes": null,
       "links": [
         {
@@ -785,12 +785,16 @@
           "href": "https://huskers.com/listen"
         },
         {
-          "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+          "title": "Box Score (PDF)",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2025/10/25/55rRHU0wwQYRUXJCvCmEUTpb1iXw0tO24hox96mz.pdf"
         },
         {
-          "title": "Sold Out! Buy on SeatGeek",
-          "href": "https://seatgeek.com/nebraska-cornhuskers-womens-volleyball-tickets/womens-college-volleyball/2025-10-24-6-pm/17607637?aid=16101&pid=sell_out_page_social&rid=45954&utm_campaign=integration&utm_medium=partnership&utm_source=nebraska_sponsorship"
+          "title": "Box Score",
+          "href": "https://huskers.com/boxscore/23681"
+        },
+        {
+          "title": "Recap",
+          "href": "https://huskers.com/news/2025/10/25/huskers-win-10th-sweep-in-a-row"
         }
       ]
     },

@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2025-10-24T13:46:46.752804+00:00",
+  "scraped_at": "2025-10-25T07:29:39.445757+00:00",
   "items": [
     {
       "date": null,
@@ -761,9 +761,9 @@
     {
       "date": null,
       "date_text": "OCT 24",
-      "time_local": "6:00 PM CDT",
+      "time_local": null,
       "venue_type": "H",
-      "nu_rank": null,
+      "nu_rank": 1,
       "opp_rank": null,
       "opponent_name": "Northwestern",
       "city": "Lincoln, Neb.",
@@ -771,8 +771,11 @@
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/1UQISSq3eRDnRJIAjeXGWar8aTYdy9GWB56k0WDg.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/MXubl9qIt0COjOck1RgrRtrtU9ZmAhC4WjYBHmg1C6s/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wOC8xOS81MTVLT25xcW94aHBvSTRZWVA5emdTaU83ZFk3b0FIUThtdFl2RnZlLnBuZw.png",
-      "status": "scheduled",
-      "result": null,
+      "status": "final",
+      "result": {
+        "outcome": "W",
+        "sets": "3-0"
+      },
       "links": [
         {
           "title": "Watch",
@@ -783,12 +786,16 @@
           "href": "https://huskers.com/listen"
         },
         {
-          "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+          "title": "Box Score (PDF)",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2025/10/25/55rRHU0wwQYRUXJCvCmEUTpb1iXw0tO24hox96mz.pdf"
         },
         {
-          "title": "Sold Out! Buy on SeatGeek",
-          "href": "https://seatgeek.com/nebraska-cornhuskers-womens-volleyball-tickets/womens-college-volleyball/2025-10-24-6-pm/17607637?aid=16101&pid=sell_out_page_social&rid=45954&utm_campaign=integration&utm_medium=partnership&utm_source=nebraska_sponsorship"
+          "title": "Box Score",
+          "href": "https://huskers.com/boxscore/23681"
+        },
+        {
+          "title": "Recap",
+          "href": "https://huskers.com/news/2025/10/25/huskers-win-10th-sweep-in-a-row"
         }
       ],
       "divider_text": "vs."
