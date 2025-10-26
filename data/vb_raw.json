@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2025-10-25T13:32:53.113764+00:00",
+  "scraped_at": "2025-10-26T07:29:35.243898+00:00",
   "items": [
     {
       "date": null,
@@ -803,9 +803,9 @@
     {
       "date": null,
       "date_text": "OCT 25",
-      "time_local": "7:30 PM CDT",
+      "time_local": null,
       "venue_type": "H",
-      "nu_rank": null,
+      "nu_rank": 1,
       "opp_rank": null,
       "opponent_name": "Michigan State",
       "city": "Lincoln, Neb.",
@@ -813,8 +813,11 @@
       "nebraska_logo_url": "https://huskers.com/imgproxy/2f6lOAAbu7hSZMM8ACWLRQQg-jfngK-kty2-v32U38k/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/V9lNQEH7qMyFnbplkvJZlFgTfYn4p67blAA6S4D4.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/1Dsb_dIet_Zh4V52NHpk2P6twI38akA8iEaIWPZpVDs/rs:fit:1980:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
-      "status": "scheduled",
-      "result": null,
+      "status": "final",
+      "result": {
+        "outcome": "W",
+        "sets": "3-0"
+      },
       "links": [
         {
           "title": "Watch",
@@ -825,12 +828,16 @@
           "href": "https://huskers.com/listen"
         },
         {
-          "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+          "title": "Box Score (PDF)",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2025/10/26/2DzR7rzkStfxWJK58QXwUQa1k1Az5e03Fc2VGZFf.pdf"
         },
         {
-          "title": "Sold Out! Buy on SeatGeek",
-          "href": "https://seatgeek.com/nebraska-cornhuskers-womens-volleyball-tickets/womens-college-volleyball/2025-10-25-7-30-pm/17607638?aid=16101&pid=sell_out_page_social&rid=45955&utm_campaign=integration&utm_medium=partnership&utm_source=nebraska_sponsorship"
+          "title": "Box Score",
+          "href": "https://huskers.com/boxscore/23682"
+        },
+        {
+          "title": "Recap",
+          "href": "https://huskers.com/news/2025/10/26/nebraska-vb-recap-msu-10-25-25"
         }
       ],
       "divider_text": "vs."
