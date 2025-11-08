@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2025-11-07T13:37:24.609322+00:00",
+  "scraped_at": "2025-11-08T07:30:12.893037+00:00",
   "items": [
     {
       "date": null,
@@ -946,16 +946,16 @@
       },
       "links": [
         {
+          "title": "Box Score (PDF)",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2025/11/07/0nJq5GqGpkKo0iiCMnlVTJ2EokmznlevXXDPON2f.pdf"
+        },
+        {
           "title": "Watch",
           "href": "https://www.foxsports.com/live"
         },
         {
           "title": "Listen",
           "href": "https://huskers.com/listen"
-        },
-        {
-          "title": "Box Score (PDF)",
-          "href": "https://storage.googleapis.com/huskers-com-prod/2025/11/07/0nJq5GqGpkKo0iiCMnlVTJ2EokmznlevXXDPON2f.pdf"
         },
         {
           "title": "Box Score",
