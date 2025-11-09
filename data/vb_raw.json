@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2025-11-08T13:32:11.874326+00:00",
+  "scraped_at": "2025-11-09T07:29:59.101048+00:00",
   "items": [
     {
       "date": null,
@@ -958,6 +958,10 @@
           "href": "https://huskers.com/listen"
         },
         {
+          "title": "Box Score (PDF)",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2025/11/07/0nJq5GqGpkKo0iiCMnlVTJ2EokmznlevXXDPON2f.pdf"
+        },
+        {
           "title": "Box Score",
           "href": "https://huskers.com/boxscore/23684"
         },
@@ -971,18 +975,21 @@
     {
       "date": null,
       "date_text": "NOV 8",
-      "time_local": "2:30 PM CST",
+      "time_local": null,
       "venue_type": "A",
-      "nu_rank": null,
-      "opp_rank": null,
+      "nu_rank": 1,
+      "opp_rank": 22,
       "opponent_name": "Minnesota",
       "city": "Minneapolis, Minn.",
       "arena": "Maturi Pavilion",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/C3Z8GJ3Nxf8uQOj0yM8sNk4HpOGW5qVREe71F2Ao.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/uF_LnR09pS-ZsANOQk63vj6EOLxk5zY0ohm-HbR28eY/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8zMC9aZHB4bkJoazV3RUlEcU1xWGtkdkptbUFkZVhYQk1wckc4SnhUcjN2LnBuZw.png",
-      "status": "scheduled",
-      "result": null,
+      "status": "final",
+      "result": {
+        "outcome": "W",
+        "sets": "3-0"
+      },
       "links": [
         {
           "title": "Watch",
@@ -993,8 +1000,16 @@
           "href": "https://huskers.com/listen"
         },
         {
-          "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+          "title": "Box Score (PDF)",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2025/11/08/2uPzgII8uWcuhnd1kfQFvyvxyu6ICcgzQW2z0Ayk.pdf"
+        },
+        {
+          "title": "Box Score",
+          "href": "https://huskers.com/boxscore/23694"
+        },
+        {
+          "title": "Recap",
+          "href": "https://huskers.com/news/2025/11/8/husker-vb-recap-at-minnesota"
         }
       ],
       "divider_text": "at"
