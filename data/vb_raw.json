@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2025-11-13T13:43:48.536896+00:00",
+  "scraped_at": "2025-11-14T07:32:03.314276+00:00",
   "items": [
     {
       "date": null,
@@ -1019,7 +1019,7 @@
       "date_text": "NOV 14",
       "time_local": "9:00 PM CST",
       "venue_type": "A",
-      "nu_rank": null,
+      "nu_rank": 1,
       "opp_rank": null,
       "opponent_name": "UCLA",
       "city": "Los Angeles, Calif.",
@@ -1050,8 +1050,8 @@
       "date_text": "NOV 16",
       "time_local": "2:00 PM CST",
       "venue_type": "A",
-      "nu_rank": null,
-      "opp_rank": null,
+      "nu_rank": 1,
+      "opp_rank": 17,
       "opponent_name": "USC",
       "city": "Los Angeles, Calif.",
       "arena": "Galen Center",
@@ -1180,7 +1180,7 @@
     {
       "date": null,
       "date_text": "NOV 29",
-      "time_local": "TBA",
+      "time_local": "8:00 PM CST",
       "venue_type": "H",
       "nu_rank": null,
       "opp_rank": null,
