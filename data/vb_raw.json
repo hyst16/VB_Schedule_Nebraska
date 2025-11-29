@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2025-11-28T13:39:57.178022+00:00",
+  "scraped_at": "2025-11-29T07:30:16.059660+00:00",
   "items": [
     {
       "date": null,
@@ -1185,18 +1185,21 @@
     {
       "date": null,
       "date_text": "NOV 28",
-      "time_local": "5:30 PM CST",
+      "time_local": null,
       "venue_type": "H",
-      "nu_rank": null,
-      "opp_rank": null,
+      "nu_rank": 1,
+      "opp_rank": 25,
       "opponent_name": "Penn State",
       "city": "Lincoln, Neb.",
       "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/eSnEQOMzqgY8gAPCfxR90DNlJ0vOuXDQfhvTLM4h.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
-      "status": "scheduled",
-      "result": null,
+      "status": "final",
+      "result": {
+        "outcome": "W",
+        "sets": "3-0"
+      },
       "links": [
         {
           "title": "Watch",
@@ -1207,12 +1210,16 @@
           "href": "https://huskers.com/listen"
         },
         {
-          "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+          "title": "Box Score (PDF)",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2025/11/29/RXZxt8TUhIKDXnTbD3ZUpOOfXRRRjqK0KP9tOnOG.pdf"
         },
         {
-          "title": "Sold Out! Buy on SeatGeek",
-          "href": "https://seatgeek.com/nebraska-cornhuskers-womens-volleyball-tickets/womens-college-volleyball/2025-11-28-5-30-pm/17607642?aid=16101&pid=sell_out_page_social&rid=45989&utm_campaign=integration&utm_medium=partnership&utm_source=nebraska_sponsorship"
+          "title": "Box Score",
+          "href": "https://huskers.com/boxscore/23686"
+        },
+        {
+          "title": "Recap",
+          "href": "https://huskers.com/news/2025/11/29/huskers-blank-no-25-penn-state-in-blackout"
         }
       ],
       "divider_text": "vs."
