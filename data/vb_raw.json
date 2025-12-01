@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2025-11-30T13:34:39.938055+00:00",
+  "scraped_at": "2025-12-01T07:36:01.868477+00:00",
   "items": [
     {
       "date": null,
@@ -1261,6 +1261,60 @@
         }
       ],
       "divider_text": "vs."
+    },
+    {
+      "date": null,
+      "date_text": "DEC 5",
+      "time_local": "4:30 PM CST",
+      "venue_type": "N",
+      "nu_rank": null,
+      "opp_rank": null,
+      "opponent_name": "San Diego vs. Kansas State",
+      "city": "Lincoln, Neb.",
+      "arena": "Bob Devaney Sports Center",
+      "nebraska_logo_url": null,
+      "opponent_logo_url": null,
+      "tv_network_logo_url": null,
+      "status": "scheduled",
+      "result": null,
+      "links": [],
+      "divider_text": ""
+    },
+    {
+      "date": null,
+      "date_text": "DEC 5",
+      "time_local": "7:00 PM CST",
+      "venue_type": "H",
+      "nu_rank": null,
+      "opp_rank": null,
+      "opponent_name": "Long Island",
+      "city": "Lincoln, Neb.",
+      "arena": "Bob Devaney Sports Center",
+      "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/sPNsF45cROvIIvJh26d1nqZGDSq7GNy7TgWza8SU.svg",
+      "tv_network_logo_url": null,
+      "status": "scheduled",
+      "result": null,
+      "links": [],
+      "divider_text": "vs."
+    },
+    {
+      "date": null,
+      "date_text": "DEC 6",
+      "time_local": "7:00 PM CST",
+      "venue_type": "H",
+      "nu_rank": null,
+      "opp_rank": null,
+      "opponent_name": "Second Round",
+      "city": "Lincoln, Neb.",
+      "arena": "Bob Devaney Sports Center",
+      "nebraska_logo_url": null,
+      "opponent_logo_url": null,
+      "tv_network_logo_url": null,
+      "status": "scheduled",
+      "result": null,
+      "links": [],
+      "divider_text": ""
     }
   ]
 }
