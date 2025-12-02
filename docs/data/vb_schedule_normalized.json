@@ -1257,6 +1257,10 @@
         {
           "title": "Box Score",
           "href": "https://huskers.com/boxscore/23687"
+        },
+        {
+          "title": "Recap",
+          "href": "https://huskers.com/news/2025/11/30/huskers-finish-regular-season-unbeaten"
         }
       ]
     },
@@ -1286,9 +1290,9 @@
       "time_local": "7:00 PM CST",
       "home_away": "H",
       "nu_rank": null,
-      "opponent": "Long Island",
+      "opponent": "LIU",
       "opp_rank": null,
-      "title": "Long Island",
+      "title": "LIU",
       "arena": "Bob Devaney Sports Center",
       "city": "Lincoln, Neb.",
       "arena_key": "bob-devaney-sports-center",
