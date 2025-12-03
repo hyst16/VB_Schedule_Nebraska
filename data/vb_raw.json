@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2025-12-02T13:48:09.179742+00:00",
+  "scraped_at": "2025-12-03T07:35:00.926758+00:00",
   "items": [
     {
       "date": null,
@@ -1269,24 +1269,6 @@
     {
       "date": null,
       "date_text": "DEC 5",
-      "time_local": "4:30 PM CST",
-      "venue_type": "N",
-      "nu_rank": null,
-      "opp_rank": null,
-      "opponent_name": "San Diego vs. Kansas State",
-      "city": "Lincoln, Neb.",
-      "arena": "Bob Devaney Sports Center",
-      "nebraska_logo_url": null,
-      "opponent_logo_url": null,
-      "tv_network_logo_url": null,
-      "status": "scheduled",
-      "result": null,
-      "links": [],
-      "divider_text": ""
-    },
-    {
-      "date": null,
-      "date_text": "DEC 5",
       "time_local": "7:00 PM CST",
       "venue_type": "H",
       "nu_rank": null,
@@ -1296,10 +1278,23 @@
       "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/sPNsF45cROvIIvJh26d1nqZGDSq7GNy7TgWza8SU.svg",
-      "tv_network_logo_url": null,
+      "tv_network_logo_url": "https://huskers.com/imgproxy/C0vPCCvNMm3wchbaUzNpElVndOJfNE0SlTLfQCDfLX0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOC8yMi9Xa2xHcUpFeDRzazZzRjJVQjNnN2F6eWdQd3pPWjFEc09OSGhwVEFVLnBuZw.png",
       "status": "scheduled",
       "result": null,
-      "links": [],
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.espn.com/watch/player/_/id/68a6771a-ce24-4409-8150-f910106d2d34"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Live Stats",
+          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+        }
+      ],
       "divider_text": "vs."
     },
     {
@@ -1314,10 +1309,23 @@
       "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": null,
       "opponent_logo_url": null,
-      "tv_network_logo_url": null,
+      "tv_network_logo_url": "https://huskers.com/imgproxy/C0vPCCvNMm3wchbaUzNpElVndOJfNE0SlTLfQCDfLX0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOC8yMi9Xa2xHcUpFeDRzazZzRjJVQjNnN2F6eWdQd3pPWjFEc09OSGhwVEFVLnBuZw.png",
       "status": "scheduled",
       "result": null,
-      "links": [],
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.espn.com/watch/schedule/_/type/upcoming/categoryId/be9385dc-c518-3a55-9197-ec47a9e0e7f6/startDate/20251206"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Live Stats",
+          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+        }
+      ],
       "divider_text": ""
     }
   ]

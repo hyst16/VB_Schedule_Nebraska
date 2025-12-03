@@ -1266,27 +1266,6 @@
     },
     {
       "date": "2025-12-05",
-      "time_local": "4:30 PM CST",
-      "home_away": "N",
-      "nu_rank": null,
-      "opponent": "San Diego vs. Kansas State",
-      "opp_rank": null,
-      "title": "San Diego vs. Kansas State",
-      "arena": "Bob Devaney Sports Center",
-      "city": "Lincoln, Neb.",
-      "arena_key": "bob-devaney-sports-center",
-      "nu_logo": null,
-      "opp_logo": null,
-      "tv_logo": null,
-      "tv": [],
-      "status": "scheduled",
-      "result": null,
-      "result_css": null,
-      "notes": null,
-      "links": []
-    },
-    {
-      "date": "2025-12-05",
       "time_local": "7:00 PM CST",
       "home_away": "H",
       "nu_rank": null,
@@ -1298,13 +1277,26 @@
       "arena_key": "bob-devaney-sports-center",
       "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/sPNsF45cROvIIvJh26d1nqZGDSq7GNy7TgWza8SU.svg",
-      "tv_logo": null,
+      "tv_logo": "https://huskers.com/imgproxy/C0vPCCvNMm3wchbaUzNpElVndOJfNE0SlTLfQCDfLX0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOC8yMi9Xa2xHcUpFeDRzazZzRjJVQjNnN2F6eWdQd3pPWjFEc09OSGhwVEFVLnBuZw.png",
       "tv": [],
       "status": "scheduled",
       "result": null,
       "result_css": null,
       "notes": null,
-      "links": []
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.espn.com/watch/player/_/id/68a6771a-ce24-4409-8150-f910106d2d34"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Live Stats",
+          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+        }
+      ]
     },
     {
       "date": "2025-12-06",
@@ -1319,13 +1311,26 @@
       "arena_key": "bob-devaney-sports-center",
       "nu_logo": null,
       "opp_logo": null,
-      "tv_logo": null,
+      "tv_logo": "https://huskers.com/imgproxy/C0vPCCvNMm3wchbaUzNpElVndOJfNE0SlTLfQCDfLX0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOC8yMi9Xa2xHcUpFeDRzazZzRjJVQjNnN2F6eWdQd3pPWjFEc09OSGhwVEFVLnBuZw.png",
       "tv": [],
       "status": "scheduled",
       "result": null,
       "result_css": null,
       "notes": null,
-      "links": []
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.espn.com/watch/schedule/_/type/upcoming/categoryId/be9385dc-c518-3a55-9197-ec47a9e0e7f6/startDate/20251206"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Live Stats",
+          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+        }
+      ]
     }
   ]
 }
