@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2025-12-05T13:43:27.935287+00:00",
+  "scraped_at": "2025-12-06T07:30:13.833638+00:00",
   "items": [
     {
       "date": null,
@@ -1269,7 +1269,7 @@
     {
       "date": null,
       "date_text": "DEC 5",
-      "time_local": "30 Mins. After Conclusion",
+      "time_local": null,
       "venue_type": "H",
       "nu_rank": null,
       "opp_rank": null,
@@ -1279,8 +1279,11 @@
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/sPNsF45cROvIIvJh26d1nqZGDSq7GNy7TgWza8SU.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/C0vPCCvNMm3wchbaUzNpElVndOJfNE0SlTLfQCDfLX0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOC8yMi9Xa2xHcUpFeDRzazZzRjJVQjNnN2F6eWdQd3pPWjFEc09OSGhwVEFVLnBuZw.png",
-      "status": "scheduled",
-      "result": null,
+      "status": "final",
+      "result": {
+        "outcome": "W",
+        "sets": "3-0"
+      },
       "links": [
         {
           "title": "Watch",
@@ -1291,8 +1294,16 @@
           "href": "https://huskers.com/listen"
         },
         {
-          "title": "Live Stats",
-          "href": "https://urldefense.com/v3/__https://www.ncaa.com/game/6500656__;!!PvXuogZ4sRB2p-tU!CqKvfgVuOfSr_BBFOLrfZG52fzZ_wccWzbzgPhE6d8-1yOw1_gImKNxmhBQb7hULC_f13ELUHNdc5AI2waG7$"
+          "title": "Box Score",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2025/12/06/4SeNDHigBGMmZru3Whf6NhHXzglWeCzhjNF6LqHn.pdf"
+        },
+        {
+          "title": "Box Score",
+          "href": "https://huskers.com/boxscore/24484"
+        },
+        {
+          "title": "Recap",
+          "href": "https://huskers.com/news/2025/12/6/nebraska-vb-vs-liu-12-5-25"
         }
       ],
       "divider_text": "vs."
@@ -1304,11 +1315,11 @@
       "venue_type": "H",
       "nu_rank": null,
       "opp_rank": null,
-      "opponent_name": "Second Round",
+      "opponent_name": "Kansas State",
       "city": "Lincoln, Neb.",
       "arena": "Bob Devaney Sports Center",
-      "nebraska_logo_url": null,
-      "opponent_logo_url": null,
+      "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/3whvSM2imPkAcLflDIm0GWihm5h9ZXWTNy9q5Cj0.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/C0vPCCvNMm3wchbaUzNpElVndOJfNE0SlTLfQCDfLX0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOC8yMi9Xa2xHcUpFeDRzazZzRjJVQjNnN2F6eWdQd3pPWjFEc09OSGhwVEFVLnBuZw.png",
       "status": "scheduled",
       "result": null,
@@ -1326,7 +1337,7 @@
           "href": "https://urldefense.com/v3/__https://www.ncaa.com/game/6500688__;!!PvXuogZ4sRB2p-tU!CqKvfgVuOfSr_BBFOLrfZG52fzZ_wccWzbzgPhE6d8-1yOw1_gImKNxmhBQb7hULC_f13ELUHNdc5HWV_J3a$"
         }
       ],
-      "divider_text": ""
+      "divider_text": "vs."
     }
   ]
 }

@@ -1266,7 +1266,7 @@
     },
     {
       "date": "2025-12-05",
-      "time_local": "30 Mins. After Conclusion",
+      "time_local": null,
       "home_away": "H",
       "nu_rank": null,
       "opponent": "LIU",
@@ -1279,9 +1279,9 @@
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/sPNsF45cROvIIvJh26d1nqZGDSq7GNy7TgWza8SU.svg",
       "tv_logo": "https://huskers.com/imgproxy/C0vPCCvNMm3wchbaUzNpElVndOJfNE0SlTLfQCDfLX0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOC8yMi9Xa2xHcUpFeDRzazZzRjJVQjNnN2F6eWdQd3pPWjFEc09OSGhwVEFVLnBuZw.png",
       "tv": [],
-      "status": "scheduled",
-      "result": null,
-      "result_css": null,
+      "status": "final",
+      "result": "W 3-0",
+      "result_css": "W",
       "notes": null,
       "links": [
         {
@@ -1293,8 +1293,16 @@
           "href": "https://huskers.com/listen"
         },
         {
-          "title": "Live Stats",
-          "href": "https://urldefense.com/v3/__https://www.ncaa.com/game/6500656__;!!PvXuogZ4sRB2p-tU!CqKvfgVuOfSr_BBFOLrfZG52fzZ_wccWzbzgPhE6d8-1yOw1_gImKNxmhBQb7hULC_f13ELUHNdc5AI2waG7$"
+          "title": "Box Score",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2025/12/06/4SeNDHigBGMmZru3Whf6NhHXzglWeCzhjNF6LqHn.pdf"
+        },
+        {
+          "title": "Box Score",
+          "href": "https://huskers.com/boxscore/24484"
+        },
+        {
+          "title": "Recap",
+          "href": "https://huskers.com/news/2025/12/6/nebraska-vb-vs-liu-12-5-25"
         }
       ]
     },
@@ -1303,14 +1311,14 @@
       "time_local": "7:00 PM CST",
       "home_away": "H",
       "nu_rank": null,
-      "opponent": "Second Round",
+      "opponent": "Kansas State",
       "opp_rank": null,
-      "title": "Second Round",
+      "title": "Kansas State",
       "arena": "Bob Devaney Sports Center",
       "city": "Lincoln, Neb.",
       "arena_key": "bob-devaney-sports-center",
-      "nu_logo": null,
-      "opp_logo": null,
+      "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
+      "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/3whvSM2imPkAcLflDIm0GWihm5h9ZXWTNy9q5Cj0.svg",
       "tv_logo": "https://huskers.com/imgproxy/C0vPCCvNMm3wchbaUzNpElVndOJfNE0SlTLfQCDfLX0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOC8yMi9Xa2xHcUpFeDRzazZzRjJVQjNnN2F6eWdQd3pPWjFEc09OSGhwVEFVLnBuZw.png",
       "tv": [],
       "status": "scheduled",
