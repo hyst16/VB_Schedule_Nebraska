@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2025-12-12T13:45:48.389024+00:00",
+  "scraped_at": "2025-12-13T07:33:35.698629+00:00",
   "items": [
     {
       "date": null,
@@ -1353,7 +1353,7 @@
     {
       "date": null,
       "date_text": "DEC 12",
-      "time_local": "30 Mins. After",
+      "time_local": null,
       "venue_type": "H",
       "nu_rank": 1,
       "opp_rank": 16,
@@ -1363,8 +1363,11 @@
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/7dZzhXwTZ2aRhPINIOWtU92TS4hYnyE1TuErfB3q.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/_BYHkKi7Z6tiJuAfd1r2guyvQ2gWZM3HtEi_XQ2F-NY/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvaHR0cHM6L3MzLnVzLWVhc3QtMi5hbWF6b25hd3MuY29tL3NpZGVhcm0ubmV4dGdlbi5zaXRlcy9odXNrZXJzLmNvbS9pbWFnZXMvMjAyMC8zLzIvRVNQTjIucG5nL0ZGN3FOOFpKRkNLV1p3QWlCRDRQZVgwQno0RndrVGlwWW16aUFBdHYucG5n.png",
-      "status": "scheduled",
-      "result": null,
+      "status": "final",
+      "result": {
+        "outcome": "W",
+        "sets": "3-0"
+      },
       "links": [
         {
           "title": "Watch",
@@ -1375,8 +1378,35 @@
           "href": "https://huskers.com/listen"
         },
         {
-          "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+          "title": "Box Score (PDF)",
+          "href": "https://huskers.com/documents/987360e1-df0b-44ce-8a71-3b1217664a55.pdf"
+        },
+        {
+          "title": "Box Score",
+          "href": "https://huskers.com/boxscore/24510"
+        }
+      ],
+      "divider_text": "vs."
+    },
+    {
+      "date": null,
+      "date_text": "DEC 14",
+      "time_local": "2:00 PM CST",
+      "venue_type": "H",
+      "nu_rank": 1,
+      "opp_rank": 6,
+      "opponent_name": "Texas A&M",
+      "city": "Lincoln, Neb.",
+      "arena": "Bob Devaney Sports Center",
+      "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/497sgWWjCJemlotBgIlY8VAUH879gaYvYg0yVPND.svg",
+      "tv_network_logo_url": "https://huskers.com/imgproxy/LqEGWiBAWDPU9UQsx2dMja-qgSVggM1dNvLB-YRHs38/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wOC8xOS9sWnRKeHRUVkkzUXJFY3NoS3d1bERUVGExWVJjRVNjNGpINGtQc3kzLnBuZw.png",
+      "status": "scheduled",
+      "result": null,
+      "links": [
+        {
+          "title": "Opens in a new window",
+          "href": "https://www.espn.com/watch/"
         }
       ],
       "divider_text": "vs."
