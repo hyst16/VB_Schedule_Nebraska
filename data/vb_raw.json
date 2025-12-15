@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2025-12-14T13:36:18.901523+00:00",
+  "scraped_at": "2025-12-15T07:38:09.559599+00:00",
   "items": [
     {
       "date": null,
@@ -1391,7 +1391,7 @@
     {
       "date": null,
       "date_text": "DEC 14",
-      "time_local": "2:00 PM CST",
+      "time_local": null,
       "venue_type": "H",
       "nu_rank": 1,
       "opp_rank": 6,
@@ -1401,12 +1401,23 @@
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/497sgWWjCJemlotBgIlY8VAUH879gaYvYg0yVPND.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/LqEGWiBAWDPU9UQsx2dMja-qgSVggM1dNvLB-YRHs38/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wOC8xOS9sWnRKeHRUVkkzUXJFY3NoS3d1bERUVGExWVJjRVNjNGpINGtQc3kzLnBuZw.png",
-      "status": "scheduled",
-      "result": null,
+      "status": "final",
+      "result": {
+        "outcome": "L",
+        "sets": "2-3"
+      },
       "links": [
         {
           "title": "Opens in a new window",
           "href": "https://www.espn.com/watch/"
+        },
+        {
+          "title": "Box Score (PDF)",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2025/12/14/KYxN4sAzqV2oIqGaHLWqkg6SEqp2fHjtzpKe3Q8u.pdf"
+        },
+        {
+          "title": "Box Score",
+          "href": "https://huskers.com/boxscore/24513"
         }
       ],
       "divider_text": "vs."

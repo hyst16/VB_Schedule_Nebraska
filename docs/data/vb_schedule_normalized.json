@@ -1388,7 +1388,7 @@
     },
     {
       "date": "2025-12-14",
-      "time_local": "2:00 PM CST",
+      "time_local": null,
       "home_away": "H",
       "nu_rank": 1,
       "opponent": "Texas A&M",
@@ -1401,14 +1401,22 @@
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/497sgWWjCJemlotBgIlY8VAUH879gaYvYg0yVPND.svg",
       "tv_logo": "https://huskers.com/imgproxy/LqEGWiBAWDPU9UQsx2dMja-qgSVggM1dNvLB-YRHs38/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wOC8xOS9sWnRKeHRUVkkzUXJFY3NoS3d1bERUVGExWVJjRVNjNGpINGtQc3kzLnBuZw.png",
       "tv": [],
-      "status": "scheduled",
-      "result": null,
-      "result_css": null,
+      "status": "final",
+      "result": "L 2-3",
+      "result_css": "L",
       "notes": null,
       "links": [
         {
           "title": "Opens in a new window",
           "href": "https://www.espn.com/watch/"
+        },
+        {
+          "title": "Box Score (PDF)",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2025/12/14/KYxN4sAzqV2oIqGaHLWqkg6SEqp2fHjtzpKe3Q8u.pdf"
+        },
+        {
+          "title": "Box Score",
+          "href": "https://huskers.com/boxscore/24513"
         }
       ]
     }
