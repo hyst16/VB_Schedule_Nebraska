@@ -1411,8 +1411,12 @@
       "notes": null,
       "links": [
         {
-          "title": "Opens in a new window",
+          "title": "Watch",
           "href": "https://www.espn.com/watch/"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
         },
         {
           "title": "Box Score (PDF)",

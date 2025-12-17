@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2025-12-16T13:49:11.401254+00:00",
+  "scraped_at": "2025-12-17T07:35:43.546531+00:00",
   "items": [
     {
       "date": null,
@@ -1412,8 +1412,12 @@
       },
       "links": [
         {
-          "title": "Opens in a new window",
+          "title": "Watch",
           "href": "https://www.espn.com/watch/"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
         },
         {
           "title": "Box Score (PDF)",
