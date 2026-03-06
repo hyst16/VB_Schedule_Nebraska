@@ -1,3 +1,20 @@
 {
-  "arenas": []
+  "arenas": [
+    {
+      "arena_key": "d-j-sokol-arena",
+      "display": "D.J. Sokol Arena",
+      "opponent": "Creighton",
+      "city": "Omaha, Neb.",
+      "filename": "d-j-sokol-arena.jpg",
+      "path": "docs/images/arenas/d-j-sokol-arena.jpg"
+    },
+    {
+      "arena_key": "sanford-pentagon",
+      "display": "Sanford Pentagon",
+      "opponent": "Iowa State",
+      "city": "Sioux Falls, S.D.",
+      "filename": "sanford-pentagon.jpg",
+      "path": "docs/images/arenas/sanford-pentagon.jpg"
+    }
+  ]
 }
