@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2026-03-16T14:37:38.017161+00:00",
+  "scraped_at": "2026-03-17T08:03:20.588073+00:00",
   "items": [
     {
       "date": null,
@@ -55,6 +55,33 @@
         }
       ],
       "divider_text": "at"
+    },
+    {
+      "date": null,
+      "date_text": "APR 25",
+      "time_local": "1:00 PM CDT",
+      "venue_type": "N",
+      "nu_rank": null,
+      "opp_rank": null,
+      "opponent_name": "Northern Colorado",
+      "city": "Chadron, Neb.",
+      "arena": "Chicoine Center",
+      "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/Ub16QLw0Gro7jDB7qOSar11tRgz1ithObFPAmAs7.svg",
+      "tv_network_logo_url": "https://huskers.com/imgproxy/_5D0pgSdzaCc_eoG0ZquTCN4ZBCsfqZEJb1KlhaBb4A/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wOC8xOS81MTVLT25xcW94aHBvSTRZWVA5emdTaU83ZFk3b0FIUThtdFl2RnZlLnBuZw.png",
+      "status": "scheduled",
+      "result": null,
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://nebraskapublicmedia.org/en/"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        }
+      ],
+      "divider_text": "vs."
     }
   ]
 }

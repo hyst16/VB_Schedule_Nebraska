@@ -1,6 +1,14 @@
 {
   "arenas": [
     {
+      "arena_key": "chicoine-center",
+      "display": "Chicoine Center",
+      "opponent": "Northern Colorado",
+      "city": "Chadron, Neb.",
+      "filename": "chicoine-center.jpg",
+      "path": "docs/images/arenas/chicoine-center.jpg"
+    },
+    {
       "arena_key": "d-j-sokol-arena",
       "display": "D.J. Sokol Arena",
       "opponent": "Creighton",
