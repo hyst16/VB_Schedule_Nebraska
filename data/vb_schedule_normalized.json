@@ -89,6 +89,96 @@
           "href": "https://huskers.com/listen"
         }
       ]
+    },
+    {
+      "date": "2026-08-15",
+      "time_local": "TBA",
+      "home_away": "H",
+      "nu_rank": null,
+      "opponent": "Red-White Scrimmage",
+      "opp_rank": null,
+      "title": "Red-White Scrimmage",
+      "arena": "Bob Devaney Sports Center",
+      "city": "Lincoln, Neb.",
+      "arena_key": "bob-devaney-sports-center",
+      "nu_logo": "https://huskers.com/imgproxy/FcJ3DhFbLh-eQIM38XEGB7mhUqJpUK6nYbZAWSNZCIU/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNy8yNi9vQ1JzNWNrVjNjSEhsZTZBREFTVXlHa3lCOFpMVVFpb3VicTNqQjZuLnBuZw.png",
+      "opp_logo": null,
+      "tv_logo": null,
+      "tv": [],
+      "status": "scheduled",
+      "result": null,
+      "result_css": null,
+      "notes": null,
+      "links": [
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "time_local": "TBA",
+      "home_away": "A",
+      "nu_rank": null,
+      "opponent": "DePaul",
+      "opp_rank": null,
+      "title": "DePaul",
+      "arena": "Wintrust Arena",
+      "city": "Chicago, Ill.",
+      "arena_key": "wintrust-arena",
+      "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
+      "opp_logo": "https://huskers.com/imgproxy/EZE_3ulQi0JgyJcvF1S7ibxKVWU-_rMP9b9ZWITZL9c/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNi8wMy8zMC95Ylg5UU1saktYSFpPV01td0FIMGtWNXFKYVdNc1RSRTZRQlk5OEJvLnBuZw.png",
+      "tv_logo": null,
+      "tv": [],
+      "status": "scheduled",
+      "result": null,
+      "result_css": null,
+      "notes": null,
+      "links": [
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "time_local": "TBA",
+      "home_away": "N",
+      "nu_rank": null,
+      "opponent": "Missouri",
+      "opp_rank": null,
+      "title": "Missouri",
+      "arena": "Wrigley Field",
+      "city": "Chicago, Ill.",
+      "arena_key": "wrigley-field",
+      "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
+      "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/F9l9kzIIcQ8lOrade7Eo1X3zqnrfQlQEdYOnpQdI.svg",
+      "tv_logo": "https://huskers.com/imgproxy/gM1A2rToEddNlu0RoRGpq7mgxF02xg2DOhpLQNTQbRA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC9SUTBlVHVRNHM0R1dSQVJ6ZVRibXFNS2tGZ01VS0ZvbHJSeVpMM21oLnBuZw.png",
+      "tv": [],
+      "status": "scheduled",
+      "result": null,
+      "result_css": null,
+      "notes": null,
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Ticket Information",
+          "href": "https://www.mlb.com/cubs/tickets/events/bigtenvolleyball?partnerId=redirect-chc-bigtenvolleyball"
+        },
+        {
+          "title": "Preview",
+          "href": "https://huskers.com/news/2026/03/30/huskers-to-play-missouri-at-wrigley-field-on-sept-6"
+        }
+      ]
     }
   ]
 }
