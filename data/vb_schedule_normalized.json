@@ -2,7 +2,7 @@
   "items": [
     {
       "date": "2026-04-11",
-      "time_local": "1:00 PM CDT",
+      "time_local": null,
       "home_away": "N",
       "nu_rank": null,
       "opponent": "Iowa State",
@@ -15,9 +15,9 @@
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/UTuwGIpJ9BhI4pThm75opdRorLz3bod7ftPDIjzC.svg",
       "tv_logo": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "tv": [],
-      "status": "scheduled",
-      "result": null,
-      "result_css": null,
+      "status": "final",
+      "result": "W 4-0",
+      "result_css": "W",
       "notes": null,
       "links": [
         {
@@ -27,6 +27,18 @@
         {
           "title": "Listen",
           "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Live Stats",
+          "href": "https://urldefense.com/v3/__http://pentagon.sidearmsports.com/sidearmstats/wvball/summary__;!!PvXuogZ4sRB2p-tU!BYyQj7SHbwKGRLO03RkKxBCDGncnZddnmOeOjIDLJGnBInxveLpAX77hhaw5OyIgWU1oH_Cx6voTkg$"
+        },
+        {
+          "title": "Final Stats",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2026/04/11/vgB3PrfzH5RRsCfoNEcx3Pbd4PlpXYMjIUvGixxU.pdf"
+        },
+        {
+          "title": "Recap",
+          "href": "https://huskers.com/news/2026/04/11/huskers-sweep-cyclones-in-sioux-falls"
         }
       ]
     },

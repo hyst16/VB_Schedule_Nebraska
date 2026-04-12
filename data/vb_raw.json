@@ -1,11 +1,11 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2026-04-11T14:00:28.257454+00:00",
+  "scraped_at": "2026-04-12T08:09:38.974356+00:00",
   "items": [
     {
       "date": null,
       "date_text": "APR 11",
-      "time_local": "1:00 PM CDT",
+      "time_local": null,
       "venue_type": "N",
       "nu_rank": null,
       "opp_rank": null,
@@ -15,8 +15,11 @@
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/UTuwGIpJ9BhI4pThm75opdRorLz3bod7ftPDIjzC.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
-      "status": "scheduled",
-      "result": null,
+      "status": "final",
+      "result": {
+        "outcome": "W",
+        "sets": "4-0"
+      },
       "links": [
         {
           "title": "Watch",
@@ -25,6 +28,18 @@
         {
           "title": "Listen",
           "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Live Stats",
+          "href": "https://urldefense.com/v3/__http://pentagon.sidearmsports.com/sidearmstats/wvball/summary__;!!PvXuogZ4sRB2p-tU!BYyQj7SHbwKGRLO03RkKxBCDGncnZddnmOeOjIDLJGnBInxveLpAX77hhaw5OyIgWU1oH_Cx6voTkg$"
+        },
+        {
+          "title": "Final Stats",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2026/04/11/vgB3PrfzH5RRsCfoNEcx3Pbd4PlpXYMjIUvGixxU.pdf"
+        },
+        {
+          "title": "Recap",
+          "href": "https://huskers.com/news/2026/04/11/huskers-sweep-cyclones-in-sioux-falls"
         }
       ],
       "divider_text": "vs."
