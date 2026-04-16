@@ -103,32 +103,6 @@
       ]
     },
     {
-      "date": "2026-08-15",
-      "time_local": "TBA",
-      "home_away": "H",
-      "nu_rank": null,
-      "opponent": "Red-White Scrimmage",
-      "opp_rank": null,
-      "title": "Red-White Scrimmage",
-      "arena": "Bob Devaney Sports Center",
-      "city": "Lincoln, Neb.",
-      "arena_key": "bob-devaney-sports-center",
-      "nu_logo": "https://huskers.com/imgproxy/FcJ3DhFbLh-eQIM38XEGB7mhUqJpUK6nYbZAWSNZCIU/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNy8yNi9vQ1JzNWNrVjNjSEhsZTZBREFTVXlHa3lCOFpMVVFpb3VicTNqQjZuLnBuZw.png",
-      "opp_logo": null,
-      "tv_logo": null,
-      "tv": [],
-      "status": "scheduled",
-      "result": null,
-      "result_css": null,
-      "notes": null,
-      "links": [
-        {
-          "title": "Listen",
-          "href": "https://huskers.com/listen"
-        }
-      ]
-    },
-    {
       "date": "2026-09-04",
       "time_local": "TBA",
       "home_away": "A",
