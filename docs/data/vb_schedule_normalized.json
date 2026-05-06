@@ -1,6 +1,27 @@
 {
   "items": [
     {
+      "date": "2026-08-27",
+      "time_local": "7:00 PM CDT",
+      "home_away": "N",
+      "nu_rank": null,
+      "opponent": "TBD",
+      "opp_rank": null,
+      "title": "TBD",
+      "arena": "AT&T Stadium",
+      "city": "Arlington, Texas",
+      "arena_key": "at-t-stadium",
+      "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
+      "opp_logo": null,
+      "tv_logo": null,
+      "tv": [],
+      "status": "scheduled",
+      "result": null,
+      "result_css": null,
+      "notes": null,
+      "links": []
+    },
+    {
       "date": "2026-09-04",
       "time_local": "TBA",
       "home_away": "A",

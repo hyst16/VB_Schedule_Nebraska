@@ -1,6 +1,14 @@
 {
   "arenas": [
     {
+      "arena_key": "at-t-stadium",
+      "display": "AT&T Stadium",
+      "opponent": "TBD",
+      "city": "Arlington, Texas",
+      "filename": "at-t-stadium.jpg",
+      "path": "docs/images/arenas/at-t-stadium.jpg"
+    },
+    {
       "arena_key": "wintrust-arena",
       "display": "Wintrust Arena",
       "opponent": "DePaul",
