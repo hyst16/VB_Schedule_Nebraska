@@ -3,10 +3,26 @@
     {
       "arena_key": "at-t-stadium",
       "display": "AT&T Stadium",
-      "opponent": "TBD",
+      "opponent": "TBA",
       "city": "Arlington, Texas",
       "filename": "at-t-stadium.jpg",
       "path": "docs/images/arenas/at-t-stadium.jpg"
+    },
+    {
+      "arena_key": "first-bank-trust-arena",
+      "display": "First Bank & Trust Arena",
+      "opponent": "South Dakota State",
+      "city": "Brookings, S.D.",
+      "filename": "first-bank-trust-arena.jpg",
+      "path": "docs/images/arenas/first-bank-trust-arena.jpg"
+    },
+    {
+      "arena_key": "t-mobile-arena",
+      "display": "T-Mobile Arena",
+      "opponent": "Texas",
+      "city": "Las Vegas, Nev.",
+      "filename": "t-mobile-arena.jpg",
+      "path": "docs/images/arenas/t-mobile-arena.jpg"
     },
     {
       "arena_key": "wintrust-arena",
