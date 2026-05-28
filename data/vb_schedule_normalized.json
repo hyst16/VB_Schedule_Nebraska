@@ -168,6 +168,27 @@
           "href": "https://huskers.com/news/2026/03/30/huskers-to-play-missouri-at-wrigley-field-on-sept-6"
         }
       ]
+    },
+    {
+      "date": "2026-11-20",
+      "time_local": "7:00 PM CST",
+      "home_away": "N",
+      "nu_rank": null,
+      "opponent": "Big Ten Tournament",
+      "opp_rank": null,
+      "title": "Big Ten Tournament",
+      "arena": "Fishers Event Center",
+      "city": "Fishers, Ind.",
+      "arena_key": "fishers-event-center",
+      "nu_logo": "https://huskers.com/imgproxy/XiM2w5OF4XtLN254b8AUbv-Kab0vdfClQiCk1b7yOHI/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8xMy95N1d4aXRHeWpqNG1oY2FCaEJJZ21pRXg4RGhCU0NtbU14bDFoYllyLnBuZw.png",
+      "opp_logo": null,
+      "tv_logo": null,
+      "tv": [],
+      "status": "scheduled",
+      "result": null,
+      "result_css": null,
+      "notes": null,
+      "links": []
     }
   ]
 }

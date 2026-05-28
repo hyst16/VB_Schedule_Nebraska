@@ -17,6 +17,14 @@
       "path": "docs/images/arenas/first-bank-trust-arena.jpg"
     },
     {
+      "arena_key": "fishers-event-center",
+      "display": "Fishers Event Center",
+      "opponent": "Big Ten Tournament",
+      "city": "Fishers, Ind.",
+      "filename": "fishers-event-center.jpg",
+      "path": "docs/images/arenas/fishers-event-center.jpg"
+    },
+    {
       "arena_key": "t-mobile-arena",
       "display": "T-Mobile Arena",
       "opponent": "Texas",
