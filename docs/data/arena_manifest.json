@@ -1,12 +1,44 @@
 {
   "arenas": [
     {
+      "arena_key": "alaska-airlines-arena",
+      "display": "Alaska Airlines Arena",
+      "opponent": "Washington",
+      "city": "Seattle, Wash.",
+      "filename": "alaska-airlines-arena.jpg",
+      "path": "docs/images/arenas/alaska-airlines-arena.jpg"
+    },
+    {
       "arena_key": "at-t-stadium",
       "display": "AT&T Stadium",
       "opponent": "TBA",
       "city": "Arlington, Texas",
       "filename": "at-t-stadium.jpg",
       "path": "docs/images/arenas/at-t-stadium.jpg"
+    },
+    {
+      "arena_key": "bob-devaney-sports-center",
+      "display": "Bob Devaney Sports Center",
+      "opponent": "Minnesota",
+      "city": "Lincoln, Neb.",
+      "filename": "bob-devaney-sports-center.jpg",
+      "path": "docs/images/arenas/bob-devaney-sports-center.jpg"
+    },
+    {
+      "arena_key": "breslin-center",
+      "display": "Breslin Center",
+      "opponent": "Michigan State",
+      "city": "East Lansing, Mich.",
+      "filename": "breslin-center.jpg",
+      "path": "docs/images/arenas/breslin-center.jpg"
+    },
+    {
+      "arena_key": "crisler-center",
+      "display": "Crisler Center",
+      "opponent": "Michigan",
+      "city": "Ann Arbor, Mich.",
+      "filename": "crisler-center.jpg",
+      "path": "docs/images/arenas/crisler-center.jpg"
     },
     {
       "arena_key": "first-bank-trust-arena",
@@ -25,12 +57,52 @@
       "path": "docs/images/arenas/fishers-event-center.jpg"
     },
     {
+      "arena_key": "matthew-knight-arena",
+      "display": "Matthew Knight Arena",
+      "opponent": "Oregon",
+      "city": "Eugene, Ore.",
+      "filename": "matthew-knight-arena.jpg",
+      "path": "docs/images/arenas/matthew-knight-arena.jpg"
+    },
+    {
+      "arena_key": "pinnacle-bank-arena",
+      "display": "Pinnacle Bank Arena",
+      "opponent": "Creighton",
+      "city": "Lincoln, Neb.",
+      "filename": "pinnacle-bank-arena.jpg",
+      "path": "docs/images/arenas/pinnacle-bank-arena.jpg"
+    },
+    {
+      "arena_key": "rec-hall",
+      "display": "Rec Hall",
+      "opponent": "Penn State",
+      "city": "University Park, Pa.",
+      "filename": "rec-hall.jpg",
+      "path": "docs/images/arenas/rec-hall.jpg"
+    },
+    {
       "arena_key": "t-mobile-arena",
       "display": "T-Mobile Arena",
       "opponent": "Texas",
       "city": "Las Vegas, Nev.",
       "filename": "t-mobile-arena.jpg",
       "path": "docs/images/arenas/t-mobile-arena.jpg"
+    },
+    {
+      "arena_key": "welsh-ryan-arena",
+      "display": "Welsh-Ryan Arena",
+      "opponent": "Northwestern",
+      "city": "Evanston, Ill.",
+      "filename": "welsh-ryan-arena.jpg",
+      "path": "docs/images/arenas/welsh-ryan-arena.jpg"
+    },
+    {
+      "arena_key": "wilkinson-hall",
+      "display": "Wilkinson Hall",
+      "opponent": "Indiana",
+      "city": "Bloomington, Ind.",
+      "filename": "wilkinson-hall.jpg",
+      "path": "docs/images/arenas/wilkinson-hall.jpg"
     },
     {
       "arena_key": "wintrust-arena",
@@ -47,6 +119,14 @@
       "city": "Chicago, Ill.",
       "filename": "wrigley-field.jpg",
       "path": "docs/images/arenas/wrigley-field.jpg"
+    },
+    {
+      "arena_key": "xfinity-center",
+      "display": "XFINITY Center",
+      "opponent": "Maryland",
+      "city": "College Park, Md.",
+      "filename": "xfinity-center.jpg",
+      "path": "docs/images/arenas/xfinity-center.jpg"
     }
   ]
 }
