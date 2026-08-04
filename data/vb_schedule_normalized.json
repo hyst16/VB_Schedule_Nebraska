@@ -112,7 +112,7 @@
     },
     {
       "date": "2026-09-04",
-      "time_local": "TBA",
+      "time_local": "5:00 PM CDT",
       "home_away": "A",
       "nu_rank": null,
       "opponent": "DePaul",
@@ -123,13 +123,17 @@
       "arena_key": "wintrust-arena",
       "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opp_logo": "https://huskers.com/imgproxy/EZE_3ulQi0JgyJcvF1S7ibxKVWU-_rMP9b9ZWITZL9c/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNi8wMy8zMC95Ylg5UU1saktYSFpPV01td0FIMGtWNXFKYVdNc1RSRTZRQlk5OEJvLnBuZw.png",
-      "tv_logo": null,
+      "tv_logo": "https://huskers.com/imgproxy/zfqIII3zlwNDjDf0HrFIOYiz30TbFsYU664SX4R4RjU/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC9YVk9GTXNUaGE1ZVozTmp3dVdjU3ZSdkw3eUpqd3dwZDF0SFRJdkxQLnBuZw.png",
       "tv": [],
       "status": "scheduled",
       "result": null,
       "result_css": null,
       "notes": null,
       "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        },
         {
           "title": "Listen",
           "href": "https://huskers.com/listen"
@@ -138,7 +142,7 @@
     },
     {
       "date": "2026-09-06",
-      "time_local": "TBA",
+      "time_local": "8:00 PM CDT",
       "home_away": "N",
       "nu_rank": null,
       "opponent": "Missouri",
@@ -176,7 +180,7 @@
     },
     {
       "date": "2026-09-10",
-      "time_local": "TBA",
+      "time_local": "6:30 PM CDT",
       "home_away": "H",
       "nu_rank": null,
       "opponent": "New Mexico",
@@ -197,7 +201,7 @@
     },
     {
       "date": "2026-09-11",
-      "time_local": "TBA",
+      "time_local": "7:00 PM CDT",
       "home_away": "H",
       "nu_rank": null,
       "opponent": "Baylor",
@@ -208,17 +212,22 @@
       "arena_key": "bob-devaney-sports-center",
       "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/doicC4lM0YOhwleAe2i550Hvj8ym9mKT69wjMZpV.svg",
-      "tv_logo": null,
+      "tv_logo": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "tv": [],
       "status": "scheduled",
       "result": null,
       "result_css": null,
       "notes": null,
-      "links": []
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        }
+      ]
     },
     {
       "date": "2026-09-12",
-      "time_local": "TBA",
+      "time_local": "2:00 PM CDT",
       "home_away": "H",
       "nu_rank": null,
       "opponent": "Georgia Tech",
@@ -239,7 +248,7 @@
     },
     {
       "date": "2026-09-16",
-      "time_local": "TBA",
+      "time_local": "6:00 PM CDT",
       "home_away": "H",
       "nu_rank": null,
       "opponent": "Creighton",
@@ -250,17 +259,22 @@
       "arena_key": "pinnacle-bank-arena",
       "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/yw3V4xJPrpfSmNdpJ7FlojR0crWvl0Glu32q0M2l.svg",
-      "tv_logo": null,
+      "tv_logo": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "tv": [],
       "status": "scheduled",
       "result": null,
       "result_css": null,
       "notes": null,
-      "links": []
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        }
+      ]
     },
     {
       "date": "2026-09-18",
-      "time_local": "TBA",
+      "time_local": "7:00 PM CDT",
       "home_away": "H",
       "nu_rank": null,
       "opponent": "North Carolina",
@@ -271,13 +285,18 @@
       "arena_key": "bob-devaney-sports-center",
       "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/7hJnLsze0fdTjTJVUvQQntYS4BD97p9R5G2f4lN4.svg",
-      "tv_logo": null,
+      "tv_logo": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "tv": [],
       "status": "scheduled",
       "result": null,
       "result_css": null,
       "notes": null,
-      "links": []
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        }
+      ]
     },
     {
       "date": "2026-09-20",
@@ -323,7 +342,7 @@
     },
     {
       "date": "2026-09-26",
-      "time_local": "TBA",
+      "time_local": "8:00 PM CDT",
       "home_away": "H",
       "nu_rank": null,
       "opponent": "Ohio State",
@@ -334,17 +353,22 @@
       "arena_key": "bob-devaney-sports-center",
       "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/ZypwLlH96dLBs8GTvlqdMhyWpV4IgVGyCUAQpTrb.svg",
-      "tv_logo": null,
+      "tv_logo": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "tv": [],
       "status": "scheduled",
       "result": null,
       "result_css": null,
       "notes": null,
-      "links": []
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        }
+      ]
     },
     {
       "date": "2026-10-01",
-      "time_local": "TBA",
+      "time_local": "6:00 PM CDT",
       "home_away": "A",
       "nu_rank": null,
       "opponent": "Penn State",
@@ -355,17 +379,22 @@
       "arena_key": "rec-hall",
       "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/eSnEQOMzqgY8gAPCfxR90DNlJ0vOuXDQfhvTLM4h.svg",
-      "tv_logo": null,
+      "tv_logo": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "tv": [],
       "status": "scheduled",
       "result": null,
       "result_css": null,
       "notes": null,
-      "links": []
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        }
+      ]
     },
     {
       "date": "2026-10-03",
-      "time_local": "TBA",
+      "time_local": "6:00 PM CDT",
       "home_away": "A",
       "nu_rank": null,
       "opponent": "Maryland",
@@ -386,7 +415,7 @@
     },
     {
       "date": "2026-10-08",
-      "time_local": "TBA",
+      "time_local": "5:30 PM CDT",
       "home_away": "A",
       "nu_rank": null,
       "opponent": "Indiana",
@@ -397,13 +426,18 @@
       "arena_key": "wilkinson-hall",
       "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/x7OWZFHnQkE6RLMJeEnOT6Lz4NZiLtRmlAGr8w1h.svg",
-      "tv_logo": null,
+      "tv_logo": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "tv": [],
       "status": "scheduled",
       "result": null,
       "result_css": null,
       "notes": null,
-      "links": []
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        }
+      ]
     },
     {
       "date": "2026-10-10",
@@ -418,13 +452,18 @@
       "arena_key": "bob-devaney-sports-center",
       "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/mJ8a1eU4tgjodrqKozGuiAx00rgRa6pcFoaFvbAB.svg",
-      "tv_logo": null,
+      "tv_logo": "https://huskers.com/imgproxy/gM1A2rToEddNlu0RoRGpq7mgxF02xg2DOhpLQNTQbRA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC9SUTBlVHVRNHM0R1dSQVJ6ZVRibXFNS2tGZ01VS0ZvbHJSeVpMM21oLnBuZw.png",
       "tv": [],
       "status": "scheduled",
       "result": null,
       "result_css": null,
       "notes": null,
-      "links": []
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        }
+      ]
     },
     {
       "date": "2026-10-15",
@@ -449,7 +488,7 @@
     },
     {
       "date": "2026-10-17",
-      "time_local": "TBA",
+      "time_local": "4 or 8 PM",
       "home_away": "H",
       "nu_rank": null,
       "opponent": "Purdue",
@@ -460,17 +499,22 @@
       "arena_key": "bob-devaney-sports-center",
       "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/xNszGRTqhoa3HqgCuw8xM0n8NiRYDXihzYzPIdG9.svg",
-      "tv_logo": null,
+      "tv_logo": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "tv": [],
       "status": "scheduled",
       "result": null,
       "result_css": null,
       "notes": null,
-      "links": []
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        }
+      ]
     },
     {
       "date": "2026-10-22",
-      "time_local": "TBA",
+      "time_local": "6:00 PM CDT",
       "home_away": "H",
       "nu_rank": null,
       "opponent": "UCLA",
@@ -481,17 +525,22 @@
       "arena_key": "bob-devaney-sports-center",
       "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/HRd1Q70l0yQpZeYQ1h4eRyyBye4Cp06Nn1icMkjm.svg",
-      "tv_logo": null,
+      "tv_logo": "https://huskers.com/imgproxy/abOCZPjFk7retFiHI95TY3B_5ZW8xUStFfv9g8xtN5g/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8zMC9TVjZNRmIwUGtaM3BRRmZ5M1BQN0RVeGNDVDROQTdYN2JFNFNNZmI5LmpwZw.jpg",
       "tv": [],
       "status": "scheduled",
       "result": null,
       "result_css": null,
       "notes": null,
-      "links": []
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        }
+      ]
     },
     {
       "date": "2026-10-24",
-      "time_local": "TBA",
+      "time_local": "8:00 PM CDT",
       "home_away": "H",
       "nu_rank": null,
       "opponent": "USC",
@@ -502,17 +551,22 @@
       "arena_key": "bob-devaney-sports-center",
       "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/UahJy09xytmTXBAdfHeKv65Npu0KNztpHnkwIgsh.svg",
-      "tv_logo": null,
+      "tv_logo": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "tv": [],
       "status": "scheduled",
       "result": null,
       "result_css": null,
       "notes": null,
-      "links": []
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        }
+      ]
     },
     {
       "date": "2026-10-30",
-      "time_local": "TBA",
+      "time_local": "5:30 PM CDT",
       "home_away": "A",
       "nu_rank": null,
       "opponent": "Michigan",
@@ -554,7 +608,7 @@
     },
     {
       "date": "2026-11-07",
-      "time_local": "TBA",
+      "time_local": "9:00 PM CST",
       "home_away": "A",
       "nu_rank": null,
       "opponent": "Oregon",
@@ -565,13 +619,18 @@
       "arena_key": "matthew-knight-arena",
       "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/Ob70zmtdWJk9Fs4HQsNtn4eRa5s5H2ZzHFRmxQS0.svg",
-      "tv_logo": null,
+      "tv_logo": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "tv": [],
       "status": "scheduled",
       "result": null,
       "result_css": null,
       "notes": null,
-      "links": []
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        }
+      ]
     },
     {
       "date": "2026-11-08",
@@ -586,13 +645,18 @@
       "arena_key": "alaska-airlines-arena",
       "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/aduluAGeTcF8UtJgQe2OQ8NPQ4RdWHL5CNunZmOf.svg",
-      "tv_logo": null,
+      "tv_logo": "https://huskers.com/imgproxy/abOCZPjFk7retFiHI95TY3B_5ZW8xUStFfv9g8xtN5g/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8zMC9TVjZNRmIwUGtaM3BRRmZ5M1BQN0RVeGNDVDROQTdYN2JFNFNNZmI5LmpwZw.jpg",
       "tv": [],
       "status": "scheduled",
       "result": null,
       "result_css": null,
       "notes": null,
-      "links": []
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        }
+      ]
     },
     {
       "date": "2026-11-12",
@@ -638,7 +702,7 @@
     },
     {
       "date": "2026-11-17",
-      "time_local": "TBA",
+      "time_local": "7:30 PM CST",
       "home_away": "H",
       "nu_rank": null,
       "opponent": "Minnesota",
@@ -649,13 +713,18 @@
       "arena_key": "bob-devaney-sports-center",
       "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/C3Z8GJ3Nxf8uQOj0yM8sNk4HpOGW5qVREe71F2Ao.svg",
-      "tv_logo": null,
+      "tv_logo": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "tv": [],
       "status": "scheduled",
       "result": null,
       "result_css": null,
       "notes": null,
-      "links": []
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        }
+      ]
     },
     {
       "date": "2026-11-20",

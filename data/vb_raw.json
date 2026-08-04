@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2026-08-04T09:59:00.420785+00:00",
+  "scraped_at": "2026-08-04T15:33:15.836772+00:00",
   "items": [
     {
       "date": null,
@@ -100,7 +100,7 @@
     {
       "date": null,
       "date_text": "SEP 4",
-      "time_local": "TBA",
+      "time_local": "5:00 PM CDT",
       "venue_type": "A",
       "nu_rank": null,
       "opp_rank": null,
@@ -109,10 +109,14 @@
       "arena": "Wintrust Arena",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://huskers.com/imgproxy/EZE_3ulQi0JgyJcvF1S7ibxKVWU-_rMP9b9ZWITZL9c/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNi8wMy8zMC95Ylg5UU1saktYSFpPV01td0FIMGtWNXFKYVdNc1RSRTZRQlk5OEJvLnBuZw.png",
-      "tv_network_logo_url": null,
+      "tv_network_logo_url": "https://huskers.com/imgproxy/zfqIII3zlwNDjDf0HrFIOYiz30TbFsYU664SX4R4RjU/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC9YVk9GTXNUaGE1ZVozTmp3dVdjU3ZSdkw3eUpqd3dwZDF0SFRJdkxQLnBuZw.png",
       "status": "scheduled",
       "result": null,
       "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        },
         {
           "title": "Listen",
           "href": "https://huskers.com/listen"
@@ -123,7 +127,7 @@
     {
       "date": null,
       "date_text": "SEP 6",
-      "time_local": "TBA",
+      "time_local": "8:00 PM CDT",
       "venue_type": "N",
       "nu_rank": null,
       "opp_rank": null,
@@ -158,7 +162,7 @@
     {
       "date": null,
       "date_text": "SEP 10",
-      "time_local": "TBA",
+      "time_local": "6:30 PM CDT",
       "venue_type": "H",
       "nu_rank": null,
       "opp_rank": null,
@@ -176,7 +180,7 @@
     {
       "date": null,
       "date_text": "SEP 11",
-      "time_local": "TBA",
+      "time_local": "7:00 PM CDT",
       "venue_type": "H",
       "nu_rank": null,
       "opp_rank": null,
@@ -185,16 +189,21 @@
       "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/doicC4lM0YOhwleAe2i550Hvj8ym9mKT69wjMZpV.svg",
-      "tv_network_logo_url": null,
+      "tv_network_logo_url": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "status": "scheduled",
       "result": null,
-      "links": [],
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        }
+      ],
       "divider_text": "vs."
     },
     {
       "date": null,
       "date_text": "SEP 12",
-      "time_local": "TBA",
+      "time_local": "2:00 PM CDT",
       "venue_type": "H",
       "nu_rank": null,
       "opp_rank": null,
@@ -212,7 +221,7 @@
     {
       "date": null,
       "date_text": "SEP 16",
-      "time_local": "TBA",
+      "time_local": "6:00 PM CDT",
       "venue_type": "H",
       "nu_rank": null,
       "opp_rank": null,
@@ -221,16 +230,21 @@
       "arena": "Pinnacle Bank Arena",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/yw3V4xJPrpfSmNdpJ7FlojR0crWvl0Glu32q0M2l.svg",
-      "tv_network_logo_url": null,
+      "tv_network_logo_url": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "status": "scheduled",
       "result": null,
-      "links": [],
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        }
+      ],
       "divider_text": "vs."
     },
     {
       "date": null,
       "date_text": "SEP 18",
-      "time_local": "TBA",
+      "time_local": "7:00 PM CDT",
       "venue_type": "H",
       "nu_rank": null,
       "opp_rank": null,
@@ -239,10 +253,15 @@
       "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/7hJnLsze0fdTjTJVUvQQntYS4BD97p9R5G2f4lN4.svg",
-      "tv_network_logo_url": null,
+      "tv_network_logo_url": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "status": "scheduled",
       "result": null,
-      "links": [],
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        }
+      ],
       "divider_text": "vs."
     },
     {
@@ -284,7 +303,7 @@
     {
       "date": null,
       "date_text": "SEP 26",
-      "time_local": "TBA",
+      "time_local": "8:00 PM CDT",
       "venue_type": "H",
       "nu_rank": null,
       "opp_rank": null,
@@ -293,16 +312,21 @@
       "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/ZypwLlH96dLBs8GTvlqdMhyWpV4IgVGyCUAQpTrb.svg",
-      "tv_network_logo_url": null,
+      "tv_network_logo_url": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "status": "scheduled",
       "result": null,
-      "links": [],
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        }
+      ],
       "divider_text": "vs."
     },
     {
       "date": null,
       "date_text": "OCT 1",
-      "time_local": "TBA",
+      "time_local": "6:00 PM CDT",
       "venue_type": "A",
       "nu_rank": null,
       "opp_rank": null,
@@ -311,16 +335,21 @@
       "arena": "Rec Hall",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/eSnEQOMzqgY8gAPCfxR90DNlJ0vOuXDQfhvTLM4h.svg",
-      "tv_network_logo_url": null,
+      "tv_network_logo_url": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "status": "scheduled",
       "result": null,
-      "links": [],
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        }
+      ],
       "divider_text": "at"
     },
     {
       "date": null,
       "date_text": "OCT 3",
-      "time_local": "TBA",
+      "time_local": "6:00 PM CDT",
       "venue_type": "A",
       "nu_rank": null,
       "opp_rank": null,
@@ -338,7 +367,7 @@
     {
       "date": null,
       "date_text": "OCT 8",
-      "time_local": "TBA",
+      "time_local": "5:30 PM CDT",
       "venue_type": "A",
       "nu_rank": null,
       "opp_rank": null,
@@ -347,10 +376,15 @@
       "arena": "Wilkinson Hall",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/x7OWZFHnQkE6RLMJeEnOT6Lz4NZiLtRmlAGr8w1h.svg",
-      "tv_network_logo_url": null,
+      "tv_network_logo_url": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "status": "scheduled",
       "result": null,
-      "links": [],
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        }
+      ],
       "divider_text": "at"
     },
     {
@@ -365,10 +399,15 @@
       "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/mJ8a1eU4tgjodrqKozGuiAx00rgRa6pcFoaFvbAB.svg",
-      "tv_network_logo_url": null,
+      "tv_network_logo_url": "https://huskers.com/imgproxy/gM1A2rToEddNlu0RoRGpq7mgxF02xg2DOhpLQNTQbRA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC9SUTBlVHVRNHM0R1dSQVJ6ZVRibXFNS2tGZ01VS0ZvbHJSeVpMM21oLnBuZw.png",
       "status": "scheduled",
       "result": null,
-      "links": [],
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        }
+      ],
       "divider_text": "vs."
     },
     {
@@ -392,7 +431,7 @@
     {
       "date": null,
       "date_text": "OCT 17",
-      "time_local": "TBA",
+      "time_local": "4 or 8 PM",
       "venue_type": "H",
       "nu_rank": null,
       "opp_rank": null,
@@ -401,16 +440,21 @@
       "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/xNszGRTqhoa3HqgCuw8xM0n8NiRYDXihzYzPIdG9.svg",
-      "tv_network_logo_url": null,
+      "tv_network_logo_url": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "status": "scheduled",
       "result": null,
-      "links": [],
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        }
+      ],
       "divider_text": "vs."
     },
     {
       "date": null,
       "date_text": "OCT 22",
-      "time_local": "TBA",
+      "time_local": "6:00 PM CDT",
       "venue_type": "H",
       "nu_rank": null,
       "opp_rank": null,
@@ -419,16 +463,21 @@
       "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/HRd1Q70l0yQpZeYQ1h4eRyyBye4Cp06Nn1icMkjm.svg",
-      "tv_network_logo_url": null,
+      "tv_network_logo_url": "https://huskers.com/imgproxy/abOCZPjFk7retFiHI95TY3B_5ZW8xUStFfv9g8xtN5g/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8zMC9TVjZNRmIwUGtaM3BRRmZ5M1BQN0RVeGNDVDROQTdYN2JFNFNNZmI5LmpwZw.jpg",
       "status": "scheduled",
       "result": null,
-      "links": [],
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        }
+      ],
       "divider_text": "vs."
     },
     {
       "date": null,
       "date_text": "OCT 24",
-      "time_local": "TBA",
+      "time_local": "8:00 PM CDT",
       "venue_type": "H",
       "nu_rank": null,
       "opp_rank": null,
@@ -437,16 +486,21 @@
       "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/UahJy09xytmTXBAdfHeKv65Npu0KNztpHnkwIgsh.svg",
-      "tv_network_logo_url": null,
+      "tv_network_logo_url": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "status": "scheduled",
       "result": null,
-      "links": [],
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        }
+      ],
       "divider_text": "vs."
     },
     {
       "date": null,
       "date_text": "OCT 30",
-      "time_local": "TBA",
+      "time_local": "5:30 PM CDT",
       "venue_type": "A",
       "nu_rank": null,
       "opp_rank": null,
@@ -482,7 +536,7 @@
     {
       "date": null,
       "date_text": "NOV 7",
-      "time_local": "TBA",
+      "time_local": "9:00 PM CST",
       "venue_type": "A",
       "nu_rank": null,
       "opp_rank": null,
@@ -491,10 +545,15 @@
       "arena": "Matthew Knight Arena",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/Ob70zmtdWJk9Fs4HQsNtn4eRa5s5H2ZzHFRmxQS0.svg",
-      "tv_network_logo_url": null,
+      "tv_network_logo_url": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "status": "scheduled",
       "result": null,
-      "links": [],
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        }
+      ],
       "divider_text": "at"
     },
     {
@@ -509,10 +568,15 @@
       "arena": "Alaska Airlines Arena",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/aduluAGeTcF8UtJgQe2OQ8NPQ4RdWHL5CNunZmOf.svg",
-      "tv_network_logo_url": null,
+      "tv_network_logo_url": "https://huskers.com/imgproxy/abOCZPjFk7retFiHI95TY3B_5ZW8xUStFfv9g8xtN5g/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8zMC9TVjZNRmIwUGtaM3BRRmZ5M1BQN0RVeGNDVDROQTdYN2JFNFNNZmI5LmpwZw.jpg",
       "status": "scheduled",
       "result": null,
-      "links": [],
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        }
+      ],
       "divider_text": "at"
     },
     {
@@ -554,7 +618,7 @@
     {
       "date": null,
       "date_text": "NOV 17",
-      "time_local": "TBA",
+      "time_local": "7:30 PM CST",
       "venue_type": "H",
       "nu_rank": null,
       "opp_rank": null,
@@ -563,10 +627,15 @@
       "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/C3Z8GJ3Nxf8uQOj0yM8sNk4HpOGW5qVREe71F2Ao.svg",
-      "tv_network_logo_url": null,
+      "tv_network_logo_url": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "status": "scheduled",
       "result": null,
-      "links": [],
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        }
+      ],
       "divider_text": "vs."
     },
     {
