@@ -38,9 +38,9 @@
       "date": "2026-08-27",
       "time_local": "7:00 PM CDT",
       "home_away": "N",
-      "nu_rank": 17,
+      "nu_rank": 1,
       "opponent": "Florida",
-      "opp_rank": null,
+      "opp_rank": 17,
       "title": "Florida",
       "arena": "AT&T Stadium",
       "city": "Arlington, Texas",
@@ -61,6 +61,10 @@
         {
           "title": "Listen",
           "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Preview",
+          "href": "https://huskers.com/news/2026/08/26/vb-preview-spikes-under-the-lights"
         }
       ]
     },
@@ -68,7 +72,7 @@
       "date": "2026-08-29",
       "time_local": "7:00 PM CDT",
       "home_away": "N",
-      "nu_rank": null,
+      "nu_rank": 1,
       "opponent": "UNLV",
       "opp_rank": null,
       "title": "UNLV",
@@ -102,9 +106,9 @@
       "date": "2026-08-30",
       "time_local": "2:30 PM CDT",
       "home_away": "N",
-      "nu_rank": 2,
+      "nu_rank": 1,
       "opponent": "Texas",
-      "opp_rank": null,
+      "opp_rank": 2,
       "title": "Texas",
       "arena": "T-Mobile Arena",
       "city": "Las Vegas, Nev.",
