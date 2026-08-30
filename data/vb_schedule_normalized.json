@@ -96,7 +96,7 @@
     },
     {
       "date": "2026-08-29",
-      "time_local": "7:00 PM CDT",
+      "time_local": null,
       "home_away": "N",
       "nu_rank": 1,
       "opponent": "UNLV",
@@ -107,24 +107,24 @@
       "arena_key": "t-mobile-arena",
       "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/w9duJUAN6fVT53pNM9zC65rOfuREf7IxPrxyh9dl.svg",
-      "tv_logo": "https://huskers.com/imgproxy/abOCZPjFk7retFiHI95TY3B_5ZW8xUStFfv9g8xtN5g/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8zMC9TVjZNRmIwUGtaM3BRRmZ5M1BQN0RVeGNDVDROQTdYN2JFNFNNZmI5LmpwZw.jpg",
+      "tv_logo": null,
       "tv": [],
-      "status": "scheduled",
-      "result": null,
-      "result_css": null,
+      "status": "final",
+      "result": "W 3-0",
+      "result_css": "W",
       "notes": null,
       "links": [
         {
-          "title": "Watch",
-          "href": "https://www.foxsports.com/live"
+          "title": "Box Score (PDF)",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2026/08/30/3c6swPJvwS8hkXLhqeyQvyo8r0OMWcUwV1xJ9r9s.pdf"
         },
         {
-          "title": "Listen",
-          "href": "https://huskers.com/listen"
+          "title": "Box Score",
+          "href": "https://huskers.com/boxscore/24983"
         },
         {
-          "title": "Live Stats",
-          "href": "https://stats.statbroadcast.com/broadcast/?id=676038"
+          "title": "Recap",
+          "href": "https://huskers.com/news/2026/08/30/no-1-huskers-begin-season-with-sweep-of-unlv"
         }
       ]
     },
