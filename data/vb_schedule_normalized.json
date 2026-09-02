@@ -1,40 +1,6 @@
 {
   "items": [
     {
-      "date": "2026-08-16",
-      "time_local": null,
-      "home_away": "H",
-      "nu_rank": null,
-      "opponent": "Red-White Scrimmage",
-      "opp_rank": null,
-      "title": "Red-White Scrimmage",
-      "arena": "Pinnacle Bank Arena",
-      "city": "Lincoln, Neb.",
-      "arena_key": "pinnacle-bank-arena",
-      "nu_logo": "https://huskers.com/imgproxy/FcJ3DhFbLh-eQIM38XEGB7mhUqJpUK6nYbZAWSNZCIU/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNy8yNi9vQ1JzNWNrVjNjSEhsZTZBREFTVXlHa3lCOFpMVVFpb3VicTNqQjZuLnBuZw.png",
-      "opp_logo": null,
-      "tv_logo": null,
-      "tv": [],
-      "status": "scheduled",
-      "result": null,
-      "result_css": null,
-      "notes": null,
-      "links": [
-        {
-          "title": "Box Score (Sets 1-3)",
-          "href": "https://storage.googleapis.com/huskers-com-prod/2026/08/16/1ePpJwVZc2Z8f7VEMCNRMNQZNfykPXcvJMvNzJKK.pdf"
-        },
-        {
-          "title": "Box Score (Set 4)",
-          "href": "https://storage.googleapis.com/huskers-com-prod/2026/08/16/iMZevAiuBmqWdU1xvaUipja2supAVXWLxhpJQMFR.pdf"
-        },
-        {
-          "title": "Recap",
-          "href": "https://huskers.com/news/2026/08/16/huskers-make-season-debut-in-red-white-scrimmage1"
-        }
-      ]
-    },
-    {
       "date": "2026-08-27",
       "time_local": null,
       "home_away": "N",
@@ -62,7 +28,8 @@
           "title": "Recap",
           "href": "https://huskers.com/news/2026/08/28/huskers-capture-spikes-under-the-lights-title"
         }
-      ]
+      ],
+      "is_exhibition": true
     },
     {
       "date": "2026-08-27",
@@ -92,7 +59,8 @@
           "title": "Recap",
           "href": "https://huskers.com/news/2026/08/28/huskers-capture-spikes-under-the-lights-title"
         }
-      ]
+      ],
+      "is_exhibition": true
     },
     {
       "date": "2026-08-29",
@@ -126,7 +94,8 @@
           "title": "Recap",
           "href": "https://huskers.com/news/2026/08/30/no-1-huskers-begin-season-with-sweep-of-unlv"
         }
-      ]
+      ],
+      "is_exhibition": false
     },
     {
       "date": "2026-08-30",
@@ -160,7 +129,8 @@
           "title": "Recap",
           "href": "https://huskers.com/news/2026/08/30/no-1-nebraska-sweeps-no-2-texas-in-players-era-showcase"
         }
-      ]
+      ],
+      "is_exhibition": false
     },
     {
       "date": "2026-09-02",
@@ -194,7 +164,8 @@
           "title": "Live Stats",
           "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
-      ]
+      ],
+      "is_exhibition": false
     },
     {
       "date": "2026-09-04",
@@ -228,7 +199,8 @@
           "title": "Live Stats",
           "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
-      ]
+      ],
+      "is_exhibition": false
     },
     {
       "date": "2026-09-06",
@@ -262,7 +234,8 @@
           "title": "Ticket Information",
           "href": "https://www.mlb.com/cubs/tickets/events/bigtenvolleyball?partnerId=redirect-chc-bigtenvolleyball"
         }
-      ]
+      ],
+      "is_exhibition": false
     },
     {
       "date": "2026-09-10",
@@ -283,7 +256,8 @@
       "result": null,
       "result_css": null,
       "notes": null,
-      "links": []
+      "links": [],
+      "is_exhibition": false
     },
     {
       "date": "2026-09-11",
@@ -309,7 +283,8 @@
           "title": "Watch",
           "href": "https://www.foxsports.com/live"
         }
-      ]
+      ],
+      "is_exhibition": false
     },
     {
       "date": "2026-09-12",
@@ -335,7 +310,8 @@
           "title": "Watch",
           "href": "https://www.bigtenplus.com/en-int/page/home"
         }
-      ]
+      ],
+      "is_exhibition": false
     },
     {
       "date": "2026-09-16",
@@ -361,7 +337,8 @@
           "title": "Watch",
           "href": "https://www.foxsports.com/live"
         }
-      ]
+      ],
+      "is_exhibition": false
     },
     {
       "date": "2026-09-18",
@@ -387,7 +364,8 @@
           "title": "Watch",
           "href": "https://www.foxsports.com/live"
         }
-      ]
+      ],
+      "is_exhibition": false
     },
     {
       "date": "2026-09-20",
@@ -408,7 +386,8 @@
       "result": null,
       "result_css": null,
       "notes": null,
-      "links": []
+      "links": [],
+      "is_exhibition": false
     },
     {
       "date": "2026-09-25",
@@ -434,7 +413,8 @@
           "title": "Watch",
           "href": "https://www.bigtenplus.com/en-int/page/home"
         }
-      ]
+      ],
+      "is_exhibition": false
     },
     {
       "date": "2026-09-26",
@@ -460,7 +440,8 @@
           "title": "Watch",
           "href": "https://www.foxsports.com/live"
         }
-      ]
+      ],
+      "is_exhibition": false
     },
     {
       "date": "2026-10-01",
@@ -486,7 +467,8 @@
           "title": "Watch",
           "href": "https://www.foxsports.com/live"
         }
-      ]
+      ],
+      "is_exhibition": false
     },
     {
       "date": "2026-10-03",
@@ -507,7 +489,8 @@
       "result": null,
       "result_css": null,
       "notes": null,
-      "links": []
+      "links": [],
+      "is_exhibition": false
     },
     {
       "date": "2026-10-08",
@@ -533,7 +516,8 @@
           "title": "Watch",
           "href": "https://www.foxsports.com/live"
         }
-      ]
+      ],
+      "is_exhibition": false
     },
     {
       "date": "2026-10-10",
@@ -559,7 +543,8 @@
           "title": "Watch",
           "href": "https://www.foxsports.com/live"
         }
-      ]
+      ],
+      "is_exhibition": false
     },
     {
       "date": "2026-10-15",
@@ -580,7 +565,8 @@
       "result": null,
       "result_css": null,
       "notes": null,
-      "links": []
+      "links": [],
+      "is_exhibition": false
     },
     {
       "date": "2026-10-17",
@@ -606,7 +592,8 @@
           "title": "Watch",
           "href": "https://www.foxsports.com/live"
         }
-      ]
+      ],
+      "is_exhibition": false
     },
     {
       "date": "2026-10-22",
@@ -632,7 +619,8 @@
           "title": "Watch",
           "href": "https://www.foxsports.com/live"
         }
-      ]
+      ],
+      "is_exhibition": false
     },
     {
       "date": "2026-10-24",
@@ -658,7 +646,8 @@
           "title": "Watch",
           "href": "https://www.foxsports.com/live"
         }
-      ]
+      ],
+      "is_exhibition": false
     },
     {
       "date": "2026-10-30",
@@ -679,7 +668,8 @@
       "result": null,
       "result_css": null,
       "notes": null,
-      "links": []
+      "links": [],
+      "is_exhibition": false
     },
     {
       "date": "2026-10-31",
@@ -700,7 +690,8 @@
       "result": null,
       "result_css": null,
       "notes": null,
-      "links": []
+      "links": [],
+      "is_exhibition": false
     },
     {
       "date": "2026-11-07",
@@ -726,7 +717,8 @@
           "title": "Watch",
           "href": "https://www.foxsports.com/live"
         }
-      ]
+      ],
+      "is_exhibition": false
     },
     {
       "date": "2026-11-08",
@@ -752,7 +744,8 @@
           "title": "Watch",
           "href": "https://www.foxsports.com/live"
         }
-      ]
+      ],
+      "is_exhibition": false
     },
     {
       "date": "2026-11-12",
@@ -778,7 +771,8 @@
           "title": "Watch",
           "href": "https://www.bigtenplus.com/en-int/page/home"
         }
-      ]
+      ],
+      "is_exhibition": false
     },
     {
       "date": "2026-11-14",
@@ -799,7 +793,8 @@
       "result": null,
       "result_css": null,
       "notes": null,
-      "links": []
+      "links": [],
+      "is_exhibition": false
     },
     {
       "date": "2026-11-17",
@@ -825,7 +820,8 @@
           "title": "Watch",
           "href": "https://www.foxsports.com/live"
         }
-      ]
+      ],
+      "is_exhibition": false
     },
     {
       "date": "2026-11-20",
@@ -846,7 +842,8 @@
       "result": null,
       "result_css": null,
       "notes": null,
-      "links": []
+      "links": [],
+      "is_exhibition": false
     }
   ]
 }
