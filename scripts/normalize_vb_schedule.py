@@ -60,6 +60,22 @@ def normalize(items: list, scraped_at: str):
 
     rows = []
     for it in items:
+        # --- Check if this is an exhibition game ---
+        opp = it.get("opponent_name") or "TBA"
+        
+        # Skip Red-White Scrimmage entirely (don't display)
+        if "Red-White Scrimmage" in opp:
+            continue
+        
+        # Mark Spikes Under The Lights games as exhibition
+        is_exhibition = False
+        links = it.get("links") or []
+        for link in links:
+            recap_url = link.get("href", "").lower()
+            if "spikes-under-the-lights" in recap_url or "spikes" in recap_url:
+                is_exhibition = True
+                break
+        
         # --- DATE: prefer ISO, else parse visible month/day text ---
         date_iso = it.get("date") or parse_date_from_text(it.get("date_text"), season_year)
         if not date_iso:
@@ -88,7 +104,6 @@ def normalize(items: list, scraped_at: str):
             result_str = f"{res.get('outcome')} {res.get('sets')}"
             result_css = {"W": "W", "L": "L", "T": "T"}.get(res.get("outcome"))
 
-        opp = it.get("opponent_name") or "TBA"
         opp_rank = it.get("opp_rank")
         nu_rank  = it.get("nu_rank")
 
@@ -115,6 +130,7 @@ def normalize(items: list, scraped_at: str):
             "result_css": result_css,
             "notes": None,
             "links": it.get("links") or [],
+            "is_exhibition": is_exhibition,    # flag for non-record games
         })
 
     # Sorted by date then time (null times sorted last)
