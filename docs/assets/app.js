@@ -155,10 +155,18 @@
 
   /* ---------------------------------------------------------
      CHOOSE "NEXT" GAME
-     - First non-final with a date; else last item
+     - First non-final with a date (skip Red-White Scrimmage)
+     - Else last item
      --------------------------------------------------------- */
-  const upcoming = sched.filter(g => g.status !== "final" && g.date).sort((a,b) => a.date.localeCompare(b.date));
-  const nextGame = upcoming[0] || sched[sched.length - 1];
+  const upcoming = sched
+    .filter(g => g.status !== "final" && g.date && g.opponent !== "Red-White Scrimmage")
+    .sort((a,b) => a.date.localeCompare(b.date));
+  const nextGame = upcoming[0] || sched.filter(g => g.opponent !== "Red-White Scrimmage")[sched.length - 1];
+
+  // Calculate record (excluding exhibition games)
+  const wins = sched.filter(g => g.status === "final" && g.result_css === "W" && !g.is_exhibition).length;
+  const losses = sched.filter(g => g.status === "final" && g.result_css === "L" && !g.is_exhibition).length;
+  const record = `${wins}-${losses}`;
 
   /* ---------------------------------------------------------
      HERO RENDER
@@ -170,6 +178,10 @@
   const nextDT  = $("#next-datetime");
   const nextVenue = $("#next-venue");
   const nextTV  = $("#next-tv");
+  const nextRecord = $("#next-record");
+
+  // Display the record
+  nextRecord.textContent = `RECORD: ${record}`;
 
   if (nextGame) {
     // Background image (if present in your images/arenas folder)
