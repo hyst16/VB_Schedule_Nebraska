@@ -134,7 +134,7 @@
     },
     {
       "date": "2026-09-02",
-      "time_local": "7:00 PM CDT",
+      "time_local": null,
       "home_away": "A",
       "nu_rank": null,
       "opponent": "South Dakota State",
@@ -147,22 +147,22 @@
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/GG1yOyGVXOo1ZXvNW9RIpm4q1fHRdNveP2VE5l08.svg",
       "tv_logo": null,
       "tv": [],
-      "status": "scheduled",
-      "result": null,
-      "result_css": null,
+      "status": "final",
+      "result": "W 3-0",
+      "result_css": "W",
       "notes": null,
       "links": [
         {
-          "title": "Watch",
-          "href": "https://www.midcosportsplus.com/watch/2083"
+          "title": "Box Score (PDF)",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2026/09/03/mEbFg1MqJfXlsimhP2pfvxGqBK3dsHcG4x1IYw1q.pdf"
         },
         {
-          "title": "Listen",
-          "href": "https://huskers.com/listen"
+          "title": "Box Score",
+          "href": "https://huskers.com/boxscore/24986"
         },
         {
-          "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+          "title": "Recap",
+          "href": "https://huskers.com/news/2026/09/3/no-1-huskers-pick-up-road-sweep-at-sdsu"
         }
       ],
       "is_exhibition": false
