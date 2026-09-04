@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2026-09-04T12:09:13.063028+00:00",
+  "scraped_at": "2026-09-04T16:50:44.385178+00:00",
   "items": [
     {
       "date": null,
@@ -249,6 +249,10 @@
         {
           "title": "Listen",
           "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Live Stats",
+          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         },
         {
           "title": "Ticket Information",
