@@ -169,7 +169,7 @@
     },
     {
       "date": "2026-09-04",
-      "time_local": "5:00 PM CDT",
+      "time_local": null,
       "home_away": "A",
       "nu_rank": 1,
       "opponent": "DePaul",
@@ -180,24 +180,24 @@
       "arena_key": "wintrust-arena",
       "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opp_logo": "https://huskers.com/imgproxy/EZE_3ulQi0JgyJcvF1S7ibxKVWU-_rMP9b9ZWITZL9c/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNi8wMy8zMC95Ylg5UU1saktYSFpPV01td0FIMGtWNXFKYVdNc1RSRTZRQlk5OEJvLnBuZw.png",
-      "tv_logo": "https://huskers.com/imgproxy/zfqIII3zlwNDjDf0HrFIOYiz30TbFsYU664SX4R4RjU/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC9YVk9GTXNUaGE1ZVozTmp3dVdjU3ZSdkw3eUpqd3dwZDF0SFRJdkxQLnBuZw.png",
+      "tv_logo": null,
       "tv": [],
-      "status": "scheduled",
-      "result": null,
-      "result_css": null,
+      "status": "final",
+      "result": "W 3-0",
+      "result_css": "W",
       "notes": null,
       "links": [
         {
-          "title": "Watch",
-          "href": "https://www.foxsports.com/live"
+          "title": "Box Score (PDF)",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2026/09/05/Mrhp2r1nxVtMDFoJdP051KO19UuVoK200YyMy3Q3.pdf"
         },
         {
-          "title": "Listen",
-          "href": "https://huskers.com/listen"
+          "title": "Box Score",
+          "href": "https://huskers.com/boxscore/24897"
         },
         {
-          "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+          "title": "Recap",
+          "href": "https://huskers.com/news/2026/09/5/no-1-huskers-cruise-to-sweep-of-depaul"
         }
       ],
       "is_exhibition": false
