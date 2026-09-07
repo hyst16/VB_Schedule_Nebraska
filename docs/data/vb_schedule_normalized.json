@@ -204,7 +204,7 @@
     },
     {
       "date": "2026-09-06",
-      "time_local": "8:00 PM CDT",
+      "time_local": null,
       "home_away": "N",
       "nu_rank": 1,
       "opponent": "Missouri",
@@ -231,12 +231,12 @@
           "href": "https://huskers.com/listen"
         },
         {
-          "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
-        },
-        {
           "title": "Ticket Information",
           "href": "https://www.mlb.com/cubs/tickets/events/bigtenvolleyball?partnerId=redirect-chc-bigtenvolleyball"
+        },
+        {
+          "title": "Recap",
+          "href": "https://huskers.com/news/2026/09/7/nebraska-missouri-volleyball-match-suspended"
         }
       ],
       "is_exhibition": false

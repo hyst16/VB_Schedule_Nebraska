@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2026-09-06T16:13:28.473445+00:00",
+  "scraped_at": "2026-09-07T13:31:33.942625+00:00",
   "items": [
     {
       "date": null,
@@ -232,7 +232,7 @@
     {
       "date": null,
       "date_text": "SEP 6",
-      "time_local": "8:00 PM CDT",
+      "time_local": null,
       "venue_type": "N",
       "nu_rank": 1,
       "opp_rank": null,
@@ -242,7 +242,7 @@
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/F9l9kzIIcQ8lOrade7Eo1X3zqnrfQlQEdYOnpQdI.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/gM1A2rToEddNlu0RoRGpq7mgxF02xg2DOhpLQNTQbRA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC9SUTBlVHVRNHM0R1dSQVJ6ZVRibXFNS2tGZ01VS0ZvbHJSeVpMM21oLnBuZw.png",
-      "status": "scheduled",
+      "status": "tbd",
       "result": null,
       "links": [
         {
@@ -254,12 +254,12 @@
           "href": "https://huskers.com/listen"
         },
         {
-          "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
-        },
-        {
           "title": "Ticket Information",
           "href": "https://www.mlb.com/cubs/tickets/events/bigtenvolleyball?partnerId=redirect-chc-bigtenvolleyball"
+        },
+        {
+          "title": "Recap",
+          "href": "https://huskers.com/news/2026/09/7/nebraska-missouri-volleyball-match-suspended"
         }
       ],
       "divider_text": "vs."
