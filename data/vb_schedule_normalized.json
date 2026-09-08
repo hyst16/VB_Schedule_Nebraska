@@ -245,7 +245,7 @@
       "date": "2026-09-10",
       "time_local": "6:30 PM CDT",
       "home_away": "H",
-      "nu_rank": null,
+      "nu_rank": 1,
       "opponent": "New Mexico",
       "opp_rank": null,
       "title": "New Mexico",
@@ -254,22 +254,35 @@
       "arena_key": "bob-devaney-sports-center",
       "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/isW00rSvNwswRGuhX7ECFFVWslTM3kovgOJBENJ4.svg",
-      "tv_logo": null,
+      "tv_logo": "https://huskers.com/imgproxy/dqDf7KySHz-PygmhYm6JjRvzXJR0nA9-L-tFtnB5yPg/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOC8wMS9YOGFieFJhdUprY2RyeXpLVjZFTUJJWmpRNE15djZ3S3NvMjlxRzlPLmpwZw.jpg",
       "tv": [],
       "status": "scheduled",
       "result": null,
       "result_css": null,
       "notes": null,
-      "links": [],
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.bigtenplus.com/en-int/page/home"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Live Stats",
+          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+        }
+      ],
       "is_exhibition": false
     },
     {
       "date": "2026-09-11",
       "time_local": "7:00 PM CDT",
       "home_away": "H",
-      "nu_rank": 21,
+      "nu_rank": 1,
       "opponent": "Baylor",
-      "opp_rank": null,
+      "opp_rank": 20,
       "title": "Baylor",
       "arena": "Bob Devaney Sports Center",
       "city": "Lincoln, Neb.",
@@ -286,6 +299,14 @@
         {
           "title": "Watch",
           "href": "https://www.foxsports.com/live"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Live Stats",
+          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
       ],
       "is_exhibition": false
@@ -294,7 +315,7 @@
       "date": "2026-09-12",
       "time_local": "2:00 PM CDT",
       "home_away": "H",
-      "nu_rank": null,
+      "nu_rank": 1,
       "opponent": "Georgia Tech",
       "opp_rank": null,
       "title": "Georgia Tech",
@@ -313,6 +334,14 @@
         {
           "title": "Watch",
           "href": "https://www.bigtenplus.com/en-int/page/home"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Live Stats",
+          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
       ],
       "is_exhibition": false
@@ -340,6 +369,14 @@
         {
           "title": "Watch",
           "href": "https://www.foxsports.com/live"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Live Stats",
+          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
       ],
       "is_exhibition": false
