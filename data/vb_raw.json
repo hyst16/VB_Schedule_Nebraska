@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2026-09-10T16:59:16.806791+00:00",
+  "scraped_at": "2026-09-11T12:13:26.984025+00:00",
   "items": [
     {
       "date": null,
@@ -267,7 +267,7 @@
     {
       "date": null,
       "date_text": "SEP 10",
-      "time_local": "6:30 PM CDT",
+      "time_local": null,
       "venue_type": "H",
       "nu_rank": 1,
       "opp_rank": null,
@@ -276,21 +276,16 @@
       "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/isW00rSvNwswRGuhX7ECFFVWslTM3kovgOJBENJ4.svg",
-      "tv_network_logo_url": "https://huskers.com/imgproxy/dqDf7KySHz-PygmhYm6JjRvzXJR0nA9-L-tFtnB5yPg/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOC8wMS9YOGFieFJhdUprY2RyeXpLVjZFTUJJWmpRNE15djZ3S3NvMjlxRzlPLmpwZw.jpg",
-      "status": "scheduled",
-      "result": null,
+      "tv_network_logo_url": null,
+      "status": "final",
+      "result": {
+        "outcome": "W",
+        "sets": "3-0"
+      },
       "links": [
         {
-          "title": "Watch",
-          "href": "https://www.bigtenplus.com/en-int/page/home"
-        },
-        {
-          "title": "Listen",
-          "href": "https://huskers.com/listen"
-        },
-        {
-          "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+          "title": "Box Score",
+          "href": "https://huskers.com/boxscore/25157"
         }
       ],
       "divider_text": "vs."
