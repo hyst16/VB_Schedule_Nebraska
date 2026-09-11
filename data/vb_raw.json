@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2026-09-11T12:13:26.984025+00:00",
+  "scraped_at": "2026-09-11T17:00:48.995184+00:00",
   "items": [
     {
       "date": null,
@@ -286,6 +286,10 @@
         {
           "title": "Box Score",
           "href": "https://huskers.com/boxscore/25157"
+        },
+        {
+          "title": "Recap",
+          "href": "https://huskers.com/news/2026/09/11/no-1-huskers-roll-to-sweep-in-home-opener"
         }
       ],
       "divider_text": "vs."
