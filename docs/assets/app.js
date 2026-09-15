@@ -155,11 +155,18 @@
 
   /* ---------------------------------------------------------
      CHOOSE "NEXT" GAME
-     - First non-final with a date (skip Red-White Scrimmage)
+     - First non-final game whose date hasn't passed yet
+       (skips Red-White Scrimmage AND guards against games
+        that were postponed/cancelled and never got a result,
+        which would otherwise get "stuck" as the next game
+        once their date is in the past)
      - Else last item
      --------------------------------------------------------- */
+  // Today's date in Central time (matches how the scraper stamps game dates)
+  const todayISO = new Date().toLocaleDateString("en-CA", { timeZone: "America/Chicago" });
+
   const upcoming = sched
-    .filter(g => g.status !== "final" && g.date && g.opponent !== "Red-White Scrimmage")
+    .filter(g => g.status !== "final" && g.date && g.date >= todayISO && g.opponent !== "Red-White Scrimmage")
     .sort((a,b) => a.date.localeCompare(b.date));
   const nextGame = upcoming[0] || sched.filter(g => g.opponent !== "Red-White Scrimmage")[sched.length - 1];
 
