@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2026-09-14T18:35:15.853204+00:00",
+  "scraped_at": "2026-09-15T12:42:04.681033+00:00",
   "items": [
     {
       "date": null,
@@ -371,8 +371,8 @@
       "date_text": "SEP 16",
       "time_local": "6:00 PM CDT",
       "venue_type": "H",
-      "nu_rank": 13,
-      "opp_rank": null,
+      "nu_rank": 1,
+      "opp_rank": 20,
       "opponent_name": "Creighton",
       "city": "Lincoln, Neb.",
       "arena": "Pinnacle Bank Arena",
@@ -402,8 +402,8 @@
       "date_text": "SEP 18",
       "time_local": "7:00 PM CDT",
       "venue_type": "H",
-      "nu_rank": 19,
-      "opp_rank": null,
+      "nu_rank": 1,
+      "opp_rank": 25,
       "opponent_name": "North Carolina",
       "city": "Lincoln, Neb.",
       "arena": "Bob Devaney Sports Center",
@@ -427,7 +427,7 @@
       "venue_type": "H",
       "nu_rank": null,
       "opp_rank": null,
-      "opponent_name": "Florida Gulf Coast",
+      "opponent_name": "FGCU",
       "city": "Lincoln, Neb.",
       "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
