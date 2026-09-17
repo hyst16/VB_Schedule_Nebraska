@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2026-09-16T17:37:00.002741+00:00",
+  "scraped_at": "2026-09-17T12:36:39.663380+00:00",
   "items": [
     {
       "date": null,
@@ -74,7 +74,7 @@
       "city": "Arlington, Texas",
       "arena": "AT&T Stadium",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/YkomUu4waXO4GoL34at3mzUgN8CxXZM2W9j06bpA.svg",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/X9RviffyiOiRBCfyCeXAoAKusKCpwNxRlntVtxZg.svg",
       "tv_network_logo_url": null,
       "status": "final",
       "result": {
@@ -275,7 +275,7 @@
       "city": "Lincoln, Neb.",
       "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/isW00rSvNwswRGuhX7ECFFVWslTM3kovgOJBENJ4.svg",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/sBDTjDjpenUzhEPO3Hl2bpLlnjUQzCt449dK7BPF.svg",
       "tv_network_logo_url": null,
       "status": "final",
       "result": {
@@ -369,7 +369,7 @@
     {
       "date": null,
       "date_text": "SEP 16",
-      "time_local": "6:00 PM CDT",
+      "time_local": null,
       "venue_type": "H",
       "nu_rank": 1,
       "opp_rank": 20,
@@ -378,25 +378,24 @@
       "arena": "Pinnacle Bank Arena",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/yw3V4xJPrpfSmNdpJ7FlojR0crWvl0Glu32q0M2l.svg",
-      "tv_network_logo_url": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
-      "status": "scheduled",
-      "result": null,
+      "tv_network_logo_url": null,
+      "status": "final",
+      "result": {
+        "outcome": "W",
+        "sets": "3-0"
+      },
       "links": [
         {
-          "title": "Watch",
-          "href": "https://www.foxsports.com/live"
+          "title": "Box Score (PDF)",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2026/09/17/ohzF8xndma8fFNnaeTTUXMPHUGr47xr8Ir2DwvCn.pdf"
         },
         {
-          "title": "Listen",
-          "href": "https://huskers.com/listen"
+          "title": "Box Score",
+          "href": "https://huskers.com/boxscore/25160"
         },
         {
-          "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
-        },
-        {
-          "title": "Preview",
-          "href": "https://huskers.com/news/2026/09/15/vb-preview-vs-no-20-creighton"
+          "title": "Recap",
+          "href": "https://huskers.com/news/2026/09/17/no-1-nebraska-soars-past-no-20-bluejays"
         }
       ],
       "divider_text": "vs."
@@ -444,10 +443,15 @@
       "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://huskers.com/imgproxy/zuiHD2Cv6YpogXqBKOCVox5YM7Km9NcAVE1D3mhkWjU/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNi8wNS8yNy9mcEdKVTVuTWNuY1Z0cEF1SFk1blMzN3E5Mno1YzBJVVF6QTAzZFlMLnBuZw.png",
-      "tv_network_logo_url": null,
+      "tv_network_logo_url": "https://huskers.com/imgproxy/dqDf7KySHz-PygmhYm6JjRvzXJR0nA9-L-tFtnB5yPg/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOC8wMS9YOGFieFJhdUprY2RyeXpLVjZFTUJJWmpRNE15djZ3S3NvMjlxRzlPLmpwZw.jpg",
       "status": "scheduled",
       "result": null,
-      "links": [],
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.bigtenplus.com/en-int/page/home"
+        }
+      ],
       "divider_text": "vs."
     },
     {
@@ -579,7 +583,7 @@
       "city": "Bloomington, Ind.",
       "arena": "Wilkinson Hall",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/x7OWZFHnQkE6RLMJeEnOT6Lz4NZiLtRmlAGr8w1h.svg",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/t8w660qGEZZcwH7ABD9w1iDy2lD33klnqvEaQpBD.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "status": "scheduled",
       "result": null,
