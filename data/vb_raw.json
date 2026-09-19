@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2026-09-18T17:04:31.858417+00:00",
+  "scraped_at": "2026-09-19T11:57:05.931014+00:00",
   "items": [
     {
       "date": null,
@@ -44,7 +44,7 @@
       "city": "Arlington, Texas",
       "arena": "AT&T Stadium",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/nk5aE9kUPU54q7NNgpWdfcqinICqCM6SmucWYHlY.svg",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/Y1hoAt5iUdhX1bbmZPprQuRNMvb4LZaBkkwujGMr.svg",
       "tv_network_logo_url": null,
       "status": "final",
       "result": {
@@ -104,7 +104,7 @@
       "city": "Las Vegas, Nev.",
       "arena": "T-Mobile Arena",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/VXJfnWlEC9lQpZhWEtWeg6L2RCOyb78JZeXvgAVk.svg",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/Ducr8t2RhRtQhgOCrltmw5himmgv6SD5cyUJJUNv.svg",
       "tv_network_logo_url": null,
       "status": "final",
       "result": {
@@ -172,7 +172,7 @@
       "city": "Brookings, S.D.",
       "arena": "First Bank & Trust Arena",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/eWI2OcnWCHfXvG9Yk0vjCfbXSAmEpwh3CV0iLj70.svg",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/qVk91pHmDRAIRiOwXUkYDcovPqzZ3698Z6wrzKOV.svg",
       "tv_network_logo_url": null,
       "status": "final",
       "result": {
@@ -240,7 +240,7 @@
       "city": "Chicago, Ill.",
       "arena": "Wrigley Field",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/iO1mAFVdJ3wnhBwZZrMzEE7ZZ5816y5Bycny5CNE.svg",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/a6RjlPVV23IIhnGiIV2IcCVt7DKXQKhLVNuIg11H.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/gM1A2rToEddNlu0RoRGpq7mgxF02xg2DOhpLQNTQbRA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC9SUTBlVHVRNHM0R1dSQVJ6ZVRibXFNS2tGZ01VS0ZvbHJSeVpMM21oLnBuZw.png",
       "status": "tbd",
       "result": null,
@@ -309,7 +309,7 @@
       "city": "Lincoln, Neb.",
       "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/NyHMJMIOBRT9qfZVq0196DaXxvwibJH5pUNmG7TS.svg",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/EOSflnlFRzNcPPLi77FYaGRlVDqBCNYwh2ESdMm4.svg",
       "tv_network_logo_url": null,
       "status": "final",
       "result": {
@@ -377,7 +377,7 @@
       "city": "Lincoln, Neb.",
       "arena": "Pinnacle Bank Arena",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/6YqiHePJRWtaivDZtMDsmWPz9aCo5VsUKi7g5To1.svg",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/1cg9w07JU2X8N7NnQpHFEeSuiLl0ltSzj5E5SG5Q.svg",
       "tv_network_logo_url": null,
       "status": "final",
       "result": {
@@ -403,7 +403,7 @@
     {
       "date": null,
       "date_text": "SEP 18",
-      "time_local": "7:00 PM CDT",
+      "time_local": null,
       "venue_type": "H",
       "nu_rank": 1,
       "opp_rank": 25,
@@ -411,22 +411,25 @@
       "city": "Lincoln, Neb.",
       "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/tufeZFGTFKSk4Pn1wtvHFkoV2w3SiKuP7cJ5LHPA.svg",
-      "tv_network_logo_url": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
-      "status": "scheduled",
-      "result": null,
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/WyyJk3c96R06cwmxbzfh6X8MwCTD4Ejgkdb7F8Up.svg",
+      "tv_network_logo_url": null,
+      "status": "final",
+      "result": {
+        "outcome": "W",
+        "sets": "3-1"
+      },
       "links": [
         {
-          "title": "Watch",
-          "href": "https://www.foxsports.com/live"
+          "title": "Box Score (PDF)",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2026/09/19/VVjjT6cG1xMMCkEMiGVq24UJKrj46ufCXYejyOJc.pdf"
         },
         {
-          "title": "Listen",
-          "href": "https://huskers.com/listen"
+          "title": "Box Score",
+          "href": "https://huskers.com/boxscore/25161"
         },
         {
-          "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+          "title": "Recap",
+          "href": "https://huskers.com/news/2026/09/19/no-1-huskers-set-devaney-center-record-on-friday-night"
         }
       ],
       "divider_text": "vs."
@@ -450,6 +453,14 @@
         {
           "title": "Watch",
           "href": "https://www.bigtenplus.com/en-int/page/home"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Live Stats",
+          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
       ],
       "divider_text": "vs."
@@ -465,7 +476,7 @@
       "city": "Lincoln, Neb.",
       "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/iO1mAFVdJ3wnhBwZZrMzEE7ZZ5816y5Bycny5CNE.svg",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/a6RjlPVV23IIhnGiIV2IcCVt7DKXQKhLVNuIg11H.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "status": "scheduled",
       "result": null,
@@ -496,7 +507,7 @@
       "city": "Lincoln, Neb.",
       "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/6Gg5qagR5k6SerYMhAnPfgd6pRFZOjoNH3yuQmxv.svg",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/bJhaZwlJq9HWXzOX2XLb61CzszhNdIXlNOqheYDD.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/_5D0pgSdzaCc_eoG0ZquTCN4ZBCsfqZEJb1KlhaBb4A/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wOC8xOS81MTVLT25xcW94aHBvSTRZWVA5emdTaU83ZFk3b0FIUThtdFl2RnZlLnBuZw.png",
       "status": "scheduled",
       "result": null,
@@ -519,7 +530,7 @@
       "city": "Lincoln, Neb.",
       "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/HXoCBh4KeZnVWHtihpvPsvXZjJemL16rnoSIPjrF.svg",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/fg3weSTLCHNuqYnnVVA9001FVzzMsOhslaCByc9r.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "status": "scheduled",
       "result": null,
@@ -542,7 +553,7 @@
       "city": "University Park, Pa.",
       "arena": "Rec Hall",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/mfJ9WOUmNOx3pcfhTlqBwhGQsCcPxdZVvPN5uaNI.svg",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/o2nj3h68raMSaNe8DjjPWaN37sfY711NYkbxcAfj.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "status": "scheduled",
       "result": null,
@@ -565,7 +576,7 @@
       "city": "College Park, Md.",
       "arena": "XFINITY Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/f6YZBxw0l7iSaZYxmU5bqVR7NymoWeleTlAzSe2s.svg",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/WvrOjv9NoeMGxuG0jkJDeXqetaEPKbc1NhYRxi0x.svg",
       "tv_network_logo_url": null,
       "status": "scheduled",
       "result": null,
@@ -606,7 +617,7 @@
       "city": "Lincoln, Neb.",
       "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/lHfovpycJbpI6y7xc7e581fl5fYROlhKSYRnWlXm.svg",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/j8I3mTZGuF3lJyds3yozQSLfrxdUabgUhTX9odJ9.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/gM1A2rToEddNlu0RoRGpq7mgxF02xg2DOhpLQNTQbRA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC9SUTBlVHVRNHM0R1dSQVJ6ZVRibXFNS2tGZ01VS0ZvbHJSeVpMM21oLnBuZw.png",
       "status": "scheduled",
       "result": null,
@@ -647,7 +658,7 @@
       "city": "Lincoln, Neb.",
       "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/uNu3v2jeUchmnwG9u9aMXlfUsQknaDeAH4E0uE3B.svg",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/LEoEsvc3cSzmjX5NOkgGpHqsHX90bhaLx5eRH3oU.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "status": "scheduled",
       "result": null,
@@ -693,7 +704,7 @@
       "city": "Lincoln, Neb.",
       "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/t78xv2HjoEyUYDruC2TA2PKsmNA8lQj9nAvIuQ8H.svg",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/hRNJBvLnNz2JJWDyypb1is2khC0xZUMrYk1zs8XU.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "status": "scheduled",
       "result": null,
@@ -716,7 +727,7 @@
       "city": "Ann Arbor, Mich.",
       "arena": "Crisler Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/4oYjRioVliijD3AFdibPbYQuxjI9F61dbRY9BsYI.svg",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/ztnsgQkJvjErOy6Cck31tMRiS5VnnEYRpoJOBrql.svg",
       "tv_network_logo_url": null,
       "status": "scheduled",
       "result": null,
@@ -752,7 +763,7 @@
       "city": "Eugene, Ore.",
       "arena": "Matthew Knight Arena",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/URGDYbgBAE2dhmFGs7Rmtkk27Zr4Xe242e3V9hm8.svg",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/U0dJM09JAXXMat7hoC2dW4NKUIAdYw3bI3xUBWDA.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "status": "scheduled",
       "result": null,
@@ -775,7 +786,7 @@
       "city": "Seattle, Wash.",
       "arena": "Alaska Airlines Arena",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/3tDvfM1Hv0hmJU9ZdquuL93zYqw961phb33CAJr4.svg",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/ocEhFWgbDVeZ1GA4wuVCQrLQhD1QF0ORAcNKb78I.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/abOCZPjFk7retFiHI95TY3B_5ZW8xUStFfv9g8xtN5g/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8zMC9TVjZNRmIwUGtaM3BRRmZ5M1BQN0RVeGNDVDROQTdYN2JFNFNNZmI5LmpwZw.jpg",
       "status": "scheduled",
       "result": null,
@@ -798,7 +809,7 @@
       "city": "Lincoln, Neb.",
       "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/UWMxkoYfpBXNa4Led31t3MMqZNtnEz7UsRoCLsBV.svg",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/VQRRGWVVHCyN8rN1SKsMEhpmHA1thIRfowmhVXqn.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/_5D0pgSdzaCc_eoG0ZquTCN4ZBCsfqZEJb1KlhaBb4A/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNC8wOC8xOS81MTVLT25xcW94aHBvSTRZWVA5emdTaU83ZFk3b0FIUThtdFl2RnZlLnBuZw.png",
       "status": "scheduled",
       "result": null,
@@ -821,7 +832,7 @@
       "city": "Lincoln, Neb.",
       "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/xyrHpWFdS1vJlQCagp18ZgSi26eXksnSmz4zBavu.svg",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/jrHlgEIoohBgq0QITXNOFolc7wP7DwHmxWo0R6ab.svg",
       "tv_network_logo_url": null,
       "status": "scheduled",
       "result": null,
@@ -839,7 +850,7 @@
       "city": "Lincoln, Neb.",
       "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/fClVdpYEcASq2qqPmSAzanlMA9HS5G2fVjZlq42O.svg",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/tGeSN6DdDWZ7vGMS4CjeWwzZFb9d4CGS11G1ioAW.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "status": "scheduled",
       "result": null,
