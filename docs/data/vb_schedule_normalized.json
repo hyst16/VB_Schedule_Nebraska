@@ -432,7 +432,7 @@
       "tv_logo": null,
       "tv": [],
       "status": "final",
-      "result": "W 3-0",
+      "result": "W 3-1",
       "result_css": "W",
       "notes": null,
       "links": [
@@ -509,6 +509,14 @@
         {
           "title": "Watch",
           "href": "https://www.bigtenplus.com/en-int/page/home"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Live Stats",
+          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
       ],
       "is_exhibition": false
@@ -536,6 +544,14 @@
         {
           "title": "Watch",
           "href": "https://www.foxsports.com/live"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Live Stats",
+          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
       ],
       "is_exhibition": false
@@ -544,7 +560,7 @@
       "date": "2026-10-01",
       "time_local": "6:00 PM CDT",
       "home_away": "A",
-      "nu_rank": 10,
+      "nu_rank": null,
       "opponent": "Penn State",
       "opp_rank": null,
       "title": "Penn State",
@@ -563,6 +579,14 @@
         {
           "title": "Watch",
           "href": "https://www.foxsports.com/live"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Live Stats",
+          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
       ],
       "is_exhibition": false
@@ -580,20 +604,25 @@
       "arena_key": "xfinity-center",
       "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/WvrOjv9NoeMGxuG0jkJDeXqetaEPKbc1NhYRxi0x.svg",
-      "tv_logo": null,
+      "tv_logo": "https://huskers.com/imgproxy/dqDf7KySHz-PygmhYm6JjRvzXJR0nA9-L-tFtnB5yPg/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOC8wMS9YOGFieFJhdUprY2RyeXpLVjZFTUJJWmpRNE15djZ3S3NvMjlxRzlPLmpwZw.jpg",
       "tv": [],
       "status": "scheduled",
       "result": null,
       "result_css": null,
       "notes": null,
-      "links": [],
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.bigtenplus.com/en-int/page/home"
+        }
+      ],
       "is_exhibition": false
     },
     {
       "date": "2026-10-08",
       "time_local": "5:30 PM CDT",
       "home_away": "A",
-      "nu_rank": 16,
+      "nu_rank": null,
       "opponent": "Indiana",
       "opp_rank": null,
       "title": "Indiana",
@@ -620,7 +649,7 @@
       "date": "2026-10-10",
       "time_local": "TBA",
       "home_away": "H",
-      "nu_rank": 6,
+      "nu_rank": null,
       "opponent": "Wisconsin",
       "opp_rank": null,
       "title": "Wisconsin",
@@ -669,7 +698,7 @@
       "date": "2026-10-17",
       "time_local": "4 or 8 PM",
       "home_away": "H",
-      "nu_rank": 9,
+      "nu_rank": null,
       "opponent": "Purdue",
       "opp_rank": null,
       "title": "Purdue",
@@ -723,7 +752,7 @@
       "date": "2026-10-24",
       "time_local": "8:00 PM CDT",
       "home_away": "H",
-      "nu_rank": 20,
+      "nu_rank": null,
       "opponent": "USC",
       "opp_rank": null,
       "title": "USC",
@@ -794,7 +823,7 @@
       "date": "2026-11-07",
       "time_local": "9:00 PM CST",
       "home_away": "A",
-      "nu_rank": 25,
+      "nu_rank": null,
       "opponent": "Oregon",
       "opp_rank": null,
       "title": "Oregon",
@@ -897,7 +926,7 @@
       "date": "2026-11-17",
       "time_local": "7:30 PM CST",
       "home_away": "H",
-      "nu_rank": 14,
+      "nu_rank": null,
       "opponent": "Minnesota",
       "opp_rank": null,
       "title": "Minnesota",
