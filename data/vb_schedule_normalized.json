@@ -418,7 +418,7 @@
     },
     {
       "date": "2026-09-20",
-      "time_local": "12:00 PM CDT",
+      "time_local": null,
       "home_away": "H",
       "nu_rank": 1,
       "opponent": "FGCU",
@@ -429,24 +429,24 @@
       "arena_key": "bob-devaney-sports-center",
       "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opp_logo": "https://huskers.com/imgproxy/zuiHD2Cv6YpogXqBKOCVox5YM7Km9NcAVE1D3mhkWjU/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyNi8wNS8yNy9mcEdKVTVuTWNuY1Z0cEF1SFk1blMzN3E5Mno1YzBJVVF6QTAzZFlMLnBuZw.png",
-      "tv_logo": "https://huskers.com/imgproxy/dqDf7KySHz-PygmhYm6JjRvzXJR0nA9-L-tFtnB5yPg/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wOC8wMS9YOGFieFJhdUprY2RyeXpLVjZFTUJJWmpRNE15djZ3S3NvMjlxRzlPLmpwZw.jpg",
+      "tv_logo": null,
       "tv": [],
-      "status": "scheduled",
-      "result": null,
-      "result_css": null,
+      "status": "final",
+      "result": "W 3-0",
+      "result_css": "W",
       "notes": null,
       "links": [
         {
-          "title": "Watch",
-          "href": "https://www.bigtenplus.com/en-int/page/home"
+          "title": "Box Score (PDF)",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2026/09/20/DO7jrdPHspOOtQjs9oMXHnUF3YAhNDX79iUgMPUr.pdf"
         },
         {
-          "title": "Listen",
-          "href": "https://huskers.com/listen"
+          "title": "Box Score",
+          "href": "https://huskers.com/boxscore/25162"
         },
         {
-          "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+          "title": "Recap",
+          "href": "https://huskers.com/news/2026/09/20/no-1-huskers-block-party-sinks-fgcu-on-sunday"
         }
       ],
       "is_exhibition": false
