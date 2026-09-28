@@ -560,7 +560,7 @@
       "date": "2026-10-01",
       "time_local": "6:00 PM CDT",
       "home_away": "A",
-      "nu_rank": null,
+      "nu_rank": 16,
       "opponent": "Penn State",
       "opp_rank": null,
       "title": "Penn State",
@@ -655,7 +655,7 @@
     },
     {
       "date": "2026-10-10",
-      "time_local": "TBA",
+      "time_local": "6:00 PM CDT",
       "home_away": "H",
       "nu_rank": null,
       "opponent": "Wisconsin",
