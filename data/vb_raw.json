@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2026-09-30T18:26:11.511235+00:00",
+  "scraped_at": "2026-10-01T14:33:32.727697+00:00",
   "items": [
     {
       "date": null,
@@ -596,7 +596,7 @@
         },
         {
           "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+          "href": "https://wmtstats.live/games/124adee7-48cd-3665-2d6f-0e2244424087"
         }
       ],
       "divider_text": "at"
@@ -627,7 +627,7 @@
         },
         {
           "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+          "href": "https://wmtstats.live/games/a678f7f9-a59c-6d18-8883-dba6bdfa7f4f"
         }
       ],
       "divider_text": "at"
