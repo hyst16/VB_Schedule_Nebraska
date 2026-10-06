@@ -113,14 +113,6 @@
       "path": "docs/images/arenas/wintrust-arena.jpg"
     },
     {
-      "arena_key": "wrigley-field",
-      "display": "Wrigley Field",
-      "opponent": "Missouri",
-      "city": "Chicago, Ill.",
-      "filename": "wrigley-field.jpg",
-      "path": "docs/images/arenas/wrigley-field.jpg"
-    },
-    {
       "arena_key": "xfinity-center",
       "display": "XFINITY Center",
       "opponent": "Maryland",

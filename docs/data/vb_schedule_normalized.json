@@ -203,45 +203,6 @@
       "is_exhibition": false
     },
     {
-      "date": "2026-09-06",
-      "time_local": null,
-      "home_away": "N",
-      "nu_rank": 1,
-      "opponent": "Missouri",
-      "opp_rank": null,
-      "title": "Missouri",
-      "arena": "Wrigley Field",
-      "city": "Chicago, Ill.",
-      "arena_key": "wrigley-field",
-      "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/a6RjlPVV23IIhnGiIV2IcCVt7DKXQKhLVNuIg11H.svg",
-      "tv_logo": "https://huskers.com/imgproxy/gM1A2rToEddNlu0RoRGpq7mgxF02xg2DOhpLQNTQbRA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC9SUTBlVHVRNHM0R1dSQVJ6ZVRibXFNS2tGZ01VS0ZvbHJSeVpMM21oLnBuZw.png",
-      "tv": [],
-      "status": "scheduled",
-      "result": null,
-      "result_css": null,
-      "notes": null,
-      "links": [
-        {
-          "title": "Watch",
-          "href": "https://www.foxsports.com/live"
-        },
-        {
-          "title": "Listen",
-          "href": "https://huskers.com/listen"
-        },
-        {
-          "title": "Ticket Information",
-          "href": "https://www.mlb.com/cubs/tickets/events/bigtenvolleyball?partnerId=redirect-chc-bigtenvolleyball"
-        },
-        {
-          "title": "Recap",
-          "href": "https://huskers.com/news/2026/09/7/nebraska-missouri-volleyball-match-suspended"
-        }
-      ],
-      "is_exhibition": false
-    },
-    {
       "date": "2026-09-10",
       "time_local": null,
       "home_away": "H",
