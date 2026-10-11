@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2026-10-10T17:49:34.492671+00:00",
+  "scraped_at": "2026-10-11T14:05:00.289217+00:00",
   "items": [
     {
       "date": null,
@@ -640,7 +640,7 @@
     {
       "date": null,
       "date_text": "OCT 10",
-      "time_local": "6:00 PM CDT",
+      "time_local": null,
       "venue_type": "H",
       "nu_rank": 1,
       "opp_rank": 7,
@@ -649,21 +649,24 @@
       "arena": "Bob Devaney Sports Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/j8I3mTZGuF3lJyds3yozQSLfrxdUabgUhTX9odJ9.svg",
-      "tv_network_logo_url": "https://huskers.com/imgproxy/gM1A2rToEddNlu0RoRGpq7mgxF02xg2DOhpLQNTQbRA/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8zMC9SUTBlVHVRNHM0R1dSQVJ6ZVRibXFNS2tGZ01VS0ZvbHJSeVpMM21oLnBuZw.png",
-      "status": "scheduled",
-      "result": null,
+      "tv_network_logo_url": null,
+      "status": "final",
+      "result": {
+        "outcome": "W",
+        "sets": "3-0"
+      },
       "links": [
         {
-          "title": "Watch",
-          "href": "https://www.foxsports.com/live"
+          "title": "Box Score (PDF)",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2026/10/11/YYRPrR8ZxhJEf0yQN3gnN6oR26XuRVkZMDJedrrg.pdf"
         },
         {
-          "title": "Listen",
-          "href": "https://huskers.com/listen"
+          "title": "Box Score",
+          "href": "https://huskers.com/boxscore/25132"
         },
         {
-          "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+          "title": "Recap",
+          "href": "https://huskers.com/news/2026/10/11/murray-no-1-huskers-dominate-no-7-badgers"
         }
       ],
       "divider_text": "vs."
