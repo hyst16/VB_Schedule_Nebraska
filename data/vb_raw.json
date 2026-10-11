@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2026-10-11T14:05:00.289217+00:00",
+  "scraped_at": "2026-10-11T18:03:08.236267+00:00",
   "items": [
     {
       "date": null,
@@ -697,7 +697,7 @@
     {
       "date": null,
       "date_text": "OCT 17",
-      "time_local": "4 or 8 PM",
+      "time_local": "4:00 PM CDT",
       "venue_type": "H",
       "nu_rank": null,
       "opp_rank": null,
