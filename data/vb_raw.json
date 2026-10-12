@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2026-10-11T18:03:08.236267+00:00",
+  "scraped_at": "2026-10-12T16:45:37.976388+00:00",
   "items": [
     {
       "date": null,
@@ -690,6 +690,14 @@
         {
           "title": "Watch",
           "href": "https://www.bigtenplus.com/en-int/page/home"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Live Stats",
+          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
       ],
       "divider_text": "at"
@@ -713,6 +721,14 @@
         {
           "title": "Watch",
           "href": "https://www.foxsports.com/live"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Live Stats",
+          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
       ],
       "divider_text": "vs."
@@ -736,6 +752,14 @@
         {
           "title": "Watch",
           "href": "https://www.foxsports.com/live"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Live Stats",
+          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
       ],
       "divider_text": "vs."
@@ -759,6 +783,14 @@
         {
           "title": "Watch",
           "href": "https://www.foxsports.com/live"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Live Stats",
+          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
       ],
       "divider_text": "vs."
@@ -782,6 +814,14 @@
         {
           "title": "Watch",
           "href": "https://www.bigtenplus.com/en-int/page/home"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Live Stats",
+          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
       ],
       "divider_text": "at"
@@ -805,6 +845,14 @@
         {
           "title": "Watch",
           "href": "https://www.bigtenplus.com/en-int/page/home"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Live Stats",
+          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
       ],
       "divider_text": "at"
@@ -828,6 +876,14 @@
         {
           "title": "Watch",
           "href": "https://www.foxsports.com/live"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Live Stats",
+          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
       ],
       "divider_text": "at"
@@ -851,6 +907,14 @@
         {
           "title": "Watch",
           "href": "https://www.foxsports.com/live"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Live Stats",
+          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
       ],
       "divider_text": "at"
@@ -874,6 +938,14 @@
         {
           "title": "Watch",
           "href": "https://www.bigtenplus.com/en-int/page/home"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Live Stats",
+          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
       ],
       "divider_text": "vs."
@@ -897,6 +969,14 @@
         {
           "title": "Watch",
           "href": "https://www.bigtenplus.com/en-int/page/home"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Live Stats",
+          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
       ],
       "divider_text": "vs."
@@ -920,6 +1000,14 @@
         {
           "title": "Watch",
           "href": "https://www.foxsports.com/live"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Live Stats",
+          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
         }
       ],
       "divider_text": "vs."
