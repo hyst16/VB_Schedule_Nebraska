@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2026-10-21T18:00:22.550393+00:00",
+  "scraped_at": "2026-10-22T13:05:29.207848+00:00",
   "items": [
     {
       "date": null,
@@ -897,7 +897,7 @@
     {
       "date": null,
       "date_text": "NOV 8",
-      "time_local": "TBA",
+      "time_local": "5:30 PM CST",
       "venue_type": "A",
       "nu_rank": null,
       "opp_rank": null,
@@ -911,16 +911,16 @@
       "result": null,
       "links": [
         {
-          "title": "Watch",
-          "href": "https://www.foxsports.com/live"
-        },
-        {
           "title": "Listen",
           "href": "https://huskers.com/listen"
         },
         {
           "title": "Live Stats",
           "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+        },
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
         }
       ],
       "divider_text": "at"

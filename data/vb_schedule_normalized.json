@@ -904,7 +904,7 @@
     },
     {
       "date": "2026-11-08",
-      "time_local": "TBA",
+      "time_local": "5:30 PM CST",
       "home_away": "A",
       "nu_rank": null,
       "opponent": "Washington",
@@ -923,16 +923,16 @@
       "notes": null,
       "links": [
         {
-          "title": "Watch",
-          "href": "https://www.foxsports.com/live"
-        },
-        {
           "title": "Listen",
           "href": "https://huskers.com/listen"
         },
         {
           "title": "Live Stats",
           "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+        },
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
         }
       ],
       "is_exhibition": false
