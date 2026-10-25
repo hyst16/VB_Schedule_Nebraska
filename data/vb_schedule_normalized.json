@@ -764,7 +764,7 @@
     },
     {
       "date": "2026-10-24",
-      "time_local": "8:00 PM CDT",
+      "time_local": null,
       "home_away": "H",
       "nu_rank": 1,
       "opponent": "USC",
@@ -775,24 +775,24 @@
       "arena_key": "bob-devaney-sports-center",
       "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/hRNJBvLnNz2JJWDyypb1is2khC0xZUMrYk1zs8XU.svg",
-      "tv_logo": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
+      "tv_logo": null,
       "tv": [],
-      "status": "scheduled",
-      "result": null,
-      "result_css": null,
+      "status": "final",
+      "result": "W 3-0",
+      "result_css": "W",
       "notes": null,
       "links": [
         {
-          "title": "Watch",
-          "href": "https://www.foxsports.com/live"
+          "title": "Box Score (PDF)",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2026/10/25/2MtqgPtR46CHXM6nqSpCjxTHh1TLwKfpGzulmAUO.pdf"
         },
         {
-          "title": "Listen",
-          "href": "https://huskers.com/listen"
+          "title": "Box Score",
+          "href": "https://huskers.com/boxscore/25129"
         },
         {
-          "title": "Live Stats",
-          "href": "https://www.statbroadcast.com/events/statmonitr.php?gid=neb"
+          "title": "Recap",
+          "href": "https://huskers.com/news/2026/10/25/no-1-huskers-match-program-record-in-saturday-sweep"
         }
       ],
       "is_exhibition": false
