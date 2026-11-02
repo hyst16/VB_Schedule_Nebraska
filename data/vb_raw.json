@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2026-11-02T17:06:14.522968+00:00",
+  "scraped_at": "2026-11-02T22:17:42.810014+00:00",
   "items": [
     {
       "date": null,
@@ -911,8 +911,8 @@
       "date_text": "NOV 8",
       "time_local": "5:30 PM CST",
       "venue_type": "A",
-      "nu_rank": null,
-      "opp_rank": null,
+      "nu_rank": 1,
+      "opp_rank": 18,
       "opponent_name": "Washington",
       "city": "Seattle, Wash.",
       "arena": "Alaska Airlines Arena",
