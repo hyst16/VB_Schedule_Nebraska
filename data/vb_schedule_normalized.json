@@ -1043,25 +1043,34 @@
       "is_exhibition": false
     },
     {
-      "date": "2026-11-20",
-      "time_local": "TBA",
+      "date": "2026-11-22",
+      "time_local": "11:00 AM CST",
       "home_away": "N",
       "nu_rank": null,
-      "opponent": "Big Ten Tournament",
-      "opp_rank": null,
-      "title": "Big Ten Tournament",
+      "opponent": "Seed/#9 Seed",
+      "opp_rank": 8,
+      "title": "Seed/#9 Seed",
       "arena": "Fishers Event Center",
       "city": "Fishers, Ind.",
       "arena_key": "fishers-event-center",
-      "nu_logo": "https://huskers.com/imgproxy/XiM2w5OF4XtLN254b8AUbv-Kab0vdfClQiCk1b7yOHI/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8xMy95N1d4aXRHeWpqNG1oY2FCaEJJZ21pRXg4RGhCU0NtbU14bDFoYllyLnBuZw.png",
+      "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opp_logo": null,
-      "tv_logo": null,
+      "tv_logo": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "tv": [],
       "status": "scheduled",
       "result": null,
       "result_css": null,
       "notes": null,
-      "links": [],
+      "links": [
+        {
+          "title": "Watch",
+          "href": "https://www.foxsports.com/live"
+        },
+        {
+          "title": "Listen",
+          "href": "https://huskers.com/listen"
+        }
+      ],
       "is_exhibition": false
     }
   ]
