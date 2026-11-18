@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2026-11-18T16:29:19.078459+00:00",
+  "scraped_at": "2026-11-18T21:28:29.404291+00:00",
   "items": [
     {
       "date": null,
@@ -1051,8 +1051,8 @@
       "time_local": "11:00 AM CST",
       "venue_type": "N",
       "nu_rank": null,
-      "opp_rank": 8,
-      "opponent_name": "Seed/#9 Seed",
+      "opp_rank": 23,
+      "opponent_name": "Indiana/#25 UCLA",
       "city": "Fishers, Ind.",
       "arena": "Fishers Event Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
@@ -1068,6 +1068,14 @@
         {
           "title": "Listen",
           "href": "https://huskers.com/listen"
+        },
+        {
+          "title": "Live Stats",
+          "href": "https://www.statbroadcast.com/events/conference.php?conf=b10&live=0"
+        },
+        {
+          "title": "Tournament Central",
+          "href": "https://bigten.org/sports/2026/10/1/VBT.aspx"
         }
       ],
       "divider_text": "vs."
