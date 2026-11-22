@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2026-11-21T15:24:52.298235+00:00",
+  "scraped_at": "2026-11-22T15:44:27.500185+00:00",
   "items": [
     {
       "date": null,
@@ -1050,13 +1050,13 @@
       "date_text": "NOV 22",
       "time_local": "11:00 AM CST",
       "venue_type": "N",
-      "nu_rank": null,
+      "nu_rank": 1,
       "opp_rank": 23,
-      "opponent_name": "Indiana/#25 UCLA",
+      "opponent_name": "Indiana",
       "city": "Fishers, Ind.",
       "arena": "Fishers Event Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": null,
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/9zwhGLl6hkKGhqy56DEc7rAyUowP1bTAIsIbxtCE.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "status": "scheduled",
       "result": null,
