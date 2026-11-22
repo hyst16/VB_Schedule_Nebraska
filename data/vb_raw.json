@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2026-11-22T15:44:27.500185+00:00",
+  "scraped_at": "2026-11-22T20:18:23.532904+00:00",
   "items": [
     {
       "date": null,
@@ -1048,7 +1048,7 @@
     {
       "date": null,
       "date_text": "NOV 22",
-      "time_local": "11:00 AM CST",
+      "time_local": null,
       "venue_type": "N",
       "nu_rank": 1,
       "opp_rank": 23,
@@ -1057,6 +1057,40 @@
       "arena": "Fishers Event Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/9zwhGLl6hkKGhqy56DEc7rAyUowP1bTAIsIbxtCE.svg",
+      "tv_network_logo_url": null,
+      "status": "final",
+      "result": {
+        "outcome": "W",
+        "sets": "3-0"
+      },
+      "links": [
+        {
+          "title": "Box Score (PDF)",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2026/11/22/T4XvOqXIKtEGSqLT5qbkYJLJqyuUHx1kKkfRJiUO.pdf"
+        },
+        {
+          "title": "Box Score",
+          "href": "https://huskers.com/boxscore/25156"
+        },
+        {
+          "title": "Recap",
+          "href": "https://huskers.com/news/2026/11/22/no-1-huskers-advance-to-big-ten-semifinal"
+        }
+      ],
+      "divider_text": "vs."
+    },
+    {
+      "date": null,
+      "date_text": "NOV 24",
+      "time_local": "5:00 PM CST",
+      "venue_type": "N",
+      "nu_rank": 1,
+      "opp_rank": 5,
+      "opponent_name": "Purdue/#4 Oregon",
+      "city": null,
+      "arena": null,
+      "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
+      "opponent_logo_url": "https://huskers.com/imgproxy/XiM2w5OF4XtLN254b8AUbv-Kab0vdfClQiCk1b7yOHI/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8xMy95N1d4aXRHeWpqNG1oY2FCaEJJZ21pRXg4RGhCU0NtbU14bDFoYllyLnBuZw.png",
       "tv_network_logo_url": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "status": "scheduled",
       "result": null,
@@ -1072,10 +1106,6 @@
         {
           "title": "Live Stats",
           "href": "https://www.statbroadcast.com/events/conference.php?conf=b10&live=0"
-        },
-        {
-          "title": "Tournament Central",
-          "href": "https://bigten.org/sports/2026/10/1/VBT.aspx"
         }
       ],
       "divider_text": "vs."

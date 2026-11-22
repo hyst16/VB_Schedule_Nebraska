@@ -1044,7 +1044,7 @@
     },
     {
       "date": "2026-11-22",
-      "time_local": "11:00 AM CST",
+      "time_local": null,
       "home_away": "N",
       "nu_rank": 1,
       "opponent": "Indiana",
@@ -1055,6 +1055,41 @@
       "arena_key": "fishers-event-center",
       "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
       "opp_logo": "https://storage.googleapis.com/huskers-com-prod/school_logos/9zwhGLl6hkKGhqy56DEc7rAyUowP1bTAIsIbxtCE.svg",
+      "tv_logo": null,
+      "tv": [],
+      "status": "final",
+      "result": "W 3-0",
+      "result_css": "W",
+      "notes": null,
+      "links": [
+        {
+          "title": "Box Score (PDF)",
+          "href": "https://storage.googleapis.com/huskers-com-prod/2026/11/22/T4XvOqXIKtEGSqLT5qbkYJLJqyuUHx1kKkfRJiUO.pdf"
+        },
+        {
+          "title": "Box Score",
+          "href": "https://huskers.com/boxscore/25156"
+        },
+        {
+          "title": "Recap",
+          "href": "https://huskers.com/news/2026/11/22/no-1-huskers-advance-to-big-ten-semifinal"
+        }
+      ],
+      "is_exhibition": false
+    },
+    {
+      "date": "2026-11-24",
+      "time_local": "5:00 PM CST",
+      "home_away": "N",
+      "nu_rank": 1,
+      "opponent": "Purdue/#4 Oregon",
+      "opp_rank": 5,
+      "title": "Purdue/#4 Oregon",
+      "arena": null,
+      "city": null,
+      "arena_key": "unknown",
+      "nu_logo": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
+      "opp_logo": "https://huskers.com/imgproxy/XiM2w5OF4XtLN254b8AUbv-Kab0vdfClQiCk1b7yOHI/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8xMy95N1d4aXRHeWpqNG1oY2FCaEJJZ21pRXg4RGhCU0NtbU14bDFoYllyLnBuZw.png",
       "tv_logo": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "tv": [],
       "status": "scheduled",
@@ -1073,10 +1108,6 @@
         {
           "title": "Live Stats",
           "href": "https://www.statbroadcast.com/events/conference.php?conf=b10&live=0"
-        },
-        {
-          "title": "Tournament Central",
-          "href": "https://bigten.org/sports/2026/10/1/VBT.aspx"
         }
       ],
       "is_exhibition": false

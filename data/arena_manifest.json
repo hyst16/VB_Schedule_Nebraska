@@ -89,6 +89,14 @@
       "path": "docs/images/arenas/t-mobile-arena.jpg"
     },
     {
+      "arena_key": "unknown",
+      "display": "Unknown Arena",
+      "opponent": "Purdue/#4 Oregon",
+      "city": "",
+      "filename": "unknown.jpg",
+      "path": "docs/images/arenas/unknown.jpg"
+    },
+    {
       "arena_key": "welsh-ryan-arena",
       "display": "Welsh-Ryan Arena",
       "opponent": "Northwestern",
