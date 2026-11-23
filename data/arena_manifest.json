@@ -51,7 +51,7 @@
     {
       "arena_key": "fishers-event-center",
       "display": "Fishers Event Center",
-      "opponent": "Indiana",
+      "opponent": "Purdue",
       "city": "Fishers, Ind.",
       "filename": "fishers-event-center.jpg",
       "path": "docs/images/arenas/fishers-event-center.jpg"
@@ -87,14 +87,6 @@
       "city": "Las Vegas, Nev.",
       "filename": "t-mobile-arena.jpg",
       "path": "docs/images/arenas/t-mobile-arena.jpg"
-    },
-    {
-      "arena_key": "unknown",
-      "display": "Unknown Arena",
-      "opponent": "Purdue/#4 Oregon",
-      "city": "",
-      "filename": "unknown.jpg",
-      "path": "docs/images/arenas/unknown.jpg"
     },
     {
       "arena_key": "welsh-ryan-arena",

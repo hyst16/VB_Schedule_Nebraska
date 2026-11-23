@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2026-11-22T20:18:23.532904+00:00",
+  "scraped_at": "2026-11-23T19:16:03.139525+00:00",
   "items": [
     {
       "date": null,
@@ -1085,12 +1085,12 @@
       "time_local": "5:00 PM CST",
       "venue_type": "N",
       "nu_rank": 1,
-      "opp_rank": 5,
-      "opponent_name": "Purdue/#4 Oregon",
-      "city": null,
-      "arena": null,
+      "opp_rank": 13,
+      "opponent_name": "Purdue",
+      "city": "Fishers, Ind.",
+      "arena": "Fishers Event Center",
       "nebraska_logo_url": "https://huskers.com/imgproxy/ZiJjtEqnKPA1myTuNSKlu9ZwOxzMNJsiQimqg6svKs0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8yNy9xVkd3OVJidUZIQmxSTDU2VFBvZHBTMWhWNU5sVGlIVGt2Tk44RURlLnBuZw.png",
-      "opponent_logo_url": "https://huskers.com/imgproxy/XiM2w5OF4XtLN254b8AUbv-Kab0vdfClQiCk1b7yOHI/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8wNi8xMy95N1d4aXRHeWpqNG1oY2FCaEJJZ21pRXg4RGhCU0NtbU14bDFoYllyLnBuZw.png",
+      "opponent_logo_url": "https://storage.googleapis.com/huskers-com-prod/school_logos/LEoEsvc3cSzmjX5NOkgGpHqsHX90bhaLx5eRH3oU.svg",
       "tv_network_logo_url": "https://huskers.com/imgproxy/MDzkCaaDsbR-fAZyprDYtyUOfLPaDjTNc7LofkEBGn0/rs:fit:1980:0:0:0/g:ce:0:0/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2h1c2tlcnMtY29tLXByb2QvMjAyMy8xMC8wMy9JS3JPSFBwbHhPWU5PUHVmdVBvQ1lDTzNnZlp2WFF1YXpFV05qeFhYLmpwZw.jpg",
       "status": "scheduled",
       "result": null,
