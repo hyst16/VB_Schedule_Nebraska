@@ -1,6 +1,6 @@
 {
   "source_url": "https://huskers.com/sports/volleyball/schedule",
-  "scraped_at": "2026-11-24T18:55:38.656108+00:00",
+  "scraped_at": "2026-11-24T23:00:16.884938+00:00",
   "items": [
     {
       "date": null,
@@ -1085,7 +1085,7 @@
       "time_local": "5:00 PM CST",
       "venue_type": "N",
       "nu_rank": 1,
-      "opp_rank": 13,
+      "opp_rank": 12,
       "opponent_name": "Purdue",
       "city": "Fishers, Ind.",
       "arena": "Fishers Event Center",
