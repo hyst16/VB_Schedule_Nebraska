@@ -49,6 +49,14 @@
       "path": "docs/images/arenas/first-bank-trust-arena.jpg"
     },
     {
+      "arena_key": "fisher-events-center",
+      "display": "Fisher Events Center",
+      "opponent": "Wisconsin",
+      "city": "Fishers, Ind.",
+      "filename": "fisher-events-center.jpg",
+      "path": "docs/images/arenas/fisher-events-center.jpg"
+    },
+    {
       "arena_key": "fishers-event-center",
       "display": "Fishers Event Center",
       "opponent": "Purdue",
